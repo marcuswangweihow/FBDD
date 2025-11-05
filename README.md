@@ -19,3 +19,9 @@ This notebook contains three functions
    
    This function takes a model and test tensor data as input.
    The output is a dictionary of metrics.
+
+
+# def mol_to_frags(mol_list)
+This function takes in a list of molecules as input and decomposes them into fragments using BRICS.
+
+The resulting list of fragments can be converted into a dataframe and fed into the function for calculating molecular descriptors.
