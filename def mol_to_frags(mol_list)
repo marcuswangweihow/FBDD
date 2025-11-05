@@ -8,25 +8,39 @@ calculating molecular descriptors later.
 
 """
 
-# Takes a list of molecules/SMILES as input
+# Takes a list of SMILES as input
 def mol_to_frags(mol_list):
     frag_list = []
     parent_list = []
+    seen_frags = set()
 
     for smiles in mol_list:
         mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            print(f'Molecule {smiles} has an error')
+            continue
+
+        # Get all frags per molecule
         frags = BRICS.BRICSDecompose(mol)
         
         for smi in frags:
             frag = Chem.MolFromSmiles(smi)
+            if frag is None:
+                print(f'Fragment {smi} has an error')
+                continue
 
             # Replace dummy atoms with hydrogens
             for atom in frag.GetAtoms():
                 if atom.GetAtomicNum() == 0:
                     atom.SetAtomicNum(1)
-            Chem.SanitizeMol(frag)
 
-            parent_list.append(smiles)
-            frag_list.append(frag)
+            Chem.SanitizeMol(frag)
+            frag_cansmi = Chem.MolToSmiles(frag, canonical=True)
+
+            # Deduplicate fragments
+            if frag_cansmi not in seen_frags:
+                seen_frags.add(frag_cansmi)
+                parent_list.append(smiles)
+                frag_list.append(frag)
 
   return parent_list, frag_list
