@@ -1,0 +1,32 @@
+from rdkit import Chem
+from rdkit.Chem import BRICS, Descriptors
+
+"""
+This function decomposes each molecule into fragments using BRICS and ensures that
+the resulting fragments have explicit hydrogens added. This prevents errors when
+calculating molecular descriptors later.
+
+"""
+
+# Takes a list of molecules/SMILES as input
+def mol_to_frags(mol_list):
+    frag_list = []
+    parent_list = []
+
+    for smiles in mol_list:
+        mol = Chem.MolFromSmiles(smiles)
+        frags = BRICS.BRICSDecompose(mol)
+        
+        for smi in frags:
+            frag = Chem.MolFromSmiles(smi)
+
+            # Replace dummy atoms with hydrogens
+            for atom in frag.GetAtoms():
+                if atom.GetAtomicNum() == 0:
+                    atom.SetAtomicNum(1)
+            Chem.SanitizeMol(frag)
+
+            parent_list.append(smiles)
+            frag_list.append(frag)
+
+  return parent_list, frag_list
