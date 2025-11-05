@@ -7,7 +7,8 @@ This notebook contains three functions
 
  - get_descriptors
    
-   This function takes a list of molecules as input and calculates the molecular descriptors for each molecule in the list
+   This function takes a list of molecules as input and calculates the molecular descriptors for each molecule in the list.
+   
    The resulting list can be easily saved to a dataframe for input into the model function
    
  - train_fragment_nn_model
