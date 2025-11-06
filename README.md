@@ -68,14 +68,17 @@ The script takes each ligand prepared using prepare_ligands.ipynb and docks it w
 
 Each docked ligand is saved as a .pdbqt file and the log file for the entire process is saved as docking_log.txt
 
-# Docking_4MZI
+# Docking_4MZI_roscovitine
 This folder contains the .pdbqt files for 4MZI - Crystal structure of a human mutant p53 and Roscovitine as the ligand.
 
 The .pdbqt file containing the 9 poses of the docked ligand is also included. 
 
 The log.txt file and the config.txt file for this docking project is included in this folder.
 
+# Docking_4MZI
+This folder contains the data and results for docking with 4MZI.
 
+More details can be found in the folder's README.
 
 
 
