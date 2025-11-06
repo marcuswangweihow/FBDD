@@ -56,5 +56,19 @@ During receptor preparation, the following operations are performed within AutoD
  - Add polar hydrogens
  - Add Kollman charges
 
+# docking.py
+By default, the parameters for:
+num_modes = 9
+exhaustiveness = 8
+energy_range = 4
+
+are set in the config.txt file.
+
+The script takes each ligand prepared using prepare_ligands.ipynb and docks it with the specified receptor using AutoDock Vina.
+
+Each docked ligand is saved as a .pdbqt file and the log file for the entire process is saved as docking_log.txt
+
+
+
 
 
