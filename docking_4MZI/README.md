@@ -49,5 +49,5 @@ find "ZINC22_all" -name "*.sdf" -exec cp {} "combined_sdf/" \;
 ls "combined_sdf" | wc -l
 
 ```
-This returned a total of 30765 .sdf files ie. 30765 molecules.
+This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficient for further analysis.
 
