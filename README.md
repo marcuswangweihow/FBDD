@@ -31,3 +31,30 @@ This notebook contains three functions
 This function takes in a list of molecules as input and decomposes them into fragments using BRICS.
 
 The resulting list of fragments can be converted into a dataframe and fed into the function for calculating molecular descriptors.
+
+# prepare_ligands.ipynb
+This notebook contains a script to prepare ligands automatically for docking in AutoDock Vina.
+
+Software and dependencies used:
+Windows 11
+MGLTools-1.5.7 (AutoDock Tools)
+Autodock Vina v1.2.7 (from https://github.com/ccsb-scripps/AutoDock-Vina/releases)
+OpenBabel 3.1.1
+
+The script requires a folder containing all ligand files in .sdf format and outputs alll ligands in .pdbqt format in a separate folder with numbering.
+
+During the ligand preparation, the following operations are performed.
+ - Add all hydrogens
+ - Assign Gasteiger charges
+ - non-polar hydrogens are merged
+ - Count rotatable bonds
+
+Note that for receptors, an automated script is not provided because of the need to assign kollman charges.
+
+During receptor preparation, the following operations are performed within AutoDock Tools before saving the receptor as a .pdbqt file.
+ - Delete water 
+ - Add polar hydrogens
+ - Add Kollman charges
+
+
+
