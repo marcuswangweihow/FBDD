@@ -6,6 +6,8 @@ The data was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches
 - Charge was set to 0
 - M000 to P030 were selected corresponding to roughly 0–3 logP
 
+In total, 20 cells were selected with the interface.
+
 All files were set to be downloaded in sdf format via CURL method. 
 
 The curl file returned was ZINC22-downloader-3D-sdf.tgz.curl. This file is available in this directory. The individual files will not be uploaded here as they will exceed the size limit of GitHub.
