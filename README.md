@@ -49,7 +49,7 @@ During the ligand preparation, the following operations are performed.
  - non-polar hydrogens are merged
  - Count rotatable bonds
 
-Note that for receptors, an automated script is not provided because of the need to assign kollman charges.
+Note that for receptors, an automated script is not provided because of the need to assign Kollman charges.
 
 During receptor preparation, the following operations are performed within AutoDock Tools before saving the receptor as a .pdbqt file.
  - Delete water 
