@@ -1,0 +1,10 @@
+receptor = protein.pdbqt
+center_x = -18.955
+center_y = -5.188
+center_z = 8.617
+size_x = 40
+size_y = 40
+size_z = 40
+num_modes = 9
+exhaustiveness = 8
+energy_range = 4
