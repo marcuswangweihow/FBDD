@@ -12,12 +12,14 @@ the curl file returned was ZINC22-downloader-3D-sdf.tgz.curl.
 
 Git bash 2.51.2-64-bit was used to download the files. The commands used were:
 
+```bash
+# Go to the directory with the curl file
 cd "/c/Users/Admin/Documents/Documents/Misc/FBDD project/ZINC22 data"
 
+# Create a directory for saving
 mkdir -p "ZINC22_all"
 
 # This step ensures every line in the curl file saves to a unique filename instead of overwriting.
-
 awk '{
   match($0, /https:\/\/files\.docking\.org\/zinc22\/([A-Za-z0-9\/._-]+)\.sdf\.tgz/, arr);
   if (arr[1] != "") {
@@ -41,6 +43,9 @@ find "ZINC22_all" -name "*.sdf.tgz" -exec tar -xvzf {} -C "ZINC22_all" \;
 mkdir -p "combined_sdf"
 find "ZINC22_all" -name "*.sdf" -exec cp {} "combined_sdf/" \;
 
-# Count how many sdf files you now have
+# If necessary count how many sdf files there are
 ls "combined_sdf" | wc -l
+
+```
+This returned a total of 30765 .sdf files ie. 30765 molecules.
 
