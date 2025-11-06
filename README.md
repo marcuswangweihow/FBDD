@@ -58,9 +58,9 @@ During receptor preparation, the following operations are performed within AutoD
 
 # docking.py
 By default, the parameters for:
-num_modes = 9
-exhaustiveness = 8
-energy_range = 4
+- num_modes = 9
+- exhaustiveness = 8
+- energy_range = 4
 
 are set in the config.txt file.
 
