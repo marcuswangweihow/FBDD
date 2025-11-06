@@ -1,13 +1,10 @@
 # Data and Methods
 The data was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
 
-Fragments subset was selected.
-
-H08 to H11 columns were selected with all layers (top-left option).
-
-Charge was set to 0
-
-M000 to P030 were selected corresponding to roughly 0–3 logP
+- Fragments subset was selected.
+- H08 to H11 columns were selected with all layers (top-left option).
+- Charge was set to 0
+- M000 to P030 were selected corresponding to roughly 0–3 logP
 
 All files were set to be downloaded in sdf format via CURL method. 
 
