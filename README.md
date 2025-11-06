@@ -41,7 +41,7 @@ Main software and dependencies used:
 - Autodock Vina v1.2.7 (from https://github.com/ccsb-scripps/AutoDock-Vina/releases)
 - OpenBabel 3.1.1
 
-The script requires a folder containing all ligand files in .sdf format and outputs alll ligands in .pdbqt format in a separate folder with numbering.
+The script requires a folder containing all ligand files in .sdf format and outputs all ligands in .pdbqt format in a separate folder with numbering.
 
 During the ligand preparation, the following operations are performed.
  - Add all hydrogens
