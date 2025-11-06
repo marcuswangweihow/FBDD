@@ -12,7 +12,7 @@ All files were set to be downloaded in sdf format via CURL method.
 
 The curl file returned was ZINC22-downloader-3D-sdf.tgz.curl. This file is available in this directory. The individual files will not be uploaded here as they will exceed the size limit of GitHub.
 
-Git bash 2.51.2-64-bit was used to download the files. The commands used were:
+Git bash 2.51.2-64-bit was used to download the files. The bash commands used were:
 
 ```bash
 # Go to the directory with the curl file
