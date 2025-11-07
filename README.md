@@ -3,7 +3,7 @@
 A repository containing code and testing during my self-training of FBDD skills.
 
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI.
+This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMDD.
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
