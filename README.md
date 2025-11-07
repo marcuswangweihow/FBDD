@@ -37,7 +37,7 @@ Completed parts of workflow:
 - Protein (.pdb)
 
 ---
-# aLMDD Sampling
+## aLMDD Sampling
 
 This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.
 
