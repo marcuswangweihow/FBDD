@@ -32,8 +32,8 @@ Completed parts of workflow:
 - Fragment Library (.sdf)
 - Protein (.pdb)
 
-# Data and Methods
-The data was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
+# Fragment Library (.sdf)
+The data for the fragment library was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
 
 - Fragments subset was selected.
 - H08 to H11 columns were selected with all layers (top-left option).
@@ -83,5 +83,7 @@ find "ZINC22_all" -name "*.sdf" -exec cp {} "combined_sdf/" \;
 ls "combined_sdf" | wc -l
 
 ```
+A total of 137 curl requests was executed succesfully, returning 137 .tgz files.
+
 This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficient for further analysis.
 
