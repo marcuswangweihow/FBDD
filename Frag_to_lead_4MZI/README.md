@@ -150,7 +150,7 @@ GPU (CUDA) drivers if using GPU acceleration
 
 **Python dependencies in Windows: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel**
 
-Note that should you prefer to run the pipeline in WSL instead of within native Windows, you would have to changen the paths and checks for WSL and AmberTools/antechamber
+Note that should you prefer to run the pipeline in WSL instead of within native Windows, you would have to change the paths and checks for WSL and AmberTools/antechamber
 
 WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
 
