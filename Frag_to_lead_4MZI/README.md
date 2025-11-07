@@ -1,5 +1,5 @@
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI.
+This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMDD.
 
 The entire fragment to lead workflow can be shown as:
 ## 🧬 Fragment to Lead Workflow Overview
@@ -95,7 +95,8 @@ This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, 
 
 ## Features
 
-- Windows-native Antechamber AM1-BCC automation  
+- Windows-native Antechamber AM1-BCC automation
+- **Automatic SDF → MOL2 conversion with 3D coordinates**   
 - Probe → OpenMM residue conversion (real residues, bonds)  
 - Probe placement (N copies)  
 - Solvate & neutralize (TIP3P)  
