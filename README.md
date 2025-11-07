@@ -2,35 +2,41 @@
 
 A repository containing code and testing during my self-training of FBDD skills.
 
-# FBDD.ipyb
-This notebook contains three functions
+# Frag_to_lead_4MZI
+This folder contains the data and results for a fragment to lead workflow with 4MZI.
 
- - get_descriptors
-   
-   This function takes a list of molecules as input and calculates the molecular descriptors for each molecule in the list.
-   
-   The resulting list can be easily saved to a dataframe for input into the model function
-   
- - train_fragment_nn_model
-   
-   This function takes a dataframe and trains it using a neural network model.
-   The output is a model and the test data as tensors
+The entire workflow can be shown as:
+## 🧬 Workflow Overview
 
- - train_fragment_rf_model
-   
-   This function takes a dataframe and trains it using a random forest model.
-   The output is a model and the test data as tensors
-   
- - evaluate_model
-   
-   This function takes a model and test tensor data as input.
-   The output is a dictionary of metrics.
+```mermaid
+flowchart TD
+    A["Fragment Library (.sdf)"] --> B["RDKit Filtering"]
+    P["Protein (.pdb)"] --> Q["aLMDD Sampling"]
+    Q --> Q1["Snapshot 1"]
+    Q --> Q2["Snapshot 2"]
+    Q --> Q3["Snapshot 3"]
+    Q --> Q4["Snapshot 4"]
+    Q --> Q5["Snapshot 5"]
 
+    B --> C["Docking (AutoDock Vina)"]
+    Q1 --> C
+    Q2 --> C
+    Q3 --> C
+    Q4 --> C
+    Q5 --> C
 
-# def mol_to_frags(mol_list)
-This function takes in a list of molecules as input and decomposes them into fragments using BRICS.
+    C --> D["Interaction Analysis (PLIP)"]
+    D --> E["Scoring & Ranking"]
+    E --> F["Visualization (PyMOL)"]
+```
 
-The resulting list of fragments can be converted into a dataframe and fed into the function for calculating molecular descriptors.
+This is ongoing work and i am currently working on the aLMDD sampling as of 7 Nov 2025.
+
+Completed parts of workflow:
+- Fragment Library (.sdf)
+- Protein (.pdb)
+
+More details can be found in the folder's README.
 
 # prepare_ligands.ipynb
 This notebook contains a script to prepare ligands automatically for docking in AutoDock Vina.
@@ -68,17 +74,42 @@ The script takes each ligand prepared using prepare_ligands.ipynb and docks it w
 
 Each docked ligand is saved as a .pdbqt file and the log file for the entire process is saved as docking_log.txt
 
+# FBDD.ipyb
+This notebook contains three functions
+
+ - get_descriptors
+   
+   This function takes a list of molecules as input and calculates the molecular descriptors for each molecule in the list.
+   
+   The resulting list can be easily saved to a dataframe for input into the model function
+   
+ - train_fragment_nn_model
+   
+   This function takes a dataframe and trains it using a neural network model.
+   The output is a model and the test data as tensors
+
+ - train_fragment_rf_model
+   
+   This function takes a dataframe and trains it using a random forest model.
+   The output is a model and the test data as tensors
+   
+ - evaluate_model
+   
+   This function takes a model and test tensor data as input.
+   The output is a dictionary of metrics.
+
+
+# def mol_to_frags(mol_list)
+This function takes in a list of molecules as input and decomposes them into fragments using BRICS.
+
+The resulting list of fragments can be converted into a dataframe and fed into the function for calculating molecular descriptors.
+
 # Docking_4MZI_roscovitine
 This folder contains the .pdbqt files for 4MZI - Crystal structure of a human mutant p53 and Roscovitine as the ligand.
 
 The .pdbqt file containing the 9 poses of the docked ligand is also included. 
 
 The log.txt file and the config.txt file for this docking project is included in this folder.
-
-# Docking_4MZI
-This folder contains the data and results for docking with 4MZI.
-
-More details can be found in the folder's README.
 
 
 
