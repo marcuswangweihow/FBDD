@@ -91,7 +91,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 # aLMDD Sampling
 
-This is the aLMDD pipeline for accelerated Ligand Mobility in Molecular Dynamics, fully aligned with **Tan et al.**.  
+This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.  
 
 ## Features
 
