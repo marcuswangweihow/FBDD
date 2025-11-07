@@ -1,3 +1,37 @@
+# Frag_to_lead_4MZI
+This folder contains the data and results for a fragment to lead workflow with 4MZI.
+
+The entire workflow can be shown as:
+## 🧬 Workflow Overview
+
+```mermaid
+flowchart TD
+    A["Fragment Library (.sdf)"] --> B["RDKit Filtering"]
+    P["Protein (.pdb)"] --> Q["aLMDD Sampling"]
+    Q --> Q1["Snapshot 1"]
+    Q --> Q2["Snapshot 2"]
+    Q --> Q3["Snapshot 3"]
+    Q --> Q4["Snapshot 4"]
+    Q --> Q5["Snapshot 5"]
+
+    B --> C["Docking (AutoDock Vina)"]
+    Q1 --> C
+    Q2 --> C
+    Q3 --> C
+    Q4 --> C
+    Q5 --> C
+
+    C --> D["Interaction Analysis (PLIP)"]
+    D --> E["Scoring & Ranking"]
+    E --> F["Visualization (PyMOL)"]
+```
+
+This is ongoing work and i am currently working on the aLMDD sampling as of 7 Nov 2025.
+
+Completed parts of workflow:
+- Fragment Library (.sdf)
+- Protein (.pdb)
+
 # Data and Methods
 The data was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
 
