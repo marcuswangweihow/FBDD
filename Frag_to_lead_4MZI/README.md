@@ -164,7 +164,7 @@ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge
 bash Miniforge3-Linux-x86_64.sh
     
 # Create environment named 'almdd'
-conda create -n almdd python=3.12 -y
+conda create -n almdd python=3.11 -y
 
 # activate environment
 conda activate almdd
@@ -174,7 +174,7 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 
 # Required installations    
-conda install -c conda-forge openmm=8.1.1 openmmforcefields ambertools=24 plumed openbabel rdkit mdtraj cuda-runtime=12.4 cuda-version=12.4 -y
+conda install -c conda-forge openmm=8.2 openmmforcefields cuda-runtime=11.8 plumed openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
 
 # Verify installation
 python -m openmm.testInstallation
