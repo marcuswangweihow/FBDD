@@ -203,6 +203,8 @@ AmberTools 24 (fully supported in conda-forge)
 
 OpenMM 8.2 (GPU-ready for CUDA 11.8)
 
+openmm-plumed 2.1
+
 PLUMED, RDKit, OpenBabel, MDTraj all compatible
 
 Works in WSL2 with my RTX 4070 SUPER
