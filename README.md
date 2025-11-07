@@ -36,6 +36,27 @@ Completed parts of workflow:
 - Fragment Library (.sdf)
 - Protein (.pdb)
 
+---
+# aLMDD Sampling
+
+This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.  
+
+## Features
+
+- Windows-native Antechamber AM1-BCC automation
+- **Automatic SDF → MOL2 conversion with 3D coordinates**   
+- Probe → OpenMM residue conversion (real residues, bonds)  
+- Probe placement (N copies)  
+- Solvate & neutralize (TIP3P)  
+- Minimization → equilibration → automated boost parameter estimation  
+- **Dual dihedral boost** (protein + probes, non-optional)  
+- AM1‑BCC charges for probes  
+- **PLUMED-based total-potential aMD integration**  
+- GPU (CUDA) auto-detection and usage  
+- Force fields: **ff14SB + GAFF + TIP3P**  
+- Probe occupancy density map & automatic snapshot selection  
+- Trajectory + representative snapshot extraction  
+
 More details can be found in the folder's README.
 
 # prepare_ligands.ipynb
