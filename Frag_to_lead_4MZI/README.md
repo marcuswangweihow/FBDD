@@ -1,8 +1,8 @@
 # Frag_to_lead_4MZI
 This folder contains the data and results for a fragment to lead workflow with 4MZI.
 
-The entire workflow can be shown as:
-## 🧬 Workflow Overview
+The entire fragment to lead workflow can be shown as:
+## 🧬 Fragment to Lead Workflow Overview
 
 ```mermaid
 flowchart TD
@@ -86,4 +86,95 @@ ls "combined_sdf" | wc -l
 A total of 137 curl requests was executed succesfully, returning 137 .tgz files.
 
 This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficient for further analysis.
+
+---
+
+# aLMDD Sampling
+
+This is the aLMDD pipeline for accelerated Ligand Mobility in Molecular Dynamics, fully aligned with **Tan et al.**.  
+
+## Features
+
+- Windows-native Antechamber AM1-BCC automation  
+- Probe → OpenMM residue conversion (real residues, bonds)  
+- Probe placement (N copies)  
+- Solvate & neutralize (TIP3P)  
+- Minimization → equilibration → automated boost parameter estimation  
+- **Dual dihedral boost** (protein + probes, non-optional)  
+- AM1‑BCC charges for probes  
+- **PLUMED-based total-potential aMD integration**  
+- GPU (CUDA) auto-detection and usage  
+- Force fields: **ff14SB + GAFF + TIP3P**  
+- Probe occupancy density map & automatic snapshot selection  
+- Trajectory + representative snapshot extraction  
+
+## Pipeline Workflow
+The aLMDD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow. Follow them sequentially from Section 1 → Section 4:
+
+## Section 1: Preparation
+```mermaid
+flowchart TD
+    A[Protein & Probe Files] --> B[AM1-BCC Charge Generation] 
+    B --> C[Probe to OpenMM Residue Conversion] 
+    C --> D[Probe Placement N copies]
+```
+
+## Section 2: System Setup
+```mermaid
+flowchart TD
+    E[Solvate & Neutralize TIP3P]  --> F[System Creation ff14SB_GAFF_TIP3P] 
+    F --> G[Minimization & Short Equilibration]
+```
+
+## Section 3: Boosting
+```mermaid
+flowchart TD
+    H[Dual Dihedral Boost Protein_and_Probes] --> I[PLUMED TotalPotential aMD]
+```
+## Section 4: Analysis
+```mermaid
+flowchart TD
+    J[Probe Occupancy Mapping & Snapshot Selection] --> K[Production Simulation & Trajectory Generation] 
+    K --> L[Trajectory & Representative Snapshot Extraction]
+```
+
+
+# Requirements
+
+AmberTools: Ensure antechamber is available on PATH or set antechamber_exe to the full path
+
+OpenMM ForceField XML files: ff14SB.xml, gaff.xml, tip3p.xml (installed with OpenMM)
+
+GPU (CUDA) drivers if using GPU acceleration
+
+Python dependencies: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed
+
+# Notes
+
+All probes are automatically converted to OpenMM residues with proper bond connectivity
+
+Dual dihedral boost is applied to both protein and probes according to Tan et al.
+
+Total-potential aMD is performed via PLUMED to reproduce the exact accelerated MD
+
+Probe occupancy maps are automatically generated to select snapshots with highest density
+
+Trajectories and snapshots are saved in PDB format for further analysis
+
+# Usage
+
+Set protein_pdb and probe_files in your notebook
+
+Ensure antechamber_exe points to the correct Antechamber executable (WSL2 or native)
+
+Run the pipeline notebook to generate charges, build the system, apply dual dihedral boost, run aMD, and extract snapshots
+
+Access trajectory and snapshot outputs for downstream analysis
+
+# References
+
+Tan et al., J Chem Theory Comput. 2022 Mar 8;18(3):1969-1981. doi: 10.1021/acs.jctc.1c01177. Epub 2022 Feb 17 — for dual dihedral boost, aMD settings, and probe placement protocols.
+Available from (https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177)
+
+---
 
