@@ -95,7 +95,7 @@ This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, 
 
 ## Features
 
-- Windows-native Antechamber AM1-BCC automation
+- Antechamber AM1-BCC automation
 - **Automatic SDF → MOL2 conversion with 3D coordinates**   
 - Probe → OpenMM residue conversion (real residues, bonds)  
 - Probe placement (N copies)  
@@ -150,7 +150,7 @@ GPU (CUDA) drivers if using GPU acceleration
 
 **Python dependencies in Windows: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel**
 
-Note that should you prefer to run the pipeline in WSL instead of within native Windows, you would have to change the paths and checks for WSL and AmberTools/Antechamber
+The pipeline was run in WSL2 because of the need for openmmplumed for accelerated MD sampling.
 
 WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
 
@@ -173,36 +173,39 @@ conda activate almdd
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 
-# Install AmberTools 25 (or 24/22 if preferred)
-conda install dacase::ambertools-dac=25 -y
-    
-# Check installation of AmberTools
-source $CONDA_PREFIX/amber.sh
-antechamber -h
+# Required installations    
+conda install -c conda-forge openmm=8.1.1 openmmforcefields ambertools=24 plumed openbabel rdkit mdtraj cuda-runtime=12.4 cuda-version=12.4 -y
 
-# OpenMM + forcefields
-conda install -c conda-forge openmm openmmforcefields -y
+# Verify installation
+python -m openmm.testInstallation
 
-# RDKit for molecule handling
-conda install -c conda-forge rdkit -y
+# Output
+# OpenMM Version: 8.1.1
+# Git Revision: ec797acabe5de4ce9f56c92d349baa889f4b0821
+#
+# There are 3 Platforms available:
+#
+# 1 Reference - Successfully computed forces
+# 2 CPU - Successfully computed forces
+# 3 CUDA - Successfully computed forces
+#
+# Median difference in forces between platforms:
+#
+# Reference vs. CPU: 6.32101e-06
+# Reference vs. CUDA: 6.73876e-06
+# CPU vs. CUDA: 7.00456e-07
 
-# MD trajectory analysis
-conda install -c conda-forge mdtraj -y
-
-# Visualization (optional in notebook)
-conda install -c conda-forge nglview -y
-
-# GPU support (CUDA toolkit)
-conda install -c conda-forge cudatoolkit=11.8 -y
-
-# PLUMED for enhanced sampling
-conda install -c conda-forge plumed -y
-
-# OpenBabel
-conda install -c conda-forge openbabel
-    
 </pre>
 
+✅ This ensures:
+
+AmberTools 24 (fully supported in conda-forge)
+
+OpenMM 8.1.1 (GPU-ready for CUDA 12.1)
+
+PLUMED, RDKit, OpenBabel, MDTraj all compatible
+
+Works in WSL2 with my RTX 4070 SUPER
 
 # Notes
 
