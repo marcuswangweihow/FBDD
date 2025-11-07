@@ -147,7 +147,7 @@ OpenMM ForceField XML files: ff14SB.xml, gaff.xml, tip3p.xml (installed with Ope
 
 GPU (CUDA) drivers if using GPU acceleration
 
-Python dependencies: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed
+Python dependencies: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel
 
 WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
 
