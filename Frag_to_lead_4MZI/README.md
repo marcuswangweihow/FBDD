@@ -174,14 +174,14 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 
 # Required installations    
-conda install -c conda-forge openmm=8.2 openmmforcefields cuda-runtime=11.8 plumed openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
+conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 plumed openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
 
 # Verify installation
 python -m openmm.testInstallation
 
 # Output
-# OpenMM Version: 8.1.1
-# Git Revision: ec797acabe5de4ce9f56c92d349baa889f4b0821
+# OpenMM Version: 8.2
+# Git Revision: 53770948682c40bd460b39830d4e0f0fd3a4b868
 #
 # There are 3 Platforms available:
 #
@@ -191,9 +191,9 @@ python -m openmm.testInstallation
 #
 # Median difference in forces between platforms:
 #
-# Reference vs. CPU: 6.32101e-06
-# Reference vs. CUDA: 6.73876e-06
-# CPU vs. CUDA: 7.00456e-07
+# Reference vs. CPU: 6.30392e-06
+# Reference vs. CUDA: 6.75486e-06
+# CPU vs. CUDA: 7.06771e-07
 
 </pre>
 
@@ -201,7 +201,7 @@ python -m openmm.testInstallation
 
 AmberTools 24 (fully supported in conda-forge)
 
-OpenMM 8.1.1 (GPU-ready for CUDA 12.1)
+OpenMM 8.2 (GPU-ready for CUDA 11.8)
 
 PLUMED, RDKit, OpenBabel, MDTraj all compatible
 
