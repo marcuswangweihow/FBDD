@@ -149,6 +149,54 @@ GPU (CUDA) drivers if using GPU acceleration
 
 Python dependencies: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed
 
+WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
+
+The following commands were executed after the initial setup inside WSL.
+
+<pre>
+# Download installer for Miniforge (Conda) inside Ubuntu
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+
+# Run installer
+bash Miniforge3-Linux-x86_64.sh
+    
+# Create environment named 'almdd'
+conda create -n almdd python=3.12 -y
+
+# activate environment
+conda activate almdd
+
+# Add dacase channel for AmberTools
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+
+# Install AmberTools 25 (or 24/22 if preferred)
+conda install dacase::ambertools-dac=25 -y
+    
+# Check installation of AmberTools
+source $CONDA_PREFIX/amber.sh
+antechamber -h
+
+# OpenMM + forcefields
+conda install -c conda-forge openmm openmmforcefields -y
+
+# RDKit for molecule handling
+conda install -c conda-forge rdkit -y
+
+# MD trajectory analysis
+conda install -c conda-forge mdtraj -y
+
+# Visualization (optional in notebook)
+conda install -c conda-forge nglview -y
+
+# GPU support (CUDA toolkit)
+conda install -c conda-forge cudatoolkit=11.8 -y
+
+# PLUMED for enhanced sampling
+conda install -c conda-forge plumed -y    
+    
+</pre>
+
 # Notes
 
 All probes are automatically converted to OpenMM residues with proper bond connectivity
