@@ -39,7 +39,9 @@ Completed parts of workflow:
 ---
 # aLMDD Sampling
 
-This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.  
+This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.
+
+Tan et al., J Chem Theory Comput. 2022 Mar 8;18(3):1969-1981. doi: 10.1021/acs.jctc.1c01177. Epub 2022 Feb 17 — for dual dihedral boost, aMD settings, and probe placement protocols. Available from (https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177)
 
 ## Features
 
