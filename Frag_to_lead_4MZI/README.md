@@ -26,7 +26,7 @@ flowchart TD
     E --> F["Visualization (PyMOL)"]
 ```
 
-This is ongoing work and i am currently working on the aLMDD sampling as of 7 Nov 2025.
+This is ongoing work and i am currently working on the aLMDD sampling.
 
 Completed parts of workflow:
 - Fragment Library (.sdf)
