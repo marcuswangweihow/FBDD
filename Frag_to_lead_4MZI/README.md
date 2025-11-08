@@ -175,6 +175,7 @@ conda config --set channel_priority strict
 
 # Required installations    
 conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 plumed openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
+conda install -c conda-forge pdbfixer
 
 # Verify installation
 python -m openmm.testInstallation
