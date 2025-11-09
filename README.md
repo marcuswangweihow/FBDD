@@ -3,7 +3,7 @@
 A repository containing code and testing during my self-training of FBDD skills.
 
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMDD.
+This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD.
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
@@ -11,7 +11,7 @@ The entire workflow can be shown as:
 ```mermaid
 flowchart TD
     A["Fragment Library (.sdf)"] --> B["RDKit Filtering"]
-    P["Protein (.pdb)"] --> Q["aLMDD Sampling"]
+    P["Protein (.pdb)"] --> Q["aLMMD Sampling"]
     Q --> Q1["Snapshot 1"]
     Q --> Q2["Snapshot 2"]
     Q --> Q3["Snapshot 3"]
@@ -30,16 +30,16 @@ flowchart TD
     E --> F["Visualization (PyMOL)"]
 ```
 
-This is ongoing work and i am currently working on the aLMDD sampling.
+This is ongoing work and i am currently working on the aLMMD sampling.
 
 Completed parts of workflow:
 - Fragment Library (.sdf)
 - Protein (.pdb)
 
 ---
-## aLMDD Sampling
+## aLMMD Sampling
 
-This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.
+This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, aligned with the high-level workflow described in **Tan et al.**.
 
 Tan et al., J Chem Theory Comput. 2022 Mar 8;18(3):1969-1981. doi: 10.1021/acs.jctc.1c01177. Epub 2022 Feb 17 — for dual dihedral boost, aMD settings, and probe placement protocols. Available from (https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177)
 
