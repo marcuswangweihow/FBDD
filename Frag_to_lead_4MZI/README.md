@@ -1,5 +1,5 @@
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMDD.
+This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD.
 
 The entire fragment to lead workflow can be shown as:
 ## 🧬 Fragment to Lead Workflow Overview
@@ -7,7 +7,7 @@ The entire fragment to lead workflow can be shown as:
 ```mermaid
 flowchart TD
     A["Fragment Library (.sdf)"] --> B["RDKit Filtering"]
-    P["Protein (.pdb)"] --> Q["aLMDD Sampling"]
+    P["Protein (.pdb)"] --> Q["aLMMD Sampling"]
     Q --> Q1["Snapshot 1"]
     Q --> Q2["Snapshot 2"]
     Q --> Q3["Snapshot 3"]
@@ -91,7 +91,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 # aLMDD Sampling
 
-This is the aLMDD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.  
+This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.  
 
 ## Features
 
@@ -116,14 +116,14 @@ The aLMDD pipeline is divided into four main sections, each corresponding to a d
 ```mermaid
 flowchart TD
     A[Protein & Probe Files] --> B[AM1-BCC Charge Generation] 
-    B --> C[Probe to OpenMM Residue Conversion] 
-    C --> D[Probe Placement N copies]
+    B --> C[Solvate & Neutralize TIP3P]
+    C --> D[Probe to OpenMM Residue Conversion]
 ```
 
 ## Section 2: System Setup
 ```mermaid
 flowchart TD
-    E[Solvate & Neutralize TIP3P]  --> F[System Creation ff14SB_GAFF_TIP3P] 
+    E[Probe Placement N copies]  --> F[System Creation ff14SB_GAFF_TIP3P] 
     F --> G[Minimization & Short Equilibration]
 ```
 
