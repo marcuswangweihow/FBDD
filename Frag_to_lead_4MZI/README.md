@@ -91,7 +91,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 # aLMMD Sampling
 
-This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, fully aligned with **Tan et al.**.  
+This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, aligned with **Tan et al.**.  
 
 ## Features
 
@@ -110,7 +110,7 @@ This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, 
 - Trajectory + representative snapshot extraction  
 
 ## Pipeline Workflow
-The aLMDD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow. Follow them sequentially from Section 1 → Section 4:
+The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow. Follow them sequentially from Section 1 → Section 4:
 
 ## Section 1: Preparation
 ```mermaid
@@ -144,7 +144,7 @@ flowchart TD
 
 AmberTools: Ensure antechamber is available on PATH or set antechamber_exe to the full path
 
-OpenMM ForceField XML files: ff14SB.xml, gaff.xml, tip3p.xml (installed with OpenMM)
+ForceField XML files: amber14-all.xml, tip3p.xml
 
 GPU (CUDA) drivers if using GPU acceleration
 
@@ -163,11 +163,11 @@ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge
 # Run installer
 bash Miniforge3-Linux-x86_64.sh
     
-# Create environment named 'almdd'
-conda create -n almdd python=3.11 -y
+# Create environment named 'almmd'
+conda create -n almmd python=3.11 -y
 
 # activate environment
-conda activate almdd
+conda activate almmd
 
 # Add dacase channel for AmberTools
 conda config --add channels conda-forge
