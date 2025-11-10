@@ -178,6 +178,14 @@ conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 plume
 conda install -c conda-forge pdbfixer
 conda install -c conda-forge fpocket -y
 
+# install gromacs and parmed (if not already)
+conda install -c conda-forge gromacs parmed -y
+
+# verify gmx is available and GPU status
+gmx --version
+# check available platforms (GPU)
+gmx mdrun -h | head -n 20
+
 # Verify installation
 python -m openmm.testInstallation
 
