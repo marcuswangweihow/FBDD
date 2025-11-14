@@ -293,7 +293,7 @@ PLUMED, RDKit, OpenBabel, MDTraj all compatible
 
 Works in WSL2 with my RTX 4070 SUPER
 
-A separate Gromacs 2025.3 with PLumed compatibility (the )
+A separate Gromacs 2025.3 with Plumed compatibility (Gromacs installed with conda forge does not have Plumed compatibilty even if plumed is installed separately)(Here both are done so that the pipeline is flexible)  
 
 # Notes
 
