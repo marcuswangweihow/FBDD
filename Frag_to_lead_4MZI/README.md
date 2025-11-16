@@ -184,6 +184,7 @@ conda install -c conda-forge gromacs parmed -y
 
 # verify gmx is available and GPU status
 gmx --version
+    
 # check available platforms (GPU)
 gmx mdrun -h | head -n 20
 
@@ -206,78 +207,21 @@ python -m openmm.testInstallation
 # Reference vs. CUDA: 6.75486e-06
 # CPU vs. CUDA: 7.06771e-07
 
-#======================================================================================
-# Now to install Gromacs 2025 with compatible plumed in base directory of wsl:
-cd ~
+# Ensure Plumed compatibility
+export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
+echo "export PLUMED_KERNEL=\"$CONDA_PREFIX/lib/libplumedKernel.so\"" >> ~/.bashrc
     
-# Update packages
-sudo apt update && sudo apt upgrade -y
-
-# Build tools
-sudo apt install build-essential cmake git wget unzip -y
-
-# Optional: MPI for parallel runs
-sudo apt install libopenmpi-dev openmpi-bin -y
-
-# FFT library (recommended for GROMACS)
-sudo apt install fftw3 fftw3-dev -y
-
-# make software directory
-mkdir -p software && cd software
-
-# Set up plumed in directory (Install PLUMED (standalone))
-# This installs PLUMED in ~/software/plumed-2.10.0
-wget https://github.com/plumed/plumed2/releases/download/v2.10.0/plumed-2.10.0.tgz
-tar -xvf plumed-2.10.0.tgz
-cd plumed-2.10.0
-./configure --prefix=$HOME/software/plumed-2.10.0
-make -j$(nproc)
-make install
-
-# Setup up cmake version > 3.28 for gromacs 25
-cd ~/software
-wget https://github.com/Kitware/CMake/releases/download/v3.31.1/cmake-3.31.1-linux-x86_64.tar.gz
-tar -xvzf cmake-3.31.1-linux-x86_64.tar.gz
-export PATH=~/software/cmake-3.31.1-linux-x86_64/bin:$PATH
-cmake --version
-
-# this should show cmake version 3.31.1
-
-# Install GROMACS 2025.3 with PLUMED
-cd ~/software
-wget https://ftp.gromacs.org/pub/gromacs/gromacs-2025.3.tar.gz
-tar -xvzf gromacs-2025.3.tar.gz
-cd gromacs-2025.3
-mkdir build
-cd build
-
-export PLUMED_ROOT=$HOME/software/plumed-2.10.0
-export PATH=$PLUMED_ROOT/bin:$PATH
-export LD_LIBRARY_PATH=$PLUMED_ROOT/lib:$LD_LIBRARY_PATH
-    
-cmake .. \
-  -DGMX_BUILD_OWN_FFTW=ON \
-  -DGMX_GPU=OFF \
-  -DGMX_MPI=ON \
-  -DGMX_BUILD_SHARED_EXE=ON \
-  -DPLUMED_ROOT=$PLUMED_ROOT \
-  -DCMAKE_INSTALL_PREFIX=$HOME/software/gromacs-2025.3-install
-
-# Compile
-make -j$(nproc)
-
-# Install
-make install
-
-# Open .bashrc
-nano ~/.bashrc
-
-# Add this to the end of .bashrc
-export PATH=$HOME/software/gromacs-2025.3-install/bin:$PLUMED_ROOT/bin:$PATH
-export LD_LIBRARY_PATH=$PLUMED_ROOT/lib:$LD_LIBRARY_PATH
-
 # Reload .bashrc:
 source ~/.bashrc    
+
+# Go back to almmd environment
+conda activate almmd
+
+# verify environment variable
+echo $PLUMED_KERNEL
+
+# run a quick (non-destructive) plumed load test:
+gmx mdrun -h | grep -i plumed
     
 </pre>
 
@@ -293,7 +237,7 @@ PLUMED, RDKit, OpenBabel, MDTraj all compatible
 
 Works in WSL2 with my RTX 4070 SUPER
 
-A separate Gromacs 2025.3 with Plumed compatibility (Gromacs installed with conda forge does not have Plumed compatibilty even if plumed is installed separately)(Here both are done so that the pipeline is flexible)  
+Gromacs 25.03 with Plumed compatibility for MetaD usage in pipeline
 
 # Notes
 
