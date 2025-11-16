@@ -144,11 +144,13 @@ flowchart TD
 
 AmberTools: Ensure antechamber is available on PATH or set antechamber_exe to the full path
 
+Gromacs 2025.03
+
 ForceField XML files: amber14-all.xml, tip3p.xml
 
 GPU (CUDA) drivers if using GPU acceleration
 
-**Python dependencies in Windows: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel**
+**Python dependencies in Windows: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel, pdbfixer, fpocket, mdanalysis, parmed**
 
 The pipeline was run in WSL2 because of the need for openmmplumed for accelerated MD sampling.
 
