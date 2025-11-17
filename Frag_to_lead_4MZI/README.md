@@ -1,36 +1,14 @@
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD.
+This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
-The entire fragment to lead workflow can be shown as:
-## 🧬 Fragment to Lead Workflow Overview
+The entire workflow can be shown as:
+## 🧬 Workflow Overview
 
-```mermaid
-flowchart TD
-    A["Fragment Library (.sdf)"] --> B["RDKit Filtering"]
-    P["Protein (.pdb)"] --> Q["aLMMD Sampling"]
-    Q --> Q1["Snapshot 1"]
-    Q --> Q2["Snapshot 2"]
-    Q --> Q3["Snapshot 3"]
-    Q --> Q4["Snapshot 4"]
-    Q --> Q5["Snapshot 5"]
+![Overall workflow FBDD](images/Overall_workflow_FBDD.svg)
 
-    B --> C["Docking (AutoDock Vina)"]
-    Q1 --> C
-    Q2 --> C
-    Q3 --> C
-    Q4 --> C
-    Q5 --> C
+This is ongoing work and i am currently working on the aLMMD sampling and analysis.
 
-    C --> D["Interaction Analysis (PLIP)"]
-    D --> E["Scoring & Ranking"]
-    E --> F["Visualization (PyMOL)"]
-```
-
-This is ongoing work and i am currently working on the aLMDD sampling.
-
-Completed parts of workflow:
-- Fragment Library (.sdf)
-- Protein (.pdb)
+---
 
 # Fragment Library (.sdf)
 The data for the fragment library was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
@@ -89,25 +67,81 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 ---
 
-# aLMMD Sampling
+## aLMMD Sampling / aLMMD Analysis
 
-This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, aligned with **Tan et al.**.  
+This aLMMD (accelerated Ligand-Mapping Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
-## Features
+References:
 
-- Antechamber AM1-BCC automation
-- **Automatic SDF → MOL2 conversion with 3D coordinates**   
-- Probe → OpenMM residue conversion (real residues, bonds)  
-- Probe placement (N copies)  
-- Solvate & neutralize (TIP3P)  
-- Minimization → equilibration → automated boost parameter estimation  
-- **Dual dihedral boost** (protein + probes, non-optional)  
-- AM1‑BCC charges for probes  
-- **PLUMED-based total-potential aMD integration**  
-- GPU (CUDA) auto-detection and usage  
-- Force fields: **ff14SB + GAFF + TIP3P**  
-- Probe occupancy density map & automatic snapshot selection  
-- Trajectory + representative snapshot extraction  
+- Tze-Yang Ng, J. and Tan, Y.S., 2022. Accelerated ligand-mapping molecular dynamics simulations for the detection of recalcitrant cryptic pockets and occluded binding sites. Journal of Chemical Theory and Computation, 18(3), pp.1969-1981. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177) — referenced for dual dihedral boost, aMD, and general workflow concepts.
+- Tan, Y.S. and Verma, C.S., 2020. Straightforward incorporation of multiple ligand types into molecular dynamics simulations for efficient binding site detection and characterization. Journal of Chemical Theory and Computation, 16(10), pp.6633-6644. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c00405) — referenced for general workflow concepts.
+
+# aLMMD Pipeline
+
+This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
+It produces **5 representative snapshots** for subsequent docking analysis.
+
+## Pipeline Overview
+
+1. **Fragment/Probe Preparation**  
+   - Automatic SDF → MOL2 conversion with 3D coordinates.  
+   - AM1‑BCC charge assignment via Antechamber (AmberTools, WSL2).  
+   - Conversion of probes into OpenMM residues (full residues, explicit bonds).  
+
+2. **Probe Placement**  
+   - N copies of each probe placed around the protein centroid.  
+   - Random translations to diversify initial positions.
+
+3. **System Solvation & Neutralization**  
+   - TIP3P water model.  
+   - Ionic strength / counterion neutralization as needed.
+
+4. **Energy Minimization & Equilibration**  
+   - Energy minimization → NVT → NPT equilibration.  
+   - Automatic estimation of aMD boost parameters from equilibration (E₀, α).
+
+5. **Dual‑Dihedral + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
+   - Automatic selection of torsions (protein backbone & side chains, ligand) for dual-dihedral boost.  
+   - Total potential boost applied to system.  
+   - PLUMED METAD CVs: distances and center-of-mass (COM) coordinates of probes are automatically monitored during production.  
+   - `plumed.dat` is auto-generated for U‑boost style aMD integration.
+
+6. **GPU Acceleration**  
+   - Detects GPU (CUDA/OpenCL) automatically and uses it when available.  
+   - CPU fallback is supported with minor adaptations.
+
+7. **Production Run**  
+   - Full accelerated MD simulation using PLUMED.  
+   - Live plotting of PLUMED bias, total energy, and temperature during runtime.
+
+8. **Post‑processing**  
+   - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
+   - **Probe occupancy mapping**: Per-probe and combined density (voxel) maps.  
+   - **Representative snapshot selection**: Highest-occupancy frames selected for MDpocket and docking.  
+   - **PLUMED METAD CVs**: Probe distances and COMs are extracted, smoothed, saved as CSV, and plotted for trajectory analysis.  
+   - MDpocket analysis is run on representative snapshots.
+
+9. **Output Organization**  
+   - Simulation outputs (`.gro`, `.trr`, `.edr`, `.tpr`, `.log`) are stored in `gmx_run_dir`.  
+   - Subdirectories for:  
+     - `plots/` → energy, temperature, CV plots  
+     - `best_snapshots/` → snapshots for docking  
+     - `MDpocket_results/` → binding site analysis  
+     - `probe_density_maps/` → density maps  
+
+## Force Fields
+
+- **Protein**: AMBER ff14SB, via `amber14-all.xml` (includes ff14SB).  
+- **Water**: TIP3P, standard model from Amber `amber14` force field.  
+- **Small molecules / Probes (GAFF)**:  
+  - GAFF version 2.11, via `GAFFTemplateGenerator` (OpenMM-compatible).  
+
+---
+
+> **Note:** This pipeline has potential for publication similar to the 2020 and 2022 papers by Tan et al.  
+> The full code is **not publicly released on GitHub**, but is **available upon request** to technical interviewers or collaborators for evaluation purposes.
+
+---
 
 ## Pipeline Workflow
 The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow. Follow them sequentially from Section 1 → Section 4:
@@ -115,47 +149,57 @@ The aLMMD pipeline is divided into four main sections, each corresponding to a d
 ## Section 1: Preparation
 ```mermaid
 flowchart TD
-    A[Protein & Probe Files] --> B[AM1-BCC Charge Generation] 
-    B --> C[Solvate & Neutralize TIP3P]
-    C --> D[Probe to OpenMM Residue Conversion]
+    A["Protein & Probe Files"] --> B["AM1-BCC Charge Generation for Probes"] 
+    B --> C["Solvation & Neutralization (TIP3P)"]
+    C --> D["Probe to OpenMM Residue Conversion"]
 ```
 
 ## Section 2: System Setup
 ```mermaid
 flowchart TD
-    E[Probe Placement N copies]  --> F[System Creation ff14SB_GAFF_TIP3P] 
-    F --> G[Minimization & Short Equilibration]
+    E["Probe Placement: N copies around protein centroid"] --> F["System Creation (ff14SB from amber14-all.xml + GAFF 2.1 + TIP3P from amber14-all.xml)"] 
+    F --> G["Energy Minimization & Short Equilibration (NVT/NPT)"]
 ```
 
 ## Section 3: Boosting
 ```mermaid
 flowchart TD
-    H[Dual Dihedral Boost Protein_and_Probes] --> I[PLUMED TotalPotential aMD]
-```
-## Section 4: Analysis
-```mermaid
-flowchart TD
-    J[Probe Occupancy Mapping & Snapshot Selection] --> K[Production Simulation & Trajectory Generation] 
-    K --> L[Trajectory & Representative Snapshot Extraction]
+    H["Dual Dihedral Boost (Protein backbone, side chains, ligand torsions)"] --> I["PLUMED Total-Potential aMD + Metadynamics CVs"]
 ```
 
+## Section 4: Post-processing & Snapshot Analysis
+```mermaid
+flowchart TD
+    J["Probe Occupancy Mapping & Per-Probe Maps"] --> K["Selection of 5 Representative Snapshots"] 
+    K --> L["Production Simulation & Trajectory Generation"] 
+    L --> M["Trajectory Analysis: C-alpha Rg, Metadynamics CVs, Energy & Temperature Plots"]
+    M --> N["Representative Snapshots Saved for Docking"]
+```
+
+---
 
 # Requirements
 
-AmberTools: Ensure antechamber is available on PATH or set antechamber_exe to the full path
+- AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
+- GROMACS 2025.03 (with PLUMED support)
+- Force fields:
+  - ff14SB from amber14-all.xml
+  - TIP3P from amber14-all.xml
+  - GAFF 2.1 for probes
+- GPU with CUDA support (optional but recommended for accelerated MD)
+- Python dependencies (Windows/WSL2): 
+  `rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel, pdbfixer, fpocket, mdanalysis, parmed, openmm-plumed`
+- Pipeline was run in WSL2 due to OpenMM PLUMED integration
+- WSL2 setup: Ubuntu 22.04.5, Miniforge3, Conda environment `almmd`
+- PLUMED kernel environment variable set via: 
+  ```bash
+  export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
 
-Gromacs 2025.03
+- Verify installations: gmx --version, python -m openmm.testInstallation, and gmx mdrun -h | grep -i plumed
+- WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
 
-ForceField XML files: amber14-all.xml, tip3p.xml
 
-GPU (CUDA) drivers if using GPU acceleration
-
-**Python dependencies in Windows: rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel, pdbfixer, fpocket, mdanalysis, parmed**
-
-The pipeline was run in WSL2 because of the need for openmmplumed for accelerated MD sampling.
-
-WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
-
+---
 The following commands were executed after the initial setup inside WSL.
 
 <pre>
@@ -227,46 +271,57 @@ gmx mdrun -h | grep -i plumed
     
 </pre>
 
-This ensures:
-
-AmberTools 24 (fully supported in conda-forge)
-
-OpenMM 8.2 (GPU-ready for CUDA 11.8)
-
-openmm-plumed 2.1
-
-PLUMED, RDKit, OpenBabel, MDTraj all compatible
-
-Works in WSL2 with my RTX 4070 SUPER
-
-Gromacs 25.03 with Plumed compatibility for MetaD usage in pipeline
+---
 
 # Notes
 
-All probes are automatically converted to OpenMM residues with proper bond connectivity
+All probes automatically converted to OpenMM residues with correct bond connectivity
 
-Dual dihedral boost is applied to both protein and probes according to Tan et al.
+Dual dihedral boost applied to protein (backbone + side chains) and probes according to Tan et al. (2020, 2022)
 
-Total-potential aMD is performed via PLUMED to reproduce the exact accelerated MD
+Total-potential aMD performed via PLUMED
 
-Probe occupancy maps are automatically generated to select snapshots with highest density
+Metadynamics CVs automatically extracted from probe positions (distances and COMs)
 
-Trajectories and snapshots are saved in PDB format for further analysis
+Probe occupancy maps generated to select snapshots with highest density
+
+5 representative snapshots automatically selected for downstream docking analysis
+
+Trajectories and snapshots saved in PDB format
+
+GPU auto-detection with CUDA available; CPU fallback supported
+
+---
 
 # Usage
 
-Set protein_pdb and probe_files in your notebook
+1. **Set up inputs**  
+   - Specify the **protein PDB** file (`protein_pdb`) and **probe SDF/MOL2 files** (`probe_files`) in your Jupyter notebook.  
 
-Ensure antechamber_exe points to the correct Antechamber executable (WSL2 or native)
+2. **Antechamber executable**  
+   - Ensure `antechamber_exe` points to the correct Antechamber executable (either via **WSL2** or native installation).
 
-Run the pipeline notebook to generate charges, build the system, apply dual dihedral boost, run aMD, and extract snapshots
+3. **PLUMED kernel (if using accelerated MD / Metadynamics CVs)**  
+   - Set the PLUMED kernel environment variable before running the notebook:
 
-Access trajectory and snapshot outputs for downstream analysis
+     ```bash
+     export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
+     ```
 
-# References
+4. **Run the pipeline notebook**  
+   - Generates **AM1-BCC charges** for probes.  
+   - Converts probes into **OpenMM residues**.  
+   - Performs **probe placement** around protein centroid.  
+   - Solvates and neutralizes the system with **TIP3P water**.  
+   - Applies **dual-dihedral accelerated MD** to protein (backbone + side chains) and ligand torsions.  
+   - Executes **total-potential aMD** via PLUMED, including **Metadynamics CVs**.  
+   - Produces **probe occupancy maps** and automatically selects **5 representative snapshots**.  
+   - Saves **trajectories, processed snapshots, and energy/temperature plots** for downstream analysis.
 
-Tan et al., J Chem Theory Comput. 2022 Mar 8;18(3):1969-1981. doi: 10.1021/acs.jctc.1c01177. Epub 2022 Feb 17 — for dual dihedral boost, aMD settings, and probe placement protocols.
-Available from (https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177)
+5. **Access outputs**  
+   - Trajectories (`.trr`/`.gro`) and snapshots (`.pdb`) are saved in the designated output directories.  
+   - Occupancy maps and post-processing results are stored in `probe_density_map_dir`.  
+   - Representative snapshots are ready for **docking analysis**.  
 
 ---
 
