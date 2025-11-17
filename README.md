@@ -8,7 +8,7 @@ This folder contains the data and results for a fragment to lead workflow with 4
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
 
-![Overall Workflow FBDD](images/Overall_workflow_FBDD.svg)
+![Overall workflow FBDD](images/Overall_workflow_FBDD.svg)
 
 This is ongoing work and i am currently working on the aLMMD sampling and analysis.
 
