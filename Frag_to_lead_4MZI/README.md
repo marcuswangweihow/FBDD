@@ -313,6 +313,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
      ```bash
      export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
      ```
+  - Ensure that the os.environ["PLUMED_KERNEL"] points to the correct path for "/lib/libplumedKernel.so"
 
 4. **Run the pipeline notebook**  
    - Generates **AM1-BCC charges** for probes.  
