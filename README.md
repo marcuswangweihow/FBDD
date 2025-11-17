@@ -3,7 +3,7 @@
 A repository containing code and testing during my self-training of FBDD skills.
 
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD.
+This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
@@ -15,7 +15,7 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 ---
 ## aLMMD Sampling / aLMMD Analysis
 
-This aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
+This aLMMD (accelerated Ligand-Mapping Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
 References:
 
@@ -24,7 +24,7 @@ References:
 
 # aLMMD Pipeline
 
-This pipeline implements an **accelerated ligand–protein molecular dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
+This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
 It produces **5 representative snapshots** for subsequent docking analysis.
 
 ## Pipeline Overview
