@@ -13,29 +13,77 @@ The entire workflow can be shown as:
 This is ongoing work and i am currently working on the aLMMD sampling and analysis.
 
 ---
-## aLMMD Sampling
+## aLMMD Sampling / aLMMD Analysis
 
-This is the aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline, aligned with the high-level workflow described in **Tan et al.**.
+This aLMMD (accelerated Ligand Mobility in Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
-Tan et al., J Chem Theory Comput. 2022 Mar 8;18(3):1969-1981. doi: 10.1021/acs.jctc.1c01177. Epub 2022 Feb 17 — for dual dihedral boost, aMD settings, and probe placement protocols. Available from (https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177)
+References:
 
-## Features
+- Tze-Yang Ng, J. and Tan, Y.S., 2022. Accelerated ligand-mapping molecular dynamics simulations for the detection of recalcitrant cryptic pockets and occluded binding sites. Journal of Chemical Theory and Computation, 18(3), pp.1969-1981. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177) — referenced for dual dihedral boost, aMD, and general workflow concepts.
+- Tan, Y.S. and Verma, C.S., 2020. Straightforward incorporation of multiple ligand types into molecular dynamics simulations for efficient binding site detection and characterization. Journal of Chemical Theory and Computation, 16(10), pp.6633-6644. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c00405) — referenced for general workflow concepts.
 
-- Windows-native Antechamber AM1-BCC automation
-- **Automatic SDF → MOL2 conversion with 3D coordinates**   
-- Probe → OpenMM residue conversion (real residues, bonds)  
-- Probe placement (N copies)  
-- Solvate & neutralize (TIP3P)  
-- Minimization → equilibration → automated boost parameter estimation  
-- **Dual dihedral boost** (protein + probes, non-optional)  
-- AM1‑BCC charges for probes  
-- **PLUMED-based total-potential aMD integration**  
-- GPU (CUDA) auto-detection and usage  
-- Force fields: **ff14SB + GAFF + TIP3P**  
-- Probe occupancy density map & automatic snapshot selection  
-- Trajectory + representative snapshot extraction  
+# aLMMD Pipeline
 
-More details can be found in the folder's README.
+This pipeline implements an **accelerated ligand–protein molecular dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
+It produces **5 representative snapshots** for subsequent docking analysis.
+
+## Pipeline Overview
+
+1. **Fragment/Probe Preparation**  
+   - Automatic SDF → MOL2 conversion with 3D coordinates.  
+   - AM1‑BCC charge assignment via Antechamber (AmberTools, WSL2).  
+   - Conversion of probes into OpenMM residues (full residues, explicit bonds).  
+
+2. **Probe Placement**  
+   - N copies of each probe placed around the protein centroid.  
+   - Random translations to diversify initial positions.
+
+3. **System Solvation & Neutralization**  
+   - TIP3P water model.  
+   - Ionic strength / counterion neutralization as needed.
+
+4. **Energy Minimization & Equilibration**  
+   - Energy minimization → NVT → NPT equilibration.  
+   - Automatic estimation of aMD boost parameters from equilibration (E₀, α).
+
+5. **Dual‑Dihedral + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
+   - Automatic selection of torsions (protein backbone & side chains, ligand) for dual-dihedral boost.  
+   - Total potential boost applied to system.  
+   - PLUMED METAD CVs: distances and center-of-mass (COM) coordinates of probes are automatically monitored during production.  
+   - `plumed.dat` is auto-generated for U‑boost style aMD integration.
+
+6. **GPU Acceleration**  
+   - Detects GPU (CUDA/OpenCL) automatically and uses it when available.  
+   - CPU fallback is supported with minor adaptations.
+
+7. **Production Run**  
+   - Full accelerated MD simulation using PLUMED.  
+   - Live plotting of PLUMED bias, total energy, and temperature during runtime.
+
+8. **Post‑processing**  
+   - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
+   - **Probe occupancy mapping**: Per-probe and combined density (voxel) maps.  
+   - **Representative snapshot selection**: Highest-occupancy frames selected for MDpocket and docking.  
+   - **PLUMED METAD CVs**: Probe distances and COMs are extracted, smoothed, saved as CSV, and plotted for trajectory analysis.  
+   - MDpocket analysis is run on representative snapshots.
+
+9. **Output Organization**  
+   - Simulation outputs (`.gro`, `.trr`, `.edr`, `.tpr`, `.log`) are stored in `gmx_run_dir`.  
+   - Subdirectories for:  
+     - `plots/` → energy, temperature, CV plots  
+     - `best_snapshots/` → snapshots for docking  
+     - `MDpocket_results/` → binding site analysis  
+     - `probe_density_maps/` → density maps  
+
+## Force Fields
+
+- **Protein**: AMBER ff14SB, via `amber14-all.xml` (includes ff14SB).  
+- **Water**: TIP3P, standard model from Amber `amber14` force field.  
+- **Small molecules / Probes (GAFF)**:  
+  - GAFF version 2.11, via `GAFFTemplateGenerator` (OpenMM-compatible).  
+
+
+More details can be found in the Frag_to_lead_4MZI folder's README.
 
 # prepare_ligands.ipynb
 This notebook contains a script to prepare ligands automatically for docking in AutoDock Vina.
