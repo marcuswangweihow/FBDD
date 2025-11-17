@@ -82,8 +82,11 @@ It produces **5 representative snapshots** for subsequent docking analysis.
 - **Small molecules / Probes (GAFF)**:  
   - GAFF version 2.11, via `GAFFTemplateGenerator` (OpenMM-compatible).  
 
+---
 
-More details can be found in the Frag_to_lead_4MZI folder's README.
+> **Note:** This pipeline has potential for publication similar to the 2020 and 2022 papers by Tan et al.  
+> The full code is **not publicly released on GitHub**, but is **available upon request** to technical interviewers or collaborators for evaluation purposes.
+> More details on the pipeline can be found in the Frag_to_lead_4MZI folder's README.
 
 # prepare_ligands.ipynb
 This notebook contains a script to prepare ligands automatically for docking in AutoDock Vina.
