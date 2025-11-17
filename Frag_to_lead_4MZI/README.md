@@ -220,7 +220,7 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 
 # Required installations    
-conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 plumed openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
+conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 plumed=2.9 openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
 conda install -c conda-forge pdbfixer
 conda install -c conda-forge fpocket -y
 conda install mdanalysis    
@@ -266,6 +266,12 @@ conda activate almmd
 # verify environment variable
 echo $PLUMED_KERNEL
 
+# verify plumed version
+plumed info --version  
+
+# get location of plumed kernel to place in jupyter notebook  
+find $CONDA_PREFIX -name "libplumedKernel.so"
+  
 # run a quick (non-destructive) plumed load test:
 gmx mdrun -h | grep -i plumed
     
