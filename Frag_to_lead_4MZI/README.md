@@ -145,36 +145,41 @@ It produces **5 representative snapshots** for subsequent docking analysis.
 
 ## Pipeline Workflow
 The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow. Follow them sequentially from Section 1 → Section 4:
+> **Note:** This workflow diagram is a high-level overview. Steps are grouped by functional purpose, not strict chronological order in the code.
+
 
 ## Section 1: Preparation
 ```mermaid
 flowchart TD
-    A["Protein & Probe Files"] --> B["AM1-BCC Charge Generation for Probes"] 
-    B --> C["Solvation & Neutralization (TIP3P)"]
-    C --> D["Probe to OpenMM Residue Conversion"]
+    A["Protein & Probe Files"] --> B["Solvation & Neutralization (TIP3P)"]
+    B --> C["Explicit TIP3P Bonds Fix"]
+    C --> D["AM1-BCC Charge Assignment for Probes"]
 ```
 
 ## Section 2: System Setup
 ```mermaid
 flowchart TD
-    E["Probe Placement: N copies around protein centroid"] --> F["System Creation (ff14SB from amber14-all.xml + GAFF 2.1 + TIP3P from amber14-all.xml)"] 
-    F --> G["Energy Minimization & Short Equilibration (NVT/NPT)"]
+    E["OpenMM System Creation (ff14SB from amber14-all.xml + GAFF 2.1 + TIP3P from amber14-all.xml)"] --> F["ParmEd Load, Save & Prepare Topologies"]
+    F --> G["Generate GROMACS Index & Positional Restraints"]
+    G --> H["Energy Minimization & NVT/NPT Equilibration"]
 ```
 
 ## Section 3: Boosting
 ```mermaid
 flowchart TD
-    H["Dual Dihedral Boost (Protein backbone, side chains, ligand torsions)"] --> I["PLUMED Total-Potential aMD + Metadynamics CVs"]
+    I["Dual Dihedral Boost (Protein backbone, side chains, ligand torsions)"] --> J["PLUMED Total-Potential aMD + Automatic Torsions"]
 ```
 
 ## Section 4: Post-processing & Snapshot Analysis
 ```mermaid
 flowchart TD
-    J["Production Simulation & Trajectory Generation"] --> K["Probe Occupancy Mapping & Per-Probe Maps"]
-    K --> L["Selection of 5 Representative Snapshots"]
-    L --> N["Representative Snapshots Saved for Docking"]
-    
-    J --> M["Trajectory Analysis: C-alpha Rg, Metadynamics CVs, Energy & Temperature Plots"]
+    K["Production Simulation & Trajectory Generation"] --> L["Probe Occupancy Mapping & Per-Probe Maps"]
+    L --> M["Selection of 5 Representative Snapshots"]
+    M --> N["Representative Snapshots Saved for Docking"]
+
+    K --> O["Trajectory Analysis: C-alpha Rg, Energy & Temperature Plot, Bias-Time Plot"]
+    K --> P["Metadynamics CVs: Probe Distances & COMs"]
+    P --> Q["Metadynamics CVs Plots"]
 ```
 
 ---
