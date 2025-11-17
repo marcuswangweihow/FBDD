@@ -144,7 +144,7 @@ It produces **5 representative snapshots** for subsequent docking analysis.
 ---
 
 ## Pipeline Workflow
-The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow. Follow them sequentially from Section 1 → Section 4:
+The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow:
 > **Note:** This workflow diagram is a high-level overview. Steps are grouped by functional purpose, not strict chronological order in the code.
 
 
