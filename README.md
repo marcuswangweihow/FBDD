@@ -8,33 +8,9 @@ This folder contains the data and results for a fragment to lead workflow with 4
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
 
-```mermaid
-flowchart TD
-    A["Fragment Library (.sdf)"] --> B["RDKit Filtering"]
-    P["Protein (.pdb)"] --> Q["aLMMD Sampling"]
-    Q --> Q1["Snapshot 1"]
-    Q --> Q2["Snapshot 2"]
-    Q --> Q3["Snapshot 3"]
-    Q --> Q4["Snapshot 4"]
-    Q --> Q5["Snapshot 5"]
+![Overall Workflow FBDD](images/Overall_Workflow_FBDD.svg)
 
-    B --> C["Docking (AutoDock Vina)"]
-    Q1 --> C
-    Q2 --> C
-    Q3 --> C
-    Q4 --> C
-    Q5 --> C
-
-    C --> D["Interaction Analysis (PLIP)"]
-    D --> E["Scoring & Ranking"]
-    E --> F["Visualization (PyMOL)"]
-```
-
-This is ongoing work and i am currently working on the aLMMD sampling.
-
-Completed parts of workflow:
-- Fragment Library (.sdf)
-- Protein (.pdb)
+This is ongoing work and i am currently working on the aLMMD sampling and analysis.
 
 ---
 ## aLMMD Sampling
