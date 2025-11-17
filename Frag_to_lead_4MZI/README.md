@@ -170,10 +170,11 @@ flowchart TD
 ## Section 4: Post-processing & Snapshot Analysis
 ```mermaid
 flowchart TD
-    J["Probe Occupancy Mapping & Per-Probe Maps"] --> K["Selection of 5 Representative Snapshots"] 
-    K --> L["Production Simulation & Trajectory Generation"] 
-    L --> M["Trajectory Analysis: C-alpha Rg, Metadynamics CVs, Energy & Temperature Plots"]
-    M --> N["Representative Snapshots Saved for Docking"]
+    J["Production Simulation & Trajectory Generation"] --> K["Probe Occupancy Mapping & Per-Probe Maps"]
+    K --> L["Selection of 5 Representative Snapshots"]
+    L --> N["Representative Snapshots Saved for Docking"]
+    
+    J --> M["Trajectory Analysis: C-alpha Rg, Metadynamics CVs, Energy & Temperature Plots"]
 ```
 
 ---
