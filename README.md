@@ -58,7 +58,7 @@ It produces **5 representative snapshots** for subsequent docking analysis.
 
 7. **Production Run**  
    - Full accelerated MD simulation using PLUMED.  
-   - Live plotting of PLUMED bias, total energy, and temperature during runtime.
+   - Plotting of PLUMED bias, total energy, and temperature during runtime.
 
 8. **Post‑processing**  
    - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
