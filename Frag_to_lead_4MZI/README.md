@@ -338,3 +338,6 @@ GPU auto-detection with CUDA available; CPU fallback supported
 
 ---
 
+# Preliminary Results
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots for a 100ps production run
+
