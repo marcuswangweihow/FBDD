@@ -46,8 +46,8 @@ It produces **5 representative snapshots** for subsequent docking analysis.
    - Energy minimization → NVT → NPT equilibration.  
    - Automatic estimation of aMD boost parameters from equilibration (E₀, α).
 
-5. **Dual‑Dihedral + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
-   - Automatic selection of torsions (protein backbone & side chains, ligand) for dual-dihedral boost.  
+5. **Multi‑Dihedral (4 slowest) + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
+   - Automatic selection of torsions (protein backbone & side chains, ligand) for multi-dihedral boost.  
    - Total potential boost applied to system.  
    - PLUMED METAD CVs: distances and center-of-mass (COM) coordinates of probes are automatically monitored during production.  
    - `plumed.dat` is auto-generated for U‑boost style aMD integration.
