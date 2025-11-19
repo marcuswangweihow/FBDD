@@ -73,7 +73,7 @@ This aLMMD (accelerated Ligand-Mapping Molecular Dynamics) pipeline is inspired 
 
 References:
 
-- Tze-Yang Ng, J. and Tan, Y.S., 2022. Accelerated ligand-mapping molecular dynamics simulations for the detection of recalcitrant cryptic pockets and occluded binding sites. Journal of Chemical Theory and Computation, 18(3), pp.1969-1981. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177) — referenced for dual dihedral boost, aMD, and general workflow concepts.
+- Tze-Yang Ng, J. and Tan, Y.S., 2022. Accelerated ligand-mapping molecular dynamics simulations for the detection of recalcitrant cryptic pockets and occluded binding sites. Journal of Chemical Theory and Computation, 18(3), pp.1969-1981. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177) — referenced for dihedral boost, aMD, and general workflow concepts.
 - Tan, Y.S. and Verma, C.S., 2020. Straightforward incorporation of multiple ligand types into molecular dynamics simulations for efficient binding site detection and characterization. Journal of Chemical Theory and Computation, 16(10), pp.6633-6644. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c00405) — referenced for general workflow concepts.
 
 # aLMMD Pipeline
@@ -100,8 +100,8 @@ It produces **5 representative snapshots** for subsequent docking analysis.
    - Energy minimization → NVT → NPT equilibration.  
    - Automatic estimation of aMD boost parameters from equilibration (E₀, α).
 
-5. **Dual‑Dihedral + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
-   - Automatic selection of torsions (protein backbone & side chains, ligand) for dual-dihedral boost.  
+5. **Multi‑Dihedral (4 slowest) + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
+   - Automatic selection of torsions (protein backbone & side chains, ligand) for multi-dihedral boost.  
    - Total potential boost applied to system.  
    - PLUMED METAD CVs: distances and center-of-mass (COM) coordinates of probes are automatically monitored during production.  
    - `plumed.dat` is auto-generated for U‑boost style aMD integration.
@@ -167,7 +167,7 @@ flowchart TD
 ## Section 3: Boosting
 ```mermaid
 flowchart TD
-    I["Dual Dihedral Boost (Protein backbone, side chains, ligand torsions)"] --> J["PLUMED Total-Potential aMD + Automatic Torsions"]
+    I["Multi Dihedral Boost (Protein backbone, side chains, ligand torsions)"] --> J["PLUMED Total-Potential aMD + Automatic Torsions"]
 ```
 
 ## Section 4: Post-processing & Snapshot Analysis
@@ -289,7 +289,7 @@ gmx mdrun -h | grep -i plumed
 
 All probes automatically converted to OpenMM residues with correct bond connectivity
 
-Dual dihedral boost applied to protein (backbone + side chains) and probes according to Tan et al. (2020, 2022)
+Multi dihedral boost applied to protein (backbone + side chains) and probes inspired by Tan et al. (2020, 2022)
 
 Total-potential aMD performed via PLUMED
 
@@ -326,7 +326,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
    - Converts probes into **OpenMM residues**.  
    - Performs **probe placement** around protein centroid.  
    - Solvates and neutralizes the system with **TIP3P water**.  
-   - Applies **dual-dihedral accelerated MD** to protein (backbone + side chains) and ligand torsions.  
+   - Applies **multi-dihedral accelerated MD** to protein (backbone + side chains) and ligand torsions.  
    - Executes **total-potential aMD** via PLUMED, including **Metadynamics CVs**.  
    - Produces **probe occupancy maps** and automatically selects **5 representative snapshots**.  
    - Saves **trajectories, processed snapshots, and energy/temperature plots** for downstream analysis.
