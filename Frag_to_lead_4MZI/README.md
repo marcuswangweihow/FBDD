@@ -10,6 +10,9 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 
 ---
 
+# Preliminary Results
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots for a 100ps production run.
+
 # Fragment Library (.sdf)
 The data for the fragment library was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
 
@@ -338,6 +341,4 @@ GPU auto-detection with CUDA available; CPU fallback supported
 
 ---
 
-# Preliminary Results
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots for a 100ps production run.
 
