@@ -1,7 +1,3 @@
-# FBDD
-
-A repository containing code and testing during my self-training of FBDD skills.
-
 # Frag_to_lead_4MZI
 This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
@@ -13,19 +9,21 @@ The entire workflow can be shown as:
 This is ongoing work and i am currently working on the aLMMD sampling and analysis.
 
 ---
-## aLMMD Sampling / aLMMD Analysis
 
-This aLMMD (accelerated Ligand-Mapping Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
+# Preliminary Results (.../Frag_to_lead_4MZI/Preliminary Results)
+This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots for a 100ps production run.
+
+# aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis (.../Frag_to_lead_4MZI)
+
+This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
+It produces **5 representative snapshots** for subsequent docking analysis.
+
+The pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
 References:
 
 - Tze-Yang Ng, J. and Tan, Y.S., 2022. Accelerated ligand-mapping molecular dynamics simulations for the detection of recalcitrant cryptic pockets and occluded binding sites. Journal of Chemical Theory and Computation, 18(3), pp.1969-1981. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/10.1021/acs.jctc.1c01177) — referenced for dihedral boost, aMD, and general workflow concepts.
 - Tan, Y.S. and Verma, C.S., 2020. Straightforward incorporation of multiple ligand types into molecular dynamics simulations for efficient binding site detection and characterization. Journal of Chemical Theory and Computation, 16(10), pp.6633-6644. [Abstract & SI only — full text/code not accessed](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.0c00405) — referenced for general workflow concepts.
-
-# aLMMD Pipeline
-
-This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
-It produces **5 representative snapshots** for subsequent docking analysis.
 
 ## Pipeline Overview
 
