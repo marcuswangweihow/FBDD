@@ -197,8 +197,8 @@ flowchart TD
   - GAFF 2.1 for probes
 - GPU with CUDA support (optional but recommended for accelerated MD)
 - Python dependencies (Windows/WSL2): 
-  `rdkit, openmm, openmmforcefields, mdtraj, numpy, plumed, openbabel, pdbfixer, fpocket, mdanalysis, parmed, openmm-plumed`
-- Pipeline was run in WSL2 due to OpenMM PLUMED integration
+  `rdkit, openmm, openmmforcefields, mdtraj, numpy, openbabel, pdbfixer, fpocket, mdanalysis, parmed, openmm-plumed`, pymol-open-source
+- Pipeline was run in WSL2
 - WSL2 setup: Ubuntu 22.04.5, Miniforge3, Conda environment `almmd`
 - PLUMED kernel environment variable set via: 
   ```bash
@@ -206,7 +206,6 @@ flowchart TD
 
 - Verify installations: gmx --version, python -m openmm.testInstallation, and gmx mdrun -h | grep -i plumed
 - WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
-
 
 ---
 The following commands were executed after the initial setup inside WSL.
@@ -228,8 +227,8 @@ conda activate almmd
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 
-# Required installations    
-conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 plumed=2.9 openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
+# Installations    
+conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
 conda install -c conda-forge pdbfixer
 conda install -c conda-forge fpocket -y
 conda install mdanalysis    
@@ -237,6 +236,12 @@ conda install mdanalysis
 # install gromacs and parmed (if not already)
 conda install -c conda-forge gromacs parmed -y
 
+# Install pymol  
+pip install pymol-open-source  
+
+# Check pymol version if necessary  
+pip show pymol-open-source
+  
 # verify gmx is available and GPU status
 gmx --version
     
@@ -262,9 +267,28 @@ python -m openmm.testInstallation
 # Reference vs. CUDA: 6.75486e-06
 # CPU vs. CUDA: 7.06771e-07
 
+# External installation of plumed 2.10
+cd ~
+wget https://www.plumed.org/downloads/plumed-2.10.0.tgz
+tar -xvf plumed-2.10.0.tgz
+cd plumed-2.10.0
+
+./configure --prefix=$HOME/plumed-2.10.0
+make -j 4
+make install
+
+# verify plumed version
+plumed info --version  
+  
 # Ensure Plumed compatibility
-export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
-echo "export PLUMED_KERNEL=\"$CONDA_PREFIX/lib/libplumedKernel.so\"" >> ~/.bashrc
+# (you might have to export a different path depending on where your plumed is installed depending on your system)
+cd ~  
+nano ~/.bashrc
+
+# add these lines at the end of .bashrc  
+export PLUMED_KERNEL=$HOME/opt/plumed-2.10/lib/libplumedKernel.so
+export PATH=$HOME/opt/plumed-2.10/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/opt/plumed-2.10/lib:$LD_LIBRARY_PATH  
     
 # Reload .bashrc:
 source ~/.bashrc    
@@ -275,14 +299,12 @@ conda activate almmd
 # verify environment variable
 echo $PLUMED_KERNEL
 
-# verify plumed version
-plumed info --version  
-
 # get location of plumed kernel to place in jupyter notebook  
 find $CONDA_PREFIX -name "libplumedKernel.so"
   
 # run a quick (non-destructive) plumed load test:
 gmx mdrun -h | grep -i plumed
+
     
 </pre>
 
