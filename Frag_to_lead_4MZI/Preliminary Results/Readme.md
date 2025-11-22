@@ -46,6 +46,22 @@ Benzene occupancy maps were generated from (A) Cluster 2 (0–20 ps) and (B) C
 
 The small and scattered appearance of the meshes is due to each cluster being based on only a handful of snapshots (5 per window by default) and the relatively short production run of 100 ps. As a result, the isomesh polygons are tiny and dispersed — the “hotspot” occupancy has not fully converged. Each mesh essentially reflects a limited number of probe binding events, rather than a fully sampled occupancy. Longer production runs (ns-scale) and more snapshots per window would yield smoother, more interpretable clusters.
 
+# Methanol occupancy maps per windows
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./methanol_window1_cluster2.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./methanol_window2_cluster1.png" width="400">
+    </td>
+  </tr>
+</table>
 
+Methanol occupancy maps were generated from (A) Cluster 2 (0–20 ps) and (B) Cluster 1 (21–40 ps) analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative structure was chosen as the snapshot whose probe atoms best overlap with the average grid peaks. Methanol occupancy maps are shown as black meshes.
+
+The small and scattered appearance of the meshes is due to each cluster being based on only a handful of snapshots (5 per window by default) and the relatively short production run of 100 ps. As a result, the isomesh polygons are tiny and dispersed — the “hotspot” occupancy has not fully converged. Each mesh essentially reflects a limited number of probe binding events, rather than a fully sampled occupancy. Longer production runs (ns-scale) and more snapshots per window would yield smoother, more interpretable clusters.
 
 
