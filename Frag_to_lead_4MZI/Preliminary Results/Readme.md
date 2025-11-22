@@ -28,14 +28,21 @@ This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD
 ![Calpha_Rg_RMSD vs Time](Calpha_Rg_RMSD_combined.png)
 
 
-#
+# Benzene occupancy maps per windows
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./window1_cluster2.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./window2_cluster1.png" width="400">
+    </td>
+  </tr>
+</table>
 
-<p float="left">
-  <img src="./aa.png" width="45%" />
-  <img src="./aaa.png" width="45%" />
-</p>
-
-Benzene occupancy maps generated from the (A) Cluster 2 0–20ps and(B) Cluster ? 21–40ps analysis windows of the pipeline MD 100ps simulation, superimposed on the PDB structure 4MZI. Benzene occupancy maps are shown as black meshes.
+Benzene occupancy maps generated from the (A) Cluster 2 0–20ps and(B) Cluster 1 21–40ps analysis windows of the pipeline MD simulation of 100ps , superimposed on the representative protein structure (PDB structure 4MZI (human mutant p53) per window taken from the snapshot whose probe atoms overlap best with avg_grid peaks. Benzene occupancy maps are shown as black meshes.
 
 The small cluster meshes are because each cluster is based on only a handful of snapshots (5 per window by default) and the short production run time of 100ps.Thus the isomesh polygons are tiny and scattered — the “hotspot” occupancy hasn’t had time to converge. Essentially, each mesh reflects a small number of probe binding events, not a fully sampled occupancy, which should be resolved once longer production runs (ns-scale) and more snapshots per window are done for smoother and more interpretable clusters. 
 
