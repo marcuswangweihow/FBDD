@@ -26,3 +26,19 @@ This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD
 ## Calpha_Rg_RMSD_combined.png
 This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD simulation progresses ie. time increases. The plot shows that there is likely a structural change from ca. 0.065ns to ca. 0.095ns as marked by the drop in the radius of gyration together with an increase in RMSD, where RMSD measures deviation from the reference structure (the initial conformation). The fall in the radius of gyration indicates the protein is becoming more compact in that region of the trajectory. The smaller wells with fewer black dots represents shorter-lived or smaller deviations — minor conformational shifts, local motions, or fluctuations.
 ![Calpha_Rg_RMSD vs Time](Calpha_Rg_RMSD_combined.png)
+
+
+#
+
+<p float="left">
+  <img src="./aa.png" width="45%" />
+  <img src="./aaa.png" width="45%" />
+</p>
+
+Benzene occupancy maps generated from the (A) Cluster 2 0–20ps and(B) Cluster ? 21–40ps analysis windows of the pipeline MD 100ps simulation, superimposed on the PDB structure 4MZI. Benzene occupancy maps are shown as black meshes.
+
+The small cluster meshes are because each cluster is based on only a handful of snapshots (5 per window by default) and the short production run time of 100ps.Thus the isomesh polygons are tiny and scattered — the “hotspot” occupancy hasn’t had time to converge. Essentially, each mesh reflects a small number of probe binding events, not a fully sampled occupancy, which should be resolved once longer production runs (ns-scale) and more snapshots per window are done for smoother and more interpretable clusters. 
+
+
+
+
