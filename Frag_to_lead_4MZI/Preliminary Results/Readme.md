@@ -33,11 +33,11 @@ This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./window1_cluster2.png" width="400">
+      <img src="./benzene_window1_cluster2.png" width="400">
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./window2_cluster1.png" width="400">
+      <img src="./benzene_window2_cluster1.png" width="400">
     </td>
   </tr>
 </table>
