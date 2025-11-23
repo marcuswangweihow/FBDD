@@ -11,7 +11,7 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 ---
 
 # Preliminary Results (.../Frag_to_lead_4MZI/Preliminary Results)
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots for a 100ps production run.
+This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run.
 
 # aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis (.../Frag_to_lead_4MZI)
 
