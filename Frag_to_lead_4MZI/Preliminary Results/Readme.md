@@ -42,7 +42,7 @@ This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD
   </tr>
 </table>
 
-Benzene occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative structure was chosen as the snapshot whose probe atoms best overlap with the average grid peaks. Benzene occupancy maps are shown as black meshes.
+Benzene occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative protein structure per window was obtained from the central frame of the window. Benzene occupancy maps are shown as black meshes.
 
 # Methanol occupancy maps per window (only 2 windows shown)
 <table style="border-collapse: collapse; border: none;">
@@ -58,7 +58,7 @@ Benzene occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps a
   </tr>
 </table>
 
-Methanol occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative structure was chosen as the snapshot whose probe atoms best overlap with the average grid peaks. Methanol occupancy maps are shown as black meshes.
+Methanol occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative protein structure per window was obtained from the central frame of the window. Methanol occupancy maps are shown as black meshes.
 
 # Acetonitrile occupancy maps per window (only 2 windows shown)
 <table style="border-collapse: collapse; border: none;">
@@ -74,7 +74,7 @@ Methanol occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps 
   </tr>
 </table>
 
-Acetonitrile occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative structure was chosen as the snapshot whose probe atoms best overlap with the average grid peaks. Acetonitrile occupancy maps are shown as black meshes.
+Acetonitrile occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative protein structure per window was obtained from the central frame of the window. Acetonitrile occupancy maps are shown as black meshes.
 
 # Toluene occupancy maps per window (only 2 windows shown)
 <table style="border-collapse: collapse; border: none;">
@@ -90,4 +90,4 @@ Acetonitrile occupancy maps were generated from (A) 0–20 ps and (B) 81-100�
   </tr>
 </table>
 
-Toluene occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative structure was chosen as the snapshot whose probe atoms best overlap with the average grid peaks. Toluene occupancy maps are shown as black meshes.
+Toluene occupancy maps were generated from (A) 0–20 ps and (B) 81-100 ps analysis windows of the pipeline MD simulation (total 100 ps), superimposed on the representative protein structure (PDB 4MZI – human mutant p53) for each window. The representative protein structure per window was obtained from the central frame of the window. Toluene occupancy maps are shown as black meshes.
