@@ -191,7 +191,9 @@ flowchart TD
 # Requirements
 
 - AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
-- GROMACS 2025.03 (with PLUMED support)
+- GROMACS 2025.03
+- External installation of Plumed 2.10.0
+- OpenMM 8.2
 - Force fields:
   - ff14SB from amber14-all.xml
   - TIP3P from amber14-all.xml
@@ -268,7 +270,7 @@ python -m openmm.testInstallation
 # Reference vs. CUDA: 6.75486e-06
 # CPU vs. CUDA: 7.06771e-07
 
-# External installation of plumed 2.10
+# External installation of plumed 2.10.0
 cd ~
 wget https://www.plumed.org/downloads/plumed-2.10.0.tgz
 tar -xvf plumed-2.10.0.tgz
