@@ -1,5 +1,9 @@
 # Preliminary Results
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. All these results are merely to show pipeline/workflow functionality.
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
+
+Representative snapshots and MDpocket results can be found in their respective folder within this directory.
+
+All these results are merely to show pipeline/workflow functionality.
 
 ---
 
