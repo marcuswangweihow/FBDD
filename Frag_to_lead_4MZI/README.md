@@ -171,7 +171,7 @@ flowchart TD
 ## Section 3: Boosting
 ```mermaid
 flowchart TD
-    I["Multi Dihedral Boost (Protein backbone, side chains, ligand torsions)"] --> J["PLUMED Total-Potential aMD + Automatic Torsions"]
+    I["Multi Dihedral Boost (Protein backbone)"] --> J["PLUMED Total-Potential aMD + Automatic Torsions"]
 ```
 
 ## Section 4: Post-processing & Snapshot Analysis
@@ -179,11 +179,12 @@ flowchart TD
 flowchart TD
     K["Production Simulation & Trajectory Generation"] --> L["Probe Occupancy Mapping & Per-Probe Maps"]
     L --> M["Selection of 5 Representative Snapshots"]
-    M --> N["Representative Snapshots Saved for Docking"]
+    M --> N["MDpocket analysis"]
+    M --> O["Representative Snapshots Saved for Docking"]
 
-    K --> O["Trajectory Analysis: C-alpha Rg, Energy & Temperature Plot, Bias-Time Plot"]
-    K --> P["Metadynamics CVs: Probe Distances & COMs"]
-    P --> Q["Metadynamics CVs Plots"]
+    K --> P["Trajectory Analysis: C-alpha Rg, Energy-Time Plot, Temperature-Time Plot, Bias-Time Plot"]
+    K --> Q["Metadynamics CVs: Probe Distances & COMs"]
+    Q --> R["Metadynamics CVs Plots"]
 ```
 
 ---
