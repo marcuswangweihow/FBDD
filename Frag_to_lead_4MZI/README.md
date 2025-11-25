@@ -193,6 +193,7 @@ flowchart TD
 - AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
 - GROMACS 2025.03
 - External installation of Plumed 2.10.0
+- External installation of fpocket (MDpocket) 4.0
 - OpenMM 8.2
 - Force fields:
   - ff14SB from amber14-all.xml
@@ -308,7 +309,32 @@ find $CONDA_PREFIX -name "libplumedKernel.so"
 # run a quick (non-destructive) plumed load test:
 gmx mdrun -h | grep -i plumed
 
-    
+# External installation of fpocket 4.0
+cd ~ 
+conda activate almmd
+sudo apt update
+sudo apt install -y git cmake build-essential
+cd ~
+git clone https://github.com/Discngine/fpocket.git
+cd fpocket
+make
+
+
+# add fpocket to your PATH
+nano ~/.bashrc
+
+# add this to the end of the .bashrc
+export PATH=$HOME/fpocket/bin:$PATH
+
+# reload
+source ~/.bashrc
+
+# verify installation
+which mdpocket
+
+# output
+/home/marcuswangweihow/fpocket/bin/mdpocket
+  
 </pre>
 
 ---
