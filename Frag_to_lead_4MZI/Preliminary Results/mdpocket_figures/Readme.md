@@ -1,4 +1,5 @@
-The MDpocket figures shown here are preliminary results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes.
+The MDpocket figures shown here are **preliminary** results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes.
+ - High-density regions (dens iso 8, red meshes) and frequent occupancy (freq iso 0.5, gray meshes)
 
 # overview.png
 Overall pocket occupancy map from representative snapshots.
