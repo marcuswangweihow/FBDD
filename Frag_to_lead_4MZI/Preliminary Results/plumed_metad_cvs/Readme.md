@@ -45,4 +45,4 @@ The plots show that the dihedrals change with time and the probes are moving, wh
 </table>
 
 # Combined torsions vs time plot
-![Torsions_Combined.png]
+![Combined torsions vs Time](Torsions_Combined.png)
