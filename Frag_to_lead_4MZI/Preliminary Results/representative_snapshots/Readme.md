@@ -16,3 +16,6 @@ Selection criteria:
  - DBSCAN clustering to find dense probe-sampling regions.
 
 Selected snapshots are protein-only PDBs, stripped of hydrogens.
+
+# Docking preparation
+
