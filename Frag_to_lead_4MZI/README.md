@@ -190,6 +190,7 @@ flowchart TD
 ---
 
 # Requirements
+> See [HPC & Backward Compatibility](#hpc--backward-compatibility) for supported GROMACS/PLUMED versions.
 
 - AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
 - GROMACS 2025.03
@@ -348,6 +349,29 @@ which mdpocket
 </pre>
 
 ---
+
+## HPC & Backward Compatibility
+
+This workflow has been designed with HPC execution and reproducibility in mind, reflecting careful consideration of GROMACS + PLUMED setup, file handling, and automated PLUMED generation.
+
+### 1. Tested Software Environment
+- **GROMACS:** Tested on 2025.03; workflow is compatible with older GROMACS versions (e.g., 2024, 2023).  
+- **PLUMED:** Input files auto-generated via `generate_plumed_v2_10`, compatible with PLUMED 2.9.2 and 2.10 (multi-dihedral aMD supported); older PLUMED versions (<2.9) are **not supported**.  
+- **Python:** 3.11; compatible with older Python/OpenMM environments (e.g., OpenMM ≥8.1).  
+- **Python packages:** ParmEd, MDAnalysis, numpy, matplotlib.  
+
+### 2. HPC Execution Considerations
+- **Parallelization & MPI:** Production runs support MPI/OpenMP; workflow respects checkpointing with `-cpi prod.cpt`.  
+- **Temporary directories:** Intermediate files stored in `gmx_temp_dir`; final outputs in `gmx_run_dir` to reduce I/O overhead.  
+- **Checkpointing:** Automatic handling of `.cpt` files ensures long simulations can resume seamlessly.  
+- **POSRES & Topology Handling:** Positional restraints use local indices; `top_clean.top` is preserved to allow safe regeneration of `.tpr` files.  
+
+### 3. Multi-Dihedral Accelerated MD & PLUMED
+- Automatically selects slowest-moving torsions from NPT equilibration for multi-dihedral aMD.  
+- Total-potential aMD applied via PLUMED.  
+- Probe atom indices adjusted automatically for PLUMED compatibility.  
+- PLUMED input copied to `gmx_temp_dir` and reusable across HPC nodes, ensuring reproducible simulations.
+
 
 # Notes
 
