@@ -19,6 +19,8 @@ Selected snapshots are protein-only PDBs, stripped of hydrogens.
 
 # Docking Preparation and Execution
 
+docking_prep.py and prepare_protein_snapshots.py are provided in this folder
+
 ## 1. Inspect the Docking Prep Folder
 
 After running the integrated docking prep script (docking_prep.py), navigate to the docking folder:
