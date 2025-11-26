@@ -64,7 +64,7 @@ Detects if probes drift together or if one is outlier.
 ## 2D projections (x-y, x-z, y-z)
 You can see if probes overlap unphysically or leave the expected region.
 
-## 3D scatter
+## 3D COM scatter
 Good for spotting impossible geometries, clustering, or probes stuck together.
 
 For multiple copies or long simulations, dense clusters may indicate potential hotspots or binding regions. 
