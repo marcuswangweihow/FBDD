@@ -1,9 +1,11 @@
 # Preliminary Results
 This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
 
-Representative snapshots and MDpocket results can be found in their respective folder within this directory.
+Representative snapshots and MDpocket analysis can be found in their respective folder within this directory.
 
-All these results are merely to show pipeline/workflow functionality.
+Plots for the PLUMED metadynamics CVs can be found in the respective folder within this directory. 
+
+**All these preliminary results are merely to show pipeline/workflow functionality.**
 
 ---
 
