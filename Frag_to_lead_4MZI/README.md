@@ -196,13 +196,21 @@ flowchart TD
 - External installation of Plumed 2.10.0
 - External installation of fpocket (MDpocket) 4.0
 - OpenMM 8.2
+> **Note:** If running on a HPC cluster with older versions or no external build support you will have to use
+> Gromacs 23/24 and plumed 2.9.2 installed via conda forge instead.
+> 
+> AmberTools 24 is backward compatible.
+> 
+> In the notebook just remember to set the paths to gromacs and the plumed kernel properly and
+> you will also need to set the path variable in the python environment
+
 - Force fields:
   - ff14SB from amber14-all.xml
   - TIP3P from amber14-all.xml
   - GAFF 2.1 for probes
 - GPU with CUDA support (optional but recommended for accelerated MD)
 - Python dependencies (Windows/WSL2): 
-  `rdkit, openmm, openmmforcefields, mdtraj, numpy, openbabel, pdbfixer, fpocket, mdanalysis, parmed, openmm-plumed`, pymol-open-source
+  `rdkit, openmm, openmmforcefields, mdtraj, numpy, openbabel, pdbfixer, fpocket, mdanalysis, parmed, pymol-open-source
 - Pipeline was run in WSL2
 - WSL2 setup: Ubuntu 22.04.5, Miniforge3, Conda environment `almmd`
 - PLUMED kernel environment variable set via: 
@@ -232,8 +240,9 @@ conda activate almmd
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 
-# Installations    
-conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 openmm-plumed ambertools=24 openbabel rdkit mdtraj -y
+# Installations
+# Note if using previous version of gromacs and plumed (eg. for HPC cluster) install via: conda install -c conda-forge gromacs=2024 plumed=2.9.2
+conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 ambertools=24 openbabel rdkit mdtraj -y
 conda install -c conda-forge pdbfixer
 conda install -c conda-forge fpocket -y
 conda install mdanalysis    
