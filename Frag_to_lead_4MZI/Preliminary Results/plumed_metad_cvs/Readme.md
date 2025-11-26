@@ -1,3 +1,7 @@
+plumed_bias_scalar.dat and plumed_com_components.dat contain the raw data for the below plots. These files were generated from a short 100ps production test run. 
+
+**All results shown here are preliminary results and only serve to show workflow/pipeline functionality.**
+
 # From plumed_bias_scalar.dat
 ## Distance and torsion plots
 
