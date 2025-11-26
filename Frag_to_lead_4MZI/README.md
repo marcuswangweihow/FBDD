@@ -191,6 +191,14 @@ flowchart TD
 
 # Requirements
 > See [HPC & Backward Compatibility](#hpc--backward-compatibility) for supported GROMACS/PLUMED versions.
+> ## Linux OS Compatibility
+
+> The pipeline is fully compatible with native Linux systems. Only minor adjustments are needed:
+
+> - **Paths:** Convert all Windows-style paths to Linux paths (e.g., `/home/user/...`).
+> - **Executables:** Ensure `antechamber_exe` and `PLUMED_KERNEL` point to Linux locations.
+> - **Shell commands:** Adjust any `find "C:/Users/..."` or backslash-escaped paths to Linux equivalents.
+> - WSL dependencies are **optional**; the code is OS-agnostic.
 
 - AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
 - GROMACS 2025.03
@@ -204,6 +212,8 @@ flowchart TD
 > 
 > In the notebook just remember to set the paths to gromacs and the plumed kernel properly and
 > you will also need to set the path variable in the python environment
+
+
 
 - Force fields:
   - ff14SB from amber14-all.xml
