@@ -74,4 +74,4 @@ Good for spotting impossible geometries, clustering, or probes stuck together.
 For multiple copies or long simulations, dense clusters may indicate potential hotspots or binding regions. 
 
 ## Pairwise COM distances
-Confirms probes don’t collide or drift apart unexpectedly.
+To confirm probes don’t collide or drift apart unexpectedly.
