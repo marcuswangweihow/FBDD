@@ -66,7 +66,7 @@ See if any probe is behaving weirdly
 Detects if probes drift together or if one is outlier.
 
 ## 2D projections (x-y, x-z, y-z)
-You can see if probes overlap unphysically or leave the expected region.
+See if probes overlap unphysically or leave the expected region.
 
 ## 3D COM scatter
 Good for spotting impossible geometries, clustering, or probes stuck together.
