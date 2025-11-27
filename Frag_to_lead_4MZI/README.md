@@ -375,7 +375,7 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 #### PLUMED
 - Input files auto-generated via `generate_plumed_v2_10`.
 - Compatible with **PLUMED 2.10** (supports multi-dihedral accelerated MD).  
-- **Testing was not done** with PLUMED 2.9.2 from conda-forge or an external build of PLUMED 2.9.2. However, documentation suggests that the pipeline is compatible with **PLUMED 2.9.2** 
+- **Testing was not done** with PLUMED 2.9.2 from conda-forge or an external build of PLUMED 2.9.2. However, documentation suggests that the pipeline is compatible with **PLUMED 2.9.2**.
 - Older PLUMED versions (<2.9) are **not supported**.
 
 #### Python
