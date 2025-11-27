@@ -19,7 +19,12 @@ Selected snapshots are protein-only PDBs, stripped of hydrogens.
 
 # Docking Preparation and Execution
 
-docking_prep.py and prepare_protein_snapshots.py are provided in this folder
+docking_prep.py and prepare_protein_snapshots.py are provided in this folder. 
+
+These scripts are intended to work on Windows.
+
+For Linux and Mac users:
+Use `conda install -c conda-forge autodock-vina` and adapt docking_prep.py and prepare_protein_snapshots.py to make them work.
 
 ## 1. Inspect the Docking Prep Folder
 
