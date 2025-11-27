@@ -362,13 +362,30 @@ which mdpocket
 
 ## HPC & Backward Compatibility
 
-This workflow has been designed with HPC execution and reproducibility in mind, reflecting careful consideration of GROMACS + PLUMED setup, file handling, and automated PLUMED generation.
+This workflow has been designed with HPC execution and reproducibility in mind, reflecting careful consideration of GROMACS + PLUMED setup, file handling, and automated PLUMED generation. The HPC cluster at A*Star ([https://www.a-star.edu.sg/acrc/service/hpc-software/hpc-software-listing](https://www.a-star.edu.sg/acrc/service/hpc-software/hpc-software-listing)) seems to support support user‑compiled or “external builds”.
 
 ### 1. Tested Software Environment
-- **GROMACS:** Tested on 2025.03; workflow is compatible with older GROMACS versions (e.g., 2024, 2023).  
-- **PLUMED:** Input files auto-generated via `generate_plumed_v2_10`, compatible with PLUMED 2.9.2 and 2.10 (multi-dihedral aMD supported); older PLUMED versions (<2.9) are **not supported**.  
-- **Python:** 3.11; compatible with older Python/OpenMM environments (e.g., OpenMM ≥8.1).  
-- **Python packages:** ParmEd, MDAnalysis, numpy, matplotlib.  
+#### GROMACS
+- Tested on **2025.03** (installed via conda-forge).  
+- **Note:** GROMACS 2024 binary (installed via conda-forge) **does not** include runtime PLUMED support. This will trigger a "cannot recognise -plumed option" when running the pipeline.  
+- Options for running with PLUMED:
+  1. Build **GROMACS 2024 + PLUMED 2.9.2** from source with `-DGMX_USE_PLUMED=ON`.
+  2. Use **GROMACS 2025 conda-forge**, which already supports runtime PLUMED, and point to the desired PLUMED kernel (as currently implemented in this pipeline with an external build of PLUMED 2.10.0). Testing was not done with plumed 2.92 from conda-forge.
+
+#### PLUMED
+- Input files auto-generated via `generate_plumed_v2_10`.
+- Compatible with **PLUMED 2.9.2 and 2.10** (supports multi-dihedral accelerated MD).  
+- **Testing was not done** with PLUMED 2.9.2 from conda-forge or an external build of PLUMED 2.9.2.  
+- Older PLUMED versions (<2.9) are **not supported**.
+
+#### Python
+- Tested on **Python 3.11**.
+
+#### Python Packages
+- Required: `ParmEd`, `MDAnalysis`, `numpy`, `matplotlib`.
+
+#### Other Notes
+- Downgrading to OpenMM 8.0 and AmberTools 23 does **not** affect the pipeline.
 
 ### 2. HPC Execution Considerations
 - **Parallelization & MPI:** Production runs support MPI/OpenMP; workflow respects checkpointing with `-cpi prod.cpt`.  
