@@ -298,7 +298,7 @@ wget https://www.plumed.org/downloads/plumed-2.10.0.tgz
 tar -xvf plumed-2.10.0.tgz
 cd plumed-2.10.0
 
-./configure --prefix=$HOME/plumed-2.10.0
+./configure --prefix=$HOME/opt/plumed-2.10
 make -j 4
 make install
 
