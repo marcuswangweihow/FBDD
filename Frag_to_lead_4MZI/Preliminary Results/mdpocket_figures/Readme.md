@@ -1,3 +1,15 @@
+# FBDD Repository Structure
+
+- [FBDD](../../../)
+ - [Frag_to_lead_4MZI](../../)
+ - [Preliminary Results](../)
+   - [binding_event_detection](../binding_event_detection/)
+   - [mdpocket_figures](./)
+   - [plumed_metad_cvs](../plumed_metad_cvs/)
+   - [representative_snapshots](../representative_snapshots/)
+
+------------------------------------
+
 The MDpocket figures shown here are **preliminary** results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes.
  - High-density regions (dens_iso 8, red meshes) and frequent occupancy (freq_iso 0.5, gray meshes)
 
