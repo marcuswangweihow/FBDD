@@ -1,3 +1,15 @@
+# FBDD Repository Structure
+
+- [FBDD](../../../)
+    - [Frag_to_lead_4MZI](../../)
+    - [Preliminary Results](../)
+      - [binding_event_detection](../binding_event_detection/)
+      - [mdpocket_figures](../mdpocket_figures/)
+      - [plumed_metad_cvs](./)
+      - [representative_snapshots](../representative_snapshots/)
+
+---------------------------------------------------------
+
 plumed_bias_scalar.dat and plumed_com_components.dat contain the raw data for the below plots. These files were generated from a short 100ps production test run. 
 
 **All results shown here are preliminary results and only serve to show workflow/pipeline functionality.**
