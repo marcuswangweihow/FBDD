@@ -1,9 +1,11 @@
 # Preliminary Results
 This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
 
-Representative snapshots and MDpocket analysis can be found in their respective folder within this directory.
+Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](representative_snapshots/)) and ([mdpocket_figures](mdpocket_figures/)) respectively within this directory.
 
-Plots for the PLUMED metadynamics CVs can be found in the respective folder within this directory. 
+Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](plumed_metad_cvs/)) within this directory. 
+
+Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](binding_event_detection/)) within this directory.
 
 **All these preliminary results are merely to show pipeline/workflow functionality.**
 
