@@ -1,3 +1,15 @@
+# FBDD Repository Structure
+
+- [FBDD](../..)
+  - [Frag_to_lead_4MZI](../)
+    - [Preliminary Results](Preliminary%Results)
+      - [binding_event_detection](binding_event_detection/)
+      - [mdpocket_figures](mdpocket_figures/)
+      - [plumed_metad_cvs](plumed_metad_cvs/)
+      - [representative_snapshots](representative_snapshots/)
+
+-----------------
+
 # Preliminary Results
 This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
 
