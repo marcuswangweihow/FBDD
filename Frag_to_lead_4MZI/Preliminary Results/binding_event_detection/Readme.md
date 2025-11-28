@@ -6,6 +6,8 @@ Cluster → Density Peak mapping: Each cluster centroid is assigned to the neare
 
 If a cluster is farther than a user-defined threshold (e.g., 3 Å) from any density peak, it is labeled Pocket_X.
 
+**All results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
+
 ## Binding event detection: Track consecutive frames where a probe is in a cluster.
 
 Events lasting longer than dbscan_min_samples frames are reported as binding events.
@@ -24,7 +26,7 @@ JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, na
 
 3D COM plots: probe trajectories color-coded by cluster labels.
 
-3D COM plots from a short 100ps production test run. The results shown are preliminary and are sued to demonstrate pipeline/workflow functionality.
+3D COM plots from a short 100ps production test run. The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.
 
 
 
