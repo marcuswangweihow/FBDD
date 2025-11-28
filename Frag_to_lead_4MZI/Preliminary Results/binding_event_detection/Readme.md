@@ -26,9 +26,36 @@ JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, na
 
 3D COM plots: probe trajectories color-coded by cluster labels.
 
-3D COM plots from a short 100ps production test run. The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.
+3D COM plots from a short 100ps production test run. **The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
 
+The plots do not show any binding events or meaningful clusters as expected due to the short production run of 100ps.
 
+### 3D COM plots
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./probe1_COM_clusters_20251119.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./probe2_COM_clusters_20251119.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>C</h3>
+      <img src="./probe3_COM_clusters_20251119.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>D</h3>
+      <img src="./probe4_COM_clusters_20251119.png" width="400">
+    </td>
+  </tr>
+</table>
+
+(A) Probe 1: benzene
+(B) Probe 2: methanol
+(C) Probe 3: acetonitrile
+(D) Probe 4: toluene
 
 ## Usage of JSON file for numerical cluster detection → structural snapshot → physical interpretation:
 
