@@ -1,3 +1,15 @@
+# FBDD Repository Structure
+
+- [FBDD](../)
+    - [Frag_to_lead_4MZI](./)
+        - [Preliminary Results](Preliminary%20Results/)
+          - [binding_event_detection](Preliminary%20Results/binding_event_detection/)
+          - [mdpocket_figures](Preliminary%20Results/mdpocket_figures/)
+          - [plumed_metad_cvs](Preliminary%20Results/plumed_metad_cvs/)
+          - [representative_snapshots](Preliminary%20Results/representative_snapshots/)
+
+--------------------------------------------------------
+
 # Frag_to_lead_4MZI
 This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
