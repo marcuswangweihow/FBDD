@@ -1,3 +1,15 @@
+# FBDD Repository Structure
+
+- [FBDD](../../../)
+  - [Frag_to_lead_4MZI](../../)
+  - [Preliminary Results](../)
+    - [binding_event_detection](./)
+    - [mdpocket_figures](../mdpocket_figures/)
+    - [plumed_metad_cvs](../plumed_metad_cvs/)
+    - [representative_snapshots](../representative_snapshots/)
+
+-----------------
+
 # Binding Event Detection and Pocket Mapping
 
 This module performs integrated COM clustering of probe fragments along MD trajectories and maps clusters to MDpocket-derived density peaks to identify potential binding pockets and transient binding events.
