@@ -1,12 +1,12 @@
 # FBDD Repository Structure
 
-- [FBDD](../..)
+- [FBDD](../../)
   - [Frag_to_lead_4MZI](../)
-    - [Preliminary Results](Preliminary%Results)
-      - [binding_event_detection](binding_event_detection/)
-      - [mdpocket_figures](mdpocket_figures/)
-      - [plumed_metad_cvs](plumed_metad_cvs/)
-      - [representative_snapshots](representative_snapshots/)
+  - [Preliminary Results](./)
+    - [binding_event_detection](binding_event_detection/)
+    - [mdpocket_figures](mdpocket_figures/)
+    - [plumed_metad_cvs](plumed_metad_cvs/)
+    - [representative_snapshots](representative_snapshots/)
 
 -----------------
 
