@@ -1,0 +1,1309 @@
+{
+  "timestamp": "20251119",
+  "n_probes": 4,
+  "probes": {
+    "1": {
+      "n_clusters": 1,
+      "n_binding_events": 0,
+      "total_frames": 51,
+      "clusters": {
+        "0": {
+          "centroid": [
+            2.3644546666666666,
+            4.172011333333334,
+            -0.9649836666666668
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe1_cluster0_repframe_31.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_0",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 17.227271622046935,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 21.53695661430487,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  21.35,
+                  3.780000000000001,
+                  12.36
+                ],
+                "distance_A": 23.198271362462556,
+                "intensity": 0.21699601312479358
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 15.672995784887998,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 17.042727858917335,
+                "intensity": 0.10410077814723184
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 17.227271622046935,
+                "intensity": 0.09550309920399845
+              }
+            ]
+          }
+        }
+      }
+    },
+    "2": {
+      "n_clusters": 4,
+      "n_binding_events": 2,
+      "total_frames": 51,
+      "clusters": {
+        "0": {
+          "centroid": [
+            3.9496346666666664,
+            0.7270456666666667,
+            6.219221
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe2_cluster0_repframe_4.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_0",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.557529664531252,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 14.354742768683161,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 17.517023756574485,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 8.232254123571597,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.557529664531252,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 11.492366363013677,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            4.022545285714286,
+            0.6524314285714287,
+            6.319054
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe2_cluster1_repframe_6.pdb",
+          "n_frames_in_cluster": 7,
+          "cluster_name": "Pocket_1",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 17,
+              "end_step": 19,
+              "duration_steps": 3,
+              "centroid": [
+                4.022545285714286,
+                0.6524314285714287,
+                6.319054
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.41357479036586,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 14.246915256777926,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 17.43025634733499,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 8.101601008766123,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.41357479036586,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 11.427409282301927,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            4.047470333333333,
+            0.6205953333333333,
+            6.526498
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe2_cluster2_repframe_15.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_2",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 13,
+              "end_step": 15,
+              "duration_steps": 3,
+              "centroid": [
+                4.047470333333333,
+                0.6205953333333333,
+                6.526498
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.250833996509316,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 14.052708741175342,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 17.253780096864936,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 7.92799892559944,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.250833996509316,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 11.287995406521,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            3.4607500000000004,
+            0.625273,
+            6.323911666666667
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe2_cluster3_repframe_35.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_3",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.725960023300102,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 14.466019253460795,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 17.647276911037345,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 8.475382845325145,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 9.725960023300102,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 11.710791848041922,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        }
+      }
+    },
+    "3": {
+      "n_clusters": 5,
+      "n_binding_events": 2,
+      "total_frames": 51,
+      "clusters": {
+        "0": {
+          "centroid": [
+            3.230905,
+            1.3631362,
+            4.0103346
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster0_repframe_26.pdb",
+          "n_frames_in_cluster": 5,
+          "cluster_name": "Pocket_0",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.761447433829415,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 16.585025008685776,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 19.520113128225784,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.472180104387652,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.761447433829415,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 13.187164628483735,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            3.361280666666667,
+            1.5621003333333332,
+            3.948654
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster1_repframe_19.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_1",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.83419558102239,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 16.578830609642623,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 19.473665406985486,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.478138307124182,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.83419558102239,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 13.095318312914603,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            3.2267189999999997,
+            1.4737963333333333,
+            3.9516066666666667
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster2_repframe_20.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_2",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.858118119604205,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 16.63187672328308,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 19.543517800159524,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.538718834460804,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.858118119604205,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 13.190338105540947,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            3.9334717999999995,
+            1.4298368,
+            3.1799512
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster3_repframe_36.pdb",
+          "n_frames_in_cluster": 5,
+          "cluster_name": "Pocket_3",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 33,
+              "end_step": 36,
+              "duration_steps": 4,
+              "centroid": [
+                3.9334717999999995,
+                1.4298368,
+                3.1799512
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 12.063694690202123,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 17.115948632150392,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  21.35,
+                  3.780000000000001,
+                  12.36
+                ],
+                "distance_A": 19.827557024969337,
+                "intensity": 0.21699601312479358
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.785825660486587,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 12.063694690202123,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 13.526141917724024,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "4": {
+          "centroid": [
+            4.219462142857142,
+            1.559908857142857,
+            3.2987035714285713
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster4_repframe_47.pdb",
+          "n_frames_in_cluster": 7,
+          "cluster_name": "Pocket_4",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 42,
+              "end_step": 44,
+              "duration_steps": 3,
+              "centroid": [
+                4.219462142857142,
+                1.559908857142857,
+                3.2987035714285713
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.909528037117834,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 16.904918931095047,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  21.35,
+                  3.780000000000001,
+                  12.36
+                ],
+                "distance_A": 19.506184273815283,
+                "intensity": 0.21699601312479358
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.563975918646962,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 11.909528037117834,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 13.263636338653086,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        }
+      }
+    },
+    "4": {
+      "n_clusters": 6,
+      "n_binding_events": 6,
+      "total_frames": 51,
+      "clusters": {
+        "0": {
+          "centroid": [
+            1.04236225,
+            3.3262072500000004,
+            6.66694525
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster0_repframe_1.pdb",
+          "n_frames_in_cluster": 4,
+          "cluster_name": "Pocket_0",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1,
+              "end_step": 4,
+              "duration_steps": 4,
+              "centroid": [
+                1.04236225,
+                3.3262072500000004,
+                6.66694525
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 12.584631946611514,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 15.179882286489415,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 17.73264398592819,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.677232938906744,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 11.837593536343237,
+                "intensity": 0.10410077814723184
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 12.584631946611514,
+                "intensity": 0.09550309920399845
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            1.2193553333333333,
+            3.4516066666666667,
+            0.6107043333333333
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster1_repframe_9.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_1",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 7,
+              "end_step": 9,
+              "duration_steps": 3,
+              "centroid": [
+                1.2193553333333333,
+                3.4516066666666667,
+                0.6107043333333333
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 16.217486864689967,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 20.4473598835251,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 22.912445196291433,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 14.752424440513442,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 16.217486864689967,
+                "intensity": 0.09550309920399845
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 16.31651666889694,
+                "intensity": 0.10410077814723184
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            1.7260429090909093,
+            3.767453181818182,
+            6.81203909090909
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster2_repframe_24.pdb",
+          "n_frames_in_cluster": 11,
+          "cluster_name": "Pocket_2",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 18,
+              "end_step": 20,
+              "duration_steps": 3,
+              "centroid": [
+                1.7260429090909093,
+                3.767453181818182,
+                6.81203909090909
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 22,
+              "end_step": 27,
+              "duration_steps": 6,
+              "centroid": [
+                1.7260429090909093,
+                3.767453181818182,
+                6.81203909090909
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 12.357346005698846,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 14.715675604143339,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 17.17821995580496,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 10.237400785844802,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 11.143243421056765,
+                "intensity": 0.10410077814723184
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 12.357346005698846,
+                "intensity": 0.09550309920399845
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            1.9107953333333334,
+            4.059836166666668,
+            0.4293048333333334
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster3_repframe_38.pdb",
+          "n_frames_in_cluster": 6,
+          "cluster_name": "Pocket_3",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 37,
+              "end_step": 39,
+              "duration_steps": 3,
+              "centroid": [
+                1.9107953333333334,
+                4.059836166666668,
+                0.4293048333333334
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 16.31682996722463,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 20.38016109306597,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 22.731332271690246,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 14.696946990650353,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 16.025146650789807,
+                "intensity": 0.10410077814723184
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 16.31682996722463,
+                "intensity": 0.09550309920399845
+              }
+            ]
+          }
+        },
+        "4": {
+          "centroid": [
+            1.790612,
+            3.946253666666667,
+            0.3993193333333333
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster4_repframe_36.pdb",
+          "n_frames_in_cluster": 3,
+          "cluster_name": "Pocket_4",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 16.336766139382192,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 20.445339466315165,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 22.817611076232275,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 14.749911815313718,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 16.126843147152655,
+                "intensity": 0.10410077814723184
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 16.336766139382192,
+                "intensity": 0.09550309920399845
+              }
+            ]
+          }
+        },
+        "5": {
+          "centroid": [
+            1.8866095714285716,
+            3.8216288571428576,
+            1.2836820000000002
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster5_repframe_46.pdb",
+          "n_frames_in_cluster": 7,
+          "cluster_name": "Pocket_5",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 44,
+              "end_step": 50,
+              "duration_steps": 7,
+              "centroid": [
+                1.8866095714285716,
+                3.8216288571428576,
+                1.2836820000000002
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 15.590215258374347,
+                "intensity": 0.30194132312448013
+              },
+              {
+                "coord": [
+                  9.35,
+                  2.780000000000001,
+                  19.36
+                ],
+                "distance_A": 19.5841890259068,
+                "intensity": 0.3374755604557362
+              },
+              {
+                "coord": [
+                  10.35,
+                  6.780000000000001,
+                  21.36
+                ],
+                "distance_A": 21.987257259659476,
+                "intensity": 0.30225878551235824
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  9.35,
+                  -0.21999999999999886,
+                  12.36
+                ],
+                "distance_A": 13.954274647766736,
+                "intensity": 0.061685122987362465
+              },
+              {
+                "coord": [
+                  9.35,
+                  6.780000000000001,
+                  14.36
+                ],
+                "distance_A": 15.34419267818628,
+                "intensity": 0.10410077814723184
+              },
+              {
+                "coord": [
+                  9.35,
+                  -4.219999999999999,
+                  12.36
+                ],
+                "distance_A": 15.590215258374347,
+                "intensity": 0.09550309920399845
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

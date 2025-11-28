@@ -1,0 +1,11 @@
+probe,cluster,cluster_name,start_step,end_step,duration_steps,centroid_x,centroid_y,centroid_z,rep_frame_pdb
+2,2,Pocket_2,13,15,3,4.047470333333333,0.6205953333333333,6.526498,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe2_cluster2_repframe_15.pdb
+2,1,Pocket_1,17,19,3,4.022545285714286,0.6524314285714287,6.319054,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe2_cluster1_repframe_6.pdb
+3,3,Pocket_3,33,36,4,3.9334717999999995,1.4298368,3.1799512,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster3_repframe_36.pdb
+3,4,Pocket_4,42,44,3,4.219462142857142,1.559908857142857,3.2987035714285713,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe3_cluster4_repframe_47.pdb
+4,0,Pocket_0,1,4,4,1.04236225,3.3262072500000004,6.66694525,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster0_repframe_1.pdb
+4,1,Pocket_1,7,9,3,1.2193553333333333,3.4516066666666667,0.6107043333333333,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster1_repframe_9.pdb
+4,2,Pocket_2,18,20,3,1.7260429090909093,3.767453181818182,6.81203909090909,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster2_repframe_24.pdb
+4,2,Pocket_2,22,27,6,1.7260429090909093,3.767453181818182,6.81203909090909,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster2_repframe_24.pdb
+4,3,Pocket_3,37,39,3,1.9107953333333334,4.059836166666668,0.4293048333333334,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster3_repframe_38.pdb
+4,5,Pocket_5,44,50,7,1.8866095714285716,3.8216288571428576,1.2836820000000002,/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/gmx_run_20251119/post_processing/cv_plots/probe4_cluster5_repframe_46.pdb

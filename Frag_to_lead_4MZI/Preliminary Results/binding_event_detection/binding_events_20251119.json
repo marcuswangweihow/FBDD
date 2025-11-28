@@ -1,0 +1,122 @@
+[
+  {
+    "probe":2,
+    "cluster":2,
+    "cluster_name":"Pocket_2",
+    "start_step":13,
+    "end_step":15,
+    "duration_steps":3,
+    "centroid_x":4.0474703333,
+    "centroid_y":0.6205953333,
+    "centroid_z":6.526498,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe2_cluster2_repframe_15.pdb"
+  },
+  {
+    "probe":2,
+    "cluster":1,
+    "cluster_name":"Pocket_1",
+    "start_step":17,
+    "end_step":19,
+    "duration_steps":3,
+    "centroid_x":4.0225452857,
+    "centroid_y":0.6524314286,
+    "centroid_z":6.319054,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe2_cluster1_repframe_6.pdb"
+  },
+  {
+    "probe":3,
+    "cluster":3,
+    "cluster_name":"Pocket_3",
+    "start_step":33,
+    "end_step":36,
+    "duration_steps":4,
+    "centroid_x":3.9334718,
+    "centroid_y":1.4298368,
+    "centroid_z":3.1799512,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe3_cluster3_repframe_36.pdb"
+  },
+  {
+    "probe":3,
+    "cluster":4,
+    "cluster_name":"Pocket_4",
+    "start_step":42,
+    "end_step":44,
+    "duration_steps":3,
+    "centroid_x":4.2194621429,
+    "centroid_y":1.5599088571,
+    "centroid_z":3.2987035714,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe3_cluster4_repframe_47.pdb"
+  },
+  {
+    "probe":4,
+    "cluster":0,
+    "cluster_name":"Pocket_0",
+    "start_step":1,
+    "end_step":4,
+    "duration_steps":4,
+    "centroid_x":1.04236225,
+    "centroid_y":3.32620725,
+    "centroid_z":6.66694525,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe4_cluster0_repframe_1.pdb"
+  },
+  {
+    "probe":4,
+    "cluster":1,
+    "cluster_name":"Pocket_1",
+    "start_step":7,
+    "end_step":9,
+    "duration_steps":3,
+    "centroid_x":1.2193553333,
+    "centroid_y":3.4516066667,
+    "centroid_z":0.6107043333,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe4_cluster1_repframe_9.pdb"
+  },
+  {
+    "probe":4,
+    "cluster":2,
+    "cluster_name":"Pocket_2",
+    "start_step":18,
+    "end_step":20,
+    "duration_steps":3,
+    "centroid_x":1.7260429091,
+    "centroid_y":3.7674531818,
+    "centroid_z":6.8120390909,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe4_cluster2_repframe_24.pdb"
+  },
+  {
+    "probe":4,
+    "cluster":2,
+    "cluster_name":"Pocket_2",
+    "start_step":22,
+    "end_step":27,
+    "duration_steps":6,
+    "centroid_x":1.7260429091,
+    "centroid_y":3.7674531818,
+    "centroid_z":6.8120390909,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe4_cluster2_repframe_24.pdb"
+  },
+  {
+    "probe":4,
+    "cluster":3,
+    "cluster_name":"Pocket_3",
+    "start_step":37,
+    "end_step":39,
+    "duration_steps":3,
+    "centroid_x":1.9107953333,
+    "centroid_y":4.0598361667,
+    "centroid_z":0.4293048333,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe4_cluster3_repframe_38.pdb"
+  },
+  {
+    "probe":4,
+    "cluster":5,
+    "cluster_name":"Pocket_5",
+    "start_step":44,
+    "end_step":50,
+    "duration_steps":7,
+    "centroid_x":1.8866095714,
+    "centroid_y":3.8216288571,
+    "centroid_z":1.283682,
+    "rep_frame_pdb":"\/mnt\/c\/Users\/Admin\/Documents\/Documents\/Misc\/FBDD project\/gmx_run_20251119\/post_processing\/cv_plots\/probe4_cluster5_repframe_46.pdb"
+  }
+]
