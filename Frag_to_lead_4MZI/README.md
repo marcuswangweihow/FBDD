@@ -399,6 +399,26 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 - Probe atom indices adjusted automatically for PLUMED compatibility.  
 - PLUMED input copied to `gmx_temp_dir` and reusable across HPC nodes, ensuring reproducible simulations.
 
+## AMBER Compatibility and Pipeline Integration
+
+### Background
+Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files. These could be:
+
+1. **Complete AMBER system files**  
+   - Already include probes, custom forcefields, ions, and other modifications.  
+   - The pipeline can take these files for downstream steps: minimization, equilibration, PLUMED generation, production runs, and post-processing.  
+   - Useful if users already have a fully set-up system but needs automated aLMMD or advanced post-processing.
+
+2. **Protein-only AMBER files**  
+   - Contain only the protein structure and standard forcefields.  
+   - **Cannot be directly used to add multi-probe setups, custom GAFF parameters, or PLUMED CVs.**  
+   - In this case, starting from scratch using the pipeline is recommended, as it automates probe placement, multi-dihedral boost and aMD setup, PLUMED integration, and downstream post-processing.  
+   - Protein-only AMBER files provide **no usable shortcut** for building a complete aLMMD system.
+
+### Conclusion
+- **Complete AMBER files:** Use pipeline for downstream aLMMD and post-processing.  
+- **Protein-only AMBER files:** Start fresh using the pipeline which generates the full system required for multi-probe aLMMD + PLUMED analysis.  
+
 
 # Notes
 
