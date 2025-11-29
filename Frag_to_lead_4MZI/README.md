@@ -39,7 +39,15 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 ---
 
 # Preliminary Results
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run.
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([100ps_pipeline_test](Preliminary%20Results/100ps_pipeline_test/)).
+
+Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](Preliminary%20Results/representative_snapshots/)) and ([mdpocket_figures](Preliminary%20Results/mdpocket_figures/)) respectively.
+
+Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](Preliminary%20Results/plumed_metad_cvs/)). 
+
+Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](Preliminary%20Results/binding_event_detection/)).
+
+**All these preliminary results are merely to show pipeline/workflow functionality.**
 
 # Fragment Library (.sdf)
 [⬆️ Back to top](#table-of-contents)
