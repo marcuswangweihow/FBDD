@@ -11,7 +11,7 @@
 
 -----------------
 
-# This folder contains the preliminary outputs from the short 100ps test of the MD pipeline:
+# This folder contains the preliminary outputs of Gromacs from the short 100ps test of the MD pipeline:
 
 Stages:
 - em   : Energy minimization
