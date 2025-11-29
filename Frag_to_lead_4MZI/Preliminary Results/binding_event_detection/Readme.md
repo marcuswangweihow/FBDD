@@ -53,6 +53,11 @@ The plots do not show any binding events or meaningful clusters as expected due 
       <h3>B</h3>
       <img src="./probe2_COM_clusters_20251119.png" width="400">
     </td>
+   </tr>
+</table>
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
     <td style="border: none; text-align: center;">
       <h3>C</h3>
       <img src="./probe3_COM_clusters_20251119.png" width="400">
