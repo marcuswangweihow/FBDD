@@ -9,7 +9,22 @@
           - [representative_snapshots](Preliminary%20Results/representative_snapshots/)
 
 --------------------------------------------------------
+## Table of Contents
+- [Frag_to_lead_4MZI](#frag_to_lead_4mzi)
+- [🧬 Workflow Overview](#-workflow-overview)
+- [Preliminary Results](#preliminary-results)
+- [Fragment Library (.sdf)](#fragment-library-sdf)
+- [aLMMD Sampling / aLMMD Analysis](#almmd-sampling--almmd-analysis)
+    - [aLMMD Pipeline](#almmd-pipeline)
+        - [Pipeline Overview](#pipeline-overview)
+        - [Pipeline Workflow](#pipeline-workflow)
+- [Requirements](#requirements)
+- [HPC & Backward Compatibility](#hpc--backward-compatibility)
+- [AMBER Compatibility and Pipeline Integration](#amber-compatibility-and-pipeline-integration)
+- [Notes](#notes)
+- [Usage](#usage)
 
+--------------------------------------------------------
 # Frag_to_lead_4MZI
 This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
@@ -417,7 +432,8 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files. These could be:
 
 1. **Complete AMBER system files**  
-   - Already include probes, custom forcefields, ions, and other modifications.  
+   - Already include probes, custom forcefields, ions, and other modifications.
+   - Complete, high-res AMBER prmtop/inpcrd -> Load in ParmEd, convert to GROMACS (Step 8a-AMBER)
    - The pipeline can take these files for downstream steps: minimization, equilibration, PLUMED generation, production runs, and post-processing.  
    - Useful if users already have a fully set-up system but needs automated aLMMD or advanced post-processing.
 
@@ -426,6 +442,11 @@ Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files.
    - **Cannot be directly used to add multi-probe setups, custom GAFF parameters, or PLUMED CVs.**  
    - In this case, starting from scratch using the pipeline is recommended, as it automates probe placement, multi-dihedral boost and aMD setup, PLUMED integration, and downstream post-processing.  
    - Protein-only AMBER files provide **no usable shortcut** for building a complete aLMMD system.
+
+3. **Low-res / missing backbone / disordered PDB containing AMBER files**  
+   - Rebuild from scratch using your pipeline since OpenMM + PDBFixer handles this issue; do not rely on incomplete AMBER files
+   - Parmed will happily load the structure (Step 8a-AMBER) but cannot fix the residues. MD simulations might not be accurate.
+
 
 ### Conclusion
 - **Complete AMBER files:** Use pipeline for downstream aLMMD and post-processing.  
