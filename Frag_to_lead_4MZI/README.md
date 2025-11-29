@@ -98,6 +98,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 ---
 
 ## aLMMD Sampling / aLMMD Analysis
+[⬆️ Back to top](#table-of-contents)
 
 This aLMMD (accelerated Ligand-Mapping Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
@@ -175,6 +176,8 @@ It produces **5 representative snapshots** for subsequent docking analysis.
 ---
 
 ## Pipeline Workflow
+[⬆️ Back to top](#table-of-contents)
+
 The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow:
 > **Note:** This workflow diagram is a high-level overview. Steps are grouped by functional purpose, not strict chronological order in the code.
 
@@ -217,6 +220,8 @@ flowchart TD
 ---
 
 # Requirements
+[⬆️ Back to top](#table-of-contents)
+
 > See [HPC & Backward Compatibility](#hpc--backward-compatibility) for supported GROMACS/PLUMED versions.
 > ## Linux OS Compatibility
 
@@ -388,6 +393,7 @@ which mdpocket
 ---
 
 ## HPC & Backward Compatibility
+[⬆️ Back to top](#table-of-contents)
 
 This workflow has been designed with HPC execution and reproducibility in mind, reflecting careful consideration of GROMACS + PLUMED setup, file handling, and automated PLUMED generation. The HPC cluster at A*Star ([https://www.a-star.edu.sg/acrc/service/hpc-software/hpc-software-listing](https://www.a-star.edu.sg/acrc/service/hpc-software/hpc-software-listing)) seems to support support user‑compiled or “external builds”.
 
@@ -427,6 +433,7 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 - PLUMED input copied to `gmx_temp_dir` and reusable across HPC nodes, ensuring reproducible simulations.
 
 ## AMBER Compatibility and Pipeline Integration
+[⬆️ Back to top](#table-of-contents)
 
 ### Background
 Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files. These could be:
@@ -454,6 +461,7 @@ Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files.
 
 
 # Notes
+[⬆️ Back to top](#table-of-contents)
 
 All probes automatically converted to OpenMM residues with correct bond connectivity
 
@@ -474,6 +482,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
 ---
 
 # Usage
+[⬆️ Back to top](#table-of-contents)
 
 1. **Set up inputs**  
    - Specify the **protein PDB** file (`protein_pdb`) and **probe SDF/MOL2 files** (`probe_files`) in your Jupyter notebook.  
