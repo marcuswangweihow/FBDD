@@ -1,3 +1,16 @@
+# FBDD Repository Structure
+
+- [FBDD](../../../)
+  - [Frag_to_lead_4MZI](../../)
+      - [Preliminary Results](../)
+        - [100ps_pipeline_test](./100ps_pipeline_test/)
+        - [binding_event_detection](./binding_event_detection/)
+        - [mdpocket_figures](../mdpocket_figures/)
+        - [plumed_metad_cvs](../plumed_metad_cvs/)
+        - [representative_snapshots](../representative_snapshots/)
+
+-----------------
+
 # This folder contains the preliminary outputs from the short 100ps test of the MD pipeline:
 
 Stages:
