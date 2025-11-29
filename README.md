@@ -28,7 +28,7 @@ This folder contains the preliminary/test results from the **accelerated Ligand-
 # aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis ([Frag_to_lead_4MZI](Frag_to_lead_4MZI/))
 
 This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
-It produces **5 representative snapshots** for subsequent docking analysis.
+It produces **5 (can be set) representative snapshots** for subsequent MDpocket analysis and docking tasks.
 
 The pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
@@ -40,13 +40,13 @@ References:
 ## Pipeline Overview
 
 1. **Fragment/Probe Preparation**  
-   - Automatic SDF → MOL2 conversion with 3D coordinates.  
-   - AM1‑BCC charge assignment via Antechamber (AmberTools, WSL2).  
-   - Conversion of probes into OpenMM residues (full residues, explicit bonds).  
+    - Automatic SDF → MOL2 conversion with 3D coordinates.
+    - AM1‑BCC charge assignment via Antechamber (AmberTools, WSL2).
+    - Conversion of probes into OpenMM residues (full residues, explicit bonds).
+    - Supports multiple probes (P01, P02, …) with per-probe residue templates. 
 
 2. **Probe Placement**  
-   - N copies of each probe placed around the protein centroid.  
-   - Random translations to diversify initial positions.
+    - N copies of each probe placed around the protein centroid while avoiding collisions 
 
 3. **System Solvation & Neutralization**  
    - TIP3P water model.  
@@ -56,8 +56,8 @@ References:
    - Energy minimization → NVT → NPT equilibration.  
    - Automatic estimation of aMD boost parameters from equilibration (E₀, α).
 
-5. **Multi‑Dihedral (4 slowest) + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
-   - Automatic selection of torsions (protein backbone & side chains, ligand) for multi-dihedral boost.  
+5. **Multi‑Dihedral + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
+   - Automatic selection of torsions (protein backbone) for multi-dihedral boost.  
    - Total potential boost applied to system.  
    - PLUMED METAD CVs: distances and center-of-mass (COM) coordinates of probes are automatically monitored during production.  
    - `plumed.dat` is auto-generated for U‑boost style aMD integration.
@@ -68,29 +68,47 @@ References:
 
 7. **Production Run**  
    - Full accelerated MD simulation using PLUMED.  
-   - Plotting of PLUMED bias, total energy, and temperature during runtime.
+   - Plotting of PLUMED bias, total energy, and temperature after run.
 
 8. **Post‑processing**  
    - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
    - **Probe occupancy mapping**: Per-probe and combined density (voxel) maps.  
-   - **Representative snapshot selection**: Highest-occupancy frames selected for MDpocket and docking.  
-   - **PLUMED METAD CVs**: Probe distances and COMs are extracted, smoothed, saved as CSV, and plotted for trajectory analysis.  
-   - MDpocket analysis is run on representative snapshots.
+   - **Representative snapshot selection**: RMSD clustering, KDE peak mapping, and DBSCAN probe clustering to select representative snapshots.
+   - **PLUMED METAD CVs**: Probe distances and torsions are extracted, smoothed, saved as CSV, and plotted for analysis.
+       - **COM Analysis**: Generate single COM overview plot for all probes.
+       - Additional visualizations:
+         - Per-probe x/y/z COM plots.
+         - Combined per-axis plots (x-only, y-only, z-only).
+         - 2D projections (x-y, x-z, y-z) for probe COMs.
+         - 3D scatter plot of COMs.
+         - Pairwise COM distance time series.
+         - 3D scatter plots of probe COM clusters.
+             - Clusters colored based on assignment (e.g., density peak vs pocket).
+             - Noise points plotted in grey.
+             - Legend placed outside axes for clarity.
+          - **Enhanced JSON**: JSON summary of clusters and top MDpocket peaks. Includes cluster info, binding events, top MDpocket peaks per cluster.
+          - **Binding events CSV/JSON**: flattened per-probe events for inspection. Includes representative frame PDBs.
+   - **MDpocket analysis** is run on representative snapshots.
 
 9. **Output Organization**  
    - Simulation outputs (`.gro`, `.trr`, `.edr`, `.tpr`, `.log`) are stored in `gmx_run_dir`.  
-   - Subdirectories for:  
-     - `plots/` → energy, temperature, CV plots  
-     - `best_snapshots/` → snapshots for docking  
-     - `MDpocket_results/` → binding site analysis  
-     - `probe_density_maps/` → density maps  
+   - Subdirectories in gmx_run_dir/ for:  
+     - `bias_and_energy_and_temp_plots/` → energy, temperature, bias plots
+   - Subdirectories in gmx_run_dir/post_processing/ for:  
+     - `rg/` → plots of C‑alpha radius of gyration (Rg) across trajectory 
+     - `windows/` → .dx and .pdb files per window
+     - `full_trajectory/` → .dx and .pdb files for the full trajectory
+     - `full_trajectory/representative_snapshots` → .pdb files for the representative snapshots
+     - `full_trajectory/representative_snapshots/cleaned_protein_pdbs` →  cleaned protein only .pdb files for the representative snapshots for downstream MDpocket analysis and docking tasks
+     - `mdpocket_analysis` → to store the MDpocket analysis results from the manual run of mdpocket outside the notebook
+     - `cv_plots/` → plots for PLUMED METAD CVs and COM Analysis, and binding events CSV/JSON  
 
-## Force Fields
+ ## Force Fields
 
-- **Protein**: AMBER ff14SB, via `amber14-all.xml` (includes ff14SB).  
-- **Water**: TIP3P, standard model from Amber `amber14` force field.  
-- **Small molecules / Probes (GAFF)**:  
-  - GAFF version 2.11, via `GAFFTemplateGenerator` (OpenMM-compatible).  
+    - **Protein**: AMBER ff14SB, via `amber14-all.xml` (includes ff14SB).  
+    - **Water**: TIP3P, standard model from Amber `amber14` force field.  
+    - **Small molecules / Probes (GAFF)**:  
+      - GAFF version 2.11, via `GAFFTemplateGenerator` (OpenMM-compatible).    
 
 ---
 
