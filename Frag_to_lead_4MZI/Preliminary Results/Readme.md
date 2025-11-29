@@ -3,6 +3,7 @@
 - [FBDD](../../)
   - [Frag_to_lead_4MZI](../)
       - [Preliminary Results](./)
+        - [100ps_pipeline_test](100ps_pipeline_test/)
         - [binding_event_detection](binding_event_detection/)
         - [mdpocket_figures](mdpocket_figures/)
         - [plumed_metad_cvs](plumed_metad_cvs/)
@@ -11,7 +12,7 @@
 -----------------
 
 # Preliminary Results
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. The outputs for energy minimization, NVT equilibration, NPT equilibration and the production run can be found in ([100ps_pipeline_test](100ps_pipeline_test/)).
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. The preliminary outputs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([100ps_pipeline_test](100ps_pipeline_test/)).
 
 Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](representative_snapshots/)) and ([mdpocket_figures](mdpocket_figures/)) respectively within this directory.
 
