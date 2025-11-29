@@ -41,6 +41,8 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run.
 
 # Fragment Library (.sdf)
+[⬆️ Back to top](#table-of-contents)
+
 The data for the fragment library was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
 
 - Fragments subset was selected.
@@ -113,6 +115,7 @@ This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLM
 It produces **5 representative snapshots** for subsequent docking analysis.
 
 ## Pipeline Overview
+[⬆️ Back to top](#table-of-contents)
 
 1. **Fragment/Probe Preparation**  
    - Automatic SDF → MOL2 conversion with 3D coordinates.  
