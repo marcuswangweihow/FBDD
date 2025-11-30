@@ -495,7 +495,7 @@ Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files.
 
 All probes automatically converted to OpenMM residues with correct bond connectivity
 
-Multi dihedral boost applied to protein (backbone + side chains) and probes inspired by Tan et al. (2020, 2022)
+Multi dihedral boost applied to protein backbone inspired by Tan et al. (2020, 2022)
 
 Total-potential aMD performed via PLUMED
 
