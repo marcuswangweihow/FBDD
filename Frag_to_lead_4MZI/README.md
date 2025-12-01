@@ -24,6 +24,8 @@
 - [AMBER Compatibility and Pipeline Integration](#amber-compatibility-and-pipeline-integration)
 - [Notes](#notes)
 - [Usage](#usage)
+- [HPC Production Run Script](#hpc-production-run-script)
+- [HPC Resume from Backup Production Run Script](#hpc-resume-from-backup-production-run-script)
 
 --------------------------------------------------------
 # Frag_to_lead_4MZI
@@ -545,7 +547,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
 
 ---
 
-# HPC Production Run Script (production_run.py)
+# HPC Production Run Script ([production_run.py](production_run.py))
 [⬆️ Back to top](#table-of-contents)
 
 This script automates the production molecular dynamics stage of the FBDD + aLMMD + multi-dihedral boosting workflow on HPC systems. It is designed to:
@@ -565,7 +567,7 @@ Users must manually set key parameters before launching a job such as:
 - Probe parameters (probe_names, num_copies_per_probe)
 - Simulation length / checkpoint interval
 
-# HPC Resume from Backup Production Run Script (resume_from_backup.py)
+# HPC Resume from Backup Production Run Script ([resume_from_backup.py](resume_from_backup.py))
 [⬆️ Back to top](#table-of-contents)
 
 This script is designed to:
