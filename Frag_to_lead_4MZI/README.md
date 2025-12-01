@@ -546,6 +546,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
 ---
 
 # HPC Production Run Script (production_run.py)
+[⬆️ Back to top](#table-of-contents)
 
 This script automates the production molecular dynamics stage of the FBDD + aLMMD + multi-dihedral boosting workflow on HPC systems. It is designed to:
 
@@ -564,6 +565,20 @@ Users must manually set key parameters before launching a job such as:
 - Probe parameters (probe_names, num_copies_per_probe)
 - Simulation length / checkpoint interval
 
+# HPC Resume from Backup Production Run Script (resume_from_backup.py)
+[⬆️ Back to top](#table-of-contents)
 
+This script is designed to:
+
+Restart the production run from a backup if the run crashed or was interrupted eg. by HPC walltime limit.
+
+> Note: This script is provided as a functional example for HPC submission. It **does not contain the novel methodological steps** (probe placement, aLMMD boosting, torsion selection, occupancy mapping) described in steps 1–11, which constitute the core scientific contributions of the workflow.
+
+Users must manually set key parameters before launching a job such as:
+
+- run_id
+- protein_pdb path
+- Probe parameters (probe_names, num_copies_per_probe)
+- Simulation length / checkpoint interval
 
 
