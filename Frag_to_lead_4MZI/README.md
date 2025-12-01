@@ -548,11 +548,9 @@ GPU auto-detection with CUDA available; CPU fallback supported
 ---
 
 # HPC Production Run Script
-([production_run.py](production_run.py))
-
 [⬆️ Back to top](#table-of-contents)
 
-This script automates the production molecular dynamics stage of the FBDD + aLMMD + multi-dihedral boosting workflow on HPC systems. It is designed to:
+This script ([production_run.py](production_run.py)) automates the production molecular dynamics stage of the FBDD + aLMMD + multi-dihedral boosting workflow on HPC systems. It is designed to:
 
 Launch GROMACS + PLUMED simulations using the pre-prepared input files from steps 1–11.
 
@@ -570,11 +568,9 @@ Users must manually set key parameters before launching a job such as:
 - Simulation length / checkpoint interval
 
 # HPC Resume from Backup Production Run Script
-([resume_from_backup.py](resume_from_backup.py))
-
 [⬆️ Back to top](#table-of-contents)
 
-This script is designed to:
+This script ([resume_from_backup.py](resume_from_backup.py)) is designed to:
 
 Restart the production run from a backup if the run crashed or was interrupted eg. by HPC walltime limit.
 
