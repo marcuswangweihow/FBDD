@@ -545,4 +545,25 @@ GPU auto-detection with CUDA available; CPU fallback supported
 
 ---
 
+# HPC Production Run Script (production_run.py)
+
+This script automates the production molecular dynamics stage of the FBDD + aLMMD + multi-dihedral boosting workflow on HPC systems. It is designed to:
+
+Launch GROMACS + PLUMED simulations using the pre-prepared input files from steps 1–11.
+
+Handle periodic backups and output organization.
+
+Generate plots for energy, temperature, and bias potentials.
+
+> Note: This script is provided as a functional example for HPC submission. It **does not contain the novel methodological steps** (probe placement, aLMMD boosting, torsion selection, occupancy mapping) described in steps 1–11, which constitute the core scientific contributions of the workflow.
+
+Users must manually set key parameters before launching a job such as:
+
+- run_id
+- protein_pdb path
+- Probe parameters (probe_names, num_copies_per_probe)
+- Simulation length / checkpoint interval
+
+
+
 
