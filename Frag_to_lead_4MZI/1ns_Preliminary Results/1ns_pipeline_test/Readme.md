@@ -8,7 +8,7 @@
         - [mdpocket_figures](../mdpocket_figures/)
         - [plumed_metad_cvs](../plumed_metad_cvs/)
         - [representative_snapshots](../representative_snapshots/)
-      - [1ns_Preliminary Results](./1ns_Preliminary%20Results)
+      - [1ns_Preliminary Results](../)
 
 -----------------
 
