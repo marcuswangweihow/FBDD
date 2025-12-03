@@ -7,6 +7,7 @@
        - [mdpocket_figures](Frag_to_lead_4MZI/Preliminary%20Results/mdpocket_figures/)
        - [plumed_metad_cvs](Frag_to_lead_4MZI/Preliminary%20Results/plumed_metad_cvs/)
        - [representative_snapshots](Frag_to_lead_4MZI/Preliminary%20Results/representative_snapshots/)
+     - [1ns_Preliminary Results](Frag_to_lead_4MZI/1ns_Preliminary%20Results/)
 
 -------------------------------------------------------------------------------
 
@@ -24,6 +25,9 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 
 # Preliminary Results ([Preliminary Results](Frag_to_lead_4MZI/Preliminary%20Results/))
 This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run.
+
+# 1ns_Preliminary Results ([1ns_Preliminary Results](Frag_to_lead_4MZI/1ns_Preliminary%20Results/))
+This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run.
 
 # aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis ([Frag_to_lead_4MZI](Frag_to_lead_4MZI/))
 
