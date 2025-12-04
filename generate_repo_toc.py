@@ -80,10 +80,15 @@ def insert_or_replace_repo_toc(readme_path, toc_text):
 # -----------------------------
 # Walk all folders and update README.md
 # -----------------------------
-for folder_path, _, _ in os.walk(repo_root):
+for folder_path, dirs, files in os.walk(repo_root):
+    # Skip .git completely
+    if ".git" in folder_path.split(os.sep):
+        continue
+    
     readme_path = os.path.join(folder_path, "README.md")
     toc = generate_toc_for_folder(folder_path)
     insert_or_replace_repo_toc(readme_path, toc)
     print(f"Updated README.md in: {folder_path}")
+
 
 print("\nAll README.md files updated with repo navigation TOC (repo TOC before headings TOC).")
