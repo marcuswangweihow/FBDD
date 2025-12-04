@@ -1,23 +1,32 @@
 <!-- REPO_TOC -->
+# FBDD Repository Structure
 - [FBDD](../../../../)
   - [Frag_to_lead_4MZI](../../../)
+    - [100ps_Preliminary Results](../../../100ps_Preliminary%20Results/)
+      - [100ps_pipeline_test](../../../100ps_Preliminary%20Results/100ps_pipeline_test/)
+        - [NPT_equil](../../../100ps_Preliminary%20Results/100ps_pipeline_test/NPT_equil/)
+        - [NVT_equil](../../../100ps_Preliminary%20Results/100ps_pipeline_test/NVT_equil/)
+        - [Production](../../../100ps_Preliminary%20Results/100ps_pipeline_test/Production/)
+        - [em](../../../100ps_Preliminary%20Results/100ps_pipeline_test/em/)
+      - [binding_event_detection](../../../100ps_Preliminary%20Results/binding_event_detection/)
+      - [mdpocket_figures](../../../100ps_Preliminary%20Results/mdpocket_figures/)
+      - [plumed_metad_cvs](../../../100ps_Preliminary%20Results/plumed_metad_cvs/)
+      - [representative_snapshots](../../../100ps_Preliminary%20Results/representative_snapshots/)
     - [1ns_Preliminary Results](../../)
       - [1ns_pipeline_test](../)
         - [NPT_equil](../NPT_equil/)
         - [NVT_equil](./)
+        - [Production](../Production/)
         - [em](../em/)
-    - [Preliminary Results](../../../Preliminary%20Results/)
-      - [100ps_pipeline_test](../../../Preliminary%20Results/100ps_pipeline_test/)
-        - [NPT_equil](../../../Preliminary%20Results/100ps_pipeline_test/NPT_equil/)
-        - [NVT_equil](../../../Preliminary%20Results/100ps_pipeline_test/NVT_equil/)
-        - [Production](../../../Preliminary%20Results/100ps_pipeline_test/Production/)
-        - [em](../../../Preliminary%20Results/100ps_pipeline_test/em/)
-      - [binding_event_detection](../../../Preliminary%20Results/binding_event_detection/)
-      - [mdpocket_figures](../../../Preliminary%20Results/mdpocket_figures/)
-      - [plumed_metad_cvs](../../../Preliminary%20Results/plumed_metad_cvs/)
-      - [representative_snapshots](../../../Preliminary%20Results/representative_snapshots/)
+      - [binding_event_detection](../../binding_event_detection/)
+      - [mdpocket_figures](../../mdpocket_figures/)
+      - [plumed_metad_cvs](../../plumed_metad_cvs/)
+      - [representative_snapshots](../../representative_snapshots/)
   - [docking_4MZI_roscovitine](../../../../docking_4MZI_roscovitine/)
   - [images](../../../../images/)
 <!-- /REPO_TOC -->
+
+
+
 
 

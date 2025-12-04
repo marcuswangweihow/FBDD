@@ -1,22 +1,31 @@
 <!-- REPO_TOC -->
+# FBDD Repository Structure
 - [FBDD](../)
   - [Frag_to_lead_4MZI](../Frag_to_lead_4MZI/)
+    - [100ps_Preliminary Results](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
+      - [100ps_pipeline_test](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/)
+        - [NPT_equil](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/NPT_equil/)
+        - [NVT_equil](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/NVT_equil/)
+        - [Production](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/Production/)
+        - [em](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/em/)
+      - [binding_event_detection](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/binding_event_detection/)
+      - [mdpocket_figures](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/mdpocket_figures/)
+      - [plumed_metad_cvs](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/plumed_metad_cvs/)
+      - [representative_snapshots](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/representative_snapshots/)
     - [1ns_Preliminary Results](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/)
       - [1ns_pipeline_test](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/1ns_pipeline_test/)
         - [NPT_equil](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
         - [NVT_equil](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
+        - [Production](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/1ns_pipeline_test/Production/)
         - [em](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/1ns_pipeline_test/em/)
-    - [Preliminary Results](../Frag_to_lead_4MZI/Preliminary%20Results/)
-      - [100ps_pipeline_test](../Frag_to_lead_4MZI/Preliminary%20Results/100ps_pipeline_test/)
-        - [NPT_equil](../Frag_to_lead_4MZI/Preliminary%20Results/100ps_pipeline_test/NPT_equil/)
-        - [NVT_equil](../Frag_to_lead_4MZI/Preliminary%20Results/100ps_pipeline_test/NVT_equil/)
-        - [Production](../Frag_to_lead_4MZI/Preliminary%20Results/100ps_pipeline_test/Production/)
-        - [em](../Frag_to_lead_4MZI/Preliminary%20Results/100ps_pipeline_test/em/)
-      - [binding_event_detection](../Frag_to_lead_4MZI/Preliminary%20Results/binding_event_detection/)
-      - [mdpocket_figures](../Frag_to_lead_4MZI/Preliminary%20Results/mdpocket_figures/)
-      - [plumed_metad_cvs](../Frag_to_lead_4MZI/Preliminary%20Results/plumed_metad_cvs/)
-      - [representative_snapshots](../Frag_to_lead_4MZI/Preliminary%20Results/representative_snapshots/)
+      - [binding_event_detection](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/binding_event_detection/)
+      - [mdpocket_figures](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/mdpocket_figures/)
+      - [plumed_metad_cvs](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/plumed_metad_cvs/)
+      - [representative_snapshots](../Frag_to_lead_4MZI/1ns_Preliminary%20Results/representative_snapshots/)
   - [docking_4MZI_roscovitine](../docking_4MZI_roscovitine/)
   - [images](./)
 <!-- /REPO_TOC -->
+
+
+
 

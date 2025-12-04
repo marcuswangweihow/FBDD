@@ -16,8 +16,8 @@
       - [1ns_pipeline_test](../)
         - [NPT_equil](../NPT_equil/)
         - [NVT_equil](../NVT_equil/)
-        - [Production](../Production/)
-        - [em](./)
+        - [Production](./)
+        - [em](../em/)
       - [binding_event_detection](../../binding_event_detection/)
       - [mdpocket_figures](../../mdpocket_figures/)
       - [plumed_metad_cvs](../../plumed_metad_cvs/)
@@ -25,8 +25,4 @@
   - [docking_4MZI_roscovitine](../../../../docking_4MZI_roscovitine/)
   - [images](../../../../images/)
 <!-- /REPO_TOC -->
-
-
-
-
 

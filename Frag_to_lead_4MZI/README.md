@@ -1,50 +1,63 @@
 <!-- REPO_TOC -->
+# FBDD Repository Structure
 - [FBDD](../)
   - [Frag_to_lead_4MZI](./)
+    - [100ps_Preliminary Results](100ps_Preliminary%20Results/)
+      - [100ps_pipeline_test](100ps_Preliminary%20Results/100ps_pipeline_test/)
+        - [NPT_equil](100ps_Preliminary%20Results/100ps_pipeline_test/NPT_equil/)
+        - [NVT_equil](100ps_Preliminary%20Results/100ps_pipeline_test/NVT_equil/)
+        - [Production](100ps_Preliminary%20Results/100ps_pipeline_test/Production/)
+        - [em](100ps_Preliminary%20Results/100ps_pipeline_test/em/)
+      - [binding_event_detection](100ps_Preliminary%20Results/binding_event_detection/)
+      - [mdpocket_figures](100ps_Preliminary%20Results/mdpocket_figures/)
+      - [plumed_metad_cvs](100ps_Preliminary%20Results/plumed_metad_cvs/)
+      - [representative_snapshots](100ps_Preliminary%20Results/representative_snapshots/)
     - [1ns_Preliminary Results](1ns_Preliminary%20Results/)
       - [1ns_pipeline_test](1ns_Preliminary%20Results/1ns_pipeline_test/)
         - [NPT_equil](1ns_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
         - [NVT_equil](1ns_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
+        - [Production](1ns_Preliminary%20Results/1ns_pipeline_test/Production/)
         - [em](1ns_Preliminary%20Results/1ns_pipeline_test/em/)
-    - [Preliminary Results](Preliminary%20Results/)
-      - [100ps_pipeline_test](Preliminary%20Results/100ps_pipeline_test/)
-        - [NPT_equil](Preliminary%20Results/100ps_pipeline_test/NPT_equil/)
-        - [NVT_equil](Preliminary%20Results/100ps_pipeline_test/NVT_equil/)
-        - [Production](Preliminary%20Results/100ps_pipeline_test/Production/)
-        - [em](Preliminary%20Results/100ps_pipeline_test/em/)
-      - [binding_event_detection](Preliminary%20Results/binding_event_detection/)
-      - [mdpocket_figures](Preliminary%20Results/mdpocket_figures/)
-      - [plumed_metad_cvs](Preliminary%20Results/plumed_metad_cvs/)
-      - [representative_snapshots](Preliminary%20Results/representative_snapshots/)
+      - [binding_event_detection](1ns_Preliminary%20Results/binding_event_detection/)
+      - [mdpocket_figures](1ns_Preliminary%20Results/mdpocket_figures/)
+      - [plumed_metad_cvs](1ns_Preliminary%20Results/plumed_metad_cvs/)
+      - [representative_snapshots](1ns_Preliminary%20Results/representative_snapshots/)
   - [docking_4MZI_roscovitine](../docking_4MZI_roscovitine/)
   - [images](../images/)
 <!-- /REPO_TOC -->
 
-# FBDD Repository Structure
-
-- [FBDD](../)
-    - [Frag_to_lead_4MZI](./)
-        - [Preliminary Results](Preliminary%20Results/)
-          - [100ps_pipeline_test](Preliminary%20Results/100ps_pipeline_test/)
-          - [binding_event_detection](Preliminary%20Results/binding_event_detection/)
-          - [mdpocket_figures](Preliminary%20Results/mdpocket_figures/)
-          - [plumed_metad_cvs](Preliminary%20Results/plumed_metad_cvs/)
-          - [representative_snapshots](Preliminary%20Results/representative_snapshots/)
-        - [1ns_Preliminary Results](1ns_Preliminary%20Results/)
 
 --------------------------------------------------------
-## Table of Contents
-- [Frag_to_lead_4MZI](#frag_to_lead_4mzi)
-- [🧬 Workflow Overview](#-workflow-overview)
-- [Preliminary Results](#preliminary-results)
+## Readme Table of Contents
+- [FBDD Repository Structure](#fbdd-repository-structure)
+  - [Readme Table of Contents](#readme-table-of-contents)
+- [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
+  - [🧬 Workflow Overview](#-workflow-overview)
+- [1ns](#1ns)
+- [1ns\_Preliminary Results](#1ns_preliminary-results)
 - [Fragment Library (.sdf)](#fragment-library-sdf)
-- [aLMMD Sampling / aLMMD Analysis](#almmd-sampling--almmd-analysis)
-    - [aLMMD Pipeline](#almmd-pipeline)
-        - [Pipeline Overview](#pipeline-overview)
-        - [Pipeline Workflow](#pipeline-workflow)
+  - [aLMMD Sampling / aLMMD Analysis](#almmd-sampling--almmd-analysis)
+- [aLMMD Pipeline](#almmd-pipeline)
+  - [Pipeline Overview](#pipeline-overview)
+  - [Force Fields](#force-fields)
+  - [Pipeline Workflow](#pipeline-workflow)
+  - [Section 1: Preparation](#section-1-preparation)
+  - [Section 2: System Setup](#section-2-system-setup)
+  - [Section 3: Boosting](#section-3-boosting)
+  - [Section 4: Post-processing \& Snapshot Analysis](#section-4-post-processing--snapshot-analysis)
 - [Requirements](#requirements)
-- [HPC & Backward Compatibility](#hpc--backward-compatibility)
-- [AMBER Compatibility and Pipeline Integration](#amber-compatibility-and-pipeline-integration)
+  - [HPC \& Backward Compatibility](#hpc--backward-compatibility)
+    - [1. Tested Software Environment](#1-tested-software-environment)
+      - [GROMACS](#gromacs)
+      - [PLUMED](#plumed)
+      - [Python](#python)
+      - [Python Packages](#python-packages)
+      - [Other Notes](#other-notes)
+    - [2. HPC Execution Considerations](#2-hpc-execution-considerations)
+    - [3. Multi-Dihedral Accelerated MD \& PLUMED](#3-multi-dihedral-accelerated-md--plumed)
+  - [AMBER Compatibility and Pipeline Integration](#amber-compatibility-and-pipeline-integration)
+    - [Background](#background)
+    - [Conclusion](#conclusion)
 - [Notes](#notes)
 - [Usage](#usage)
 - [HPC Production Run Script](#hpc-production-run-script)
@@ -52,10 +65,14 @@
 
 --------------------------------------------------------
 # Frag_to_lead_4MZI
+[⬆️ Back to top](#readme-table-of-contents)
+
 This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
+[⬆️ Back to top](#readme-table-of-contents)
+
 
 ![Overall workflow FBDD](../images/Overall_workflow_FBDD.svg)
 
@@ -63,19 +80,35 @@ This is ongoing work and i am currently working on the aLMMD sampling and analys
 
 ---
 
-# Preliminary Results
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([100ps_pipeline_test](Preliminary%20Results/100ps_pipeline_test/)).
+# 1ns
+[⬆️ Back to top](#readme-table-of-contents)
 
-Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](Preliminary%20Results/representative_snapshots/)) and ([mdpocket_figures](Preliminary%20Results/mdpocket_figures/)) respectively.
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([100ps_pipeline_test](100ps_Preliminary%20Results/100ps_pipeline_test/)).
 
-Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](Preliminary%20Results/plumed_metad_cvs/)). 
+Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](100ps_Preliminary%20Results/representative_snapshots/)) and ([mdpocket_figures](100ps_Preliminary%20Results/mdpocket_figures/)) respectively.
 
-Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](Preliminary%20Results/binding_event_detection/)).
+Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](100ps_Preliminary%20Results/plumed_metad_cvs/)). 
+
+Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](100ps_Preliminary%20Results/binding_event_detection/)).
+
+**All these preliminary results are merely to show pipeline/workflow functionality.**
+
+
+# 1ns_Preliminary Results
+[⬆️ Back to top](#readme-table-of-contents)
+
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 1ns production run to show pipeline/workflow functionality can be found in ([100ps_pipeline_test](1ns_Preliminary%20Results/100ps_pipeline_test/)).
+
+Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](1nsPreliminary%20Results/representative_snapshots/)) and ([mdpocket_figures](1nsPreliminary%20Results/mdpocket_figures/)) respectively.
+
+Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](1nsPreliminary%20Results/plumed_metad_cvs/)). 
+
+Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](1nsPreliminary%20Results/binding_event_detection/)).
 
 **All these preliminary results are merely to show pipeline/workflow functionality.**
 
 # Fragment Library (.sdf)
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 The data for the fragment library was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
 
@@ -134,7 +167,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 ---
 
 ## aLMMD Sampling / aLMMD Analysis
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 This aLMMD (accelerated Ligand-Mapping Molecular Dynamics) pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
@@ -149,7 +182,7 @@ This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLM
 It produces **5 (can be set) representative snapshots** for subsequent MDpocket analysis and docking tasks.
 
 ## Pipeline Overview
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 1. **Fragment/Probe Preparation**  
     - Automatic SDF → MOL2 conversion with 3D coordinates.
@@ -231,7 +264,7 @@ It produces **5 (can be set) representative snapshots** for subsequent MDpocket 
 ---
 
 ## Pipeline Workflow
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow:
 > **Note:** This workflow diagram is a high-level overview. Steps are grouped by functional purpose, not strict chronological order in the code.
@@ -275,7 +308,7 @@ flowchart TD
 ---
 
 # Requirements
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 > See [HPC & Backward Compatibility](#hpc--backward-compatibility) for supported GROMACS/PLUMED versions.
 > ## Linux OS Compatibility
@@ -321,7 +354,7 @@ flowchart TD
 ---
 The following commands were executed after the initial setup inside WSL.
 
-<pre>
+```bash
 # Download installer for Miniforge (Conda) inside Ubuntu
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 
@@ -443,12 +476,12 @@ which mdpocket
 # output
 /home/marcuswangweihow/fpocket/bin/mdpocket
   
-</pre>
+```
 
 ---
 
 ## HPC & Backward Compatibility
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 This workflow has been designed with HPC execution and reproducibility in mind, reflecting careful consideration of GROMACS + PLUMED setup, file handling, and automated PLUMED generation. The HPC cluster at A*Star ([https://www.a-star.edu.sg/acrc/service/hpc-software/hpc-software-listing](https://www.a-star.edu.sg/acrc/service/hpc-software/hpc-software-listing)) seems to support support user‑compiled or “external builds”.
 
@@ -488,7 +521,7 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 - PLUMED input copied to `gmx_temp_dir` and reusable across HPC nodes, ensuring reproducible simulations.
 
 ## AMBER Compatibility and Pipeline Integration
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 ### Background
 Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files. These could be:
@@ -516,7 +549,7 @@ Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files.
 
 
 # Notes
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 All probes automatically converted to OpenMM residues with correct bond connectivity
 
@@ -537,7 +570,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
 ---
 
 # Usage
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 1. **Set up inputs**  
    - Specify the **protein PDB** file (`protein_pdb`) and **probe SDF/MOL2 files** (`probe_files`) in your Jupyter notebook.  
@@ -571,7 +604,7 @@ GPU auto-detection with CUDA available; CPU fallback supported
 ---
 
 # HPC Production Run Script
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 This script ([production_run.py](production_run.py)) automates the production molecular dynamics stage of the FBDD + aLMMD + multi-dihedral boosting workflow on HPC systems. It is designed to:
 
@@ -591,7 +624,7 @@ Users must manually set key parameters before launching a job such as:
 - Simulation length / checkpoint interval
 
 # HPC Resume from Backup Production Run Script
-[⬆️ Back to top](#table-of-contents)
+[⬆️ Back to top](#readme-table-of-contents)
 
 This script ([resume_from_backup.py](resume_from_backup.py)) is designed to:
 
