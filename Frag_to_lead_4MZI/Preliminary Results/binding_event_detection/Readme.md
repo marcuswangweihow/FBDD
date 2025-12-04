@@ -1,3 +1,25 @@
+<!-- REPO_TOC -->
+- [FBDD](../../../)
+  - [Frag_to_lead_4MZI](../../)
+    - [1ns_Preliminary Results](../../1ns_Preliminary%20Results/)
+      - [1ns_pipeline_test](../../1ns_Preliminary%20Results/1ns_pipeline_test/)
+        - [NPT_equil](../../1ns_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
+        - [NVT_equil](../../1ns_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
+        - [em](../../1ns_Preliminary%20Results/1ns_pipeline_test/em/)
+    - [Preliminary Results](../)
+      - [100ps_pipeline_test](../100ps_pipeline_test/)
+        - [NPT_equil](../100ps_pipeline_test/NPT_equil/)
+        - [NVT_equil](../100ps_pipeline_test/NVT_equil/)
+        - [Production](../100ps_pipeline_test/Production/)
+        - [em](../100ps_pipeline_test/em/)
+      - [binding_event_detection](./)
+      - [mdpocket_figures](../mdpocket_figures/)
+      - [plumed_metad_cvs](../plumed_metad_cvs/)
+      - [representative_snapshots](../representative_snapshots/)
+  - [docking_4MZI_roscovitine](../../../docking_4MZI_roscovitine/)
+  - [images](../../../images/)
+<!-- /REPO_TOC -->
+
 # FBDD Repository Structure
 
 - [FBDD](../../../)

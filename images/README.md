@@ -16,13 +16,7 @@
       - [mdpocket_figures](../Frag_to_lead_4MZI/Preliminary%20Results/mdpocket_figures/)
       - [plumed_metad_cvs](../Frag_to_lead_4MZI/Preliminary%20Results/plumed_metad_cvs/)
       - [representative_snapshots](../Frag_to_lead_4MZI/Preliminary%20Results/representative_snapshots/)
-  - [docking_4MZI_roscovitine](./)
-  - [images](../images/)
+  - [docking_4MZI_roscovitine](../docking_4MZI_roscovitine/)
+  - [images](./)
 <!-- /REPO_TOC -->
 
-# Docking_4MZI
-This folder contains the .pdbqt files for 4MZI - Crystal structure of a human mutant p53 and Roscovitine as the ligand.
-
-The .pdbqt file containing the 9 poses of the docked ligand is also included.
-
-The log.txt file and the config.txt file for this docking project is included in this folder.
