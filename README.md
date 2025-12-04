@@ -1,3 +1,4 @@
+# FBDD Repository Structure
 <!-- REPO_TOC -->
 - [FBDD](./)
   - [Frag_to_lead_4MZI](Frag_to_lead_4MZI/)
@@ -20,17 +21,22 @@
   - [images](images/)
 <!-- /REPO_TOC -->
 
-# FBDD Repository Structure
-
-- [FBDD](./)
-   - [Frag_to_lead_4MZI](Frag_to_lead_4MZI/)
-     - [Preliminary Results](Frag_to_lead_4MZI/Preliminary%20Results/)
-       - [100ps_pipeline_test](Frag_to_lead_4MZI/Preliminary%20Results/100ps_pipeline_test/)
-       - [binding_event_detection](Frag_to_lead_4MZI/Preliminary%20Results/binding_event_detection/)
-       - [mdpocket_figures](Frag_to_lead_4MZI/Preliminary%20Results/mdpocket_figures/)
-       - [plumed_metad_cvs](Frag_to_lead_4MZI/Preliminary%20Results/plumed_metad_cvs/)
-       - [representative_snapshots](Frag_to_lead_4MZI/Preliminary%20Results/representative_snapshots/)
-     - [1ns_Preliminary Results](Frag_to_lead_4MZI/1ns_Preliminary%20Results/)
+-------------------------------------------------------------------------------
+# Readme Table of Contents
+- [FBDD Repository Structure](#fbdd-repository-structure)
+- [Readme Table of Contents](#readme-table-of-contents)
+- [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
+  - [🧬 Workflow Overview](#-workflow-overview)
+- [Preliminary Results (Preliminary Results)](#preliminary-results-preliminary-results)
+- [1ns\_Preliminary Results (1ns\_Preliminary Results)](#1ns_preliminary-results-1ns_preliminary-results)
+- [aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis (Frag\_to\_lead\_4MZI)](#almmd-pipeline---almmd-sampling--almmd-analysis-frag_to_lead_4mzi)
+  - [Pipeline Overview](#pipeline-overview)
+  - [Force Fields](#force-fields)
+- [prepare\_ligands.ipynb](#prepare_ligandsipynb)
+- [docking.py](#dockingpy)
+- [FBDD.ipyb](#fbddipyb)
+- [def mol\_to\_frags(mol\_list)](#def-mol_to_fragsmol_list)
+- [Docking\_4MZI\_roscovitine](#docking_4mzi_roscovitine)
 
 -------------------------------------------------------------------------------
 

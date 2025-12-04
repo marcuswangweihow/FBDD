@@ -34,6 +34,7 @@ def relative_link(target_path, current_path):
 def generate_toc_for_folder(current_folder):
     """Generate full-repo TOC Markdown for a given folder"""
     lines = [REPO_TOC_START]
+    lines.append("# FBDD Repository Structure") 
     lines.append(f"- [FBDD]({relative_link(repo_root, current_folder)})")
 
     # Walk repo tree and add all directories
