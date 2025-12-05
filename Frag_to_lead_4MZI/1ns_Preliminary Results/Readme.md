@@ -53,11 +53,6 @@ Details and preliminary results for Binding Event Detection and Pocket Mapping c
 
 ---
 
-
-
-
-
-
 ## energy.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
