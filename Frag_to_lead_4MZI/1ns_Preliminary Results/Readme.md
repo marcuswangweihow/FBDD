@@ -37,7 +37,11 @@
 
 **NOTE THAT MOST OF THE README IN THIS DIRECTORY AND SUBDIRECTORIES ARE PLACEHOLDERS FOR THE UPCOMING RESULTS**
 
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_pipeline_test/)).
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run. 
+
+The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_pipeline_test/)).
+
+Occupancy maps for the individual probes per-window and for the full trajectory can be found in ([occupancy_maps](occupancy_maps/))
 
 Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](representative_snapshots/)) and ([mdpocket_figures](mdpocket_figures/)) respectively within this directory.
 
@@ -48,6 +52,8 @@ Details and preliminary results for Binding Event Detection and Pocket Mapping c
 **All these preliminary results are merely to show pipeline/workflow functionality.**
 
 ---
+
+
 
 
 
