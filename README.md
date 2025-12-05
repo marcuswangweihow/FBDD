@@ -20,11 +20,13 @@
         - [em](Frag_to_lead_4MZI/1ns_Preliminary%20Results/1ns_pipeline_test/em/)
       - [binding_event_detection](Frag_to_lead_4MZI/1ns_Preliminary%20Results/binding_event_detection/)
       - [mdpocket_figures](Frag_to_lead_4MZI/1ns_Preliminary%20Results/mdpocket_figures/)
+      - [occupancy_maps](Frag_to_lead_4MZI/1ns_Preliminary%20Results/occupancy_maps/)
       - [plumed_metad_cvs](Frag_to_lead_4MZI/1ns_Preliminary%20Results/plumed_metad_cvs/)
       - [representative_snapshots](Frag_to_lead_4MZI/1ns_Preliminary%20Results/representative_snapshots/)
   - [docking_4MZI_roscovitine](docking_4MZI_roscovitine/)
   - [images](images/)
 <!-- /REPO_TOC -->
+
 
 -------------------------------------------------------------------------------
 # Readme Table of Contents
