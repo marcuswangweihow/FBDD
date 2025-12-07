@@ -1,0 +1,1012 @@
+{
+  "timestamp": "2025-12-07T19:42:54.864383",
+  "probe_kde_files": {
+    "P01A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P01A_full.dx",
+    "P02A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P02A_full.dx",
+    "P03A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P03A_full.dx",
+    "P04A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P04A_full.dx",
+    "P01B": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P01B_full.dx",
+    "P02B": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P02B_full.dx",
+    "P03B": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P03B_full.dx",
+    "P04B": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/P04B_full.dx"
+  },
+  "rmsd_clusters": [
+    {
+      "cluster": 0,
+      "representative_frame": 2535
+    },
+    {
+      "cluster": 1,
+      "representative_frame": 4760
+    },
+    {
+      "cluster": 2,
+      "representative_frame": 4287
+    },
+    {
+      "cluster": 3,
+      "representative_frame": 2360
+    }
+  ],
+  "kde_peak_mapped_frames": [
+    {
+      "probe": "P01A",
+      "peak": [
+        27.110001,
+        38.416296,
+        21.280033
+      ],
+      "mapped_frame": 2494,
+      "distance_A": 0.12929574815241873
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        28.110001,
+        36.916296,
+        26.280033
+      ],
+      "mapped_frame": 1893,
+      "distance_A": 0.2514401172900229
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        28.610001,
+        53.916296,
+        21.280033
+      ],
+      "mapped_frame": 3065,
+      "distance_A": 0.22443878126014333
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        29.110001,
+        39.416296,
+        25.280033
+      ],
+      "mapped_frame": 1832,
+      "distance_A": 0.15316823347169128
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        29.610001,
+        66.916296,
+        21.780033
+      ],
+      "mapped_frame": 4971,
+      "distance_A": 0.15779441152273754
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        30.610001,
+        40.416296,
+        21.280033
+      ],
+      "mapped_frame": 1737,
+      "distance_A": 0.5102458394124143
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        31.110001,
+        47.416296,
+        21.780033
+      ],
+      "mapped_frame": 1595,
+      "distance_A": 0.3254384936612222
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        32.110001,
+        55.916296,
+        22.280033
+      ],
+      "mapped_frame": 3156,
+      "distance_A": 0.3583642950632898
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        32.110001,
+        62.916296,
+        24.780033
+      ],
+      "mapped_frame": 4708,
+      "distance_A": 0.2566633747805292
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        32.110001,
+        63.916296,
+        21.280033
+      ],
+      "mapped_frame": 4795,
+      "distance_A": 0.263169931676686
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        32.610001,
+        62.916296,
+        31.780033
+      ],
+      "mapped_frame": 4215,
+      "distance_A": 0.11157257644978869
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        33.110001,
+        69.416296,
+        38.280033
+      ],
+      "mapped_frame": 4347,
+      "distance_A": 0.14661305536960728
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        34.110001,
+        41.916296,
+        23.280033
+      ],
+      "mapped_frame": 2753,
+      "distance_A": 0.41433463262459524
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        34.110001,
+        59.416296,
+        28.280033
+      ],
+      "mapped_frame": 3477,
+      "distance_A": 0.20230066975705566
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        35.110001,
+        71.416296,
+        35.780033
+      ],
+      "mapped_frame": 4478,
+      "distance_A": 0.4271374305310374
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        36.110001,
+        43.916296,
+        21.280033
+      ],
+      "mapped_frame": 1463,
+      "distance_A": 0.8512282694931613
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        36.110001,
+        57.416296,
+        25.780033
+      ],
+      "mapped_frame": 3221,
+      "distance_A": 0.1726622985494998
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        40.110001,
+        56.416296,
+        30.280033
+      ],
+      "mapped_frame": 3739,
+      "distance_A": 0.2054149627051034
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        42.610001,
+        38.916296,
+        22.780033
+      ],
+      "mapped_frame": 625,
+      "distance_A": 0.3193683312438147
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        42.610001,
+        49.416296,
+        21.280033
+      ],
+      "mapped_frame": 1266,
+      "distance_A": 0.24202200326869328
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        45.610001,
+        53.916296,
+        21.280033
+      ],
+      "mapped_frame": 1083,
+      "distance_A": 0.24143531890035871
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        47.110001,
+        47.416296,
+        21.280033
+      ],
+      "mapped_frame": 924,
+      "distance_A": 0.09552887177898409
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        62.610001,
+        32.916296,
+        55.280033
+      ],
+      "mapped_frame": 1103,
+      "distance_A": 0.3023315323758355
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        65.110001,
+        40.416296,
+        54.780033
+      ],
+      "mapped_frame": 2161,
+      "distance_A": 0.1576237446219102
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        66.110001,
+        36.916296,
+        54.280033
+      ],
+      "mapped_frame": 1673,
+      "distance_A": 0.11804307345197586
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        66.110001,
+        42.916296,
+        55.280033
+      ],
+      "mapped_frame": 2325,
+      "distance_A": 0.32901556250564634
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        68.610001,
+        39.916296,
+        70.780033
+      ],
+      "mapped_frame": 3094,
+      "distance_A": 0.16700311320498842
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        69.610001,
+        33.416296,
+        65.780033
+      ],
+      "mapped_frame": 2975,
+      "distance_A": 0.2191630711521349
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        70.110001,
+        42.416296,
+        57.780033
+      ],
+      "mapped_frame": 2634,
+      "distance_A": 0.34572205918094534
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        73.110001,
+        41.916296,
+        69.280033
+      ],
+      "mapped_frame": 3183,
+      "distance_A": 0.2792498114273738
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        24.610001,
+        63.916296,
+        76.780033
+      ],
+      "mapped_frame": 4205,
+      "distance_A": 0.22053241190534828
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        25.110001,
+        62.916296,
+        73.780033
+      ],
+      "mapped_frame": 4230,
+      "distance_A": 0.4184507760210018
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        25.610001,
+        68.916296,
+        71.280033
+      ],
+      "mapped_frame": 4299,
+      "distance_A": 0.3434488548573823
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        28.610001,
+        72.916296,
+        73.780033
+      ],
+      "mapped_frame": 4359,
+      "distance_A": 0.12085871209055282
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        30.610001,
+        76.416296,
+        74.280033
+      ],
+      "mapped_frame": 4463,
+      "distance_A": 0.1882475319481703
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        34.110001,
+        76.416296,
+        72.780033
+      ],
+      "mapped_frame": 4802,
+      "distance_A": 0.35394639861202476
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        43.110001,
+        77.916296,
+        78.280033
+      ],
+      "mapped_frame": 4983,
+      "distance_A": 0.4870856924684637
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        43.610001,
+        76.916296,
+        72.280033
+      ],
+      "mapped_frame": 4860,
+      "distance_A": 0.29876001404673036
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        46.110001,
+        75.916296,
+        74.280033
+      ],
+      "mapped_frame": 4883,
+      "distance_A": 0.6711312704786673
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        61.610001,
+        73.416296,
+        76.280033
+      ],
+      "mapped_frame": 770,
+      "distance_A": 0.10204999424510433
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        74.110001,
+        76.416296,
+        78.280033
+      ],
+      "mapped_frame": 59,
+      "distance_A": 0.5253896620939157
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        64.110001,
+        73.416296,
+        22.780033
+      ],
+      "mapped_frame": 3722,
+      "distance_A": 0.30498761996552687
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        65.110001,
+        77.916296,
+        21.280033
+      ],
+      "mapped_frame": 3891,
+      "distance_A": 0.28247132721350854
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        66.110001,
+        77.916296,
+        24.780033
+      ],
+      "mapped_frame": 3789,
+      "distance_A": 0.5895260325392918
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        68.110001,
+        70.916296,
+        21.280033
+      ],
+      "mapped_frame": 3665,
+      "distance_A": 0.12289275347859949
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        71.110001,
+        75.416296,
+        21.280033
+      ],
+      "mapped_frame": 2507,
+      "distance_A": 0.19890350464967824
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        57.110001,
+        42.416296,
+        63.780033
+      ],
+      "mapped_frame": 300,
+      "distance_A": 0.41701718337576377
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        58.110001,
+        42.916296,
+        78.280033
+      ],
+      "mapped_frame": 296,
+      "distance_A": 0.5102669231706431
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        59.110001,
+        45.916296,
+        33.280033
+      ],
+      "mapped_frame": 372,
+      "distance_A": 0.21595315849821578
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        59.610001,
+        42.916296,
+        33.280033
+      ],
+      "mapped_frame": 344,
+      "distance_A": 0.3909346506366896
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        59.610001,
+        46.916296,
+        48.780033
+      ],
+      "mapped_frame": 375,
+      "distance_A": 0.1675775299174546
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        60.110001,
+        43.416296,
+        48.780033
+      ],
+      "mapped_frame": 333,
+      "distance_A": 0.43705145718682
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        70.110001,
+        55.416296,
+        64.280033
+      ],
+      "mapped_frame": 1667,
+      "distance_A": 0.31471300077159076
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        70.110001,
+        55.916296,
+        48.780033
+      ],
+      "mapped_frame": 1684,
+      "distance_A": 0.07938252559668861
+    },
+    {
+      "probe": "P01B",
+      "peak": [
+        70.610001,
+        55.916296,
+        33.280033
+      ],
+      "mapped_frame": 1689,
+      "distance_A": 0.47747692197759767
+    },
+    {
+      "probe": "P02B",
+      "peak": [
+        72.610001,
+        66.416296,
+        73.780033
+      ],
+      "mapped_frame": 2474,
+      "distance_A": 0.441429958229943
+    },
+    {
+      "probe": "P02B",
+      "peak": [
+        74.110001,
+        56.916296,
+        67.780033
+      ],
+      "mapped_frame": 3509,
+      "distance_A": 0.5879375557484746
+    },
+    {
+      "probe": "P02B",
+      "peak": [
+        74.110001,
+        60.916296,
+        72.280033
+      ],
+      "mapped_frame": 3175,
+      "distance_A": 0.3089482088060212
+    },
+    {
+      "probe": "P02B",
+      "peak": [
+        74.110001,
+        61.916296,
+        65.280033
+      ],
+      "mapped_frame": 3289,
+      "distance_A": 0.2523433435301156
+    },
+    {
+      "probe": "P02B",
+      "peak": [
+        74.110001,
+        65.916296,
+        78.280033
+      ],
+      "mapped_frame": 2414,
+      "distance_A": 0.7071021961423691
+    },
+    {
+      "probe": "P02B",
+      "peak": [
+        74.110001,
+        66.916296,
+        74.280033
+      ],
+      "mapped_frame": 2582,
+      "distance_A": 0.26259694385014376
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        51.610001,
+        64.916296,
+        42.780033
+      ],
+      "mapped_frame": 1120,
+      "distance_A": 0.5314463553821605
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        53.110001,
+        65.416296,
+        41.280033
+      ],
+      "mapped_frame": 1010,
+      "distance_A": 0.2078419560399298
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        55.610001,
+        68.416296,
+        40.780033
+      ],
+      "mapped_frame": 772,
+      "distance_A": 0.16185602771843016
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        58.610001,
+        72.416296,
+        43.780033
+      ],
+      "mapped_frame": 629,
+      "distance_A": 0.24683051157648542
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        60.610001,
+        61.916296,
+        40.780033
+      ],
+      "mapped_frame": 1321,
+      "distance_A": 0.38152724877902183
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        63.110001,
+        59.916296,
+        39.780033
+      ],
+      "mapped_frame": 1439,
+      "distance_A": 0.12628702522378468
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        63.110001,
+        76.916296,
+        42.780033
+      ],
+      "mapped_frame": 15,
+      "distance_A": 0.5749167987364101
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        65.110001,
+        74.916296,
+        45.280033
+      ],
+      "mapped_frame": 35,
+      "distance_A": 0.24407415399813923
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        66.610001,
+        60.916296,
+        46.280033
+      ],
+      "mapped_frame": 1591,
+      "distance_A": 0.2141031770051767
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        66.610001,
+        71.416296,
+        50.280033
+      ],
+      "mapped_frame": 92,
+      "distance_A": 0.20832588018497852
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        70.110001,
+        59.416296,
+        45.780033
+      ],
+      "mapped_frame": 1726,
+      "distance_A": 0.1568041374737416
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        70.110001,
+        62.916296,
+        39.280033
+      ],
+      "mapped_frame": 2052,
+      "distance_A": 0.23666221121328837
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        70.610001,
+        62.416296,
+        43.280033
+      ],
+      "mapped_frame": 2158,
+      "distance_A": 0.21725477430987594
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        72.610001,
+        44.916296,
+        30.780033
+      ],
+      "mapped_frame": 3064,
+      "distance_A": 0.28059665581310284
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        74.110001,
+        42.416296,
+        31.780033
+      ],
+      "mapped_frame": 3125,
+      "distance_A": 0.4537929802581279
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        74.110001,
+        60.916296,
+        41.280033
+      ],
+      "mapped_frame": 1785,
+      "distance_A": 0.32538237002534964
+    },
+    {
+      "probe": "P03B",
+      "peak": [
+        74.110001,
+        64.916296,
+        35.280033
+      ],
+      "mapped_frame": 1970,
+      "distance_A": 0.3390002973244588
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        37.610001,
+        76.916296,
+        26.780033
+      ],
+      "mapped_frame": 1843,
+      "distance_A": 0.1698293249462076
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        38.610001,
+        58.916296,
+        23.780033
+      ],
+      "mapped_frame": 281,
+      "distance_A": 0.4319521857385321
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        39.110001,
+        72.916296,
+        27.780033
+      ],
+      "mapped_frame": 1756,
+      "distance_A": 0.08057068508500269
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        39.610001,
+        71.916296,
+        21.280033
+      ],
+      "mapped_frame": 1507,
+      "distance_A": 0.1751951970276045
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        40.110001,
+        68.416296,
+        26.780033
+      ],
+      "mapped_frame": 1727,
+      "distance_A": 0.35240349615312205
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        40.610001,
+        59.416296,
+        21.280033
+      ],
+      "mapped_frame": 228,
+      "distance_A": 0.16846439058104012
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        40.610001,
+        63.916296,
+        21.280033
+      ],
+      "mapped_frame": 1082,
+      "distance_A": 0.21273927239357623
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        41.610001,
+        68.416296,
+        28.280033
+      ],
+      "mapped_frame": 1604,
+      "distance_A": 0.1865423579939631
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        42.610001,
+        73.916296,
+        24.780033
+      ],
+      "mapped_frame": 1935,
+      "distance_A": 0.14784967627271897
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        43.110001,
+        72.916296,
+        25.280033
+      ],
+      "mapped_frame": 1986,
+      "distance_A": 0.16746621017289084
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        44.610001,
+        71.916296,
+        21.280033
+      ],
+      "mapped_frame": 2170,
+      "distance_A": 0.43828414752460715
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        45.610001,
+        58.416296,
+        23.780033
+      ],
+      "mapped_frame": 813,
+      "distance_A": 0.15954282027369074
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        47.110001,
+        69.916296,
+        25.280033
+      ],
+      "mapped_frame": 2060,
+      "distance_A": 0.17759296321208287
+    },
+    {
+      "probe": "P04B",
+      "peak": [
+        48.110001,
+        73.916296,
+        21.780033
+      ],
+      "mapped_frame": 2141,
+      "distance_A": 0.4396638453381284
+    }
+  ],
+  "dbscan_clusters": [
+    {
+      "cluster_label": 0,
+      "representative_frame": 235
+    },
+    {
+      "cluster_label": 1,
+      "representative_frame": 631
+    },
+    {
+      "cluster_label": 2,
+      "representative_frame": 1710
+    },
+    {
+      "cluster_label": 3,
+      "representative_frame": 1881
+    },
+    {
+      "cluster_label": 4,
+      "representative_frame": 3519
+    },
+    {
+      "cluster_label": 5,
+      "representative_frame": 4756
+    }
+  ],
+  "selected_frames": [
+    {
+      "frame": 2535,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_2535_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_2535_allatoms.pdb",
+      "source": "RMSD"
+    },
+    {
+      "frame": 4760,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_4760_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_4760_allatoms.pdb",
+      "source": "RMSD"
+    },
+    {
+      "frame": 4287,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_4287_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_4287_allatoms.pdb",
+      "source": "RMSD"
+    },
+    {
+      "frame": 2494,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_2494_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_2494_allatoms.pdb",
+      "source": "KDE_P01A"
+    },
+    {
+      "frame": 235,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_235_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_5ns_testA_20251205/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_235_allatoms.pdb",
+      "source": "DBSCAN"
+    }
+  ],
+  "removed_frames_due_to_max": []
+}
