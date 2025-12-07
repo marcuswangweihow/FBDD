@@ -31,13 +31,13 @@
 ------------------------------------
 
 The MDpocket figures shown here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes.
- - High-density regions (dens_iso 8, red meshes) and frequent occupancy (freq_iso 0.5, gray meshes)
+ - High-density regions (dens 6, gray meshes) and frequent occupancy (freq 0.5, black meshes) using level = 0.8.
 
 Each representative snapshot was analyzed using MDpocket to generate:
 
- - Occupancy grids (freq_iso), highlighting frequently sampled pockets.
+ - Occupancy grids (freq_iso), highlighting frequently sampled pockets ie. “frequently visited” regions
 
- - Density grids (dens_iso), highlighting highly populated regions.
+ - Density grids (dens_iso), highlighting highly populated regions ie. “densely occupied” regions
 
 Potential cryptic or occluded sites are identified outside frequent-density regions.
 
@@ -45,27 +45,24 @@ Figures illustrate pocket locations, occupancy density, and potential druggable 
 
 All figures show the MDpocket density maps generated from a 1ns simulation of 4MZI.
 
-# overview.png
-Overall pocket occupancy map from representative snapshots.
-![Overview](overview_mdpocket_analysis.png)
+# overview_frontview.png & overview_backview.png
+Overall pocket occupancy map from representative snapshots highlighting high-density regions (dens  6, gray meshes) and frequent occupancy (freq 0.5, black meshes). Front view and backview of the mdpocket_analysis_freq.dx file and the mdpocket_analysis_dens.dx file superimposed on the 4MZI protein structure with level=0.8.
 
-# region1.png & region2.png
-Localized views highlighting high-density regions (dens_iso 8, red meshes) and frequent occupancy (freq_iso 0.5, gray meshes).
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./region1_mdpocket_analysis.png" width="400">
+      <img src="./overview_frontview.png" width="400">
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./region2_mdpocket_analysis.png" width="400">
+      <img src="./overview_backview.png" width="400">
     </td>
   </tr>
 </table>
 
 # cryptic_site.png 
-Example of a potential cryptic or occluded pocket identified outside high-frequency regions.
-![Cryptic1](cryptic1_mdpocket_analysis.png)
+Example of a potential cryptic or occluded pocket identified outside highly populated regions.
+![Cryptic1](cryptic1.png)
 
 
