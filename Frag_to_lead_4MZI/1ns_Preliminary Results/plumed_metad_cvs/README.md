@@ -36,7 +36,7 @@ plumed_bias_scalar.dat and plumed_com_components.dat contain the raw data for th
 # From plumed_bias_scalar.dat
 ## Distance and torsion plots
 
-The distance vs time plots as well as the torsions vs time plots obatined by plotting the data from plumed_bias_scalar.dat are just for sanity checks.
+The distance vs time plots as well as the torsions vs time plots obtained by plotting the data from plumed_bias_scalar.dat are just for sanity checks.
 
 The plots show that the dihedrals change with time and the probes are moving, which shows the system is working.
 
@@ -58,6 +58,29 @@ The plots show that the dihedrals change with time and the probes are moving, wh
   </tr>
 </table>
 
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>D</h3>
+      <img src="./Distance_d4.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>E</h3>
+      <img src="./Distance_d5.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>F</h3>
+      <img src="./Distance_d6.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>G</h3>
+      <img src="./Distance_d7.png" width="400">
+    </td>
+  </tr>
+</table>
+
+
+
 ## Torsions vs time plots
 <table style="border-collapse: collapse; border: none;">
   <tr>
@@ -69,6 +92,11 @@ The plots show that the dihedrals change with time and the probes are moving, wh
       <h3>B</h3>
       <img src="./Torsion_t2.png" width="400">
     </td>
+  </tr>
+</table>
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
     <td style="border: none; text-align: center;">
       <h3>C</h3>
       <img src="./Torsion_t3.png" width="400">
@@ -88,7 +116,7 @@ The plots show that the dihedrals change with time and the probes are moving, wh
 
 With more probes and longer simulations, the 2D/3D COM density plots could become informative about preferred probe regions, which might correspond to cryptic or binding sites.
 
-Otherwise with just 4 probes and short 100ps runs, mostly a sanity check.
+Otherwise with just 8 probes and 1ns runs, mostly a sanity check. Also with 8 probes the combined plots are quite messy.
 
 ## Per-probe (x,y,z) plots
 See if any probe is behaving weirdly.
@@ -96,19 +124,40 @@ See if any probe is behaving weirdly.
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./COM_P01.png" width="400">
+      <img src="./COM_P01A.png" width="400">
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./COM_P02.png" width="400">
+      <img src="./COM_P02A.png" width="400">
     </td>
     <td style="border: none; text-align: center;">
       <h3>C</h3>
-      <img src="./COM_P03.png" width="400">
+      <img src="./COM_P03A.png" width="400">
     </td>
     <td style="border: none; text-align: center;">
       <h3>D</h3>
-      <img src="./COM_P04.png" width="400">
+      <img src="./COM_P04A.png" width="400">
+    </td>
+  </tr>
+</table>
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./COM_P01B.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./COM_P02B.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>C</h3>
+      <img src="./COM_P03B.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>D</h3>
+      <img src="./COM_P04B.png" width="400">
     </td>
   </tr>
 </table>
