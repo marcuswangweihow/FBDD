@@ -56,25 +56,25 @@ Details and preliminary results for Binding Event Detection and Pocket Mapping c
 ## energy.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. MD step increases.
+This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases.
 ![Energy vs Steps](energy.png)
 
 ## temperature.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. MD step increases.
+This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases.
 ![Temparature vs Steps](temperature.png)
 
 ## energy_temperature_dual.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. MD step increases. 
+This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. 
 ![Energy/Temparature vs Steps](energy_temperature_dual.png)
 
 ## plumed_bias.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. MD step increases.
+This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases.
 ![Bias vs Steps](plumed_bias.png)
 
 ## Calpha_Rg.png
