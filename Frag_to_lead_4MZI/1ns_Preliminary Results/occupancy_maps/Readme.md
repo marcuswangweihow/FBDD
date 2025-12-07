@@ -39,7 +39,7 @@
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./benzene_window_5.png" width="400">
+      <img src="./benzene_window_2.png" width="400">
     </td>
   </tr>
 </table>
@@ -57,7 +57,7 @@ Benzene occupancy maps were generated from (A) 0-0.2 ns and (B) 0.2-0.4 ns a
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./methanol_window_5.png" width="400">
+      <img src="./methanol_window_2.png" width="400">
     </td>
   </tr>
 </table>
@@ -75,7 +75,7 @@ Methanol occupancy maps were generated from (A) 0-0.2 ns and (B) 0.2-0.4 ns 
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./acetonitrile_window_5.png" width="400">
+      <img src="./acetonitrile_window_2.png" width="400">
     </td>
   </tr>
 </table>
@@ -93,7 +93,7 @@ Acetonitrile occupancy maps were generated from (A) 0-0.2 ns and (B) 0.2-0.4�
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./toluene_window_5.png" width="400">
+      <img src="./toluene_window_2.png" width="400">
     </td>
   </tr>
 </table>
