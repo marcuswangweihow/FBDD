@@ -60,7 +60,7 @@ JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, na
 
 3D COM plots from a 1ns production test run. **The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
 
-The plots do not show any binding events or meaningful clusters as expected due to the short production run of 100ps.
+The plots do not show any binding events or meaningful clusters as expected due to the short production run of 1ns.
 
 ### 3D COM plots
 (1,5) Probe : benzene
