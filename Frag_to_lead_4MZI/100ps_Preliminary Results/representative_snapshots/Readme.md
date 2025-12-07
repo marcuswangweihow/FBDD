@@ -27,21 +27,6 @@
   - [images](../../../images/)
 <!-- /REPO_TOC -->
 
-
-
-
-
-# FBDD Repository Structure
-
-- [FBDD](../../../)
-  - [Frag_to_lead_4MZI](../../)
-      - [Preliminary Results](../)
-        - [100ps_pipeline_test](../100ps_pipeline_test/)
-        - [binding_event_detection](../binding_event_detection/)
-        - [mdpocket_figures](../mdpocket_figures/)
-        - [plumed_metad_cvs](../plumed_metad_cvs/)
-        - [representative_snapshots](./)
-
 -----------------------------------------------------------
 
 The results here are **preliminary** results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes. 
