@@ -35,7 +35,7 @@
 # 1ns_Preliminary Results
 [⬆️ Back to top](#fbdd-repository-structure)
 
-**NOTE THAT MOST OF THE README IN THIS DIRECTORY AND SUBDIRECTORIES ARE PLACEHOLDERS FOR THE UPCOMING RESULTS**
+**NOTE THAT MOST OF THE README IN THE SUBDIRECTORIES ARE PLACEHOLDERS FOR THE UPCOMING RESULTS**
 
 This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run. 
 
