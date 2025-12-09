@@ -107,7 +107,7 @@ This plot shows both of the changes in the (instantaneous and smoothed) temperat
 ## plumed_bias.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases.
+This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases. There seems to be a plotting artifact for B which i am fixing. i am also checking the other plots.
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
