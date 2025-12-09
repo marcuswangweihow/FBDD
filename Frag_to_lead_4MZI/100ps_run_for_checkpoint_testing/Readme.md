@@ -53,11 +53,13 @@ This plot shows the changes in the (instantaneous and smoothed) potential energy
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./benzene_window_1.png" width="400">
+      <img src="./energy_A.png" width="800">
     </td>
+  </tr>
+  <tr>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./benzene_window_2.png" width="400">
+      <img src="./energy_B.png" width="800">
     </td>
   </tr>
 </table>
@@ -70,11 +72,13 @@ This plot shows the changes in the (instantaneous and smoothed) temperature (K) 
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./benzene_window_1.png" width="400">
+      <img src="./temperature_A.png" width="800">
     </td>
+  </tr>
+  <tr>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./benzene_window_2.png" width="400">
+      <img src="./temperature_B.png" width="800">
     </td>
   </tr>
 </table>
@@ -87,11 +91,13 @@ This plot shows both of the changes in the (instantaneous and smoothed) temperat
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./benzene_window_1.png" width="400">
+      <img src="./energy_temperature_dual_A.png" width="800">
     </td>
+  </tr>
+  <tr>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./benzene_window_2.png" width="400">
+      <img src="./energy_temperature_dual_B.png" width="800">
     </td>
   </tr>
 </table>
@@ -104,11 +110,13 @@ This plot shows the changes in the bias (kJ/mol) of the system as the MD simulat
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./benzene_window_1.png" width="400">
+      <img src="./plumed_bias_A.png" width="800">
     </td>
+  </tr>
+  <tr>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./benzene_window_2.png" width="400">
+      <img src="./plumed_bias_B.png" width="800">
     </td>
   </tr>
 </table>
