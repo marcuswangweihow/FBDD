@@ -41,6 +41,8 @@
 
  All results shown are **preliminary results** and are only meant to show **workflow/pipeline functionality**.
 
+ The checkpoint was restarted from 64.300ps.
+
 
  # (A) 100ps production run (without starting from backup)
  # (B) 100ps production run (starting from backup ~30min before production run completion)
