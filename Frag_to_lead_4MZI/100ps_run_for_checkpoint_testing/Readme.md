@@ -44,7 +44,7 @@
  ## energy.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases.
+This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. Both plots look the same, indicating that the restart from backup/checkpoint is robust.
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
@@ -63,7 +63,7 @@ This plot shows the changes in the (instantaneous and smoothed) potential energy
 ## temperature.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases.
+This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases. Both plots look the same, indicating that the restart from backup/checkpoint is robust.
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
@@ -82,7 +82,7 @@ This plot shows the changes in the (instantaneous and smoothed) temperature (K) 
 ## energy_temperature_dual.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. 
+This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. Both plots look the same, indicating that the restart from backup/checkpoint is robust.
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
@@ -101,7 +101,7 @@ This plot shows both of the changes in the (instantaneous and smoothed) temperat
 ## plumed_bias.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases. There seems to be a plotting artifact for B which i am fixing. i am also checking the other plots.
+This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases. The small jump in bias does not affect the overall simulation and is indicative of a restart from checkpoint. Both plots look the same, indicating that the restart from backup/checkpoint is robust.
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
