@@ -29,12 +29,6 @@
 <!-- /REPO_TOC -->
 
 
-
-
-
-
-
-
 ---------------------------------------------------
 
  This folder contains the results of testing the checkpoint and backup system on a short 100ps test run.
@@ -112,13 +106,13 @@ This plot shows the changes in the bias (kJ/mol) of the system as the MD simulat
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./plumed_bias_A.png" width="800">
+      <img src="./plumed_bias_B.png" width="800">
     </td>
   </tr>
   <tr>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./plumed_bias_B.png" width="800">
+      <img src="./plumed_bias_A.png" width="800">
     </td>
   </tr>
 </table>
