@@ -279,9 +279,9 @@ It produces **5 (can be set) representative snapshots** for subsequent MDpocket 
 
 ---
 
-> **Note:** This pipeline has potential for publication similar to the 2020 and 2022 papers by Tan et al.  
+> **Note:** This pipeline has **potential for publication** similar to the **2020** and **2022** papers by **Tan et al.**.  
 > The full code is **not publicly released on GitHub**, but is **available upon request** to technical interviewers or collaborators for evaluation purposes.
-> If you require access, please contact me via the email provided in my application/CV.
+> If you **require access to the private repo containing the code**, please **contact me via the email** provided in my application/CV.
 
 ---
 
