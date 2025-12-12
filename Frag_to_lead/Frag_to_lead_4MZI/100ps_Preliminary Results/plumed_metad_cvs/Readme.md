@@ -43,6 +43,7 @@
 
 
 
+
 ---------------------------------------------------------
 
 plumed_bias_scalar.dat and plumed_com_components.dat contain the raw data for the below plots. These files were generated from a short 100ps production test run. 
