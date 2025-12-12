@@ -51,11 +51,12 @@
 # Readme Table of Contents
 - [FBDD Repository Structure](#fbdd-repository-structure)
 - [Readme Table of Contents](#readme-table-of-contents)
+- [Frag\_to\_lead](#frag_to_lead)
 - [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
   - [🧬 Workflow Overview](#-workflow-overview)
 - [100ps_Preliminary Results (100ps_Preliminary Results)](#preliminary-results-preliminary-results)
 - [1ns\_Preliminary Results (1ns\_Preliminary Results)](#1ns_preliminary-results-1ns_preliminary-results)
-- [aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis (Frag\_to\_lead\_4MZI)](#almmd-pipeline---almmd-sampling--almmd-analysis-frag_to_lead_4mzi)
+- [aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis (Frag\_to\_lead\_4MZI)](#almmd-pipeline---almmd-sampling--almmd-analysis)
   - [Pipeline Overview](#pipeline-overview)
   - [Force Fields](#force-fields)
 - [prepare\_ligands.ipynb](#prepare_ligandsipynb)
@@ -65,9 +66,11 @@
 - [Docking\_4MZI\_roscovitine](#docking_4mzi_roscovitine)
 
 -------------------------------------------------------------------------------
+# Frag_to_lead
+This folder contains the data and results for a fragment to lead workflow with using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
 # Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
+This folder contains the data and results for a fragment to lead workflow using aLMMD (accelerated Ligand-Mapping Molecular Dynamics) with 4MZI.
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
