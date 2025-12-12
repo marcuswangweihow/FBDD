@@ -93,7 +93,7 @@ The entire workflow can be shown as:
 [⬆️ Back to top](#readme-table-of-contents)
 
 
-![Overall workflow FBDD](../../images/Overall_workflow_FBDD.svg)
+![Overall workflow FBDD](../images/Overall_workflow_FBDD.svg)
 
 This is ongoing work and i am currently working on the aLMMD sampling and analysis.
 
