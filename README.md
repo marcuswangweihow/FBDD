@@ -91,6 +91,7 @@ This folder contains the preliminary/test results from the **accelerated Ligand-
 
 This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
 It produces **5 (can be set) representative snapshots** for subsequent MDpocket analysis and docking tasks.
+All simulation and analysis parameters were conservatively selected to ensure system stability and reproducibility across all stages, including minimization, equilibration (NVT/NPT), and production runs.
 
 The pipeline is inspired by the workflow described in the abstracts and supporting information of **Tan et al.** (2020, 2022).  
 
