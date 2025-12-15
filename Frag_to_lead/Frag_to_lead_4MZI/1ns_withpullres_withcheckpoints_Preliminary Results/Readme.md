@@ -54,7 +54,7 @@
 # 1ns_withpullres_withcheckpoints_Preliminary Results
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality. For this run, the run was continued/restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
+This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (e.g., occupancy maps) for a 1 ns production run with pull restraints on the metal. Multiple restarts were performed from checkpoint/backup files at 368.2 ps and 648.6 ps. Backup plots and last-frame PDBs corresponding to the 648.6 ps restart are included to demonstrate pipeline functionality. Before each restart, these plots and PDBs were manually inspected to ensure system stability (e.g., no metal drift, sharp spikes in energy/temperature/bias, or runaway values).
 
 The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 1ns production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_pipeline_test/)).
 
