@@ -58,7 +58,7 @@ Each representative snapshot was analyzed using MDpocket to generate:
 
  - Density grids (dens_iso), highlighting highly populated regions ie. “densely occupied” regions
 
-Potential cryptic or occluded sites are identified outside frequent-density regions.
+Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, gray meshes) but not in the frequency grids (freq_iso, black meshes), i.e., regions visited rarely or transiently during the simulation.
 
 Figures illustrate pocket locations, occupancy density, and potential druggable regions.
 
