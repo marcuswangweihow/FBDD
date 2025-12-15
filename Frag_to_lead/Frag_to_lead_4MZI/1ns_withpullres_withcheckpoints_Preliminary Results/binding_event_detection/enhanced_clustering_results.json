@@ -1,0 +1,6157 @@
+{
+  "timestamp": "20251211",
+  "n_probes": 4,
+  "probes": {
+    "1": {
+      "n_clusters": 11,
+      "n_binding_events": 91,
+      "total_frames": 5001,
+      "clusters": {
+        "0": {
+          "centroid": [
+            4.871827465612644,
+            4.497405510276684,
+            2.7290196664031665
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster0_repframe_1326.pdb",
+          "n_frames_in_cluster": 2530,
+          "cluster_name": "Pocket_0",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 0,
+              "end_step": 996,
+              "duration_steps": 997,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1002,
+              "end_step": 1004,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1006,
+              "end_step": 1115,
+              "duration_steps": 110,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1120,
+              "end_step": 1123,
+              "duration_steps": 4,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1125,
+              "end_step": 1192,
+              "duration_steps": 68,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1194,
+              "end_step": 1196,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1210,
+              "end_step": 1212,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1387,
+              "end_step": 1408,
+              "duration_steps": 22,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1410,
+              "end_step": 1416,
+              "duration_steps": 7,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1421,
+              "end_step": 1425,
+              "duration_steps": 5,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1427,
+              "end_step": 1430,
+              "duration_steps": 4,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1434,
+              "end_step": 1684,
+              "duration_steps": 251,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1686,
+              "end_step": 1744,
+              "duration_steps": 59,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1748,
+              "end_step": 1750,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1752,
+              "end_step": 1754,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1756,
+              "end_step": 1819,
+              "duration_steps": 64,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1828,
+              "end_step": 2433,
+              "duration_steps": 606,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2614,
+              "end_step": 2634,
+              "duration_steps": 21,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2684,
+              "end_step": 2722,
+              "duration_steps": 39,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2727,
+              "end_step": 2780,
+              "duration_steps": 54,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2794,
+              "end_step": 2796,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2798,
+              "end_step": 2800,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2817,
+              "end_step": 2822,
+              "duration_steps": 6,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2834,
+              "end_step": 2838,
+              "duration_steps": 5,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2879,
+              "end_step": 2881,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2887,
+              "end_step": 2893,
+              "duration_steps": 7,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2908,
+              "end_step": 2920,
+              "duration_steps": 13,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3323,
+              "end_step": 3325,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3340,
+              "end_step": 3342,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3347,
+              "end_step": 3367,
+              "duration_steps": 21,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3434,
+              "end_step": 3489,
+              "duration_steps": 56,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3497,
+              "end_step": 3511,
+              "duration_steps": 15,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3516,
+              "end_step": 3519,
+              "duration_steps": 4,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3521,
+              "end_step": 3523,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3534,
+              "end_step": 3536,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3538,
+              "end_step": 3540,
+              "duration_steps": 3,
+              "centroid": [
+                4.871827465612644,
+                4.497405510276684,
+                2.7290196664031665
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 35.08347637103623,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 35.913490594430755,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 35.94000847473486,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 28.553772646697155,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 34.07728391569277,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 34.38317782135966,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            4.613378684466022,
+            -2.375603237864076,
+            2.618028281553396
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster1_repframe_1299.pdb",
+          "n_frames_in_cluster": 206,
+          "cluster_name": "Pocket_1",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1198,
+              "end_step": 1208,
+              "duration_steps": 11,
+              "centroid": [
+                4.613378684466022,
+                -2.375603237864076,
+                2.618028281553396
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1214,
+              "end_step": 1222,
+              "duration_steps": 9,
+              "centroid": [
+                4.613378684466022,
+                -2.375603237864076,
+                2.618028281553396
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1228,
+              "end_step": 1230,
+              "duration_steps": 3,
+              "centroid": [
+                4.613378684466022,
+                -2.375603237864076,
+                2.618028281553396
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1234,
+              "end_step": 1324,
+              "duration_steps": 91,
+              "centroid": [
+                4.613378684466022,
+                -2.375603237864076,
+                2.618028281553396
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1328,
+              "end_step": 1385,
+              "duration_steps": 58,
+              "centroid": [
+                4.613378684466022,
+                -2.375603237864076,
+                2.618028281553396
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1821,
+              "end_step": 1826,
+              "duration_steps": 6,
+              "centroid": [
+                4.613378684466022,
+                -2.375603237864076,
+                2.618028281553396
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 37.690262668992006,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 37.7844081977438,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 38.97940141957655,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 32.08443518370881,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 36.52734398517103,
+                "intensity": 0.05319881320487787
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 36.73440039206314,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            5.789594812500001,
+            -1.2779939866071428,
+            2.3890701160714305
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster2_repframe_2570.pdb",
+          "n_frames_in_cluster": 224,
+          "cluster_name": "Pocket_2",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2435,
+              "end_step": 2455,
+              "duration_steps": 21,
+              "centroid": [
+                5.789594812500001,
+                -1.2779939866071428,
+                2.3890701160714305
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2463,
+              "end_step": 2606,
+              "duration_steps": 144,
+              "centroid": [
+                5.789594812500001,
+                -1.2779939866071428,
+                2.3890701160714305
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2608,
+              "end_step": 2612,
+              "duration_steps": 5,
+              "centroid": [
+                5.789594812500001,
+                -1.2779939866071428,
+                2.3890701160714305
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2636,
+              "end_step": 2648,
+              "duration_steps": 13,
+              "centroid": [
+                5.789594812500001,
+                -1.2779939866071428,
+                2.3890701160714305
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2652,
+              "end_step": 2682,
+              "duration_steps": 31,
+              "centroid": [
+                5.789594812500001,
+                -1.2779939866071428,
+                2.3890701160714305
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 37.01972223855945,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 37.17659698311686,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 38.34354218356194,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 31.285401724550734,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 35.85270497583661,
+                "intensity": 0.05319881320487787
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 36.143843230833845,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            5.75246295658683,
+            4.611511413173656,
+            9.024031234281432
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster3_repframe_3330.pdb",
+          "n_frames_in_cluster": 1336,
+          "cluster_name": "Pocket_3",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2782,
+              "end_step": 2792,
+              "duration_steps": 11,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2804,
+              "end_step": 2811,
+              "duration_steps": 8,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2840,
+              "end_step": 2853,
+              "duration_steps": 14,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2860,
+              "end_step": 2877,
+              "duration_steps": 18,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2883,
+              "end_step": 2885,
+              "duration_steps": 3,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2895,
+              "end_step": 2906,
+              "duration_steps": 12,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3327,
+              "end_step": 3331,
+              "duration_steps": 5,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3525,
+              "end_step": 3532,
+              "duration_steps": 8,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3542,
+              "end_step": 3583,
+              "duration_steps": 42,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3585,
+              "end_step": 3587,
+              "duration_steps": 3,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3600,
+              "end_step": 3604,
+              "duration_steps": 5,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3606,
+              "end_step": 4529,
+              "duration_steps": 924,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4534,
+              "end_step": 4537,
+              "duration_steps": 4,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4541,
+              "end_step": 4550,
+              "duration_steps": 10,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4555,
+              "end_step": 4562,
+              "duration_steps": 8,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4624,
+              "end_step": 4626,
+              "duration_steps": 3,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4700,
+              "end_step": 4704,
+              "duration_steps": 5,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4786,
+              "end_step": 5000,
+              "duration_steps": 215,
+              "centroid": [
+                5.75246295658683,
+                4.611511413173656,
+                9.024031234281432
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 29.216717382020107,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 29.987509926489647,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 30.07580790889502,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 23.044342992318143,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 28.094685481783863,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 28.7955196274571,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "4": {
+          "centroid": [
+            6.0751555,
+            -1.427447,
+            9.14332775
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster4_repframe_2826.pdb",
+          "n_frames_in_cluster": 4,
+          "cluster_name": "Pocket_4",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 2824,
+              "end_step": 2826,
+              "duration_steps": 3,
+              "centroid": [
+                6.0751555,
+                -1.427447,
+                9.14332775
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 31.36685079587859,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 31.433838174026878,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 32.816994710834045,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 26.330087197935924,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 30.226516981797776,
+                "intensity": 0.05319881320487787
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 30.425599671180013,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "5": {
+          "centroid": [
+            12.481911033707863,
+            4.900690868913857,
+            2.4048055730337072
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster5_repframe_3279.pdb",
+          "n_frames_in_cluster": 267,
+          "cluster_name": "Pocket_5",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 2922,
+              "end_step": 2957,
+              "duration_steps": 36,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 2963,
+              "end_step": 2966,
+              "duration_steps": 4,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 3165,
+              "end_step": 3265,
+              "duration_steps": 101,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 3278,
+              "end_step": 3282,
+              "duration_steps": 5,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 3284,
+              "end_step": 3316,
+              "duration_steps": 33,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 3369,
+              "end_step": 3432,
+              "duration_steps": 64,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 3491,
+              "end_step": 3495,
+              "duration_steps": 5,
+              "centroid": [
+                12.481911033707863,
+                4.900690868913857,
+                2.4048055730337072
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 33.20143991758053,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 33.71355638717342,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 34.715318267926136,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 26.950168707259948,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 30.41328934644151,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  26.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 30.869796675763137,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "6": {
+          "centroid": [
+            2.9909072285714293,
+            5.215527668571427,
+            2.6542901999999993
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster6_repframe_3126.pdb",
+          "n_frames_in_cluster": 175,
+          "cluster_name": "Pocket_6",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 2959,
+              "end_step": 2961,
+              "duration_steps": 3,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 2968,
+              "end_step": 2979,
+              "duration_steps": 12,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 2981,
+              "end_step": 2984,
+              "duration_steps": 4,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 2988,
+              "end_step": 2995,
+              "duration_steps": 8,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 2997,
+              "end_step": 3004,
+              "duration_steps": 8,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 3032,
+              "end_step": 3034,
+              "duration_steps": 3,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 3042,
+              "end_step": 3053,
+              "duration_steps": 12,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 3057,
+              "end_step": 3152,
+              "duration_steps": 96,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 3154,
+              "end_step": 3163,
+              "duration_steps": 10,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 3272,
+              "end_step": 3276,
+              "duration_steps": 5,
+              "centroid": [
+                2.9909072285714293,
+                5.215527668571427,
+                2.6542901999999993
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 35.712665863104,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 36.31636270346624,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 36.737535506399986,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 29.06299878792374,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 34.561827880208284,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 35.34583015630395,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "7": {
+          "centroid": [
+            3.0839802916666668,
+            5.245908583333334,
+            9.279384708333332
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster7_repframe_3020.pdb",
+          "n_frames_in_cluster": 24,
+          "cluster_name": "Pocket_7",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 7,
+              "cluster_name": "Pocket_7",
+              "start_step": 3018,
+              "end_step": 3024,
+              "duration_steps": 7,
+              "centroid": [
+                3.0839802916666668,
+                5.245908583333334,
+                9.279384708333332
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 7,
+              "cluster_name": "Pocket_7",
+              "start_step": 3038,
+              "end_step": 3040,
+              "duration_steps": 3,
+              "centroid": [
+                3.0839802916666668,
+                5.245908583333334,
+                9.279384708333332
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 30.032829554203335,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 30.53818121409922,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 31.029718482692726,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 23.757577409432187,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 28.664520452675102,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 29.98554664109298,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "8": {
+          "centroid": [
+            12.699971599999998,
+            5.287841200000001,
+            9.253973400000001
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster8_repframe_3013.pdb",
+          "n_frames_in_cluster": 10,
+          "cluster_name": "Pocket_8",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 8,
+              "cluster_name": "Pocket_8",
+              "start_step": 3006,
+              "end_step": 3014,
+              "duration_steps": 9,
+              "centroid": [
+                12.699971599999998,
+                5.287841200000001,
+                9.253973400000001
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 26.621076856452138,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 27.045824620394395,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 28.227408109798738,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 20.695550859958562,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 24.92771084149388,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 25.464339374842055,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "9": {
+          "centroid": [
+            12.2120778,
+            4.4715598,
+            9.168978599999999
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster9_repframe_3595.pdb",
+          "n_frames_in_cluster": 10,
+          "cluster_name": "Pocket_9",
+          "binding_events": [],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 27.07249336388296,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 27.409963643490787,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 28.690853032586652,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 21.2530427218666,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 25.634800442708478,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 25.863059868033535,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "10": {
+          "centroid": [
+            6.2352154697674465,
+            3.978296925581398,
+            2.0358250139534886
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe1_cluster10_repframe_4754.pdb",
+          "n_frames_in_cluster": 215,
+          "cluster_name": "Pocket_10",
+          "binding_events": [
+            {
+              "probe": 1,
+              "cluster": 10,
+              "cluster_name": "Pocket_10",
+              "start_step": 4564,
+              "end_step": 4622,
+              "duration_steps": 59,
+              "centroid": [
+                6.2352154697674465,
+                3.978296925581398,
+                2.0358250139534886
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 10,
+              "cluster_name": "Pocket_10",
+              "start_step": 4628,
+              "end_step": 4630,
+              "duration_steps": 3,
+              "centroid": [
+                6.2352154697674465,
+                3.978296925581398,
+                2.0358250139534886
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 10,
+              "cluster_name": "Pocket_10",
+              "start_step": 4638,
+              "end_step": 4640,
+              "duration_steps": 3,
+              "centroid": [
+                6.2352154697674465,
+                3.978296925581398,
+                2.0358250139534886
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 10,
+              "cluster_name": "Pocket_10",
+              "start_step": 4642,
+              "end_step": 4698,
+              "duration_steps": 57,
+              "centroid": [
+                6.2352154697674465,
+                3.978296925581398,
+                2.0358250139534886
+              ]
+            },
+            {
+              "probe": 1,
+              "cluster": 10,
+              "cluster_name": "Pocket_10",
+              "start_step": 4706,
+              "end_step": 4784,
+              "duration_steps": 79,
+              "centroid": [
+                6.2352154697674465,
+                3.978296925581398,
+                2.0358250139534886
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 35.364938444218325,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 36.10114589124597,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 36.36328825065963,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 28.908450779572735,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 34.258242691196706,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 34.48579655426211,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        }
+      }
+    },
+    "2": {
+      "n_clusters": 5,
+      "n_binding_events": 18,
+      "total_frames": 5001,
+      "clusters": {
+        "0": {
+          "centroid": [
+            2.269402671802451,
+            7.691569149852265,
+            2.0080745778809566
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe2_cluster0_repframe_1125.pdb",
+          "n_frames_in_cluster": 4738,
+          "cluster_name": "Pocket_0",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 0,
+              "end_step": 4520,
+              "duration_steps": 4521,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4537,
+              "end_step": 4540,
+              "duration_steps": 4,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4542,
+              "end_step": 4576,
+              "duration_steps": 35,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4583,
+              "end_step": 4723,
+              "duration_steps": 141,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4734,
+              "end_step": 4737,
+              "duration_steps": 4,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4744,
+              "end_step": 4760,
+              "duration_steps": 17,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4770,
+              "end_step": 4772,
+              "duration_steps": 3,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4786,
+              "end_step": 4790,
+              "duration_steps": 5,
+              "centroid": [
+                2.269402671802451,
+                7.691569149852265,
+                2.0080745778809566
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 36.07843126779851,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 36.43136086836725,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 37.41513057709551,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 29.114195614287546,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 34.62839464679945,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 34.87763780384325,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            2.50679075,
+            7.931680100000001,
+            10.594219499999998
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe2_cluster1_repframe_4528.pdb",
+          "n_frames_in_cluster": 20,
+          "cluster_name": "Pocket_1",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 4524,
+              "end_step": 4535,
+              "duration_steps": 12,
+              "centroid": [
+                2.50679075,
+                7.931680100000001,
+                10.594219499999998
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 4578,
+              "end_step": 4581,
+              "duration_steps": 4,
+              "centroid": [
+                2.50679075,
+                7.931680100000001,
+                10.594219499999998
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 28.590474320308186,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 28.737039631113742,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 29.990882958996085,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 22.001552648851895,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 27.08571517165832,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 28.514959543373052,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            3.4708401428571434,
+            -0.22735092857142855,
+            0.30206428571428573
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe2_cluster2_repframe_4726.pdb",
+          "n_frames_in_cluster": 14,
+          "cluster_name": "Pocket_2",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 4725,
+              "end_step": 4732,
+              "duration_steps": 8,
+              "centroid": [
+                3.4708401428571434,
+                -0.22735092857142855,
+                0.30206428571428573
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 4739,
+              "end_step": 4742,
+              "duration_steps": 4,
+              "centroid": [
+                3.4708401428571434,
+                -0.22735092857142855,
+                0.30206428571428573
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 39.21097266083794,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 39.63576769078091,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 40.264443307540255,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 33.143381263540526,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 38.203473897881636,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 38.34841140509858,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            3.7537104590909096,
+            0.26113218181818176,
+            -0.7697207272727272
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe2_cluster3_repframe_4826.pdb",
+          "n_frames_in_cluster": 220,
+          "cluster_name": "Pocket_3",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4762,
+              "end_step": 4768,
+              "duration_steps": 7,
+              "centroid": [
+                3.7537104590909096,
+                0.26113218181818176,
+                -0.7697207272727272
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4777,
+              "end_step": 4784,
+              "duration_steps": 8,
+              "centroid": [
+                3.7537104590909096,
+                0.26113218181818176,
+                -0.7697207272727272
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4792,
+              "end_step": 4868,
+              "duration_steps": 77,
+              "centroid": [
+                3.7537104590909096,
+                0.26113218181818176,
+                -0.7697207272727272
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4870,
+              "end_step": 4969,
+              "duration_steps": 100,
+              "centroid": [
+                3.7537104590909096,
+                0.26113218181818176,
+                -0.7697207272727272
+              ]
+            },
+            {
+              "probe": 2,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4979,
+              "end_step": 5000,
+              "duration_steps": 22,
+              "centroid": [
+                3.7537104590909096,
+                0.26113218181818176,
+                -0.7697207272727272
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 39.86253415871131,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 40.34148344604042,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 40.910347599019595,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 33.68595068273836,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 38.893751327288705,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 39.01524039141475,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "4": {
+          "centroid": [
+            3.6614927499999994,
+            0.6050305,
+            8.48002375
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe2_cluster4_repframe_4975.pdb",
+          "n_frames_in_cluster": 8,
+          "cluster_name": "Pocket_4",
+          "binding_events": [
+            {
+              "probe": 2,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 4971,
+              "end_step": 4977,
+              "duration_steps": 7,
+              "centroid": [
+                3.6614927499999994,
+                0.6050305,
+                8.48002375
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 32.04064276383663,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 32.398102015701426,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 33.01698827452009,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 26.455471186879226,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 30.8180425273864,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 31.330083365988617,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        }
+      }
+    },
+    "3": {
+      "n_clusters": 5,
+      "n_binding_events": 86,
+      "total_frames": 5001,
+      "clusters": {
+        "0": {
+          "centroid": [
+            1.1945957098293112,
+            7.948170199529127,
+            6.69289574573279
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe3_cluster0_repframe_1138.pdb",
+          "n_frames_in_cluster": 1699,
+          "cluster_name": "Pocket_0",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 0,
+              "end_step": 263,
+              "duration_steps": 264,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 265,
+              "end_step": 275,
+              "duration_steps": 11,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 288,
+              "end_step": 303,
+              "duration_steps": 16,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 331,
+              "end_step": 343,
+              "duration_steps": 13,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 374,
+              "end_step": 376,
+              "duration_steps": 3,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 396,
+              "end_step": 470,
+              "duration_steps": 75,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 472,
+              "end_step": 490,
+              "duration_steps": 19,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 494,
+              "end_step": 996,
+              "duration_steps": 503,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1002,
+              "end_step": 1012,
+              "duration_steps": 11,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1046,
+              "end_step": 1050,
+              "duration_steps": 5,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1069,
+              "end_step": 1119,
+              "duration_steps": 51,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1128,
+              "end_step": 1130,
+              "duration_steps": 3,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1146,
+              "end_step": 1316,
+              "duration_steps": 171,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1318,
+              "end_step": 1324,
+              "duration_steps": 7,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1439,
+              "end_step": 1447,
+              "duration_steps": 9,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1748,
+              "end_step": 1759,
+              "duration_steps": 12,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1768,
+              "end_step": 1858,
+              "duration_steps": 91,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1869,
+              "end_step": 1873,
+              "duration_steps": 5,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1881,
+              "end_step": 1900,
+              "duration_steps": 20,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1916,
+              "end_step": 1921,
+              "duration_steps": 6,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1929,
+              "end_step": 1946,
+              "duration_steps": 18,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1950,
+              "end_step": 1954,
+              "duration_steps": 5,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1956,
+              "end_step": 1962,
+              "duration_steps": 7,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1966,
+              "end_step": 1968,
+              "duration_steps": 3,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1974,
+              "end_step": 2075,
+              "duration_steps": 102,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2089,
+              "end_step": 2091,
+              "duration_steps": 3,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2167,
+              "end_step": 2194,
+              "duration_steps": 28,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2196,
+              "end_step": 2199,
+              "duration_steps": 4,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2438,
+              "end_step": 2448,
+              "duration_steps": 11,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2455,
+              "end_step": 2459,
+              "duration_steps": 5,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4710,
+              "end_step": 4715,
+              "duration_steps": 6,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4744,
+              "end_step": 4797,
+              "duration_steps": 54,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4815,
+              "end_step": 4821,
+              "duration_steps": 7,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4829,
+              "end_step": 4846,
+              "duration_steps": 18,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4855,
+              "end_step": 4872,
+              "duration_steps": 18,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4874,
+              "end_step": 4877,
+              "duration_steps": 4,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4884,
+              "end_step": 4897,
+              "duration_steps": 14,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4899,
+              "end_step": 4914,
+              "duration_steps": 16,
+              "centroid": [
+                1.1945957098293112,
+                7.948170199529127,
+                6.69289574573279
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 32.50523715635647,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 32.63162889224675,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 33.93835042921838,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 25.703810544199392,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 31.063451463898105,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 31.577845724668894,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            1.891859807692307,
+            7.59421864102564,
+            -2.5840120769230768
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe3_cluster1_repframe_347.pdb",
+          "n_frames_in_cluster": 78,
+          "cluster_name": "Pocket_1",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 280,
+              "end_step": 284,
+              "duration_steps": 5,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 305,
+              "end_step": 310,
+              "duration_steps": 6,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 312,
+              "end_step": 314,
+              "duration_steps": 3,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 319,
+              "end_step": 329,
+              "duration_steps": 11,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 345,
+              "end_step": 356,
+              "duration_steps": 12,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 358,
+              "end_step": 372,
+              "duration_steps": 15,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 378,
+              "end_step": 389,
+              "duration_steps": 12,
+              "centroid": [
+                1.891859807692307,
+                7.59421864102564,
+                -2.5840120769230768
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 40.35901070778419,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 40.76694269214808,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  16.97,
+                  20.86,
+                  33.9
+                ],
+                "distance_A": 41.646301203733145,
+                "intensity": 0.25917032756510305
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 33.29666440525489,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 38.35991494473691,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 39.17803603378921,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            1.1990690494838023,
+            9.120390123887509,
+            -2.277822723033107
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe3_cluster2_repframe_4677.pdb",
+          "n_frames_in_cluster": 2809,
+          "cluster_name": "Pocket_2",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1014,
+              "end_step": 1044,
+              "duration_steps": 31,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1052,
+              "end_step": 1065,
+              "duration_steps": 14,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1121,
+              "end_step": 1126,
+              "duration_steps": 6,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1139,
+              "end_step": 1144,
+              "duration_steps": 6,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1326,
+              "end_step": 1344,
+              "duration_steps": 19,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1348,
+              "end_step": 1434,
+              "duration_steps": 87,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1449,
+              "end_step": 1453,
+              "duration_steps": 5,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1455,
+              "end_step": 1728,
+              "duration_steps": 274,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1730,
+              "end_step": 1737,
+              "duration_steps": 8,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1741,
+              "end_step": 1746,
+              "duration_steps": 6,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1860,
+              "end_step": 1867,
+              "duration_steps": 8,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1877,
+              "end_step": 1879,
+              "duration_steps": 3,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1902,
+              "end_step": 1914,
+              "duration_steps": 13,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 1923,
+              "end_step": 1925,
+              "duration_steps": 3,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2077,
+              "end_step": 2087,
+              "duration_steps": 11,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2093,
+              "end_step": 2095,
+              "duration_steps": 3,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2097,
+              "end_step": 2099,
+              "duration_steps": 3,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2106,
+              "end_step": 2163,
+              "duration_steps": 58,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2201,
+              "end_step": 2394,
+              "duration_steps": 194,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2402,
+              "end_step": 2427,
+              "duration_steps": 26,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2429,
+              "end_step": 2431,
+              "duration_steps": 3,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2433,
+              "end_step": 2436,
+              "duration_steps": 4,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2464,
+              "end_step": 2776,
+              "duration_steps": 313,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2780,
+              "end_step": 2787,
+              "duration_steps": 8,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2808,
+              "end_step": 2811,
+              "duration_steps": 4,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2813,
+              "end_step": 2816,
+              "duration_steps": 4,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2837,
+              "end_step": 2869,
+              "duration_steps": 33,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 3095,
+              "end_step": 3097,
+              "duration_steps": 3,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 3120,
+              "end_step": 3330,
+              "duration_steps": 211,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 3334,
+              "end_step": 3393,
+              "duration_steps": 60,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 3408,
+              "end_step": 4708,
+              "duration_steps": 1301,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 4720,
+              "end_step": 4742,
+              "duration_steps": 23,
+              "centroid": [
+                1.1990690494838023,
+                9.120390123887509,
+                -2.277822723033107
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 40.156728996569626,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 40.39468532744846,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  16.97,
+                  20.86,
+                  33.9
+                ],
+                "distance_A": 41.17493849501755,
+                "intensity": 0.25917032756510305
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 32.96067686475545,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 37.61692813220354,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 38.999196119930964,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            1.7106989999999989,
+            10.736901689189182,
+            7.043760222972975
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe3_cluster3_repframe_3109.pdb",
+          "n_frames_in_cluster": 296,
+          "cluster_name": "Pocket_3",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2789,
+              "end_step": 2806,
+              "duration_steps": 18,
+              "centroid": [
+                1.7106989999999989,
+                10.736901689189182,
+                7.043760222972975
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2822,
+              "end_step": 2832,
+              "duration_steps": 11,
+              "centroid": [
+                1.7106989999999989,
+                10.736901689189182,
+                7.043760222972975
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 2871,
+              "end_step": 3093,
+              "duration_steps": 223,
+              "centroid": [
+                1.7106989999999989,
+                10.736901689189182,
+                7.043760222972975
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3099,
+              "end_step": 3116,
+              "duration_steps": 18,
+              "centroid": [
+                1.7106989999999989,
+                10.736901689189182,
+                7.043760222972975
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3395,
+              "end_step": 3404,
+              "duration_steps": 10,
+              "centroid": [
+                1.7106989999999989,
+                10.736901689189182,
+                7.043760222972975
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 31.452686537840897,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 31.54958362686834,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  16.97,
+                  20.86,
+                  33.9
+                ],
+                "distance_A": 32.50509193003629,
+                "intensity": 0.25917032756510305
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 24.419775948882577,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 29.50840727293691,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 30.113459134226993,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "4": {
+          "centroid": [
+            1.5903628728813555,
+            -1.496123016949153,
+            7.0086377627118654
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe3_cluster4_repframe_4917.pdb",
+          "n_frames_in_cluster": 118,
+          "cluster_name": "Pocket_4",
+          "binding_events": [
+            {
+              "probe": 3,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 4799,
+              "end_step": 4813,
+              "duration_steps": 15,
+              "centroid": [
+                1.5903628728813555,
+                -1.496123016949153,
+                7.0086377627118654
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 4825,
+              "end_step": 4827,
+              "duration_steps": 3,
+              "centroid": [
+                1.5903628728813555,
+                -1.496123016949153,
+                7.0086377627118654
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 4879,
+              "end_step": 4882,
+              "duration_steps": 4,
+              "centroid": [
+                1.5903628728813555,
+                -1.496123016949153,
+                7.0086377627118654
+              ]
+            },
+            {
+              "probe": 3,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 4916,
+              "end_step": 5000,
+              "duration_steps": 85,
+              "centroid": [
+                1.5903628728813555,
+                -1.496123016949153,
+                7.0086377627118654
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 35.03210512522485,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 35.28031573487208,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 35.970682914261786,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 29.595877879999712,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 33.73381933226793,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 34.27673414515081,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        }
+      }
+    },
+    "4": {
+      "n_clusters": 7,
+      "n_binding_events": 121,
+      "total_frames": 5001,
+      "clusters": {
+        "0": {
+          "centroid": [
+            4.0830268437866435,
+            6.183047165885129,
+            8.902426796014058
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster0_repframe_2519.pdb",
+          "n_frames_in_cluster": 3412,
+          "cluster_name": "Pocket_0",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 0,
+              "end_step": 1320,
+              "duration_steps": 1321,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1322,
+              "end_step": 1331,
+              "duration_steps": 10,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1333,
+              "end_step": 1338,
+              "duration_steps": 6,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1350,
+              "end_step": 1356,
+              "duration_steps": 7,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1358,
+              "end_step": 1405,
+              "duration_steps": 48,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1407,
+              "end_step": 1434,
+              "duration_steps": 28,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1636,
+              "end_step": 1695,
+              "duration_steps": 60,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1701,
+              "end_step": 1745,
+              "duration_steps": 45,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1750,
+              "end_step": 1810,
+              "duration_steps": 61,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1834,
+              "end_step": 1837,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1860,
+              "end_step": 1872,
+              "duration_steps": 13,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1889,
+              "end_step": 1894,
+              "duration_steps": 6,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1896,
+              "end_step": 1900,
+              "duration_steps": 5,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1909,
+              "end_step": 1912,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1914,
+              "end_step": 1929,
+              "duration_steps": 16,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 1937,
+              "end_step": 2260,
+              "duration_steps": 324,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2267,
+              "end_step": 2274,
+              "duration_steps": 8,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2280,
+              "end_step": 2289,
+              "duration_steps": 10,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2291,
+              "end_step": 2293,
+              "duration_steps": 3,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2503,
+              "end_step": 2514,
+              "duration_steps": 12,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2518,
+              "end_step": 2526,
+              "duration_steps": 9,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2528,
+              "end_step": 2618,
+              "duration_steps": 91,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2815,
+              "end_step": 2819,
+              "duration_steps": 5,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2824,
+              "end_step": 2827,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2841,
+              "end_step": 2898,
+              "duration_steps": 58,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 2903,
+              "end_step": 3234,
+              "duration_steps": 332,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3283,
+              "end_step": 3318,
+              "duration_steps": 36,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3320,
+              "end_step": 3546,
+              "duration_steps": 227,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3596,
+              "end_step": 3599,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3601,
+              "end_step": 3754,
+              "duration_steps": 154,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3759,
+              "end_step": 3788,
+              "duration_steps": 30,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3799,
+              "end_step": 3822,
+              "duration_steps": 24,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3824,
+              "end_step": 3832,
+              "duration_steps": 9,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3842,
+              "end_step": 3844,
+              "duration_steps": 3,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3846,
+              "end_step": 3851,
+              "duration_steps": 6,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3853,
+              "end_step": 3860,
+              "duration_steps": 8,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3872,
+              "end_step": 3878,
+              "duration_steps": 7,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3882,
+              "end_step": 3885,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3906,
+              "end_step": 3915,
+              "duration_steps": 10,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3917,
+              "end_step": 3920,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3980,
+              "end_step": 3988,
+              "duration_steps": 9,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 3996,
+              "end_step": 4005,
+              "duration_steps": 10,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4007,
+              "end_step": 4011,
+              "duration_steps": 5,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4020,
+              "end_step": 4109,
+              "duration_steps": 90,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4115,
+              "end_step": 4132,
+              "duration_steps": 18,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4140,
+              "end_step": 4142,
+              "duration_steps": 3,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4144,
+              "end_step": 4175,
+              "duration_steps": 32,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4190,
+              "end_step": 4196,
+              "duration_steps": 7,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4198,
+              "end_step": 4224,
+              "duration_steps": 27,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4231,
+              "end_step": 4241,
+              "duration_steps": 11,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4248,
+              "end_step": 4253,
+              "duration_steps": 6,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4255,
+              "end_step": 4279,
+              "duration_steps": 25,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4281,
+              "end_step": 4288,
+              "duration_steps": 8,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4305,
+              "end_step": 4309,
+              "duration_steps": 5,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4313,
+              "end_step": 4319,
+              "duration_steps": 7,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4880,
+              "end_step": 4887,
+              "duration_steps": 8,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 0,
+              "cluster_name": "Pocket_0",
+              "start_step": 4889,
+              "end_step": 4892,
+              "duration_steps": 4,
+              "centroid": [
+                4.0830268437866435,
+                6.183047165885129,
+                8.902426796014058
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 29.608483486110032,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 30.139630369708115,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 30.688592517532584,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 23.15344989176833,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 28.325614828454658,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 29.57318657506559,
+                "intensity": 0.05319881320487787
+              }
+            ]
+          }
+        },
+        "1": {
+          "centroid": [
+            12.811019057971016,
+            6.052722074534167,
+            9.38599020082816
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster1_repframe_2338.pdb",
+          "n_frames_in_cluster": 483,
+          "cluster_name": "Pocket_1",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1346,
+              "end_step": 1348,
+              "duration_steps": 3,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1439,
+              "end_step": 1588,
+              "duration_steps": 150,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1602,
+              "end_step": 1618,
+              "duration_steps": 17,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1620,
+              "end_step": 1634,
+              "duration_steps": 15,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1697,
+              "end_step": 1699,
+              "duration_steps": 3,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1812,
+              "end_step": 1820,
+              "duration_steps": 9,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1824,
+              "end_step": 1830,
+              "duration_steps": 7,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1839,
+              "end_step": 1858,
+              "duration_steps": 20,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1879,
+              "end_step": 1883,
+              "duration_steps": 5,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 1931,
+              "end_step": 1935,
+              "duration_steps": 5,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2262,
+              "end_step": 2265,
+              "duration_steps": 4,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2295,
+              "end_step": 2298,
+              "duration_steps": 4,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2300,
+              "end_step": 2326,
+              "duration_steps": 27,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2328,
+              "end_step": 2334,
+              "duration_steps": 7,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2339,
+              "end_step": 2410,
+              "duration_steps": 72,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2412,
+              "end_step": 2494,
+              "duration_steps": 83,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 1,
+              "cluster_name": "Pocket_1",
+              "start_step": 2496,
+              "end_step": 2501,
+              "duration_steps": 6,
+              "centroid": [
+                12.811019057971016,
+                6.052722074534167,
+                9.38599020082816
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 26.239385461545726,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 26.771459978161634,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 27.792501702771236,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 20.188720570181285,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  25.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 24.427373473962163,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  26.97,
+                  16.86,
+                  26.9
+                ],
+                "distance_A": 24.980282959175785,
+                "intensity": 0.02982191441397137
+              }
+            ]
+          }
+        },
+        "2": {
+          "centroid": [
+            4.555962805147058,
+            -3.880699356617645,
+            9.746387775735295
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster2_repframe_2801.pdb",
+          "n_frames_in_cluster": 272,
+          "cluster_name": "Pocket_2",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2625,
+              "end_step": 2694,
+              "duration_steps": 70,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2696,
+              "end_step": 2809,
+              "duration_steps": 114,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2811,
+              "end_step": 2813,
+              "duration_steps": 3,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 2832,
+              "end_step": 2834,
+              "duration_steps": 3,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 3236,
+              "end_step": 3281,
+              "duration_steps": 46,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 3834,
+              "end_step": 3836,
+              "duration_steps": 3,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 4111,
+              "end_step": 4113,
+              "duration_steps": 3,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 2,
+              "cluster_name": "Pocket_2",
+              "start_step": 4134,
+              "end_step": 4138,
+              "duration_steps": 5,
+              "centroid": [
+                4.555962805147058,
+                -3.880699356617645,
+                9.746387775735295
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 32.543871456572916,
+                "intensity": 0.436883402697084
+              },
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 32.8339122098927,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 34.224742342727126,
+                "intensity": 0.4986718750361188
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 28.149490121929176,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  20.97,
+                  9.86,
+                  32.9
+                ],
+                "distance_A": 31.53279554487024,
+                "intensity": 0.05319881320487787
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 31.72666966193936,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "3": {
+          "centroid": [
+            5.740574745644597,
+            13.210200311846693,
+            9.647333526132401
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster3_repframe_4482.pdb",
+          "n_frames_in_cluster": 574,
+          "cluster_name": "Pocket_3",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3550,
+              "end_step": 3555,
+              "duration_steps": 6,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3557,
+              "end_step": 3559,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3565,
+              "end_step": 3594,
+              "duration_steps": 30,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3887,
+              "end_step": 3891,
+              "duration_steps": 5,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3895,
+              "end_step": 3904,
+              "duration_steps": 10,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3927,
+              "end_step": 3978,
+              "duration_steps": 52,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 3990,
+              "end_step": 3992,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4177,
+              "end_step": 4188,
+              "duration_steps": 12,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4226,
+              "end_step": 4229,
+              "duration_steps": 4,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4297,
+              "end_step": 4299,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4323,
+              "end_step": 4337,
+              "duration_steps": 15,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4361,
+              "end_step": 4363,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4367,
+              "end_step": 4610,
+              "duration_steps": 244,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4624,
+              "end_step": 4627,
+              "duration_steps": 4,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4631,
+              "end_step": 4639,
+              "duration_steps": 9,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4657,
+              "end_step": 4684,
+              "duration_steps": 28,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4712,
+              "end_step": 4714,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4902,
+              "end_step": 4910,
+              "duration_steps": 9,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4912,
+              "end_step": 4914,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4918,
+              "end_step": 4920,
+              "duration_steps": 3,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4927,
+              "end_step": 4945,
+              "duration_steps": 19,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4974,
+              "end_step": 4979,
+              "duration_steps": 6,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 3,
+              "cluster_name": "Pocket_3",
+              "start_step": 4989,
+              "end_step": 5000,
+              "duration_steps": 12,
+              "centroid": [
+                5.740574745644597,
+                13.210200311846693,
+                9.647333526132401
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 27.133014803552033,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 27.16933773170136,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  16.97,
+                  20.86,
+                  33.9
+                ],
+                "distance_A": 27.79948305103328,
+                "intensity": 0.25917032756510305
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 19.744827914458654,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 24.589818125775018,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 25.957587739486097,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "4": {
+          "centroid": [
+            -3.758846041666667,
+            12.98995925,
+            9.271000208333335
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster4_repframe_4345.pdb",
+          "n_frames_in_cluster": 24,
+          "cluster_name": "Pocket_4",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 4,
+              "cluster_name": "Pocket_4",
+              "start_step": 4339,
+              "end_step": 4359,
+              "duration_steps": 21,
+              "centroid": [
+                -3.758846041666667,
+                12.98995925,
+                9.271000208333335
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 31.978000559452802,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 32.85555283277136,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  16.97,
+                  20.86,
+                  33.9
+                ],
+                "distance_A": 33.139255126868754,
+                "intensity": 0.25917032756510305
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 25.880271281686696,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 29.83600740208097,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 30.95342106612822,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "5": {
+          "centroid": [
+            -3.306925911764706,
+            12.890246411764707,
+            9.858031247058829
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster5_repframe_4785.pdb",
+          "n_frames_in_cluster": 170,
+          "cluster_name": "Pocket_5",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4612,
+              "end_step": 4614,
+              "duration_steps": 3,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4641,
+              "end_step": 4651,
+              "duration_steps": 11,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4653,
+              "end_step": 4655,
+              "duration_steps": 3,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4686,
+              "end_step": 4689,
+              "duration_steps": 4,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4695,
+              "end_step": 4710,
+              "duration_steps": 16,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4716,
+              "end_step": 4724,
+              "duration_steps": 9,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4726,
+              "end_step": 4729,
+              "duration_steps": 4,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4731,
+              "end_step": 4786,
+              "duration_steps": 56,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4805,
+              "end_step": 4815,
+              "duration_steps": 11,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4817,
+              "end_step": 4826,
+              "duration_steps": 10,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4951,
+              "end_step": 4964,
+              "duration_steps": 14,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 5,
+              "cluster_name": "Pocket_5",
+              "start_step": 4966,
+              "end_step": 4972,
+              "duration_steps": 7,
+              "centroid": [
+                -3.306925911764706,
+                12.890246411764707,
+                9.858031247058829
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 31.255482132879106,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 32.119530815284634,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  16.97,
+                  20.86,
+                  33.9
+                ],
+                "distance_A": 32.44513766661784,
+                "intensity": 0.25917032756510305
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 25.165336400199298,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  26.86,
+                  27.9
+                ],
+                "distance_A": 29.23546942640488,
+                "intensity": 0.02982191441397137
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 30.21593460946444,
+                "intensity": 0.12772840751123862
+              }
+            ]
+          }
+        },
+        "6": {
+          "centroid": [
+            -3.0954917424242425,
+            3.5876713939393943,
+            9.695931136363635
+          ],
+          "rep_frame_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/cv_plots/probe4_cluster6_repframe_4877.pdb",
+          "n_frames_in_cluster": 66,
+          "cluster_name": "Pocket_6",
+          "binding_events": [
+            {
+              "probe": 4,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 4788,
+              "end_step": 4803,
+              "duration_steps": 16,
+              "centroid": [
+                -3.0954917424242425,
+                3.5876713939393943,
+                9.695931136363635
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 4828,
+              "end_step": 4865,
+              "duration_steps": 38,
+              "centroid": [
+                -3.0954917424242425,
+                3.5876713939393943,
+                9.695931136363635
+              ]
+            },
+            {
+              "probe": 4,
+              "cluster": 6,
+              "cluster_name": "Pocket_6",
+              "start_step": 4867,
+              "end_step": 4872,
+              "duration_steps": 6,
+              "centroid": [
+                -3.0954917424242425,
+                3.5876713939393943,
+                9.695931136363635
+              ]
+            }
+          ],
+          "top_mdpocket_peaks": {
+            "dens": [
+              {
+                "coord": [
+                  17.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 33.691432544442016,
+                "intensity": 0.2331923448211874
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 33.73072465580568,
+                "intensity": 0.4986718750361188
+              },
+              {
+                "coord": [
+                  19.97,
+                  9.86,
+                  34.9
+                ],
+                "distance_A": 34.73620737422511,
+                "intensity": 0.436883402697084
+              }
+            ],
+            "freq": [
+              {
+                "coord": [
+                  14.97,
+                  15.86,
+                  26.9
+                ],
+                "distance_A": 27.802014797051566,
+                "intensity": 0.03168158699777224
+              },
+              {
+                "coord": [
+                  14.97,
+                  13.86,
+                  33.9
+                ],
+                "distance_A": 31.901719020174145,
+                "intensity": 0.12772840751123862
+              },
+              {
+                "coord": [
+                  14.97,
+                  16.86,
+                  34.9
+                ],
+                "distance_A": 33.73072465580568,
+                "intensity": 0.0629383014008502
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
