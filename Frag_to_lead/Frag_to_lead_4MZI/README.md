@@ -57,8 +57,6 @@
 - [1ns\_Preliminary Results](#1ns_preliminary-results)
 - [1ns\_withpullres\_withcheckpoints\_Preliminary Results](#1ns_withpullres_withcheckpoints_preliminary-results)
   - [🧬 Workflow Overview](#-workflow-overview)
-- [1ns\_Preliminary Results](#1ns_preliminary-results-1)
-- [100ps\_Preliminary Results](#100ps_preliminary-results-1)
   - [aLMMD Sampling / aLMMD Analysis](#almmd-sampling--almmd-analysis)
 - [aLMMD Pipeline](#almmd-pipeline)
   - [Pipeline Overview](#pipeline-overview)
@@ -104,7 +102,7 @@ This folder contains the preliminary/test results from the **accelerated Ligand-
 # 1ns_withpullres_withcheckpoints_Preliminary Results
 [⬆️ Back to top](#readme-table-of-contents)
 
-This folder **is going to** contain the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality.
+This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality.
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
@@ -114,34 +112,6 @@ The entire workflow can be shown as:
 ![Overall workflow FBDD](../../images/Overall_workflow_FBDD.svg)
 
 This is ongoing work and i am currently working on the aLMMD sampling and analysis.
-
----
-
-# 1ns_Preliminary Results
-[⬆️ Back to top](#readme-table-of-contents)
-
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 1ns production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_Preliminary%20Results/100ps_pipeline_test/)).
-
-Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](1nsPreliminary%20Results/representative_snapshots/)) and ([mdpocket_figures](1nsPreliminary%20Results/mdpocket_figures/)) respectively.
-
-Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](1nsPreliminary%20Results/plumed_metad_cvs/)). 
-
-Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](1nsPreliminary%20Results/binding_event_detection/)).
-
-**All these preliminary results are merely to show pipeline/workflow functionality.**
-
-# 100ps_Preliminary Results
-[⬆️ Back to top](#readme-table-of-contents)
-
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the short 100ps production run to show pipeline/workflow functionality can be found in ([100ps_pipeline_test](100ps_Preliminary%20Results/100ps_pipeline_test/)).
-
-Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](100ps_Preliminary%20Results/representative_snapshots/)) and ([mdpocket_figures](100ps_Preliminary%20Results/mdpocket_figures/)) respectively.
-
-Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](100ps_Preliminary%20Results/plumed_metad_cvs/)). 
-
-Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](100ps_Preliminary%20Results/binding_event_detection/)).
-
-**All these preliminary results are merely to show pipeline/workflow functionality.**
 
 ---
 
