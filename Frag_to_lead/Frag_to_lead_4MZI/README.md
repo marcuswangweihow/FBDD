@@ -127,8 +127,9 @@ References:
 
 # aLMMD Pipeline
 
-This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.  
+This pipeline implements an **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** workflow with automated setup, simulation, and post‑processing.   
 It produces **5 (can be set) representative snapshots** for subsequent MDpocket analysis and docking tasks.
+All simulation and analysis parameters were conservatively selected to ensure system stability and reproducibility across all stages, including minimization, equilibration (NVT/NPT), and production runs.
 
 ## Pipeline Overview
 [⬆️ Back to top](#readme-table-of-contents)
