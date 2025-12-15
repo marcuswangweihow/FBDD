@@ -1,0 +1,814 @@
+{
+  "timestamp": "2025-12-15T10:42:14.061059",
+  "probe_kde_files": {
+    "P01A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/P01A_full.dx",
+    "P02A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/P02A_full.dx",
+    "P03A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/P03A_full.dx",
+    "P04A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/P04A_full.dx"
+  },
+  "rmsd_clusters": [
+    {
+      "cluster": 0,
+      "representative_frame": 2068
+    },
+    {
+      "cluster": 1,
+      "representative_frame": 865
+    },
+    {
+      "cluster": 2,
+      "representative_frame": 81
+    },
+    {
+      "cluster": 3,
+      "representative_frame": 4918
+    }
+  ],
+  "kde_peak_mapped_frames": [
+    {
+      "probe": "P01A",
+      "peak": [
+        28.919998,
+        51.156326,
+        25.268162
+      ],
+      "mapped_frame": 90,
+      "distance_A": 0.1810619644844358
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        32.419998,
+        47.156326,
+        25.268162
+      ],
+      "mapped_frame": 762,
+      "distance_A": 0.1912746069998736
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        36.419998,
+        47.656326,
+        20.768162
+      ],
+      "mapped_frame": 349,
+      "distance_A": 0.26240174851018444
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        37.419998,
+        55.656326,
+        20.768162
+      ],
+      "mapped_frame": 1021,
+      "distance_A": 0.206585336242119
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        24.419998,
+        72.656326,
+        23.268162
+      ],
+      "mapped_frame": 588,
+      "distance_A": 0.13160317661048415
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        24.419998,
+        77.156326,
+        24.268162
+      ],
+      "mapped_frame": 1174,
+      "distance_A": 0.3892448714686076
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        29.919998,
+        77.156326,
+        23.268162
+      ],
+      "mapped_frame": 2503,
+      "distance_A": 0.42206599400196154
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        24.419998,
+        60.656326,
+        69.768162
+      ],
+      "mapped_frame": 3749,
+      "distance_A": 0.031300296733257744
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        24.419998,
+        63.156326,
+        76.268162
+      ],
+      "mapped_frame": 3604,
+      "distance_A": 0.5094479013596535
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        24.419998,
+        65.656326,
+        68.768162
+      ],
+      "mapped_frame": 3756,
+      "distance_A": 0.33687101619174914
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        24.419998,
+        75.156326,
+        65.768162
+      ],
+      "mapped_frame": 32,
+      "distance_A": 0.6536113903595482
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        24.419998,
+        76.156326,
+        70.768162
+      ],
+      "mapped_frame": 274,
+      "distance_A": 0.4716167741799606
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        26.419998,
+        33.656326,
+        70.768162
+      ],
+      "mapped_frame": 3744,
+      "distance_A": 0.4297443773003383
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        27.419998,
+        33.656326,
+        78.268162
+      ],
+      "mapped_frame": 3653,
+      "distance_A": 0.7557737172774187
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        27.419998,
+        61.656326,
+        68.768162
+      ],
+      "mapped_frame": 3811,
+      "distance_A": 0.5813728819350663
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        34.919998,
+        77.156326,
+        78.268162
+      ],
+      "mapped_frame": 1883,
+      "distance_A": 1.063691999152589
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        35.419998,
+        77.156326,
+        70.268162
+      ],
+      "mapped_frame": 2326,
+      "distance_A": 1.1203458201298107
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        63.419998,
+        77.156326,
+        70.768162
+      ],
+      "mapped_frame": 2328,
+      "distance_A": 1.370816674948801
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        63.419998,
+        77.156326,
+        77.268162
+      ],
+      "mapped_frame": 1882,
+      "distance_A": 0.6618868754981883
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        24.919998,
+        63.156326,
+        29.268162
+      ],
+      "mapped_frame": 1800,
+      "distance_A": 0.5740290114148908
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        24.919998,
+        63.156326,
+        42.268162000000004
+      ],
+      "mapped_frame": 1737,
+      "distance_A": 0.3388262175134369
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        25.419998,
+        63.656326,
+        55.268162000000004
+      ],
+      "mapped_frame": 1748,
+      "distance_A": 0.3942672116871206
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        25.419998,
+        64.156326,
+        67.768162
+      ],
+      "mapped_frame": 1751,
+      "distance_A": 0.290141200297023
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        28.419998,
+        59.656326,
+        41.268162000000004
+      ],
+      "mapped_frame": 1907,
+      "distance_A": 0.29457771174018466
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        30.419998,
+        67.656326,
+        69.268162
+      ],
+      "mapped_frame": 89,
+      "distance_A": 0.10399715450519595
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        32.419998,
+        71.656326,
+        74.768162
+      ],
+      "mapped_frame": 538,
+      "distance_A": 0.055477747479397765
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        32.919998,
+        61.156326,
+        41.768162000000004
+      ],
+      "mapped_frame": 2238,
+      "distance_A": 0.32021870783579376
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        36.419998,
+        70.156326,
+        72.768162
+      ],
+      "mapped_frame": 594,
+      "distance_A": 0.11870738203729969
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        36.919998,
+        77.156326,
+        73.768162
+      ],
+      "mapped_frame": 657,
+      "distance_A": 0.3561399836287773
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        41.419998,
+        58.156326,
+        28.768162
+      ],
+      "mapped_frame": 2690,
+      "distance_A": 0.12209327139711842
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        41.419998,
+        58.156326,
+        41.268162000000004
+      ],
+      "mapped_frame": 2679,
+      "distance_A": 0.2664062060054924
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        46.419998,
+        55.156326,
+        29.268162
+      ],
+      "mapped_frame": 2995,
+      "distance_A": 0.32215745706482396
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        46.419998,
+        58.656326,
+        41.268162000000004
+      ],
+      "mapped_frame": 2802,
+      "distance_A": 0.26241211043588203
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        48.419998,
+        54.156326,
+        42.268162000000004
+      ],
+      "mapped_frame": 2934,
+      "distance_A": 0.28586792624314983
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        48.919998,
+        54.156326,
+        68.268162
+      ],
+      "mapped_frame": 2942,
+      "distance_A": 0.26887196696127064
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        48.919998,
+        54.656326,
+        55.268162000000004
+      ],
+      "mapped_frame": 2898,
+      "distance_A": 0.19635496337234315
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        49.419998,
+        49.156326,
+        41.768162000000004
+      ],
+      "mapped_frame": 3150,
+      "distance_A": 0.3057028123276221
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        49.419998,
+        49.656326,
+        28.768162
+      ],
+      "mapped_frame": 3166,
+      "distance_A": 0.16323039846422668
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        52.419998,
+        51.156326,
+        54.268162000000004
+      ],
+      "mapped_frame": 3331,
+      "distance_A": 0.08405080585618581
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        52.919998,
+        42.656326,
+        42.268162000000004
+      ],
+      "mapped_frame": 4240,
+      "distance_A": 0.39368205934745953
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        54.919998,
+        43.656326,
+        67.768162
+      ],
+      "mapped_frame": 3571,
+      "distance_A": 0.32730468480241315
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        55.419998,
+        45.656326,
+        55.268162000000004
+      ],
+      "mapped_frame": 4187,
+      "distance_A": 0.2740015518131612
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        56.919998,
+        32.656326,
+        78.268162
+      ],
+      "mapped_frame": 4519,
+      "distance_A": 0.253778676198034
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        56.919998,
+        44.156326,
+        41.768162000000004
+      ],
+      "mapped_frame": 3951,
+      "distance_A": 0.5535675357962829
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        57.419998,
+        32.156326,
+        41.268162000000004
+      ],
+      "mapped_frame": 4465,
+      "distance_A": 0.26649945907007216
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        57.419998,
+        33.656326,
+        55.268162000000004
+      ],
+      "mapped_frame": 4477,
+      "distance_A": 0.3122025229039508
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        57.419998,
+        43.656326,
+        28.768162
+      ],
+      "mapped_frame": 3605,
+      "distance_A": 0.6010537782382839
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        57.419998,
+        49.156326,
+        55.268162000000004
+      ],
+      "mapped_frame": 4023,
+      "distance_A": 0.30692068125540556
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        58.419998,
+        31.156326,
+        29.268162
+      ],
+      "mapped_frame": 4561,
+      "distance_A": 0.48904617234529235
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        59.419998,
+        31.156326,
+        41.268162000000004
+      ],
+      "mapped_frame": 4543,
+      "distance_A": 0.09355561787392094
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        60.419998,
+        34.156326,
+        54.768162000000004
+      ],
+      "mapped_frame": 4636,
+      "distance_A": 0.4681299929905234
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        60.919998,
+        34.656326,
+        41.268162000000004
+      ],
+      "mapped_frame": 4614,
+      "distance_A": 0.17447388126652702
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        66.41999799999999,
+        36.156326,
+        55.268162000000004
+      ],
+      "mapped_frame": 4847,
+      "distance_A": 0.21394543077734957
+    }
+  ],
+  "dbscan_clusters": [
+    {
+      "cluster_label": 0,
+      "representative_frame": 801
+    },
+    {
+      "cluster_label": 1,
+      "representative_frame": 1330
+    },
+    {
+      "cluster_label": 2,
+      "representative_frame": 2539
+    },
+    {
+      "cluster_label": 3,
+      "representative_frame": 1598
+    },
+    {
+      "cluster_label": 4,
+      "representative_frame": 1738
+    },
+    {
+      "cluster_label": 5,
+      "representative_frame": 1732
+    },
+    {
+      "cluster_label": 6,
+      "representative_frame": 1736
+    },
+    {
+      "cluster_label": 7,
+      "representative_frame": 1762
+    },
+    {
+      "cluster_label": 8,
+      "representative_frame": 1797
+    },
+    {
+      "cluster_label": 9,
+      "representative_frame": 1872
+    },
+    {
+      "cluster_label": 10,
+      "representative_frame": 1884
+    },
+    {
+      "cluster_label": 11,
+      "representative_frame": 2192
+    },
+    {
+      "cluster_label": 12,
+      "representative_frame": 2234
+    },
+    {
+      "cluster_label": 13,
+      "representative_frame": 2211
+    },
+    {
+      "cluster_label": 14,
+      "representative_frame": 2223
+    },
+    {
+      "cluster_label": 15,
+      "representative_frame": 2314
+    },
+    {
+      "cluster_label": 16,
+      "representative_frame": 2474
+    },
+    {
+      "cluster_label": 17,
+      "representative_frame": 2381
+    },
+    {
+      "cluster_label": 18,
+      "representative_frame": 2367
+    },
+    {
+      "cluster_label": 19,
+      "representative_frame": 2605
+    },
+    {
+      "cluster_label": 20,
+      "representative_frame": 2613
+    },
+    {
+      "cluster_label": 21,
+      "representative_frame": 2635
+    },
+    {
+      "cluster_label": 22,
+      "representative_frame": 2641
+    },
+    {
+      "cluster_label": 23,
+      "representative_frame": 3061
+    },
+    {
+      "cluster_label": 24,
+      "representative_frame": 2680
+    },
+    {
+      "cluster_label": 25,
+      "representative_frame": 2673
+    },
+    {
+      "cluster_label": 26,
+      "representative_frame": 2773
+    },
+    {
+      "cluster_label": 27,
+      "representative_frame": 3496
+    },
+    {
+      "cluster_label": 28,
+      "representative_frame": 3472
+    },
+    {
+      "cluster_label": 29,
+      "representative_frame": 3409
+    },
+    {
+      "cluster_label": 30,
+      "representative_frame": 3965
+    },
+    {
+      "cluster_label": 31,
+      "representative_frame": 3613
+    },
+    {
+      "cluster_label": 32,
+      "representative_frame": 3610
+    },
+    {
+      "cluster_label": 33,
+      "representative_frame": 3658
+    },
+    {
+      "cluster_label": 34,
+      "representative_frame": 3662
+    },
+    {
+      "cluster_label": 35,
+      "representative_frame": 3877
+    },
+    {
+      "cluster_label": 36,
+      "representative_frame": 3795
+    },
+    {
+      "cluster_label": 37,
+      "representative_frame": 3772
+    },
+    {
+      "cluster_label": 38,
+      "representative_frame": 3980
+    },
+    {
+      "cluster_label": 39,
+      "representative_frame": 4356
+    },
+    {
+      "cluster_label": 40,
+      "representative_frame": 4248
+    },
+    {
+      "cluster_label": 41,
+      "representative_frame": 4260
+    },
+    {
+      "cluster_label": 42,
+      "representative_frame": 4455
+    },
+    {
+      "cluster_label": 43,
+      "representative_frame": 4485
+    },
+    {
+      "cluster_label": 44,
+      "representative_frame": 4563
+    },
+    {
+      "cluster_label": 45,
+      "representative_frame": 4578
+    },
+    {
+      "cluster_label": 46,
+      "representative_frame": 4630
+    },
+    {
+      "cluster_label": 47,
+      "representative_frame": 4672
+    },
+    {
+      "cluster_label": 48,
+      "representative_frame": 4859
+    },
+    {
+      "cluster_label": 49,
+      "representative_frame": 4783
+    },
+    {
+      "cluster_label": 50,
+      "representative_frame": 4945
+    },
+    {
+      "cluster_label": 51,
+      "representative_frame": 4969
+    },
+    {
+      "cluster_label": 52,
+      "representative_frame": 4832
+    },
+    {
+      "cluster_label": 53,
+      "representative_frame": 4873
+    },
+    {
+      "cluster_label": 54,
+      "representative_frame": 4982
+    }
+  ],
+  "selected_frames": [
+    {
+      "frame": 2068,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_2068_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_2068_allatoms.pdb",
+      "source": "RMSD"
+    },
+    {
+      "frame": 865,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_865_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_865_allatoms.pdb",
+      "source": "RMSD"
+    },
+    {
+      "frame": 81,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_81_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_81_allatoms.pdb",
+      "source": "RMSD"
+    },
+    {
+      "frame": 90,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_90_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_90_allatoms.pdb",
+      "source": "KDE_P01A"
+    },
+    {
+      "frame": 801,
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_801_protein.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD project/4MZI_1ns_pullres_testing_C_20251211/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_801_allatoms.pdb",
+      "source": "DBSCAN"
+    }
+  ],
+  "removed_frames_due_to_max": []
+}
