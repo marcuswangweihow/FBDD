@@ -54,7 +54,7 @@
 # 1ns_withpullres_withcheckpoints_Preliminary Results
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality. For this run, the run was restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
+This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality. For this run, the run was continued/restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
 
 The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 1ns production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_pipeline_test/)).
 
@@ -73,25 +73,25 @@ Details and preliminary results for Binding Event Detection and Pocket Mapping c
 ## energy.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. For this run, the run was restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
+This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. For this run, the run was continued/restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
 ![Energy vs Steps](energy.png)
 
 ## temperature.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases. For this run, the run was restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
+This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases. For this run, the run was continued/restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
 ![Temparature vs Steps](temperature.png)
 
 ## energy_temperature_dual.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. For this run, the run was restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
+This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. For this run, the run was continued/restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
 ![Energy/Temparature vs Steps](energy_temperature_dual.png)
 
 ## plumed_bias.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases. For this run, the run was restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
+This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases. For this run, the run was continued/restarted from the checkpoint/backup files at 368.2ps and 648.6ps.
 ![Bias vs Steps](plumed_bias.png)
 
 ## Calpha_Rg.png
