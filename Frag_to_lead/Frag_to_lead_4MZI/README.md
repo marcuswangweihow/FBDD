@@ -176,7 +176,9 @@ It produces **5 (can be set) representative snapshots** for subsequent MDpocket 
    - Plotting of PLUMED bias, total energy, and temperature after run to check stability of the MD simulation.
    - Pull restraints automatically added to metal to prevent drift in production runs.
    - Resume from checkpoint/backup files implemented to handle HPC walltime limits or crashes during ns-scale runs.
-   - Five most recent checkpoint/backup folders containing all required files saved for the production run at pre-set intervals. 
+   - Five most recent checkpoint/backup folders containing all required files saved for the production run at pre-set intervals.
+   - For each backup, energy/temperature/bias vs. time plots and last-frame PDBs can be generated on demand for manual inspection.
+   - Before each restart, these plots and PDBs are inspected to ensure system stability (e.g., no metal drift, sharp spikes, or runaway values).
 
 8. **Post‑processing**  
    - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
