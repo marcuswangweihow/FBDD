@@ -483,31 +483,29 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 Some users may have existing AMBER workflows with `.prmtop` and `.inpcrd` files. These could be:
 
 1. **Complete AMBER system files**  
-   - Already include probes, custom forcefields, ions, and other modifications.
-   - Complete, high-res AMBER prmtop/inpcrd -> Load in ParmEd, convert to GROMACS (Step 8a-AMBER)
-   - The pipeline can take these files for downstream steps: minimization, equilibration, PLUMED generation, production runs, and post-processing.  
-   - Useful if users already have a fully set-up system but needs automated aLMMD or advanced post-processing.
+   - Already include probes, forcefields, ions, and other modifications.
+   - Complete, high-res AMBER prmtop/inpcrd -> Load in ParmEd, convert to GROMACS (Step 6c)
+   - The pipeline can take these files for downstream steps: minimization, equilibration, PLUMED generation, production runs, and post-processing. (Step 7EXT-External complete AMBER file)  
+   - Useful if users already have a fully set-up system but needs automated aLMMD or need restraints or advanced post-processing.
 
-2. **Protein-only AMBER files**  
-   - Contain only the protein structure and standard forcefields.  
-   - **Cannot be directly used to add multi-probe setups, custom GAFF parameters, or PLUMED CVs.**  
-   - In this case, starting from scratch using the pipeline is recommended, as it automates probe placement, multi-dihedral boost and aMD setup, PLUMED integration, and downstream post-processing.  
-   - Protein-only AMBER files provide **no usable shortcut** for building a complete aLMMD system.
+2. **Solvated protein/DNA/RNA-only AMBER files**  
+   - Contain only the solvated protein structure with optional DNA/RNA structures.
+   - The pipeline can take these files for downstream steps: probe-placement, minimization, equilibration, PLUMED generation, production runs, and post-processing. (Step 6c)   
+   - Runs in the same fashion as having complete AMBER system files, just starting at an earlier step in the pipeline.
 
 3. **Low-res / missing backbone / disordered PDB containing AMBER files**  
-   - Rebuild from scratch using your pipeline since OpenMM + PDBFixer handles this issue; do not rely on incomplete AMBER files
-   - Parmed will happily load the structure (Step 8a-AMBER) but cannot fix the residues. MD simulations might not be accurate.
+   - Rebuild from scratch using the pipeline since the pipeline (PDBFixer/tleap) handles this issue; do not rely on incomplete AMBER files
+   - Parmed might load the structure (Step 7EXT-External complete AMBER file) but cannot fix the residues. MD simulations might not be accurate.
 
 
 ### Conclusion
-- **Complete AMBER files:** Use pipeline for downstream aLMMD and post-processing.  
-- **Protein-only AMBER files:** Start fresh using the pipeline which generates the full system required for multi-probe aLMMD + PLUMED analysis.  
+- **Complete AMBER system files:** Use pipeline for downstream aLMMD, generating restraints, and post-processing.  
+- **Solvated protein/DNA/RNA-only AMBER files:** Use pipeline for probe-placement, downstream aLMMD, generating restraints, and post-processing.
+- **Low-res / missing backbone / disordered PDB containing AMBER files:** Rebuild from scratch using the pipeline.    
 
 
 # Notes
 [⬆️ Back to top](#readme-table-of-contents)
-
-All probes automatically converted to OpenMM residues with correct bond connectivity
 
 Multi dihedral boost applied to protein backbone inspired by Tan et al. (2020, 2022)
 
@@ -543,10 +541,8 @@ GPU auto-detection with CUDA available; CPU fallback supported
   - Ensure that the os.environ["PLUMED_KERNEL"] points to the correct path for "/lib/libplumedKernel.so"
 
 4. **Run the pipeline notebook**  
-   - Generates **AM1-BCC charges** for probes.  
-   - Converts probes into **OpenMM residues**.  
    - Performs **probe placement** around protein centroid.  
-   - Solvates and neutralizes the system with **TIP3P water**.  
+   - **Solvates and neutralizes** the system.  
    - Applies **multi-dihedral accelerated MD** to protein (backbone + side chains) and ligand torsions.  
    - Executes **total-potential aMD** via PLUMED, including **Metadynamics CVs**.  
    - Produces **probe occupancy maps** and automatically selects **5 representative snapshots**.  
