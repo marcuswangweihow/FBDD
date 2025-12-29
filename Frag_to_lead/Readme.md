@@ -277,7 +277,7 @@ flowchart TD
 > - WSL dependencies are **optional**; the code is OS-agnostic.
 
 - AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
-- GROMACS 2025.03
+- GROMACS 2025.03 (External installation with CUDA and plumed support recommended for faster runs. Alternaltively can just use conda-forge installation but this only has plumed support and no CUDA support)
 - External installation of Plumed 2.10.0
 - External installation of fpocket (MDpocket) 4.0
 - OpenMM 8.2
@@ -289,12 +289,6 @@ flowchart TD
 > In the notebook just remember to set the paths to gromacs and the plumed kernel properly and
 > you will also need to set the path variable in the python environment
 
-
-
-- Force fields:
-  - ff14SB from amber14-all.xml
-  - TIP3P from amber14-all.xml
-  - GAFF 2.1 for probes
 - GPU with CUDA support (optional but recommended for accelerated MD)
 - Python dependencies (Windows/WSL2): 
   `rdkit, openmm, openmmforcefields, mdtraj, numpy, openbabel, pdbfixer, fpocket, mdanalysis, parmed, pymol-open-source
@@ -304,7 +298,7 @@ flowchart TD
   ```bash
   export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
 
-- Verify installations: gmx --version, python -m openmm.testInstallation, and gmx mdrun -h | grep -i plumed
+- Verify installations: gmx --version, and gmx mdrun -h | grep -i plumed
 - WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
 
 ---
@@ -327,46 +321,51 @@ conda activate almmd
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 
-# Installations
+# Conda installations
 # Note if using previous version of gromacs and plumed (eg. for HPC cluster) install via: conda install -c conda-forge gromacs=2024 plumed=2.9.2
 conda install -c conda-forge openmm=8.2 openmmforcefields cudatoolkit=11.8 ambertools=24 openbabel rdkit mdtraj -y
 conda install -c conda-forge pdbfixer
-conda install -c conda-forge fpocket -y
-conda install mdanalysis    
+conda install -c conda-forge parmed -y
+conda install -c conda-forge mdanalysis
 
-# install gromacs and parmed (if not already)
-conda install -c conda-forge gromacs parmed -y
 
-# Install pymol  
-pip install pymol-open-source  
+# RUN THE EXTERNAL INSTALLATIONS IN A NEW TERMINAL WINDOW IE. NO ENVIRONMENT
+#===========================================================================
+# EXTERNAL INSTALLATION OF CUDA 12.6
+#===========================================================================
+# Exit conda
+conda deactivate
 
-# Check pymol version if necessary  
-pip show pymol-open-source
-  
-# verify gmx is available and GPU status
-gmx --version
-    
-# check available platforms (GPU)
-gmx mdrun -h | head -n 20
+# You’ll see no (base) or (almmd) prefix now
+# Download NVIDIA repo pin
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
 
-# Verify installation
-python -m openmm.testInstallation
+# Add CUDA repo
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/3bf863cc.pub
+sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/ /"
 
-# Output
-# OpenMM Version: 8.2
-# Git Revision: 53770948682c40bd460b39830d4e0f0fd3a4b868
-#
-# There are 3 Platforms available:
-#
-# 1 Reference - Successfully computed forces
-# 2 CPU - Successfully computed forces
-# 3 CUDA - Successfully computed forces
-#
-# Median difference in forces between platforms:
-#
-# Reference vs. CPU: 6.30392e-06
-# Reference vs. CUDA: 6.75486e-06
-# CPU vs. CUDA: 7.06771e-07
+# Install CUDA 12.6
+sudo apt update
+sudo apt install cuda-toolkit-12-6
+
+# now install nvidia-cuda-toolkit
+cd ~
+sudo apt install nvidia-cuda-toolkit
+echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+
+# verify
+nvcc --version
+#===========================================================================
+# EXTERNAL INSTALLATION OF PLUMED 2.10.0
+#===========================================================================
+
+***IMPORTANT***
+'''
+RUN THE FOLLOWING COMMANDS IN A NEW TERMINAL OR REMEMBER TO DO conda activate first after the CUDA installation
+'''
 
 # External installation of plumed 2.10.0
 cd ~
@@ -386,13 +385,13 @@ plumed info --version
 cd ~  
 nano ~/.bashrc
 
-# add these lines at the end of .bashrc  
+# add these lines at the end of ~/.bashrc  
 export PLUMED_KERNEL=$HOME/opt/plumed-2.10/lib/libplumedKernel.so
 export PATH=$HOME/opt/plumed-2.10/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/opt/plumed-2.10/lib:$LD_LIBRARY_PATH  
     
 # Reload .bashrc:
-source ~/.bashrc    
+source ~/.bashrc
 
 # Go back to almmd environment
 conda activate almmd
@@ -400,13 +399,79 @@ conda activate almmd
 # verify environment variable
 echo $PLUMED_KERNEL
 
-# get location of plumed kernel to place in jupyter notebook  
+# get location of plumed kernel to place in jupyter notebook or for gromacs installation 
 find $CONDA_PREFIX -name "libplumedKernel.so"
-  
-# run a quick (non-destructive) plumed load test:
+   
+#===========================================================================
+# EXTERNAL INSTALLATION OF GROMACS WITH CUDA SUPPORT AND PLUMED SUPPORT
+#===========================================================================
+# conda-forge gromacs 2025.3 has plumed support but not CUDA support
+
+***IMPORTANT***
+'''
+RUN THE FOLLOWING COMMANDS IN A NEW TERMINAL OR REMEMBER TO go back to base environment after the plumed installation
+'''
+
+#------------------------------------------------------------------------------------
+# cmake installation
+cd $HOME
+wget https://github.com/Kitware/CMake/releases/download/v3.30.5/cmake-3.30.5-linux-x86_64.tar.gz
+tar -xzf cmake-3.30.5-linux-x86_64.tar.gz
+
+# Add this to end of ~/.bashrc
+cd ~  
+nano ~/.bashrc
+export PATH=$HOME/cmake-3.30.5-linux-x86_64/bin:$PATH
+source ~/.bashrc
+
+# verify
+cmake --version
+
+#------------------------------------------------------------------------------------
+# Gromacs installation
+export GMX_VERSION=2025.03
+export GMX_PREFIX=$HOME/opt/gromacs-$GMX_VERSION
+export BUILD_DIR=$HOME/build/gromacs-$GMX_VERSION
+mkdir -p $BUILD_DIR
+cd $BUILD_DIR
+
+cd ~/build
+wget https://ftp.gromacs.org/pub/gromacs/gromacs-2025.3.tar.gz
+tar -xzf gromacs-2025.3.tar.gz
+cd gromacs-2025.3
+
+mkdir build
+cd build
+
+export CUDA_HOME=/usr/local/cuda
+export PATH=$CUDA_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+
+export PATH=$HOME/opt/plumed-2.10/bin:$PATH 
+export LD_LIBRARY_PATH=$HOME/opt/plumed-2.10/lib:$LD_LIBRARY_PATH
+export PLUMED_KERNEL=$HOME/opt/plumed-2.10/lib/libplumedKernel.so
+
+# Run cmake
+cmake .. \
+  -DCMAKE_INSTALL_PREFIX=$HOME/opt/gromacs-2025.3 \
+  -DGMX_BUILD_OWN_FFTW=ON \
+  -DGMX_GPU=CUDA \
+  -DGMX_USE_PLUMED=ON \
+  -DGMX_CUDA_TARGET_SM=89
+
+# build and install
+make -j$(nproc)
+make install
+source $HOME/opt/gromacs-2025.3/bin/GMXRC
+
+verification:
+gmx mdrun -version
 gmx mdrun -h | grep -i plumed
 
-# External installation of fpocket 4.0
+#===========================================================================
+# EXTERNAL INSTALLATION OF fpocket 4.0
+#===========================================================================
+# In a new terminal window
 cd ~ 
 conda activate almmd
 sudo apt update
@@ -416,11 +481,19 @@ git clone https://github.com/Discngine/fpocket.git
 cd fpocket
 make
 
-
 # add fpocket to your PATH
 nano ~/.bashrc
 
 # add this to the end of the .bashrc
+export PATH=$HOME/fpocket/bin:$PATH
+
+# **Double check that the end of the ~/.bashrc contains all the lines below**
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export PATH=$HOME/cmake-3.30.5-linux-x86_64/bin:$PATH
+export PLUMED_KERNEL=$HOME/opt/plumed-2.10/lib/libplumedKernel.so
+export PATH=$HOME/opt/plumed-2.10/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/opt/plumed-2.10/lib:$LD_LIBRARY_PATH
 export PATH=$HOME/fpocket/bin:$PATH
 
 # reload
@@ -446,8 +519,9 @@ This workflow has been designed with HPC execution and reproducibility in mind, 
 - Tested on **2025.03** (installed via conda-forge).  
 - **Note:** GROMACS 2024 binary (installed via conda-forge) **does not** include runtime PLUMED support. This will trigger a "cannot recognise -plumed option" when running the pipeline.  
 - Options for running with PLUMED:
-  1. Build **GROMACS 2024 + PLUMED 2.9.2** from source with `-DGMX_USE_PLUMED=ON`.
-  2. Use **GROMACS 2025 conda-forge**, which already supports runtime PLUMED, and point to the desired PLUMED kernel (as currently implemented in this pipeline with an external build of PLUMED 2.10.0). Testing was not done with plumed 2.92 from conda-forge.
+  1. Build **GROMACS 2025 + PLUMED 2.10.0** from source as per the installation instructions under the requirements section.
+  2. Use **GROMACS 2025 conda-forge**, which already supports runtime PLUMED, and point to the desired PLUMED kernel (as currently implemented in this pipeline with an external build of PLUMED 2.10.0). Testing was not done with plumed 2.92 from conda-forge. Note that conda-forge Gromacs does not have CUDA support.
+
 
 #### PLUMED
 - Input files auto-generated via `generate_plumed_v2_10`.
