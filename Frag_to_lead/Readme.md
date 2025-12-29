@@ -56,6 +56,7 @@
 ## Readme Table of Contents
 - [FBDD Repository Structure](#fbdd-repository-structure)
   - [Readme Table of Contents](#readme-table-of-contents)
+- [9N39](#9n39)
 - [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
   - [🧬 Workflow Overview](#-workflow-overview)
   - [aLMMD Sampling / aLMMD Analysis](#almmd-sampling--almmd-analysis)
@@ -89,11 +90,17 @@
 --------------------------------------------------------
 📌 See [CHANGELOG.md](./CHANGELOG.md) for version updates.
 
+# 9N39
+[⬆️ Back to top](#readme-table-of-contents)
+
+This folder contains the data and preliminary results for a fragment to lead workflow with 9N39 using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
+
 # Frag_to_lead_4MZI
 [⬆️ Back to top](#readme-table-of-contents)
 
 This folder contains the data and preliminary results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
+---
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
 [⬆️ Back to top](#readme-table-of-contents)
