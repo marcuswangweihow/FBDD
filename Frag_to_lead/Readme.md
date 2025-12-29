@@ -601,7 +601,9 @@ GPU auto-detection with CUDA available; CPU fallback supported
 [⬆️ Back to top](#readme-table-of-contents)
 
 1. **Set up inputs**  
-   - Specify the **protein PDB** file (`protein_pdb`) and **probe SDF/MOL2 files** (`probe_files`) in your Jupyter notebook.  
+   - Input structures can be obtained via download from the Protein Data Bank as Legacy PDB Format (.pdb) or PDBx/mmCIF format (.cif). Load the input structure in PyMOL.
+   - Preprocess the input structures in PyMOL -> remove waters, remove bound ligands if present -> save as _clean.pdb (eg. "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39/9N39_clean.pdb")
+   - Specify the **input PDB** file (`input_pdb`) and **probe SDF/MOL2 files** (`probe_files`) in your Jupyter notebook.  
 
 2. **Antechamber executable**  
    - Ensure `antechamber_exe` points to the correct Antechamber executable (either via **WSL2** or native installation).
@@ -623,9 +625,19 @@ GPU auto-detection with CUDA available; CPU fallback supported
    - Saves **trajectories, processed snapshots, and energy/temperature plots** for downstream analysis.
 
 5. **Access outputs**  
-   - Trajectories (`.trr`/`.gro`) and snapshots (`.pdb`) are saved in the designated output directories.  
-   - Occupancy maps and post-processing results are stored in `probe_density_map_dir`.  
-   - Representative snapshots are ready for **docking analysis**.  
+   - Each run output is saved under a `run_id` directory.
+   - `run_id` directory contains the directories (`backup`, `gmx_run`, `gmx_temp`, `off_mols`, `plumed`).
+   - Simulation outputs (`.gro`, `.trr`, `.edr`, `.tpr`, `.log`) are stored in `gmx_run`.  
+   - Subdirectories in gmx_run/ for:  
+     - `bias_and_energy_and_temp_plots/` → energy, temperature, bias plots.
+   - Subdirectories in gmx_run/post_processing/ for:  
+     - `rg/` → plots of C‑alpha radius of gyration (Rg) across trajectory.
+     - `windows/` → .dx and .pdb files per window with each window having their own subdirectory.
+     - `full_trajectory/` → .dx and .pdb files for the full trajectory.
+     - `full_trajectory/representative_snapshots` → .pdb files for the representative snapshots.
+     - `full_trajectory/representative_snapshots/cleaned_protein_pdbs` →  cleaned protein only .pdb files for the representative snapshots for downstream MDpocket analysis and docking tasks.
+     - `mdpocket_analysis` → to store the MDpocket analysis results from the manual run of mdpocket outside the notebook.
+     - `cv_plots/` → plots for PLUMED METAD CVs and COM Analysis, and binding events CSV/JSON.  
 
 ---
 
