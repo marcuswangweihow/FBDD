@@ -52,8 +52,8 @@
 - [FBDD Repository Structure](#fbdd-repository-structure)
 - [Readme Table of Contents](#readme-table-of-contents)
 - [Frag\_to\_lead](#frag_to_lead)
-- [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
   - [🧬 Workflow Overview](#-workflow-overview)
+- [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
 - [100ps_Preliminary Results (100ps_Preliminary Results)](#preliminary-results-preliminary-results)
 - [1ns\_Preliminary Results (1ns\_Preliminary Results)](#1ns_preliminary-results-1ns_preliminary-results)
 - [aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis (Frag\_to\_lead\_4MZI)](#almmd-pipeline---almmd-sampling--almmd-analysis)
@@ -69,9 +69,6 @@
 -------------------------------------------------------------------------------
 # Frag_to_lead
 This folder contains the data and results for a fragment to lead workflow with using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
-
-# Frag_to_lead_4MZI
-This folder contains the data and results for a fragment to lead workflow using aLMMD (accelerated Ligand-Mapping Molecular Dynamics) with 4MZI.
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
@@ -243,6 +240,10 @@ flowchart TD
     R --> S["Metadynamics CVs Plots"]
 ```
 
+----------------------------------------
+
+# Frag_to_lead_4MZI
+This folder contains the data and results for a fragment to lead workflow using aLMMD (accelerated Ligand-Mapping Molecular Dynamics) with 4MZI.
 
 # prepare_ligands.ipynb
 This notebook contains a script to prepare ligands automatically for docking in AutoDock Vina.
