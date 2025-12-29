@@ -83,6 +83,8 @@
 - [Fragment Library (.sdf)](#fragment-library-sdf)
 
 --------------------------------------------------------
+📌 See [CHANGELOG.md](./CHANGELOG.md) for version updates.
+
 # Frag_to_lead_4MZI
 [⬆️ Back to top](#readme-table-of-contents)
 
