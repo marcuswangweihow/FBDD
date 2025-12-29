@@ -103,7 +103,7 @@ The table below shows the png of the last frame of the 1ns production run for 9N
   <tr>
     <td style="border: none; text-align: center;">
       <h3>A</h3>
-      <img src="./all_atoms_.png" width="400">
+      <img src="./all_atoms.png" width="400">
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
