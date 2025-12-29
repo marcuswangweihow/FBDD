@@ -46,7 +46,7 @@
 # Readme Table of Contents
 - [FBDD Repository Structure](#fbdd-repository-structure)
 - [Readme Table of Contents](#readme-table-of-contents)
-- [Frag\_to\_lead\_4MZI](#frag_to_lead_4mzi)
+- [Frag\_to\_lead](#frag_to_lead)
   - [🧬 Workflow Overview](#-workflow-overview)
 - [aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis](#almmd-pipeline---almmd-sampling--almmd-analysis)
   - [Pipeline Overview](#pipeline-overview)
