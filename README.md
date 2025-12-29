@@ -59,10 +59,10 @@
 
 -------------------------------------------------------------------------------
 
-# Frag_to_lead_4MZI
+# Frag_to_lead
 [⬆️ Back to top](#readme-table-of-contents)
 
-This folder contains the data and results for a fragment to lead workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
+This folder contains the data and results for a fragment to lead workflow using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
 The entire workflow can be shown as:
 ## 🧬 Workflow Overview
