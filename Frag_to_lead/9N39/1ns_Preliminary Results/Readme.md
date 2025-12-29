@@ -94,6 +94,24 @@ This plot shows both of the changes in the (instantaneous and smoothed) temperat
 This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases.
 ![Bias vs Steps](plumed_bias.png)
 
+## last_frame_pdb.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+The table below shows the png of the last frame of the 1ns production run for 9N39 which is a protein/DNA complex.
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./all_atoms_.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./prot_metal_nucleotides_probes.png" width="400">
+    </td>
+  </tr>
+</table>
+
 ---
 To be added after post-processing has been done:
 
