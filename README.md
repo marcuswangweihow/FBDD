@@ -176,7 +176,54 @@ References:
 > **Note:** This pipeline has potential for publication similar to the 2020 and 2022 papers by Tan et al.  
 > The full code is **not publicly released on GitHub**, but is **available upon request** to technical interviewers or collaborators for evaluation purposes.
 > If you require access, please contact me via the email provided in my application/CV.
-> More details on the pipeline can be found in the Frag_to_lead_4MZI folder's README.
+> More details on the pipeline can be found in the Frag_to_lead folder's README.
+
+---
+## Pipeline Workflow
+[⬆️ Back to top](#readme-table-of-contents)
+
+The aLMMD pipeline is divided into four main sections, each corresponding to a distinct phase of the workflow:
+> **Note:** This workflow diagram is a high-level overview. Steps are grouped by functional purpose, not strict chronological order in the code.
+
+
+## Section 1: Preparation
+```mermaid
+flowchart TD
+    A["Protein & Probe Files (PDB, SDF)"] --> B["Protonate probes with RDKit & generate 3D conformers"]
+    B --> C["Automatic SDF → MOL2 via Antechamber + GAFF"]
+    C --> D["Load GAFF-protonated probes into ParmEd as full residues for system assembly"]
+```
+
+## Section 2: System Setup
+```mermaid
+flowchart TD
+    E["Merge protein/DNA/metals and GAFF probes using tleap"] --> F["Solvate system (TIP4P-Ew default, option TIP3P/OPC)"]
+    F --> G["Add counterions for neutralization and additional salt for ionic strength"]
+    G --> H["Generate Amber prmtop/inpcrd for GROMACS simulations"]
+    H --> I["Generate positional and pull restraints"]
+    I --> J["Energy Minimization & NVT/NPT Equilibration with metal/protein/probe restraints where necessary"]
+```
+
+## Section 3: Boosting
+```mermaid
+flowchart TD
+    J["Automatic Selection of Torsions"] --> K["PLUMED Total-Potential aMD + Multi Dihedral Boost (Protein backbone)"]
+```
+
+## Section 4: Post-processing & Snapshot Analysis
+```mermaid
+flowchart TD
+    L["Production Simulation & Trajectory Generation"] --> M["Probe Occupancy Mapping & Per-Probe Maps"]
+    M --> N["Selection of 5 Representative Snapshots"]
+    N --> O["MDpocket Analysis"]
+    N --> P["Representative Snapshots Saved for Docking"]
+
+    L --> Q["Trajectory Analysis: C-alpha Rg, Energy-Time Plot, Temperature-Time Plot, Bias-Time Plot"]
+    L --> R["Metadynamics CVs: Probe Distances & COMs"]
+    R --> S["Metadynamics CVs Plots"]
+```
+
+---
 
 # prepare_ligands.ipynb
 [⬆️ Back to top](#readme-table-of-contents)
