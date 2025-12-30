@@ -100,27 +100,39 @@ References:
 ## Pipeline Overview
 [⬆️ Back to top](#readme-table-of-contents)
 
-
-1. **Fragment/Probe Preparation**  
-    - Automatic SDF → MOL2 conversion with 3D coordinates.
-    - AM1‑BCC charge assignment via Antechamber (AmberTools, WSL2).
-    - Conversion of probes into OpenMM residues (full residues, explicit bonds).
-    - Supports multiple probes (P01, P02, …) with per-probe residue templates. 
+1. **Fragment/Probe Preparation**
+    - Protonate probes with RDKit and generate single 3D conformer.
+    - Automatic SDF → MOL2 conversion via Antechamber + GAFF.
+    - AM1‑BCC charge assignment (AmberTools, WSL2).
+    - Load GAFF-protonated probes into ParmEd as full residues with explicit bonds for integration into system.
 
 2. **Probe Placement**  
-    - N copies of each probe placed around the protein centroid while avoiding collisions 
+    - Multiple copies (N) of each probe placed around the protein centroid while avoiding collisions with protein and previously placed probes.
+    - Unique residue naming for each copy (e.g., P01A, P01B) and sequential residue numbering.
+    - Automatically removes overlapping waters within `min_dist`.
+    - Collision coordinates updated after each placement to prevent overlap.
+    - Final PDB saved for manual inspection.
 
 3. **System Solvation & Neutralization**  
-   - TIP3P water model.  
-   - Ionic strength / counterion neutralization as needed.
+    - Solvate the system with TIP4P-Ew (default), with option for TIP3P or OPC (Amber ff14SB-compatible).
+    - Crystallographic waters excluded prior to solvation to prevent clashes
+    - Metals reintroduced as part of tleap merge.
+    - Add counterions to neutralize total charge, then additional salt ions to achieve user-specified ionic strength.
+    - Solvation box size automatically adjusted according to system dimensions + padding buffer.
 
-4. **Energy Minimization & Equilibration**  
-   - Energy minimization → NVT → NPT equilibration.  
+4. **Energy Minimization(EM) & Equilibration**  
+   - Energy minimization → NVT → NPT equilibration to reduce likelihood of bad contacts and large forces that might crash the system during MD runs.  
    - Automatic estimation of aMD boost parameters from equilibration (E₀, α).
+   - Strong positional restraints automatically added to metal during EM to prevent drift during EM.
+   - Standard positional restraints automatically added to protein and probes during EM to prevent drift during EM.
+   - Pull restraints automatically added to metal to prevent drift during equilibration.
+   - Standard positional restraints automatically added to protein during equilibration to prevent drift during equilibration.
 
 5. **Multi‑Dihedral + Total‑Potential aMD with METAD CVs (Distances + COMs)**  
    - Automatic selection of torsions (protein backbone) for multi-dihedral boost.  
-   - Total potential boost applied to system.  
+   - Total potential boost applied to system.
+   - Accelerates exploration of backbone torsions while maintaining realistic dynamics.
+   - Use of metadynamics encourages exploration of new conformational space. 
    - PLUMED METAD CVs: distances and center-of-mass (COM) coordinates of probes are automatically monitored during production.  
    - `plumed.dat` is auto-generated for U‑boost style aMD integration.
 
@@ -129,13 +141,18 @@ References:
    - CPU fallback is supported with minor adaptations.
 
 7. **Production Run**  
-   - Full accelerated MD simulation using PLUMED.  
-   - Plotting of PLUMED bias, total energy, and temperature after run.
+   - Full accelerated MD simulation using GROMACS 2025.03 + PLUMED 2.10.0.  
+   - Plotting of PLUMED bias, total energy, and temperature after run to check stability of the MD simulation.
+   - Pull restraints automatically added to metal to prevent drift in production runs.
+   - Resume from checkpoint/backup files implemented to handle HPC walltime limits or crashes during ns-scale runs.
+   - Five most recent checkpoint/backup folders containing all required files saved for the production run at pre-set intervals.
+   - For each backup, energy/temperature/bias vs. time plots and last-frame PDBs can be generated on demand for manual inspection.
+   - Before each restart, these plots and PDBs are inspected to ensure system stability (e.g., no metal drift, sharp spikes, or runaway values).
 
 8. **Post‑processing**  
    - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
    - **Probe occupancy mapping**: Per-probe and combined density (voxel) maps.  
-   - **Representative snapshot selection**: RMSD clustering, KDE peak mapping, and DBSCAN probe clustering to select representative snapshots.
+   - **Representative snapshot selection**: RMSD clustering, KDE peak mapping, and DBSCAN probe clustering to select representative snapshots automatically.
    - **PLUMED METAD CVs**: Probe distances and torsions are extracted, smoothed, saved as CSV, and plotted for analysis.
        - **COM Analysis**: Generate single COM overview plot for all probes.
        - Additional visualizations:
@@ -150,27 +167,29 @@ References:
              - Legend placed outside axes for clarity.
           - **Enhanced JSON**: JSON summary of clusters and top MDpocket peaks. Includes cluster info, binding events, top MDpocket peaks per cluster.
           - **Binding events CSV/JSON**: flattened per-probe events for inspection. Includes representative frame PDBs.
-   - **MDpocket analysis** is run on representative snapshots.
+   - **MDpocket analysis** is run on representative snapshots to check for cryptic and occluded sites.
 
 9. **Output Organization**  
-   - Simulation outputs (`.gro`, `.trr`, `.edr`, `.tpr`, `.log`) are stored in `gmx_run_dir`.  
-   - Subdirectories in gmx_run_dir/ for:  
-     - `bias_and_energy_and_temp_plots/` → energy, temperature, bias plots
-   - Subdirectories in gmx_run_dir/post_processing/ for:  
-     - `rg/` → plots of C‑alpha radius of gyration (Rg) across trajectory 
-     - `windows/` → .dx and .pdb files per window
-     - `full_trajectory/` → .dx and .pdb files for the full trajectory
-     - `full_trajectory/representative_snapshots` → .pdb files for the representative snapshots
-     - `full_trajectory/representative_snapshots/cleaned_protein_pdbs` →  cleaned protein only .pdb files for the representative snapshots for downstream MDpocket analysis and docking tasks
-     - `mdpocket_analysis` → to store the MDpocket analysis results from the manual run of mdpocket outside the notebook
-     - `cv_plots/` → plots for PLUMED METAD CVs and COM Analysis, and binding events CSV/JSON  
+   - Each run output is saved under a `run_id` directory.
+   - `run_id` directory contains the directories (`backup`, `gmx_run`, `gmx_temp`, `off_mols`, `plumed`).
+   - Simulation outputs (`.gro`, `.trr`, `.edr`, `.tpr`, `.log`) are stored in `gmx_run`.  
+   - Subdirectories in gmx_run/ for:  
+     - `bias_and_energy_and_temp_plots/` → energy, temperature, bias plots.
+   - Subdirectories in gmx_run/post_processing/ for:  
+     - `rg/` → plots of C‑alpha radius of gyration (Rg) across trajectory.
+     - `windows/` → .dx and .pdb files per window with each window having their own subdirectory.
+     - `full_trajectory/` → .dx and .pdb files for the full trajectory.
+     - `full_trajectory/representative_snapshots` → .pdb files for the representative snapshots.
+     - `full_trajectory/representative_snapshots/cleaned_protein_pdbs` →  cleaned protein only .pdb files for the representative snapshots for downstream MDpocket analysis and docking tasks.
+     - `mdpocket_analysis` → to store the MDpocket analysis results from the manual run of mdpocket outside the notebook.
+     - `cv_plots/` → plots for PLUMED METAD CVs and COM Analysis, and binding events CSV/JSON.  
 
  ## Force Fields
-
-    - **Protein**: AMBER ff14SB, via `amber14-all.xml` (includes ff14SB).  
-    - **Water**: TIP3P, standard model from Amber `amber14` force field.  
-    - **Small molecules / Probes (GAFF)**:  
-      - GAFF version 2.11, via `GAFFTemplateGenerator` (OpenMM-compatible).    
+    - **Protein**: AMBER ff14SB (parameters loaded from Amber prmtop files generated by tleap).
+    - **DNA**: OL15 or bsc1 depending on user choice (tleap).
+    - **Water**: TIP4P-Ew by default, optionally TIP3P or OPC, assigned via tleap during solvation.
+    - **Small molecules / Probes (GAFF)**: GAFF v2.11 parameterized via Antechamber + tleap; included in the system prmtop/inpcrd for downstream simulation. ParmEd used to assemble probes into full system PDB/topology.
+    - **Metals**: included in tleap merge   
 
 ---
 
