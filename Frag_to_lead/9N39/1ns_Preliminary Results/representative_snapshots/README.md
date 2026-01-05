@@ -4,16 +4,16 @@
   - [Frag_to_lead](../../../)
     - [9N39](../../)
       - [1ns_Preliminary Results](../)
-        - [1ns_test](./)
-          - [NPT_equil](NPT_equil/)
-          - [NVT_equil](NVT_equil/)
-          - [Production](Production/)
-          - [em](em/)
+        - [1ns_test](../1ns_test/)
+          - [NPT_equil](../1ns_test/NPT_equil/)
+          - [NVT_equil](../1ns_test/NVT_equil/)
+          - [Production](../1ns_test/Production/)
+          - [em](../1ns_test/em/)
         - [binding_event_detection](../binding_event_detection/)
         - [mdpocket_figures](../mdpocket_figures/)
         - [occupancy_maps](../occupancy_maps/)
         - [plumed_metad_cvs](../plumed_metad_cvs/)
-        - [representative_snapshots](../representative_snapshots/)
+        - [representative_snapshots](./)
     - [Frag_to_lead_4MZI](../../../Frag_to_lead_4MZI/)
       - [100ps_Preliminary Results](../../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
         - [100ps_pipeline_test](../../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/)
@@ -62,18 +62,69 @@
 
 
 
+-----------------------------------------------------------
+
+The results here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes. 
+
+Representative snapshots: Protein-only PDBs selected from a full trajectory (1ns) using RMSD clustering, KDE peaks, and DBSCAN clustering on probe center-of-mass positions.
+These snapshots are used as input for downstream docking and MDpocket pocket analysis.
+
+# Representative Snapshot Selection
+
+Full trajectory frames were analyzed to select representative protein conformations.
+
+Selection criteria:
+
+ - RMSD clustering to identify conformational regimes.
+
+ - KDE peak detection on probe positions.
+
+ - DBSCAN clustering to find dense probe-sampling regions.
+
+Selected snapshots are protein-only PDBs, stripped of hydrogens.
+
+# Docking Preparation and Execution
+
+docking_prep.py and prepare_protein_snapshots.py are provided in this folder. 
+
+These scripts are intended to work on Windows.
+
+For Linux and Mac users:
+Use `conda install -c conda-forge autodock-vina` and adapt docking_prep.py and prepare_protein_snapshots.py to make them work.
+
+## 1. Inspect the Docking Prep Folder
+
+After running the integrated docking prep script (docking_prep.py), navigate to the docking folder:
+
+C:\Users\Admin\Documents\Documents\Misc\FBDD project\docking_prep
+
+You should see the following files:
+
+- `*_cleaned.pdbqt` → prepared receptor files for each representative snapshot.  
+- `*_grid_*.txt` → AutoDock Vina config files (one per KDE peak per snapshot).  
+- `run_all_vina.bat` → batch file containing all Vina docking commands.  
+- Ligands in `pdbqt_fragment_library` → prepared ligand files (.pdbqt) ready for docking.
+
+---
+
+## 2. Run the Batch Docking
+
+On Windows:
+
+1. Open a **Command Prompt (CMD)** or **PowerShell**.  
+2. Navigate to the docking folder:
+
+```cmd
+cd "C:\Users\Admin\Documents\Documents\Misc\FBDD project\docking_prep"
+```
+
+3. Execute the batch file:
+```cmd
+run_all_vina.bat
+```
 
 
------------------
 
-# This folder contains the preliminary outputs from Gromacs for the 1ns production test run:
 
-Stages:
-- em   : Energy minimization
-- nvt  : NVT equilibration
-- npt  : NPT equilibration
-- prod : Production run
-
-All files are for pipeline demonstration; results are preliminary and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
 
 

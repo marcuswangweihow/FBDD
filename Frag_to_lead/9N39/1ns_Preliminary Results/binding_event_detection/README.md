@@ -4,12 +4,12 @@
   - [Frag_to_lead](../../../)
     - [9N39](../../)
       - [1ns_Preliminary Results](../)
-        - [1ns_test](./)
-          - [NPT_equil](NPT_equil/)
-          - [NVT_equil](NVT_equil/)
-          - [Production](Production/)
-          - [em](em/)
-        - [binding_event_detection](../binding_event_detection/)
+        - [1ns_test](../1ns_test/)
+          - [NPT_equil](../1ns_test/NPT_equil/)
+          - [NVT_equil](../1ns_test/NVT_equil/)
+          - [Production](../1ns_test/Production/)
+          - [em](../1ns_test/em/)
+        - [binding_event_detection](./)
         - [mdpocket_figures](../mdpocket_figures/)
         - [occupancy_maps](../occupancy_maps/)
         - [plumed_metad_cvs](../plumed_metad_cvs/)
@@ -63,17 +63,111 @@
 
 
 
-
 -----------------
 
-# This folder contains the preliminary outputs from Gromacs for the 1ns production test run:
+# Binding Event Detection and Pocket Mapping
 
-Stages:
-- em   : Energy minimization
-- nvt  : NVT equilibration
-- npt  : NPT equilibration
-- prod : Production run
+This module performs integrated COM clustering of probe fragments along MD trajectories and maps clusters to MDpocket-derived density peaks to identify potential binding pockets and transient binding events.
 
-All files are for pipeline demonstration; results are preliminary and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
+Cluster → Density Peak mapping: Each cluster centroid is assigned to the nearest MDpocket density peak (DensPeak_X).
 
+If a cluster is farther than a user-defined threshold (e.g., 3 Å) from any density peak, it is labeled Pocket_X.
 
+**All results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
+
+## Binding event detection: Track consecutive frames where a probe is in a cluster.
+
+Events lasting longer than dbscan_min_samples frames are reported as binding events.
+
+## Interpretation:
+
+DensPeak_X clusters are likely near real pockets detected by MDpocket.
+
+Pocket_X clusters may represent transient, low-occupancy, or previously unidentified pockets.
+
+Binding events summarize when and for how long a probe occupies a particular cluster/pocket. Once clusters are labeled, users can track how long a probe resides in a cluster → gives residence times, which are biologically relevant.
+
+## Outputs:
+
+JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, names, distances to peaks, and binding events.
+
+3D COM plots: probe trajectories color-coded by cluster labels.
+
+3D COM plots from a 1ns production test run. **The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
+
+The plots do not show any binding events or meaningful clusters as expected due to the short production run of 1ns.
+
+### 3D COM plots
+(1,5) Probe : benzene
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>1</h3>
+      <img src="./probe1_COM_clusters.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>5</h3>
+      <img src="./probe5_COM_clusters.png" width="400">
+    </td>
+   </tr>
+</table>
+
+(2,6) Probe : methanol
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>2</h3>
+      <img src="./probe2_COM_clusters.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>6</h3>
+      <img src="./probe6_COM_clusters.png" width="400">
+    </td>
+  </tr>
+</table>
+
+(3,7) Probe : acetonitrile
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>3</h3>
+      <img src="./probe3_COM_clusters.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>7</h3>
+      <img src="./probe7_COM_clusters.png" width="400">
+    </td>
+  </tr>
+</table>
+
+(4,8) Probe : toluene
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>4</h3>
+      <img src="./probe4_COM_clusters.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>8</h3>
+      <img src="./probe8_COM_clusters.png" width="400">
+    </td>
+  </tr>
+</table>
+
+## Usage of JSON file for numerical cluster detection → structural snapshot → physical interpretation:
+
+### Open JSON → see which clusters survived as “binding events”
+
+Compare cluster names to plots to confirm physical location
+
+DensPeak → matches an MDpocket peak
+
+Pocket_X → a cluster far from any peak, might be minor or transient
+
+### Once you identify a cluster / binding event of interest:
+
+Use the rep_frame_pdb listed in the JSON (and saved in the cv_plots_dir) or extract frames manually from the full trajectory
+
+Open in PyMOL/Chimera
+
+Overlay protein + probe COMs to see how the probe binds in that cluster

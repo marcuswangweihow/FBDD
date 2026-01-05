@@ -9,6 +9,11 @@
           - [NVT_equil](../NVT_equil/)
           - [Production](../Production/)
           - [em](../em/)
+        - [binding_event_detection](../../binding_event_detection/)
+        - [mdpocket_figures](../../mdpocket_figures/)
+        - [occupancy_maps](../../occupancy_maps/)
+        - [plumed_metad_cvs](../../plumed_metad_cvs/)
+        - [representative_snapshots](../../representative_snapshots/)
     - [Frag_to_lead_4MZI](../../../../Frag_to_lead_4MZI/)
       - [100ps_Preliminary Results](../../../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
         - [100ps_pipeline_test](../../../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/)
@@ -46,4 +51,5 @@
   - [docking_4MZI_roscovitine](../../../../../docking_4MZI_roscovitine/)
   - [images](../../../../../images/)
 <!-- /REPO_TOC -->
+
 
