@@ -119,7 +119,6 @@ The table below shows the png of the last frame of the 1ns production run for 9N
 </table>
 
 ---
-To be added after post-processing has been done:
 
 ## Calpha_Rg.png
 [⬆️ Back to top](#fbdd-repository-structure)
