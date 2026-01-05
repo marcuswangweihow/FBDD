@@ -129,7 +129,7 @@ This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD
 ## Calpha_Rg_RMSD_combined.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD simulation progresses ie. time increases. 
+This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD simulation progresses ie. time increases. Plateauing RMSD indicates normal drift of system. 
 ![Calpha_Rg_RMSD vs Time](Calpha_Rg_RMSD_combined.png)
 
 
