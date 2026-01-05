@@ -678,7 +678,7 @@ Handle periodic backups and output organization.
 
 Generate plots for energy, temperature, and bias potentials.
 
-> Note: This script is provided as a functional example for HPC submission. It **does not contain the novel methodological steps** (probe placement, aLMMD boosting, torsion selection, occupancy mapping) described in steps 1–11, which constitute the core scientific contributions of the workflow.
+> Note: This script is provided as a functional example for HPC submission. It **does not contain the novel methodological steps** (probe placement, aLMMD boosting, torsion selection, occupancy mapping) described in steps 1–11, which constitute the core scientific contributions of the workflow. The pipeline contains a more updated version of the code found in this script and is not shown here.
 
 Users must manually set key parameters before launching a job such as:
 
@@ -694,7 +694,7 @@ This script ([resume_from_backup.py](resume_from_backup.py)) is designed to:
 
 Restart the production run from a backup if the run crashed or was interrupted eg. by HPC walltime limit.
 
-> Note: This script is provided as a functional example for HPC submission. It **does not contain the novel methodological steps** (probe placement, aLMMD boosting, torsion selection, occupancy mapping) described in steps 1–11, which constitute the core scientific contributions of the workflow.
+> Note: This script is provided as a functional example for HPC submission. It **does not contain the novel methodological steps** (probe placement, aLMMD boosting, torsion selection, occupancy mapping) described in steps 1–11, which constitute the core scientific contributions of the workflow. The pipeline contains a more updated version of the code found in this script and is not shown here.
 
 Users must manually set key parameters before launching a job such as:
 
