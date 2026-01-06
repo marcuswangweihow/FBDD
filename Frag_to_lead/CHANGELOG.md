@@ -4,7 +4,7 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
-## [v0.3.3] - 2025-1-5
+## [v0.3.3] - 2026-1-5
 ### Added
 - Uploaded C-alpha radius of gyration (Rg) plots for the 1ns production run of 9N39 to GitHub
 - Uploaded most KDE occupancy map images to GitHub. Only combined_full still in progress of generating from PyMOL.
