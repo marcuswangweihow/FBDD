@@ -1,0 +1,472 @@
+{
+  "timestamp": "2026-01-07T12:39:25.064609",
+  "probe_kde_files": {
+    "P01A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/P01A_full.dx",
+    "P02A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/P02A_full.dx",
+    "P03A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/P03A_full.dx",
+    "P04A": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/P04A_full.dx"
+  },
+  "rmsd_clusters": [
+    {
+      "cluster": 0,
+      "representative_frame": 3404
+    },
+    {
+      "cluster": 1,
+      "representative_frame": 442
+    },
+    {
+      "cluster": 2,
+      "representative_frame": 31
+    },
+    {
+      "cluster": 3,
+      "representative_frame": 4657
+    }
+  ],
+  "kde_peak_mapped_frames": [
+    {
+      "probe": "P01A",
+      "peak": [
+        94.162704,
+        89.400789,
+        105.568998
+      ],
+      "mapped_frame": 95,
+      "distance_A": 0.2835162777015781
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        95.162704,
+        78.400789,
+        108.568998
+      ],
+      "mapped_frame": 2677,
+      "distance_A": 0.08864700353331162
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        95.162704,
+        84.900789,
+        106.568998
+      ],
+      "mapped_frame": 509,
+      "distance_A": 0.27266620222004206
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        99.162704,
+        73.400789,
+        108.568998
+      ],
+      "mapped_frame": 2080,
+      "distance_A": 0.2580119594113125
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        99.662704,
+        78.900789,
+        104.068998
+      ],
+      "mapped_frame": 3656,
+      "distance_A": 0.18292801693872376
+    },
+    {
+      "probe": "P01A",
+      "peak": [
+        100.662704,
+        78.900789,
+        97.068998
+      ],
+      "mapped_frame": 4222,
+      "distance_A": 0.3592153346415301
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        113.162704,
+        45.400789,
+        10.568998
+      ],
+      "mapped_frame": 1528,
+      "distance_A": 0.3870476380280574
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        114.662704,
+        54.400789,
+        12.568998
+      ],
+      "mapped_frame": 2662,
+      "distance_A": 0.2453825194238487
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        115.162704,
+        51.400789,
+        11.568998
+      ],
+      "mapped_frame": 2469,
+      "distance_A": 0.2343735759814709
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        116.162704,
+        52.900789,
+        18.068998
+      ],
+      "mapped_frame": 3234,
+      "distance_A": 0.2788692365714066
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        116.162704,
+        69.400789,
+        25.568998
+      ],
+      "mapped_frame": 4656,
+      "distance_A": 0.20377613075970352
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        116.662704,
+        56.400789,
+        26.068998
+      ],
+      "mapped_frame": 3591,
+      "distance_A": 0.4245190116178483
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        118.662704,
+        60.400789,
+        26.068998
+      ],
+      "mapped_frame": 3711,
+      "distance_A": 0.24717663656059044
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        118.662704,
+        63.900789,
+        22.568998
+      ],
+      "mapped_frame": 4364,
+      "distance_A": 0.17417007075443716
+    },
+    {
+      "probe": "P02A",
+      "peak": [
+        119.662704,
+        53.400789,
+        25.068998
+      ],
+      "mapped_frame": 3480,
+      "distance_A": 0.11867102774936088
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        86.162704,
+        42.900789,
+        11.568998
+      ],
+      "mapped_frame": 4462,
+      "distance_A": 0.3195152145400071
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        86.662704,
+        78.900789,
+        12.568998
+      ],
+      "mapped_frame": 3523,
+      "distance_A": 0.4014254920520771
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        87.662704,
+        45.400789,
+        12.568998
+      ],
+      "mapped_frame": 3544,
+      "distance_A": 0.1463484095971029
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        87.662704,
+        80.900789,
+        13.068998
+      ],
+      "mapped_frame": 3542,
+      "distance_A": 0.4645254999355652
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        87.662704,
+        80.900789,
+        16.568998
+      ],
+      "mapped_frame": 3879,
+      "distance_A": 0.33741986746697805
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        88.662704,
+        42.900789,
+        15.568998
+      ],
+      "mapped_frame": 4063,
+      "distance_A": 0.48887053418011944
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        93.662704,
+        42.900789,
+        12.068998
+      ],
+      "mapped_frame": 3282,
+      "distance_A": 0.20350830049474455
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        103.162704,
+        117.900789,
+        40.068998
+      ],
+      "mapped_frame": 2362,
+      "distance_A": 0.26530462586036613
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        103.662704,
+        117.900789,
+        73.568998
+      ],
+      "mapped_frame": 2401,
+      "distance_A": 0.23660794274361627
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        105.162704,
+        108.900789,
+        108.568998
+      ],
+      "mapped_frame": 1950,
+      "distance_A": 0.36019665395895994
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        106.162704,
+        104.900789,
+        94.568998
+      ],
+      "mapped_frame": 492,
+      "distance_A": 0.1990484071621017
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        107.162704,
+        104.400789,
+        90.068998
+      ],
+      "mapped_frame": 382,
+      "distance_A": 0.24039636306089143
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        107.662704,
+        98.400789,
+        95.068998
+      ],
+      "mapped_frame": 703,
+      "distance_A": 0.3792484920586723
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        108.662704,
+        104.900789,
+        93.068998
+      ],
+      "mapped_frame": 1095,
+      "distance_A": 0.2692429251411812
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        109.162704,
+        108.900789,
+        104.568998
+      ],
+      "mapped_frame": 1880,
+      "distance_A": 0.19022836402730917
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        109.162704,
+        109.400789,
+        94.568998
+      ],
+      "mapped_frame": 1232,
+      "distance_A": 0.12767103382295675
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        110.162704,
+        106.400789,
+        102.068998
+      ],
+      "mapped_frame": 1783,
+      "distance_A": 0.28697599073621316
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        110.662704,
+        101.400789,
+        89.068998
+      ],
+      "mapped_frame": 295,
+      "distance_A": 0.46298855271462647
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        112.162704,
+        106.400789,
+        97.568998
+      ],
+      "mapped_frame": 1424,
+      "distance_A": 0.05568813041997867
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        113.662704,
+        100.400789,
+        87.068998
+      ],
+      "mapped_frame": 257,
+      "distance_A": 0.20820201110559064
+    },
+    {
+      "probe": "P03A",
+      "peak": [
+        117.162704,
+        102.400789,
+        85.568998
+      ],
+      "mapped_frame": 57,
+      "distance_A": 0.180067316454576
+    },
+    {
+      "probe": "P04A",
+      "peak": [
+        109.662704,
+        77.900789,
+        95.568998
+      ],
+      "mapped_frame": 2317,
+      "distance_A": 0.09368853260256704
+    }
+  ],
+  "dbscan_clusters": [
+    {
+      "cluster_label": 0,
+      "representative_frame": 72
+    },
+    {
+      "cluster_label": 1,
+      "representative_frame": 1568
+    },
+    {
+      "cluster_label": 2,
+      "representative_frame": 2379
+    },
+    {
+      "cluster_label": 3,
+      "representative_frame": 3307
+    },
+    {
+      "cluster_label": 4,
+      "representative_frame": 4064
+    },
+    {
+      "cluster_label": 5,
+      "representative_frame": 4069
+    },
+    {
+      "cluster_label": 6,
+      "representative_frame": 4112
+    }
+  ],
+  "selected_frames": [
+    {
+      "frame": 3404,
+      "source": "RMSD",
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_3404_prot.pdb",
+      "prot_metal_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_3404_prot_metal.pdb",
+      "prot_metal_nucleotides_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_3404_prot_metal_nucleotides.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_3404_allatoms.pdb"
+    },
+    {
+      "frame": 442,
+      "source": "RMSD",
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_442_prot.pdb",
+      "prot_metal_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_442_prot_metal.pdb",
+      "prot_metal_nucleotides_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_442_prot_metal_nucleotides.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_442_allatoms.pdb"
+    },
+    {
+      "frame": 31,
+      "source": "RMSD",
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_31_prot.pdb",
+      "prot_metal_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_31_prot_metal.pdb",
+      "prot_metal_nucleotides_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_31_prot_metal_nucleotides.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_31_allatoms.pdb"
+    },
+    {
+      "frame": 95,
+      "source": "KDE_P01A",
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_95_prot.pdb",
+      "prot_metal_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_95_prot_metal.pdb",
+      "prot_metal_nucleotides_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_95_prot_metal_nucleotides.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_95_allatoms.pdb"
+    },
+    {
+      "frame": 72,
+      "source": "DBSCAN",
+      "protein_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_72_prot.pdb",
+      "prot_metal_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_72_prot_metal.pdb",
+      "prot_metal_nucleotides_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_72_prot_metal_nucleotides.pdb",
+      "allatoms_pdb": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/9N39_1ns_tip4pew_A_20251228/gmx_run/post_processing/full_trajectory/representative_snapshots/rep_frame_72_allatoms.pdb"
+    }
+  ],
+  "removed_frames_due_to_max": []
+}
