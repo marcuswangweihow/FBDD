@@ -14,6 +14,11 @@
         - [occupancy_maps](../occupancy_maps/)
         - [plumed_metad_cvs](../plumed_metad_cvs/)
         - [representative_snapshots](./)
+          - [P01A_probespecific_snapshots](P01A_probespecific_snapshots/)
+          - [P02A_probespecific_snapshots](P02A_probespecific_snapshots/)
+          - [P03A_probespecific_snapshots](P03A_probespecific_snapshots/)
+          - [P04A_probespecific_snapshots](P04A_probespecific_snapshots/)
+          - [global_snapshots](global_snapshots/)
     - [Frag_to_lead_4MZI](../../../Frag_to_lead_4MZI/)
       - [100ps_Preliminary Results](../../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
         - [100ps_pipeline_test](../../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/)
@@ -62,26 +67,30 @@
 
 
 
+
 -----------------------------------------------------------
 
 The results here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes. 
 
-Representative snapshots: Protein-only PDBs selected from a full trajectory (1ns) using RMSD clustering, KDE peaks, and DBSCAN clustering on probe center-of-mass positions.
-These snapshots are used as input for downstream docking and MDpocket pocket analysis.
+Representative snapshots (PDBs) were selected from the full trajectory using:
 
-# Representative Snapshot Selection
+- RMSD clustering to identify conformational regimes.
 
-Full trajectory frames were analyzed to select representative protein conformations.
+- KDE peak mapping and detection on probe positions.
 
-Selection criteria:
+- DBSCAN clustering on probe center-of-mass positions to find dense probe-sampling regions.
 
- - RMSD clustering to identify conformational regimes.
+These snapshots are intended for downstream docking and MDpocket pocket analysis.
 
- - KDE peak detection on probe positions.
+- For **overall fragment hotspots**, use snapshots in the **global_snapshots** folder.
 
- - DBSCAN clustering to find dense probe-sampling regions.
+- For **probe-specific hotspots**, use snapshots in the respective **probespecific** folders.
 
-Selected snapshots are protein-only PDBs, stripped of hydrogens.
+All snapshot and peak mapping information is saved in `representative_selection_summary.json`. 
+
+For docking, each grid center coordinate is stored as `"peak"` under the relevant section:
+- `global_selection` for global docking.
+- Probe-specific sections for probe-specific docking.
 
 # Docking Preparation and Execution
 
