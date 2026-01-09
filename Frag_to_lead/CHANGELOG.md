@@ -4,6 +4,20 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.4] - 2026-1-9
+### Added
+- Uploaded representative snapshots for the 1ns production run of 9N39 to GitHub
+- Implemented RMSD, KDE, and DBSCAN selection strategies for multi-run representative snapshot selection.
+- Added deduplication and failsafe logic to enforce max_total_frames across RMSD, KDE, and DBSCAN selections.
+- For downstream docking, grid creation can now be automatically read from KDE peak coordinates, already sorted by occupancy.
+- Implemented global vs probe-specific snapshot selection for both single-run and multi-run systems.
+- Merged JSON summary and merged PDB folder now available for multi-run analysis.
+
+### Changed
+- Adjusted selection logic for more robust handling of single-run snapshots.
+- Refined DBSCAN selection: now focuses on minor clusters and considers RMSD to the mean structure to capture rare probe arrangements.
+- Updated the JSON summary structure for single runs to simplify multi-run handling.
+
 ## [v0.3.3] - 2026-1-5
 ### Added
 - Uploaded C-alpha radius of gyration (Rg) plots for the 1ns production run of 9N39 to GitHub
@@ -13,7 +27,7 @@ All notable changes to this project are documented in this file. Versions prior 
 - Optimized KDE occupancy map code for improved efficiency and scalability
 
 ### Changed
-- 9N39 folder on GitHub updated to for upcoming post-processing results
+- 9N39 folder on GitHub updated for upcoming post-processing results
 
 ## [v0.3.2] - 2025-12-29
 ### Added
