@@ -315,7 +315,7 @@ flowchart TD
 - External installation of fpocket (MDpocket) 4.0
 - OpenMM 8.2
 > **Note:** If running on a HPC cluster with older versions or no external build support you will have to use
-> Gromacs 23/24 and plumed 2.9.2 installed via conda forge instead.
+> Gromacs versions that have plumed compatibility and compiled with plumed functionality enabled.
 > 
 > AmberTools 24 is backward compatible.
 > 
