@@ -361,6 +361,17 @@ conda install -c conda-forge pdbfixer
 conda install -c conda-forge parmed -y
 conda install -c conda-forge mdanalysis
 
+# JupyterLab installation and verification
+conda install -c conda-forge jupyterlab -y
+jupyter lab --version
+
+# Set up kernel in almmd for Jupyter notebooks
+conda install ipykernel -y
+python -m ipykernel install \
+  --user \
+  --name almmd \
+  --display-name "Python (almmd)"
+
 
 # RUN THE EXTERNAL INSTALLATIONS IN A NEW TERMINAL WINDOW IE. NO ENVIRONMENT
 #===========================================================================
