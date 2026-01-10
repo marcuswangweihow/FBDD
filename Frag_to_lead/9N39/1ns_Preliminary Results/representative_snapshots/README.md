@@ -70,7 +70,7 @@
 
 -----------------------------------------------------------
 
-The results here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes. 
+The results here are **preliminary** results for a 1ns production run of the pipeline for workflow functionality illustration purposes. 
 
 Representative snapshots (PDBs) were selected from the full trajectory using:
 
@@ -78,7 +78,7 @@ Representative snapshots (PDBs) were selected from the full trajectory using:
 
 - KDE peak mapping and detection on probe positions.
 
-- DBSCAN clustering on probe center-of-mass positions to find dense probe-sampling regions.
+- DBSCAN clustering on probe center-of-mass positions to identify rare probe-sampling regions, followed by RMSD-based prioritization of representative frames.
 
 These snapshots are intended for downstream docking and MDpocket pocket analysis.
 
