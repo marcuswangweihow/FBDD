@@ -72,7 +72,7 @@
 ------------------------------------
 
 The MDpocket figures shown here are **preliminary** results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes.
- - High-density regions (dens 0.5, red meshes) and frequent occupancy (freq 0.5, gray meshes)
+ - High-density regions (dens isovalue 0.5, red meshes) and frequent occupancy (freq isovalue 0.5, gray meshes)
 
 Each representative snapshot was analyzed using MDpocket to generate:
 
@@ -80,7 +80,7 @@ Each representative snapshot was analyzed using MDpocket to generate:
 
  - Density grids (dens_iso), highlighting highly populated regions ie. “densely occupied” regions
 
-Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, gray meshes) but not in the frequency grids (freq_iso, black meshes), i.e., regions visited rarely or transiently during the simulation.
+Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, red meshes) but not in the frequency grids (freq_iso, gray meshes), i.e., regions visited rarely or transiently during the simulation.
 
 Figures illustrate pocket locations, occupancy density, and potential druggable regions.
 
@@ -91,7 +91,7 @@ Overall pocket occupancy map from representative snapshots.
 ![Overview](overview_mdpocket_analysis.png)
 
 # region1.png & region2.png
-Localized views highlighting high-density regions (dens 0.8 red meshes) and frequent occupancy (freq 0.8, gray meshes).
+Localized views highlighting high-density regions (dens isovalue 0.5 red meshes) and frequent occupancy (freq isovalue 0.5, gray meshes).
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
