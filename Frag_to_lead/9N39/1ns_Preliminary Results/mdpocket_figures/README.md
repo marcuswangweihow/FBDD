@@ -87,6 +87,8 @@ Figures illustrate pocket locations, occupancy density, and potential druggable 
 
 All figures show the MDpocket density maps generated from a 1ns simulation of 9N39.
 
+Cavity rankings are saved under the ranking_cavities.json (geometry-informed) and the mapped_cavities.json (occupancy-informed).
+
 # overview_frontview.png & overview_backview.png
 Overall pocket occupancy map from representative snapshots highlighting high-density regions (dens isovalue 8, black meshes) and frequent occupancy (freq isovalue 0.5, gray meshes). Front view and back view of the mdpocket_analysis_freq.dx file and the mdpocket_analysis_dens.dx file superimposed on the 9N39 protein structure.
 
