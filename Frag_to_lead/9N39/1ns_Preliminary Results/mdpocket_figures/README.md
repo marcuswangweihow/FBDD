@@ -105,6 +105,6 @@ Overall pocket occupancy map from representative snapshots highlighting high-den
 
 # cryptic_site.png 
 Example of a potential cryptic or occluded pocket identified outside highly populated regions.
-![Cryptic1](cryptic1.png)
+![Cryptic_site](cryptic_site.png)
 
 
