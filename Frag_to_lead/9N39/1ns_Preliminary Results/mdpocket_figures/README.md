@@ -75,7 +75,7 @@
 The MDpocket figures shown here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes.
  - High-density regions (dens isovalue 8, black meshes) and frequent occupancy (freq isovalue 0.5, gray meshes).
 
-Each representative snapshot was analyzed using MDpocket to generate:
+The representative snapshots were analyzed using MDpocket to generate:
 
  - Occupancy grids (freq_iso), highlighting frequently sampled pockets ie. “frequently visited” regions
 
