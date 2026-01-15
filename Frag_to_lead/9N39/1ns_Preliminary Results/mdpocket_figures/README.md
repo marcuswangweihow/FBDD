@@ -73,7 +73,7 @@
 ------------------------------------
 
 The MDpocket figures shown here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes.
- - High-density regions (dens 6, gray meshes) and frequent occupancy (freq 0.5, black meshes) using level = 0.8.
+ - High-density regions (dens isovalue 8, black meshes) and frequent occupancy (freq isovalue 0.5, gray meshes).
 
 Each representative snapshot was analyzed using MDpocket to generate:
 
@@ -81,14 +81,14 @@ Each representative snapshot was analyzed using MDpocket to generate:
 
  - Density grids (dens_iso), highlighting highly populated regions ie. “densely occupied” regions
 
-Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, gray meshes) but not in the frequency grids (freq_iso, black meshes), i.e., regions visited rarely or transiently during the simulation.
+Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, black meshes) but not in the frequency grids (freq_iso, gray meshes), i.e. regions visited rarely or transiently during the simulation.
 
 Figures illustrate pocket locations, occupancy density, and potential druggable regions.
 
-All figures show the MDpocket density maps generated from a 1ns simulation of 4MZI.
+All figures show the MDpocket density maps generated from a 1ns simulation of 9N39.
 
 # overview_frontview.png & overview_backview.png
-Overall pocket occupancy map from representative snapshots highlighting high-density regions (dens  6, gray meshes) and frequent occupancy (freq 0.5, black meshes). Front view and backview of the mdpocket_analysis_freq.dx file and the mdpocket_analysis_dens.dx file superimposed on the 4MZI protein structure with level=0.8.
+Overall pocket occupancy map from representative snapshots highlighting high-density regions (dens isovalue 8, black meshes) and frequent occupancy (freq isovalue 0.5, gray meshes). Front view and back view of the mdpocket_analysis_freq.dx file and the mdpocket_analysis_dens.dx file superimposed on the 9N39 protein structure.
 
 <table style="border-collapse: collapse; border: none;">
   <tr>
