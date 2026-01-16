@@ -4,6 +4,19 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.5] - 2026-1-16
+### Added
+- Selected medoid representative snapshots from protein PDBs for MDpocket, ensuring consistent cavity analysis
+- Extraction of geometric cavities from freq.dx grids, computed per-cavity metrics, and assigned geometry-informed scores for initial ranking of cavities
+- Mapped KDE peaks from probe sampling onto cavities to quantify which pockets are actively explored
+- Added occupancy-informed ranking to prioritize druggable sites
+- Distinguished KDE-supported vs exploratory cavities, providing a clearer picture of pocket druggability
+- Uploaded MDpocket analysis outputs (cavity JSONs, visualization) to GitHub
+
+### Changed
+- Updated the pipeline to match incoming JSON from single- or multi-run representative snapshots, allowing seamless integration between snapshot selection and cavity detection
+
+
 ## [v0.3.4] - 2026-1-9
 ### Added
 - Uploaded representative snapshots for the 1ns production run of 9N39 to GitHub
