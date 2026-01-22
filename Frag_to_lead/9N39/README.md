@@ -9,10 +9,10 @@
           - [NVT_equil](1ns_Preliminary%20Results/1ns_test/NVT_equil/)
           - [Production](1ns_Preliminary%20Results/1ns_test/Production/)
           - [em](1ns_Preliminary%20Results/1ns_test/em/)
-        - [binding_event_detection](1ns_Preliminary%20Results/binding_event_detection/)
         - [mdpocket_figures](1ns_Preliminary%20Results/mdpocket_figures/)
         - [occupancy_maps](1ns_Preliminary%20Results/occupancy_maps/)
         - [plumed_metad_cvs](1ns_Preliminary%20Results/plumed_metad_cvs/)
+        - [probe_behaviour_analysis](1ns_Preliminary%20Results/probe_behaviour_analysis/)
         - [representative_snapshots](1ns_Preliminary%20Results/representative_snapshots/)
           - [P01A_probespecific_snapshots](1ns_Preliminary%20Results/representative_snapshots/P01A_probespecific_snapshots/)
           - [P02A_probespecific_snapshots](1ns_Preliminary%20Results/representative_snapshots/P02A_probespecific_snapshots/)
@@ -56,6 +56,7 @@
   - [docking_4MZI_roscovitine](../../docking_4MZI_roscovitine/)
   - [images](../../images/)
 <!-- /REPO_TOC -->
+
 
 
 

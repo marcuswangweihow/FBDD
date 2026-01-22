@@ -9,10 +9,10 @@
           - [NVT_equil](../../1ns_test/NVT_equil/)
           - [Production](../../1ns_test/Production/)
           - [em](../../1ns_test/em/)
-        - [binding_event_detection](../../binding_event_detection/)
         - [mdpocket_figures](../../mdpocket_figures/)
         - [occupancy_maps](../../occupancy_maps/)
         - [plumed_metad_cvs](../../plumed_metad_cvs/)
+        - [probe_behaviour_analysis](../../probe_behaviour_analysis/)
         - [representative_snapshots](../)
           - [P01A_probespecific_snapshots](../P01A_probespecific_snapshots/)
           - [P02A_probespecific_snapshots](./)
@@ -56,5 +56,6 @@
   - [docking_4MZI_roscovitine](../../../../../docking_4MZI_roscovitine/)
   - [images](../../../../../images/)
 <!-- /REPO_TOC -->
+
 
 
