@@ -88,4 +88,7 @@ Uses COMs of probes to identify aggregation events with a user-defined `aggregat
 
 Uses COMs of probes and MDpocket cavity centroids to compute the time spent by probes spent inside cavities. This is done per probe and per cavity. Outputs a json containing all calculated data as well as cavity occupancy visualisations.
 
+### Cavity occupancy visualisations
+For the 1ns simulation run analyzed here, no probe–cavity residency events were observed within the selected distance threshold. This is expected given the short simulation timescale and the absence of translational or cavity-targeted biasing. Thermal fluctuations lead to local probe motion but are insufficient to drive spontaneous entry into MDpocket-defined cavities within the current simulationm time.
+
  
