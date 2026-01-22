@@ -1,0 +1,1048 @@
+{
+    "metadata": {
+        "empty_cavities": 52,
+        "occupied_cavities": 0
+    },
+    "cavities": {
+        "1": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "2": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "3": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "4": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "5": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "6": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "7": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "8": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "9": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "10": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "11": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "12": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "13": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "14": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "15": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "16": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "17": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "18": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "19": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "20": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "21": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "22": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "23": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "24": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "25": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "26": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "27": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "28": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "29": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "30": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "31": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "32": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "33": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "34": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "35": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "36": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "37": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "38": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "39": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "40": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "41": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "42": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "43": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "44": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "45": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "46": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "47": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "48": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "49": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "50": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "51": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        },
+        "52": {
+            "occupancy_data": {
+                "P01A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P02A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P03A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                },
+                "P04A": {
+                    "time_inside_ns": 0.0,
+                    "occupancy_fraction_time_inside": 0.0
+                }
+            }
+        }
+    }
+}
