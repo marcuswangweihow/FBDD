@@ -204,21 +204,15 @@ All simulation and analysis parameters were conservatively selected to ensure sy
    - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
    - **Probe occupancy mapping**: Per-probe and combined density (voxel) maps.  
    - **Representative snapshot selection**: RMSD clustering, KDE peak mapping, and DBSCAN probe clustering to select representative snapshots automatically.
-   - **PLUMED METAD CVs**: Probe distances and torsions are extracted, smoothed, saved as CSV, and plotted for analysis.
-       - **COM Analysis**: Generate single COM overview plot for all probes.
-       - Additional visualizations:
-         - Per-probe x/y/z COM plots.
-         - Combined per-axis plots (x-only, y-only, z-only).
-         - 2D projections (x-y, x-z, y-z) for probe COMs.
-         - 3D scatter plot of COMs.
-         - Pairwise COM distance time series.
-         - 3D scatter plots of probe COM clusters.
-             - Clusters colored based on assignment (e.g., density peak vs pocket).
-             - Noise points plotted in grey.
-             - Legend placed outside axes for clarity.
-          - **Enhanced JSON**: JSON summary of clusters and top MDpocket peaks. Includes cluster info, binding events, top MDpocket peaks per cluster.
-          - **Binding events CSV/JSON**: flattened per-probe events for inspection. Includes representative frame PDBs.
    - **MDpocket analysis** is run on representative snapshots to check for cryptic and occluded sites.
+   - **PLUMED METAD CVs & Probe Analysis**: Probe distances and torsions are extracted, smoothed, saved as CSV, and plotted for analysis.
+    - **Cavity Occupancy Analysis**:
+      - Per-probe occupancy tracked in MDpocket cavities, including **time spent in each cavity** and **fraction of simulation occupancy**.
+      - Multi-run support: aggregates occupancy across multiple simulations for ensemble-level cavity interpretation.
+      - Occupancy visualizations:
+        - Per-cavity probe occupancy across time (fraction of probes in each cavity).
+        - Highlights frequently visited vs unexplored cavities.
+      - Output saved in structured JSONs for reproducible analysis and downstream aggregation.
 
 9. **Output Organization**  
    - Each run output is saved under a `run_id` directory.
