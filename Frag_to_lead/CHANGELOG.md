@@ -11,7 +11,7 @@ All notable changes to this project are documented in this file. Versions prior 
 - Added plotting to visualize per-cavity probe occupancy (fraction of probes in each cavity) across time, highlighting frequently visited vs unexplored cavities
 - Output saved in structured JSONs, supporting reproducible analysis and easy aggregation across runs
 - Multi-run support: aggregates per-run probe COMs and occupancy into ensemble cavity analyses, allowing ranking and comparison across simulations
-- Uploaded MDpocket analysis outputs (cavity JSONs, visualization) to GitHub
+- Uploaded probe analysis outputs to GitHub
 
 ### Changed
 - Removed the previous setup with raw COM plots and binding event detection from DBSCAN clusters
