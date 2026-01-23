@@ -163,19 +163,20 @@ References:
    - For each backup, energy/temperature/bias vs. time plots and last-frame PDBs can be generated on demand for manual inspection.
    - Before each restart, these plots and PDBs are inspected to ensure system stability (e.g., no metal drift, sharp spikes, or runaway values).
 
-8. **Post‑processing**  
+8. **Post‑processing**
+   - All post processing steps support multi-run handling.
    - **Protein analysis**: C‑alpha radius of gyration (Rg) across trajectory.  
    - **Probe occupancy mapping**: Per-probe and combined density (voxel) maps.  
    - **Representative snapshot selection**: RMSD clustering, KDE peak mapping, and DBSCAN probe clustering to select representative snapshots automatically.
-   - **MDpocket analysis** is run on representative snapshots to check for cryptic and occluded sites.
-   - **PLUMED METAD CVs & Probe Analysis**: Probe distances and torsions are extracted, smoothed, saved as CSV, and plotted for analysis.
-    - **Cavity Occupancy Analysis**:
-      - Per-probe occupancy tracked in MDpocket cavities, including **time spent in each cavity** and **fraction of simulation occupancy**.
+   - **MDpocket analysis**: Run on representative snapshots to identify cavities, including cryptic and occluded sites; computes per-cavity metrics, maps KDE probe peaks, ranks cavities based on occupancy and geometry, and supports multi-run ensemble analyses.
+   - **PLUMED METAD CVs & Probe analysis**: Probe distances and torsions are extracted, smoothed, saved as CSV, and plotted for analysis.
+    - **Cavity occupancy analysis**:
+      - Tracks per-probe occupancy in MDpocket cavities, including **time spent in each cavity** and **fraction of simulation occupancy**.
       - Multi-run support: aggregates occupancy across multiple simulations for ensemble-level cavity interpretation.
       - Occupancy visualizations:
         - Per-cavity probe occupancy across time (fraction of probes in each cavity).
         - Highlights frequently visited vs unexplored cavities.
-      - Output saved in structured JSONs for reproducible analysis and downstream aggregation.
+      - Outputs saved in structured JSONs for reproducible analysis and downstream aggregation.
 
 9. **Output Organization**  
    - Each run output is saved under a `run_id` directory.
