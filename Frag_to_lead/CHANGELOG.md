@@ -4,6 +4,18 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.6] - 2026-1-23
+### Added
+- Extended cavity occupancy analysis to multiple simulation runs, enabling ensemble-level interpretation of probe–cavity interactions
+- Implemented per-probe occupancy tracking in MDpocket cavities, including time spent in each cavity and fraction of simulation occupancy
+- Added plotting to visualize per-cavity probe occupancy (fraction of probes in each cavity) across time, highlighting frequently visited vs unexplored cavities
+- Output saved in structured JSONs, supporting reproducible analysis and easy aggregation across runs
+- Multi-run support: aggregates per-run probe COMs and occupancy into ensemble cavity analyses, allowing ranking and comparison across simulations
+- Uploaded MDpocket analysis outputs (cavity JSONs, visualization) to GitHub
+
+### Changed
+- Removed the previous setup with raw COM plots and binding event detection from DBSCAN clusters
+
 ## [v0.3.5] - 2026-1-16
 ### Added
 - Selected medoid representative snapshots from protein PDBs for MDpocket, ensuring consistent cavity analysis
