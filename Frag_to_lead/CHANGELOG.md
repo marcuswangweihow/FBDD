@@ -4,6 +4,16 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.7] - 2026-1-30
+### Added
+ - Added probe aggregation diagnostics for production runs
+ - Added functionality to generate probe occupancy per cavity and combined cavity occupancy fraction with top-K visualization for single-run analyses, enabling clear interpretation of probe–cavity interactions
+ - Added automated binding event detection and snapshot extraction, including per-cavity top-K ranking, supporting visualization and analysis of probe–cavity interactions over time
+ - Added functionality to generate per-probe occupancy fractions across cavities with top-K visualization for multi-run analyses, enabling clear comparison of probe behavior across ensembles
+
+### Changed
+ - Shifted individual torsion bias plots to production run diagnostics for per-run clarity. Maintained generation of smoothed torsion angle vs time plots in step 13e with plots saved to torsion_plots folder.
+
 ## [v0.3.6] - 2026-1-23
 ### Added
 - Extended cavity occupancy analysis to multiple simulation runs, enabling ensemble-level interpretation of probe–cavity interactions
