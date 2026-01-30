@@ -191,7 +191,7 @@ References:
      - `full_trajectory/representative_snapshots` → .pdb files for the representative snapshots.
      - `full_trajectory/representative_snapshots/cleaned_protein_pdbs` →  cleaned protein only .pdb files for the representative snapshots for downstream MDpocket analysis and docking tasks.
      - `full_trajectory/representative_snapshots/cleaned_protein_pdbs/mdpocket_analysis` → to store the MDpocket analysis results from the manual run of mdpocket outside the notebook. Files will be automatically moved into this folder by running subsequent notebook cells
-     - `torsion_plots/` → bias plots for individual torsions from PLUMED METAD CVs
+     - `torsion_plots/` → smoothed plots for individual torsions from PLUMED METAD CVs
      - `probe_analysis/` → plots for per-cavity probe occupancy (fraction of probes in each cavity) across time, highlighting frequently visited vs unexplored cavities   
 
  ## Force Fields
