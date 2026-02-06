@@ -4,6 +4,12 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.8] - 2026-2-6
+### Added
+ - Added RNA handling and preprocessing for system creation and solvation, including correct termini treatment for reliable simulation setup
+ - Automatic detection and handling of DNA, RNA, and metals based on input PDB content
+ - Automatic generation of Tleap configuration lines according to detected system components, removing manual setup adjustments
+
 ## [v0.3.7] - 2026-1-30
 ### Added
  - Added probe aggregation diagnostics for production runs
