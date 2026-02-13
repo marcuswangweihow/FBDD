@@ -4,6 +4,14 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.9] - 2026-2-13
+### Added
+ - Automated generation of production and checkpoint-resume execution scripts, reducing manual script preparation for HPC runs
+ - Standardized run directory structure to encapsulate simulation inputs, execution scripts, configuration, and logs for reproducible execution across systems
+ - Introduced configuration-driven execution via config.json, allowing run parameters (e.g., checkpoint intervals, paths, run identifiers) to be managed without modifying scripts
+ - Added scheduler submission templates to simplify adaptation across different HPC environments while retaining flexibility in job resource configuration
+ - Streamlined execution workflow so prepared runs can be transferred and submitted with minimal reconfiguration
+
 ## [v0.3.8] - 2026-2-6
 ### Added
  - Added RNA handling and preprocessing for system creation and solvation, including correct termini treatment for reliable simulation setup
