@@ -4,6 +4,12 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.9] - 2026-2-27
+### Changed
+ - Cleaned up legacy/experimental code and isolated unused functions in a separate section at end of notebook
+ - Removed unused imports and packages
+ - Updated GitHub installation requirements
+
 ## [v0.3.9] - 2026-2-13
 ### Added
  - Automated generation of production and checkpoint-resume execution scripts, reducing manual script preparation for HPC runs
