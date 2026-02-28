@@ -297,15 +297,48 @@ flowchart TD
 [⬆️ Back to top](#readme-table-of-contents)
 
 > See [HPC & Backward Compatibility](#hpc--backward-compatibility) for supported GROMACS/PLUMED versions.
-> ## Linux OS Compatibility
 
-> The pipeline is fully compatible with native Linux systems. Only minor adjustments are needed:
+### Installation guide
 
-> - **Paths:** Convert all Windows-style paths to Linux paths (e.g., `/home/user/...`).
-> - **Executables:** Ensure `antechamber_exe` and `PLUMED_KERNEL` point to Linux locations.
-> - **Shell commands:** Adjust any `find "C:/Users/..."` or backslash-escaped paths to Linux equivalents.
-> - WSL dependencies are **optional**; the code is OS-agnostic.
+- See Installation notes section for more details about pipeline dependencies
+  
+#### Windows
 
+1. Install WSL2:
+Open PowerShell (Administrator) and run
+`wsl --install`
+3. Install Ubuntu 22.04 LTS from the Microsoft Store if not installed automatically.
+4. Restart your machine if prompted.
+5. Open Ubuntu and proceed to execute the commands under the **Commands to Execute** section.
+6. Launch Jupyter inside WSL:
+```bash
+conda activate almmd
+cd /path/to/project_directory/   # directory containing the pipeline notebook
+jupyter lab --no-browser --ip=localhost
+```
+7. Run the pipeline notebook
+
+#### Native Linux (Expected Compatible)
+
+> The pipeline was developed and tested on Ubuntu 22.04 within WSL2. Native Linux systems should work with minimal adjustments but are untested.
+
+Minor adjustments required:
+
+- **Paths:** Convert all Windows-style paths to Linux paths (e.g., `/home/user/...`).
+- **Executables:** Ensure `antechamber_exe` and `PLUMED_KERNEL` point to Linux locations.
+- **Shell commands:** Adjust any `find "C:/Users/..."` or backslash-escaped paths to Linux equivalents.
+- WSL is only required for Windows users. Native Linux users can execute all commands directly in their system terminal.
+
+1. Execute the commands under the **Commands to Execute** section in a Linux terminal
+2. Launch Jupyter:
+```bash
+conda activate almmd
+cd /path/to/project_directory/   # directory containing the pipeline notebook
+jupyter lab
+```
+3. Run the pipeline notebook
+
+### Installation notes
 - AmberTools 24: Ensure antechamber is available on PATH or set `antechamber_exe` to the full path
 - GROMACS 2025.03 (External installation with CUDA and plumed support recommended for faster runs. Alternaltively can just use conda-forge installation but this only has plumed support and no CUDA support)
 - External installation of Plumed 2.10.0
@@ -322,17 +355,16 @@ flowchart TD
 - GPU with CUDA support (optional but recommended for accelerated MD)
 - Python dependencies (Windows/WSL2): 
   `rdkit, openmm, openmmforcefields, mdtraj, numpy, openbabel, pdbfixer, fpocket, mdanalysis, parmed, pymol-open-source
-- Pipeline was run in WSL2
-- WSL2 setup: Ubuntu 22.04.5, Miniforge3, Conda environment `almmd`
 - PLUMED kernel environment variable set via: 
   ```bash
   export PLUMED_KERNEL="$CONDA_PREFIX/lib/libplumedKernel.so"
-
 - Verify installations: gmx --version, and gmx mdrun -h | grep -i plumed
-- WSL2 was installed using wsl --install in PowerShell, with Ubuntu 22.04.5 installed separately as per the instructions at: https://www.windowscentral.com/how-install-wsl2-windows-10 
+  
+- Pipeline was run in WSL2
+- WSL2 setup: Ubuntu 22.04.5, Miniforge3, Conda environment `almmd`
 
 ---
-The following commands were executed after the initial setup inside WSL.
+### Commands to execute
 
 ```bash
 # Download installer for Miniforge (Conda) inside Ubuntu
