@@ -4,11 +4,23 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.11] - 2026-3-6
+### Changed
+ - Added and updated comments to explain several steps in the workflow
+ - Expanded markdown notes to make the pipeline easier to follow
+
+### Notes
+- These updates improve readability of the workflow and make the execution steps easier to follow
+- This marks the second stage of the stabilisation phase and represents an initial documentation pass across the workflow
+
 ## [v0.3.10] - 2026-2-27
 ### Changed
  - Cleaned up legacy/experimental code and isolated unused functions in a separate section at end of notebook
  - Removed unused imports and packages
  - Updated GitHub installation requirements
+
+### Notes
+- This marks the first stage of the stabilisation phase
 
 ## [v0.3.9] - 2026-2-13
 ### Added
