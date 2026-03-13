@@ -4,6 +4,18 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.12] - 2026-3-13
+### Changed
+ - Added structured Markdown documentation to notebook cells to clarify workflow stages and execution order
+ - Reviewed inline code comments across pipeline modules
+ - Improved explanations of overall execution flow
+
+### Notes
+- These updates improves readability and accessibility of the workflow for future development and reduces ambiguity during pipeline execution and debugging
+- Strengthens reproducibility of complex MD preparation and analysis steps
+- This marks the completion of the second stage of the stabilisation phase and represents an initial documentation pass across the workflow
+- The next step is to perform a final validation run to confirm end-to-end pipeline execution before continuing development of other parts of the FBDD workflow (e.g., fragment preprocessing).
+
 ## [v0.3.11] - 2026-3-6
 ### Changed
  - Added and updated comments to explain several steps in the workflow
