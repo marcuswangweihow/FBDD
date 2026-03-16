@@ -363,6 +363,8 @@ jupyter lab
 - Pipeline was run in WSL2
 - WSL2 setup: Ubuntu 22.04.5, Miniforge3, Conda environment `almmd`
 
+- `.pdb` files can be visualized using PyMOL (installed separately). Other molecular visualization tools may also be used.
+
 ---
 ### Commands to execute
 
