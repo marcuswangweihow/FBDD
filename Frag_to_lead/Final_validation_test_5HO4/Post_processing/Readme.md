@@ -19,14 +19,13 @@
           - [P03A_probespecific_snapshots](../../9N39/1ns_Preliminary%20Results/representative_snapshots/P03A_probespecific_snapshots/)
           - [P04A_probespecific_snapshots](../../9N39/1ns_Preliminary%20Results/representative_snapshots/P04A_probespecific_snapshots/)
           - [global_snapshots](../../9N39/1ns_Preliminary%20Results/representative_snapshots/global_snapshots/)
-    - [Final_validation_test](../)
-      - [100ps_test](./)
-        - [NPT_equil](NPT_equil/)
-        - [NVT_equil](NVT_equil/)
-        - [Production](Production/)
-        - [em](em/)
-      - [Post_processing](../Post_processing/)
-    - [Final_validation_test_5HO4](../../Final_validation_test_5HO4/)
+    - [Final_validation_test_5HO4](../)
+      - [100ps_test](../100ps_test/)
+        - [NPT_equil](../100ps_test/NPT_equil/)
+        - [NVT_equil](../100ps_test/NVT_equil/)
+        - [Production](../100ps_test/Production/)
+        - [em](../100ps_test/em/)
+      - [Post_processing](./)
     - [Frag_to_lead_4MZI](../../Frag_to_lead_4MZI/)
       - [100ps_Preliminary Results](../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
         - [100ps_pipeline_test](../../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/)
@@ -64,33 +63,5 @@
   - [docking_4MZI_roscovitine](../../../docking_4MZI_roscovitine/)
   - [images](../../../images/)
 <!-- /REPO_TOC -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
------------------
-
-# This folder contains the preliminary outputs from Gromacs for the 1ns production test run:
-
-Stages:
-- em   : Energy minimization
-- nvt  : NVT equilibration
-- npt  : NPT equilibration
-- prod : Production run
-
-All files are for pipeline demonstration; results are preliminary and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
 
 
