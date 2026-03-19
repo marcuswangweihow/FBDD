@@ -2,30 +2,30 @@
 # FBDD Repository Structure
 - [FBDD](../../)
   - [Frag_to_lead](../)
-    - [9N39](./)
-      - [1ns_Preliminary Results](1ns_Preliminary%20Results/)
-        - [1ns_test](1ns_Preliminary%20Results/1ns_test/)
-          - [NPT_equil](1ns_Preliminary%20Results/1ns_test/NPT_equil/)
-          - [NVT_equil](1ns_Preliminary%20Results/1ns_test/NVT_equil/)
-          - [Production](1ns_Preliminary%20Results/1ns_test/Production/)
-          - [em](1ns_Preliminary%20Results/1ns_test/em/)
-        - [mdpocket_figures](1ns_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](1ns_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](1ns_Preliminary%20Results/plumed_metad_cvs/)
-        - [probe_behaviour_analysis](1ns_Preliminary%20Results/probe_behaviour_analysis/)
-        - [representative_snapshots](1ns_Preliminary%20Results/representative_snapshots/)
-          - [P01A_probespecific_snapshots](1ns_Preliminary%20Results/representative_snapshots/P01A_probespecific_snapshots/)
-          - [P02A_probespecific_snapshots](1ns_Preliminary%20Results/representative_snapshots/P02A_probespecific_snapshots/)
-          - [P03A_probespecific_snapshots](1ns_Preliminary%20Results/representative_snapshots/P03A_probespecific_snapshots/)
-          - [P04A_probespecific_snapshots](1ns_Preliminary%20Results/representative_snapshots/P04A_probespecific_snapshots/)
-          - [global_snapshots](1ns_Preliminary%20Results/representative_snapshots/global_snapshots/)
-    - [Final_validation_test](../Final_validation_test/)
-      - [100ps_test](../Final_validation_test/100ps_test/)
-        - [NPT_equil](../Final_validation_test/100ps_test/NPT_equil/)
-        - [NVT_equil](../Final_validation_test/100ps_test/NVT_equil/)
-        - [Production](../Final_validation_test/100ps_test/Production/)
-        - [em](../Final_validation_test/100ps_test/em/)
-      - [Post_processing](../Final_validation_test/Post_processing/)
+    - [9N39](../9N39/)
+      - [1ns_Preliminary Results](../9N39/1ns_Preliminary%20Results/)
+        - [1ns_test](../9N39/1ns_Preliminary%20Results/1ns_test/)
+          - [NPT_equil](../9N39/1ns_Preliminary%20Results/1ns_test/NPT_equil/)
+          - [NVT_equil](../9N39/1ns_Preliminary%20Results/1ns_test/NVT_equil/)
+          - [Production](../9N39/1ns_Preliminary%20Results/1ns_test/Production/)
+          - [em](../9N39/1ns_Preliminary%20Results/1ns_test/em/)
+        - [mdpocket_figures](../9N39/1ns_Preliminary%20Results/mdpocket_figures/)
+        - [occupancy_maps](../9N39/1ns_Preliminary%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../9N39/1ns_Preliminary%20Results/plumed_metad_cvs/)
+        - [probe_behaviour_analysis](../9N39/1ns_Preliminary%20Results/probe_behaviour_analysis/)
+        - [representative_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/)
+          - [P01A_probespecific_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/P01A_probespecific_snapshots/)
+          - [P02A_probespecific_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/P02A_probespecific_snapshots/)
+          - [P03A_probespecific_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/P03A_probespecific_snapshots/)
+          - [P04A_probespecific_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/P04A_probespecific_snapshots/)
+          - [global_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/global_snapshots/)
+    - [Final_validation_test](./)
+      - [100ps_test](100ps_test/)
+        - [NPT_equil](100ps_test/NPT_equil/)
+        - [NVT_equil](100ps_test/NVT_equil/)
+        - [Production](100ps_test/Production/)
+        - [em](100ps_test/em/)
+      - [Post_processing](Post_processing/)
     - [Final_validation_test_5HO4](../Final_validation_test_5HO4/)
     - [Frag_to_lead_4MZI](../Frag_to_lead_4MZI/)
       - [100ps_Preliminary Results](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
@@ -64,37 +64,4 @@
   - [docking_4MZI_roscovitine](../../docking_4MZI_roscovitine/)
   - [images](../../images/)
 <!-- /REPO_TOC -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------------------------
-## Readme Table of Contents
-- [FBDD Repository Structure](#fbdd-repository-structure)
-  - [Readme Table of Contents](#readme-table-of-contents)
-- [9N39](#9n39)
-- [1ns\_Preliminary Results](#1ns_preliminary-results)
-
---------------------------------------------------------
-# 9N39
-[⬆️ Back to top](#readme-table-of-contents)
-
-This folder contains the data and results for a fragment to lead workflow with 9N39 using aLMMD (accelerated Ligand-Mapping Molecular Dynamics). The results were obtained using v0.3.2 of the pipeline, after the pipeline refactor and with pull restraints added as well.
-
-# 1ns_Preliminary Results
-[⬆️ Back to top](#readme-table-of-contents)
-
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run.
 
