@@ -106,7 +106,7 @@ This plot shows the changes in the bias (kJ/mol) of the system as the MD simulat
 ## last_frame_pdb.png
 [⬆️ Back to top](#fbdd-repository-structure)
 
-The table below shows the png of the last frame of the 1ns production run for 5HO4 which is a protein/RNA complex.
+The table below shows the png of the last frame of the 100ps production run for 5HO4 which is a protein/RNA complex.
 
 <table style="border-collapse: collapse; border: none;">
   <tr>
