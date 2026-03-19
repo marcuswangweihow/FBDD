@@ -116,7 +116,7 @@ The table below shows the png of the last frame of the 100ps production run for 
     </td>
     <td style="border: none; text-align: center;">
       <h3>B</h3>
-      <img src="./prot_metal_nucleotides_probes.png" width="400">
+      <img src="./prot_nucleotides_probes.png" width="400">
     </td>
   </tr>
 </table>
