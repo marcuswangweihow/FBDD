@@ -68,6 +68,79 @@
 
 This folder contains the preliminary results and data for the final validation test of the pipeline. This final validation test was performed with 5HO4 with a 100ps production run and is intended to only verify existing features of the pipeline. Pipeline/workflow functionality has already been demonstrated with the preliminary results of 9N39 and 4MZI in earlier work. Subsequently, after the completion of this validation test, the aLMMD pipeline is ready and and subsequent work will focus on other parts of the FBDD workflow eg. fragment preprocessing or docking.
 
+# 100ps_test
+[⬆️ Back to top](#fbdd-repository-structure)
 
+This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
+
+The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 100ps production run to show pipeline/workflow functionality can be found in ([100ps_test](100ps_test/)).
+
+To be added after post-processing has been done:
+>Occupancy maps for the individual probes per-window and for the full trajectory can be found in ([occupancy_maps](occupancy_maps/))
+
+>Representative snapshots and MDpocket analysis can be found in ([representative_snapshots](representative_snapshots/)) and ([mdpocket_figures](mdpocket_figures/)) respectively within this directory.
+
+>Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](plumed_metad_cvs/)) within this directory. 
+
+>Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](binding_event_detection/)) within this directory.
+
+**All these preliminary results are merely to show pipeline/workflow functionality.**
+
+---
+
+## energy.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases.
+![Energy vs Steps](energy.png)
+
+## temperature.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases.
+![Temparature vs Steps](temperature.png)
+
+## energy_temperature_dual.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. 
+![Energy/Temparature vs Steps](energy_temperature_dual.png)
+
+## plumed_bias.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases.
+![Bias vs Steps](plumed_bias.png)
+
+## last_frame_pdb.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+The table below shows the png of the last frame of the 1ns production run for 5HO4 which is a protein/RNA complex.
+
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./all_atoms.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./prot_metal_nucleotides_probes.png" width="400">
+    </td>
+  </tr>
+</table>
+
+---
+<!-- 
+## Calpha_Rg.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+This plot shows the changes in C-alpha Rg (nm) of the protein backbone as the MD simulation progresses ie. time increases.
+![Calpha_Rg vs Time](Calpha_Rg.png)
+
+## Calpha_Rg_RMSD_combined.png
+[⬆️ Back to top](#fbdd-repository-structure)
+
+-->
 
 
