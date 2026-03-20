@@ -137,7 +137,11 @@ The entire workflow can be shown as:
 
 ![Overall workflow FBDD](../images/Overall_workflow_FBDD.svg)
 
-This is ongoing work and i am currently working on the aLMMD sampling and analysis.
+This is ongoing work and i am currently working on:
+Fragment preprocessing
+
+Completed work on:
+aLMMD sampling and analysis
 
 ---
 
