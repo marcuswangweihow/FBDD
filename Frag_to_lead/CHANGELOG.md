@@ -4,6 +4,19 @@ All notable changes to this project are documented in this file. Versions prior 
 
 **Note:** Versions prior to 0.3 (working and reproducible workflow for small proteins with single metals - currently only 4MZI tested) have been backed up to a private GitHub repository
 
+## [v0.3.13] - 2026-3-20
+### Changed
+- Final short validation production run completed on a new protein–RNA complex target (PDB ID 5HO4), confirming end-to-end stability and reproducibility
+- Added outputs of EM, NVT/NPT equilibration, production run to `Final_validation_test_5HO4` folder
+- Workflow documentation and clarity maintained to support long-term usability
+- Postprocessing outputs of the final validation run will not be uploaded, as explained in the Github README of the `Final_validation_test_5HO4` folder
+
+### Notes
+- Confirms robustness and reproducibility of the pipeline across multiple target structures (protein, protein/DNA, protein/RNA)
+- Provides a fully operational workflow ready for downstream FBDD tasks
+- Demonstrates careful pipeline design and documentation practices, supporting future maintainability and collaboration
+- The next step is to continue development of other parts of the FBDD workflow (e.g. fragment preprocessing, docking)
+
 ## [v0.3.12] - 2026-3-13
 ### Changed
  - Added structured Markdown documentation to notebook cells to clarify workflow stages and execution order
