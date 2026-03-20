@@ -66,7 +66,7 @@
 
 ---
 
-This folder contains the preliminary results and data for the final validation test of the pipeline. This final validation test was performed with 5HO4 with a 100ps production run and is intended to only verify existing features of the pipeline. Post processing results will not be uploaded since the pipeline/workflow functionality has already been demonstrated with the preliminary results of 9N39 and 4MZI in earlier work. Subsequently, after the completion of this validation test, the aLMMD pipeline is ready and and subsequent work will focus on other parts of the FBDD workflow eg. fragment preprocessing or docking.
+This folder contains the preliminary results and data for the final validation test of the pipeline. This final validation test was performed with 5HO4 with a 100ps production run and is intended to only verify existing features of the pipeline not show system stability. Post processing results will not be uploaded since the pipeline/workflow functionality has already been demonstrated with the preliminary results of 9N39 and 4MZI in earlier work. Subsequently, after the completion of this validation test, the aLMMD pipeline is ready and and subsequent work will focus on other parts of the FBDD workflow eg. fragment preprocessing or docking.
 
 # 100ps_test
 [⬆️ Back to top](#fbdd-repository-structure)
