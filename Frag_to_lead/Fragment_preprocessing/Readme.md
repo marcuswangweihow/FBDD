@@ -19,12 +19,12 @@
           - [P03A_probespecific_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/P03A_probespecific_snapshots/)
           - [P04A_probespecific_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/P04A_probespecific_snapshots/)
           - [global_snapshots](../9N39/1ns_Preliminary%20Results/representative_snapshots/global_snapshots/)
-    - [Final_validation_test_5HO4](./)
-      - [100ps_test](100ps_test/)
-        - [NPT_equil](100ps_test/NPT_equil/)
-        - [NVT_equil](100ps_test/NVT_equil/)
-        - [Production](100ps_test/Production/)
-        - [em](100ps_test/em/)
+    - [Final_validation_test_5HO4](../Final_validation_test_5HO4/)
+      - [100ps_test](../Final_validation_test_5HO4/100ps_test/)
+        - [NPT_equil](../Final_validation_test_5HO4/100ps_test/NPT_equil/)
+        - [NVT_equil](../Final_validation_test_5HO4/100ps_test/NVT_equil/)
+        - [Production](../Final_validation_test_5HO4/100ps_test/Production/)
+        - [em](../Final_validation_test_5HO4/100ps_test/em/)
     - [Frag_to_lead_4MZI](../Frag_to_lead_4MZI/)
       - [100ps_Preliminary Results](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/)
         - [100ps_pipeline_test](../Frag_to_lead_4MZI/100ps_Preliminary%20Results/100ps_pipeline_test/)
@@ -59,66 +59,74 @@
         - [occupancy_maps](../Frag_to_lead_4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../Frag_to_lead_4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../Frag_to_lead_4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
-    - [Fragment_preprocessing](../Fragment_preprocessing/)
+    - [Fragment_preprocessing](./)
   - [docking_4MZI_roscovitine](../../docking_4MZI_roscovitine/)
   - [images](../../images/)
 <!-- /REPO_TOC -->
 
+This folder contains the preliminary data and results for the fragment preprocessing part of the FBDD workflow.
 
+# Fragment Library (.sdf)
+
+The data for the fragment library was downloaded from ZINC-22 at https://cartblanche.docking.org/tranches/3d
+
+- Fragments subset was selected.
+- H08 to H11 columns were selected with all layers (top-left option).
+- Charge was set to 0
+- M000 to P030 were selected corresponding to roughly 0–3 logP
+
+In total, 20 cells were selected with the interface.
+
+All files were set to be downloaded in sdf format via CURL method. 
+
+The curl file returned was ZINC22-downloader-3D-sdf.tgz.curl. This file is available in this directory. The individual files will not be uploaded here as they will exceed the size limit of GitHub.
+
+Git bash 2.51.2-64-bit was used to download the files. The bash commands used were:
+
+```bash
+# Go to the directory with the curl file
+cd "/c/Users/Admin/Documents/Documents/Misc/FBDD project/ZINC22 data"
+
+# Create a directory for saving
+mkdir -p "ZINC22_all"
+
+# This step ensures every line in the curl file saves to a unique filename instead of overwriting.
+awk '{
+  match($0, /https:\/\/files\.docking\.org\/zinc22\/([A-Za-z0-9\/._-]+)\.sdf\.tgz/, arr);
+  if (arr[1] != "") {
+    safe_name = arr[1];
+    gsub("/", "_", safe_name);
+    sub("-o [^ ]+", "-o \"ZINC22_all/" safe_name ".sdf.tgz\"");
+  }
+  print $0;
+}' "ZINC22-downloader-3D-sdf.tgz.curl" > "fixed_downloads.curl"
+
+# Run all the download commands
+while read cmd; do eval "$cmd"; done < "fixed_downloads.curl"
+
+# Check number of .tgz files
+find "ZINC22_all" -name "*.sdf.tgz" | wc -l
+
+# Extract all .tgz archives
+find "ZINC22_all" -name "*.sdf.tgz" -exec tar -xvzf {} -C "ZINC22_all" \;
+
+# Gather all .sdf into one folder
+mkdir -p "combined_sdf"
+find "ZINC22_all" -name "*.sdf" -exec cp {} "combined_sdf/" \;
+
+# If necessary count how many sdf files there are
+ls "combined_sdf" | wc -l
+
+```
+A total of 137 curl requests was executed succesfully, returning 137 .tgz files.
+
+This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficient for further analysis.
 
 ---
 
-This folder contains the preliminary results and data for the final validation test of the pipeline. This final validation test was performed with 5HO4 with a 100ps production run and is intended to only verify existing features of the pipeline not show system stability. Post processing results will not be uploaded since the pipeline/workflow functionality has already been demonstrated with the preliminary results of 9N39 and 4MZI in earlier work. Subsequently, after the completion of this validation test, the aLMMD pipeline is ready and and subsequent work will focus on other parts of the FBDD workflow eg. fragment preprocessing or docking.
+!--
+# Fragment Preprocessing Methods
 
-# 100ps_test
-[⬆️ Back to top](#fbdd-repository-structure)
+The fragment library was 
 
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
-
-The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 100ps production run to show pipeline/workflow functionality can be found in ([100ps_test](100ps_test/)).
-
-**All these preliminary results are merely to show pipeline/workflow functionality.**
-
----
-
-## energy.png
-[⬆️ Back to top](#fbdd-repository-structure)
-
-This plot shows the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases.
-![Energy vs Steps](energy.png)
-
-## temperature.png
-[⬆️ Back to top](#fbdd-repository-structure)
-
-This plot shows the changes in the (instantaneous and smoothed) temperature (K) of the system as the MD simulation progresses ie. time increases.
-![Temparature vs Steps](temperature.png)
-
-## energy_temperature_dual.png
-[⬆️ Back to top](#fbdd-repository-structure)
-
-This plot shows both of the changes in the (instantaneous and smoothed) temperature (K) of the system, as well as the changes in the (instantaneous and smoothed) potential energy (kJ/mol) of the system as the MD simulation progresses ie. time increases. 
-![Energy/Temparature vs Steps](energy_temperature_dual.png)
-
-## plumed_bias.png
-[⬆️ Back to top](#fbdd-repository-structure)
-
-This plot shows the changes in the bias (kJ/mol) of the system as the MD simulation progresses ie. time increases.
-![Bias vs Steps](plumed_bias.png)
-
-## last_frame_pdb.png
-[⬆️ Back to top](#fbdd-repository-structure)
-
-The table below shows the png of the last frame of the 100ps production run for 5HO4 which is a protein/RNA complex.
-
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./all_atoms.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./prot_nucleotides_probes.png" width="400">
-    </td>
-  </tr>
-</table>
+--
