@@ -64,6 +64,8 @@
   - [images](../../images/)
 <!-- /REPO_TOC -->
 
+---
+
 This folder contains the preliminary data and results for the fragment preprocessing part of the FBDD workflow.
 
 # Fragment Library (.sdf)
@@ -124,9 +126,9 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 ---
 
-!--
+<!---
 # Fragment Preprocessing Methods
 
 The fragment library was 
 
---
+--->
