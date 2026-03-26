@@ -126,7 +126,49 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 ---
 
+# Requirements
+
+### Installation guide
+  
+#### Windows
+
+1. Install WSL2:
+Open PowerShell (Administrator) and run
+`wsl --install`
+3. Install Ubuntu 22.04 LTS from the Microsoft Store if not installed automatically.
+4. Restart your machine if prompted.
+5. Open Ubuntu and proceed to execute the commands under the **Commands to Execute** section.
+6. Launch Jupyter inside WSL:
+```bash
+conda activate fragment_pp
+cd /path/to/project_directory/   # directory containing the pipeline notebook
+jupyter lab --no-browser --ip=localhost
+```
+7. Run the pipeline notebook
+
+#### Native Linux (Expected Compatible)
+
+> The pipeline was developed and tested on Ubuntu 22.04 within WSL2. Native Linux systems should work with minimal adjustments but are untested.
+
+Minor adjustments required:
+
+- **Paths:** Convert all Windows-style paths to Linux paths (e.g., `/home/user/...`).
+- **Executables:** Ensure `antechamber_exe` and `PLUMED_KERNEL` point to Linux locations.
+- **Shell commands:** Adjust any `find "C:/Users/..."` or backslash-escaped paths to Linux equivalents.
+- WSL is only required for Windows users. Native Linux users can execute all commands directly in their system terminal.
+
+1. Execute the commands under the **Commands to Execute** section in a Linux terminal
+2. Launch Jupyter:
+```bash
+conda activate fragment_pp
+cd /path/to/project_directory/   # directory containing the pipeline notebook
+jupyter lab
+```
+3. Run the pipeline notebook
+   
 ### Commands to execute
+
+Run these commands in a new WSL terminal window
 
 ```bash
 # Create environment named 'fragment_pp'
@@ -149,6 +191,7 @@ python -m ipykernel install \
   --user \
   --name fragment_pp \
   --display-name "Python (fragment_pp)"
+```
 
 <!---
 # Fragment Preprocessing Methods
