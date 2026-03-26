@@ -126,6 +126,30 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 ---
 
+### Commands to execute
+
+```bash
+# Create environment named 'fragment_pp'
+conda create -n fragment_pp python=3.11 -y
+
+# activate environment
+conda activate fragment_pp
+
+# Conda installations
+# Note if using previous version of gromacs and plumed (eg. for HPC cluster) install via: conda install -c conda-forge gromacs=2024 plumed=2.9.2
+conda install -c conda-forge openbabel rdkit-y
+
+# JupyterLab installation and verification
+conda install -c conda-forge jupyterlab -y
+jupyter lab --version
+
+# Set up kernel in almmd for Jupyter notebooks
+conda install ipykernel -y
+python -m ipykernel install \
+  --user \
+  --name fragment_pp \
+  --display-name "Python (fragment_pp)"
+
 <!---
 # Fragment Preprocessing Methods
 
