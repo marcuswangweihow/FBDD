@@ -179,7 +179,7 @@ conda activate fragment_pp
 
 # Conda installations
 # Note if using previous version of gromacs and plumed (eg. for HPC cluster) install via: conda install -c conda-forge gromacs=2024 plumed=2.9.2
-conda install -c conda-forge openbabel rdkit-y
+conda install -c conda-forge openbabel rdkit -y
 
 # JupyterLab installation and verification
 conda install -c conda-forge jupyterlab -y
