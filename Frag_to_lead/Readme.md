@@ -775,4 +775,6 @@ Users must manually set key parameters before launching a job such as:
 
 This folder contains the overview, preliminary data and results for the fragment preprocessing part of the FBDD workflow.
 
+For full details, please refer to the README within the `Fragment_preprocessing` folder.
+
 ---
