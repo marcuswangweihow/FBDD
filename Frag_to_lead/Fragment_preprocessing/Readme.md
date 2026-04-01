@@ -130,7 +130,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 This file (sanitization_report.json) summarizes the outcome of the fragment preprocessing pipeline, which cleans and validates fragment libraries before conformer generation.
 
-**Pipeline statistics (current run):**
+### Pipeline statistics (current run)
 
 | Metric | Value |
 |--------|-------|
@@ -139,7 +139,7 @@ This file (sanitization_report.json) summarizes the outcome of the fragment prep
 | Passed sanitization | 27,101 (88.1%) |
 | Failed sanitization | 3,664 (11.9%) |
 
-### Breakdown of failure types
+### Breakdown of failure types (current run)
 
 | Failure type | Count | % of failures | % of total |
 |--------------|-------|---------------|------------|
