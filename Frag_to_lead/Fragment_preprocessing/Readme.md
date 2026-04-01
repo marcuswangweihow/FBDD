@@ -128,7 +128,7 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 # Fragment Library Sanitization Summary
 
-This file (sanitization_report.json) summarizes the outcome of the fragment preprocessing pipeline, which cleans and validates fragment libraries before conformer generation.
+This JSON file (sanitization_report.json) summarizes the outcome of the fragment preprocessing pipeline, which cleans and validates fragment libraries before conformer generation.
 
 ### Pipeline statistics (current run)
 
@@ -244,6 +244,7 @@ python -m ipykernel install \
     - Add explicit hydrogens.  
     - Sanitize molecules with RDKit; molecules failing sanitization are logged and skipped.  
     - Full logging of cleaning status into CSV for traceability.
+    - Generation of `sanitization_report.json` provides a **transparent QC snapshot** of the preprocessing stage of the fragment library.
 
 3. **3D Conformer Generation (ETKDGv3)**
     - Generate initial low-energy 3D conformers using **RDKit ETKDGv3**.  
