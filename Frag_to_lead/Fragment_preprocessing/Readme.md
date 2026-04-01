@@ -126,6 +126,43 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 ---
 
+# Fragment Library Sanitization Summary
+
+This file (sanitization_report.json) summarizes the outcome of the fragment preprocessing pipeline, which cleans and validates fragment libraries before conformer generation.
+
+**Pipeline statistics (current run):**
+
+| Metric | Value |
+|--------|-------|
+| Total files processed | 30,765 |
+| Total molecules | 30,765 |
+| Passed sanitization | 27,101 (88.1%) |
+| Failed sanitization | 3,664 (11.9%) |
+
+### Breakdown of failure types
+
+| Failure type | Count | % of failures | % of total |
+|--------------|-------|---------------|------------|
+| READ_ERROR | 2,439 | 66.6% | 7.9% |
+| SANITIZE_ALL | 1,225 | 33.4% | 4.0% |
+| SANITIZE_KEKULIZE | 1,225 | 33.4% | 4.0% |
+
+### Failure type explanations
+
+- **READ_ERROR**: Molecules that could not be read from the SDF file (corrupted file, unparsable format, etc.).  
+- **SANITIZE_ALL**: Molecules that failed the full sanitization process. This is an umbrella flag that includes all sanitization checks such as:
+  - Adding hydrogens
+  - Sanitizing atom valences
+  - Kekulization  
+
+  *All molecules failing any of these checks are counted under `SANITIZE_ALL`.*  
+- **SANITIZE_KEKULIZE**: A subset of `SANITIZE_ALL`, specifically molecules that failed **kekulization**.  
+  *Note: The numbers in the table reflect that `SANITIZE_KEKULIZE` is already included in `SANITIZE_ALL`.*
+
+This JSON and table provide a **transparent QC snapshot** of the preprocessing stage of the fragment library.
+
+---
+
 # Requirements
 
 ### Installation guide
@@ -225,7 +262,13 @@ python -m ipykernel install \
 5. **Output Organization**  
      - Each run output is saved under a `run_id` directory.
      - `run_id` directory contains the directory (`frag_pp_run`).
-     - Outputs (`conformer_log.csv`, `fragments_conformers.sdf`,`conformer_minimization_log.csv`,`min_fragments_conformers.sdf`) are stored in `frag_pp_run`.
+     - Pipeline outputs are stored in `frag_pp_run`.
+       - `sanitization_report.json`
+       - `sanitization_log.csv`
+       - `conformer_log.csv`
+       - `fragments_conformers.sdf`
+       - `conformer_minimization_log.csv`
+       - `min_fragments_conformers.sdf`
      - metadata json saved in `run_dir`
     
 
