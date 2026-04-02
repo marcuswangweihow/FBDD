@@ -126,11 +126,11 @@ This returned a total of 30765 .sdf files ie. 30765 molecules which is sufficien
 
 ---
 
-# Fragment Library Sanitization Summary
+# Fragment library sanitization summary
 
-This JSON file (sanitization_report.json) summarizes the outcome of the fragment preprocessing pipeline, which cleans and validates fragment libraries before conformer generation.
+This JSON file (sanitization_report.json) summarizes the outcome of the sanitization part of the fragment preprocessing pipeline, which sanitizes and validates fragments before filtering and conformer generation.
 
-### Pipeline statistics (current run)
+### Sanitization statistics
 
 | Metric | Value |
 |--------|-------|
@@ -139,7 +139,7 @@ This JSON file (sanitization_report.json) summarizes the outcome of the fragment
 | Passed sanitization | 27,101 (88.1%) |
 | Failed sanitization | 3,664 (11.9%) |
 
-### Breakdown of failure types (current run)
+### Breakdown of failure types
 
 | Failure type | Count | % of failures | % of total |
 |--------------|-------|---------------|------------|
@@ -163,6 +163,72 @@ This JSON and table provide a **transparent QC snapshot** of the preprocessing s
 
 ---
 
+# Fragment library filtering summary
+This JSON file (filtered_summary.json) summarizes the outcome of the filtering part of the fragment preprocessing pipeline, which filters the sanitized fragments before conformer generation.
+
+### Filtering statistics
+
+| Metric | Value |
+|--------|-------|
+| Total molecules | 27,101 |
+| Passed filtering | 6,835 (25.2% of sanitized) |
+| Failed filtering | 20,266 (74.8% of sanitized) |
+
+### Breakdown of filtering failures
+
+| Filter criterion | Count | % of failures | % of total |
+|-----------------|-------|---------------|------------|
+| MW | 2 | 0.01% | 0.007% |
+| NumHDonors | 128 | 0.6% | 0.5% |
+| NumHAcceptors | 6,900 | 34.1% | 25.5% |
+| cLogP | 0 | 0% | 0% |
+| NumRotatableBonds | 14,884 | 73.4% | 54.9% |
+| PSA | 8,377 | 41.3% | 30.9% |
+
+*Note:* Filtering applied **Rule-of-3 + PSA (≤ 60 Å²)**. Only ~25% of sanitized molecules passed strict fragment criteria.
+
+### Notes on filtering
+- Per-molecule descriptors are logged in CSV, including:
+  - Molecular weight (MW)
+  - Number of hydrogen donors
+  - Number of hydrogen acceptors
+  - cLogP
+  - Number of rotatable bonds
+  - Polar surface area (PSA)
+  - Status (`success` / failure message)
+
+---
+# ETKDG conformer generation
+This JSON file (etkdg_summary.json) summarizes the outcome of the ETKDG conformer generation part of the fragment preprocessing pipeline, which generates conformers after the previous filtering part.
+
+### ETKDG conformer generation statistics
+
+| Metric | Value |
+|--------|-------|
+| Total molecules | 6,832 |
+| Number of conformers per molecule | 2 |
+| Passed | 6,832 (100%) |
+| Failed | 0 (0%) |
+
+### Notes on ETKDG conformer generation
+- Conformers were generated for all filtered molecules successfully (6,832/6,832).  
+- Each conformer retains the original molecule name, index, and conformer ID for traceability.  
+- CSV logs capture pass/fail status per molecule for reproducibility.
+- Per-conformer descriptors are logged in CSV, including:
+  - Molecular weight (MW)
+  - Number of hydrogen donors
+  - Number of hydrogen acceptors
+  - cLogP
+  - Number of rotatable bonds
+  - Polar surface area (PSA)
+  - Status (`success` / failure message)
+- Example CSV row format:
+  
+| mol_name | original_index | conf_id | mw | h_donors | h_acceptors | clogp | rot_bonds | psa | comment |
+|----------|----------------|--------|----|----------|-------------|-------|------------|-----|---------|
+  
+---
+  
 # Requirements
 
 ### Installation guide
@@ -264,13 +330,22 @@ python -m ipykernel install \
 
 
 4. **3D Conformer Generation (ETKDGv3)**
-    - Generate initial low-energy 3D conformers using **RDKit ETKDGv3**.  
+    - Generate initial low-energy 3D conformers for **filtered fragment molecules** using **RDKit ETKDGv3**.  
     - Number of conformers per fragment configurable (`numConfs`).  
     - Conformers stored in a single SDF file, with per-conformer properties:
       - `mol_name`  
       - `mol_index`  
-      - `conf_id` for traceability.  
-    - Skipped or problematic molecules logged in CSV.
+      - `conf_id` for traceability  
+      - **Descriptors logged per conformer** in `conformer_log.csv`:
+        - Molecular weight (MW)  
+        - Number of hydrogen donors  
+        - Number of hydrogen acceptors  
+        - cLogP  
+        - Number of rotatable bonds  
+        - Polar Surface Area (PSA)  
+        - Status (`success` / failure message)  
+    - Skipped or problematic molecules are logged in CSV with failure message for reproducibility.  
+    - Provides a **traceable 3D conformer dataset** for downstream MMFF minimization, docking, and MD workflows.
 
 5. **Force Field Minimization (MMFF)**
     - MMFF94 energy minimization planned for all generated conformers.  
