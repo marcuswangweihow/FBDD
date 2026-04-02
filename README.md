@@ -304,13 +304,22 @@ flowchart TD
 
 
 4. **3D Conformer Generation (ETKDGv3)**
-    - Generate initial low-energy 3D conformers using **RDKit ETKDGv3**.  
+    - Generate initial low-energy 3D conformers for **filtered fragment molecules** using **RDKit ETKDGv3**.  
     - Number of conformers per fragment configurable (`numConfs`).  
     - Conformers stored in a single SDF file, with per-conformer properties:
       - `mol_name`  
       - `mol_index`  
-      - `conf_id` for traceability.  
-    - Skipped or problematic molecules logged in CSV.
+      - `conf_id` for traceability  
+      - **Descriptors logged per conformer** in `conformer_log.csv`:
+        - Molecular weight (MW)  
+        - Number of hydrogen donors  
+        - Number of hydrogen acceptors  
+        - cLogP  
+        - Number of rotatable bonds  
+        - Polar Surface Area (PSA)  
+        - Status (`success` / failure message)  
+    - Skipped or problematic molecules are logged in CSV with failure message for reproducibility.  
+    - Provides a **traceable 3D conformer dataset** for downstream MMFF minimization, docking, and MD workflows.
 
 5. **Force Field Minimization (MMFF)**
     - MMFF94 energy minimization planned for all generated conformers.  
