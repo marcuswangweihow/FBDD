@@ -354,16 +354,19 @@ python -m ipykernel install \
   
 6. **Output Organization**  
     - Each run output is saved under a `run_id` directory.  
-    - `run_id` directory contains the directory (`frag_pp_run`).  
+    - `run_id` directory contains the directory (`frag_pp_run`).
+    - Metadata JSON saved in `run_dir`.
     - Pipeline outputs are stored in `frag_pp_run`:
+      - `cleaned_molecules.sdf` 
       - `sanitization_report.json`  
       - `sanitization_log.csv`  
       - `filtered_log.csv`  
-      - `filtered_summary.json`  
-      - `conformer_log.csv`  
+      - `filtered_summary.json`
+      - `filtered_fragments.sdf`
+      - `conformer_log.csv`
+      - `etkdg_summary.json`
       - `fragments_conformers.sdf`  
       - `conformer_minimization_log.csv`  
       - `min_fragments_conformers.sdf`  
-    - Metadata JSON saved in `run_dir`.
     
 
