@@ -83,6 +83,7 @@
   - [Pipeline Overview](#pipeline-overview)
   - [Force Fields](#force-fields)
   - [Pipeline Workflow](#pipeline-workflow)
+- [Fragment Preprocessing Pipeline Overview](#fragment-preprocessing-pipeline-overview)
 - [prepare\_ligands.ipynb](#prepare_ligandsipynb)
 - [docking.py](#dockingpy)
 - [FBDD.ipyb](#fbddipyb)
@@ -110,7 +111,6 @@ Completed work on:
 aLMMD sampling and analysis
 
 ---
-
 
 # aLMMD Pipeline - aLMMD Sampling / aLMMD Analysis
 [⬆️ Back to top](#readme-table-of-contents)
@@ -270,6 +270,66 @@ flowchart TD
 ```
 
 ---
+
+# Fragment Preprocessing Pipeline Overview
+[⬆️ Back to top](#readme-table-of-contents)
+
+1. **Library Loading & File Handling**
+    - Raw fragment library stored in `library_folder` (SDF/SMILES).  
+    - Folder structure and metadata JSON prepared to track runs and parameters.  
+    - Automatic checking for missing or invalid files before processing.
+
+2. **Molecule Cleaning & Sanitization**
+    - Remove unwanted metals and keep the largest fragment per molecule.  
+    - Add explicit hydrogens.  
+    - Sanitize molecules with RDKit; molecules failing sanitization are logged and skipped.  
+    - Full logging of cleaning status into CSV for traceability.
+    - Generation of `sanitization_report.json` provides a **transparent QC snapshot** of the preprocessing stage of the fragment library.
+
+3. **Fragment Filtering (Rule-of-3 + PSA)**
+    - Filter cleaned molecules to retain **fragment-friendly molecules** according to Rule-of-3 + PSA:
+      - Molecular weight (MW) ≤ 300  
+      - H-bond donors ≤ 3  
+      - H-bond acceptors ≤ 3  
+      - clogP ≤ 3  
+      - Rotatable bonds ≤ 3  
+      - Polar Surface Area (PSA) ≤ 60 Å²  
+    - Compute all descriptors using RDKit for each molecule and log them in `filtered_log.csv`.  
+    - Molecules failing one or more rules are flagged and excluded from downstream 3D conformer generation.  
+    - Summary of filtering results stored in `filtered_summary.json`, including:
+      - Total molecules processed  
+      - Number and percentage of molecules passing or failing  
+      - Failure counts per rule (MW, donors, acceptors, clogP, rotatable bonds, PSA)   
+    - Provides a **quantitative snapshot of library quality** and ensures only fragment-compliant molecules proceed downstream.
+
+
+4. **3D Conformer Generation (ETKDGv3)**
+    - Generate initial low-energy 3D conformers using **RDKit ETKDGv3**.  
+    - Number of conformers per fragment configurable (`numConfs`).  
+    - Conformers stored in a single SDF file, with per-conformer properties:
+      - `mol_name`  
+      - `mol_index`  
+      - `conf_id` for traceability.  
+    - Skipped or problematic molecules logged in CSV.
+
+5. **Force Field Minimization (MMFF)**
+    - MMFF94 energy minimization planned for all generated conformers.  
+    - Ready to iterate over SDF conformers, minimize energies, and store results in a new SDF.  
+    - Per-conformer logging of minimization status and energy for reproducibility.
+  
+6. **Output Organization**  
+    - Each run output is saved under a `run_id` directory.  
+    - `run_id` directory contains the directory (`frag_pp_run`).  
+    - Pipeline outputs are stored in `frag_pp_run`:
+      - `sanitization_report.json`  
+      - `sanitization_log.csv`  
+      - `filtered_log.csv`  
+      - `filtered_summary.json`  
+      - `conformer_log.csv`  
+      - `fragments_conformers.sdf`  
+      - `conformer_minimization_log.csv`  
+      - `min_fragments_conformers.sdf`  
+    - Metadata JSON saved in `run_dir`.
 
 # prepare_ligands.ipynb
 [⬆️ Back to top](#readme-table-of-contents)
