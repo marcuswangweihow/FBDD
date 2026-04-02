@@ -232,7 +232,7 @@ python -m ipykernel install \
 
 ---
 
-## Fragment Preprocessing Overview
+## Fragment Preprocessing Pipeline Overview
 
 1. **Library Loading & File Handling**
     - Raw fragment library stored in `library_folder` (SDF/SMILES).  
