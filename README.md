@@ -219,10 +219,14 @@ References:
 
 ---
 
-> **Note:** This pipeline has potential for publication similar to the 2020 and 2022 papers by Tan et al.  
-> The full code is **not publicly released on GitHub**, but is **available upon request** to technical interviewers or collaborators for evaluation purposes.
-> If you require access, please contact me via the email provided in my application/CV.
-> More details on the pipeline can be found in the Frag_to_lead folder's README.
+> **Note:** This pipeline has **potential for publication** similar to the **2020** and **2022** papers by **Tan et al.**.  
+> The full pipeline code is **not publicly released** due to publication considerations. Selected outputs and workflow details are provided for transparency.
+> 
+> The complete implementation is **available upon request** for technical evaluation or collaboration.
+> 
+> To access the private repository, please **contact me via the email** provided in my application/CV.
+> 
+> More details on the aLMMD pipeline can be found in the Frag_to_lead folder's README.
 
 ---
 ## Pipeline Workflow
@@ -342,6 +346,14 @@ flowchart TD
       - `fragments_conformers.sdf`  
       - `conformer_minimization_log.csv`  
       - `min_fragments_conformers.sdf`  
+
+> **Note:** The full pipeline code is **not publicly released** due to ongoing development and publication considerations. Selected outputs and workflow details are provided for transparency.
+> 
+> The complete implementation is **available upon request** for technical evaluation or collaboration.
+> 
+> To access the private repository, please **contact me via the email** provided in my application/CV.
+
+---
 
 # prepare_ligands.ipynb
 [⬆️ Back to top](#readme-table-of-contents)
