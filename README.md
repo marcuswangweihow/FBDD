@@ -351,7 +351,7 @@ flowchart TD
 > 
 > The complete implementation is **available upon request** for technical evaluation or collaboration.
 > 
-> To access the private repository, please **contact me via the email** provided in my application/CV.
+> To access the private repository, please **contact me via the email** provided in my application/CV or at marcuswangweihow@gmail.com.
 
 ---
 
