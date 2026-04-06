@@ -224,7 +224,7 @@ References:
 > 
 > The complete implementation is **available upon request** for technical evaluation or collaboration.
 > 
-> To access the private repository, please **contact me via the email** provided in my application/CV.
+> To access the private repository, please **contact me via the email** provided in my application/CV or at marcuswangweihow@gmail.com.
 > 
 > More details on the aLMMD pipeline can be found in the Frag_to_lead folder's README.
 
