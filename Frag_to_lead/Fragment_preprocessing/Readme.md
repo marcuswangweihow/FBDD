@@ -286,11 +286,15 @@ This JSON file (etkdg_summary.json) summarizes the outcome of the ETKDG conforme
 |--------|-------|
 | Total molecules | 6,832 |
 | Number of conformers per molecule | 2 |
-| Passed | 6,832 (100%) |
-| Failed | 0 (0%) |
+| full_confs | 6,830 (100%) |
+| partial_confs | 2 (0.03%) |
+| failed | 0 (0%) |
+| total_conformers_generated | 13660 |
 
 ### Notes on ETKDG conformer generation
-- Conformers were generated for all filtered molecules successfully (6,832/6,832).  
+- full_confs: Number of molecules that generated all conformers
+- partial_confs: Number of molecules that generated less than the specified number of conformers
+- failed: Number of molecules that generated no conformers
 - Each conformer retains the original molecule name, index, and conformer ID for traceability.  
 - CSV logs capture pass/fail status per molecule for reproducibility.
 - Per-conformer descriptors are logged in CSV, including:
