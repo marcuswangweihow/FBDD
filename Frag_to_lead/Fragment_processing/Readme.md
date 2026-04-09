@@ -70,7 +70,7 @@
 
 This folder contains the preliminary data and results for the fragment preprocessing part of the FBDD workflow.
 
-# Fragment Preprocessing Pipeline Overview
+# Fragment Processing Pipeline Overview
 
 1. **Library Loading & File Handling**
     - Raw fragment library stored in `library_folder` (SDF/SMILES).  

@@ -66,25 +66,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------------------------------------------------------
 ## Readme Table of Contents
 - [FBDD Repository Structure](#fbdd-repository-structure)
@@ -102,6 +83,10 @@
   - [Section 3: Boosting](#section-3-boosting)
   - [Section 4: Post-processing \& Snapshot Analysis](#section-4-post-processing--snapshot-analysis)
 - [Requirements](#requirements)
+    - [Installation guide](#installation-guide)
+      - [Windows](#windows)
+      - [Native Linux (Expected Compatible)](#native-linux-expected-compatible)
+    - [Installation notes](#installation-notes)
   - [HPC \& Backward Compatibility](#hpc--backward-compatibility)
     - [1. Tested Software Environment](#1-tested-software-environment)
       - [GROMACS](#gromacs)
@@ -118,7 +103,7 @@
 - [Usage](#usage)
 - [HPC Production Run Script](#hpc-production-run-script)
 - [HPC Resume from Backup Production Run Script](#hpc-resume-from-backup-production-run-script)
-- [Fragment Preprocessing](#fragment-preprocessing)
+- [Fragment Processing](#fragment-processing)
 
 --------------------------------------------------------
 📌 See [CHANGELOG.md](./CHANGELOG.md) for version updates.
@@ -775,11 +760,11 @@ Users must manually set key parameters before launching a job such as:
 
 
 ---
-# Fragment Preprocessing
+# Fragment Processing
 [⬆️ Back to top](#readme-table-of-contents)
 
-This folder contains the overview, preliminary data and results for the fragment preprocessing part of the FBDD workflow.
+This folder contains the overview, preliminary data and results for the fragment processing part of the FBDD workflow.
 
-For full details, please refer to the README within the `Fragment_preprocessing` folder.
+For full details, please refer to the README within the `Fragment_processing` folder.
 
 ---

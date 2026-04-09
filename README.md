@@ -85,7 +85,11 @@
   - [Pipeline Overview](#pipeline-overview)
   - [Force Fields](#force-fields)
   - [Pipeline Workflow](#pipeline-workflow)
-- [Fragment Preprocessing Pipeline Overview](#fragment-preprocessing-pipeline-overview)
+  - [Section 1: Preparation](#section-1-preparation)
+  - [Section 2: System Setup](#section-2-system-setup)
+  - [Section 3: Boosting](#section-3-boosting)
+  - [Section 4: Post-processing \& Snapshot Analysis](#section-4-post-processing--snapshot-analysis)
+- [Fragment Processing Pipeline Overview](#fragment-processing-pipeline-overview)
 - [prepare\_ligands.ipynb](#prepare_ligandsipynb)
 - [docking.py](#dockingpy)
 - [FBDD.ipyb](#fbddipyb)
@@ -277,7 +281,7 @@ flowchart TD
 
 ---
 
-# Fragment Preprocessing Pipeline Overview
+# Fragment Processing Pipeline Overview
 [⬆️ Back to top](#readme-table-of-contents)
 
 1. **Library Loading & File Handling**
