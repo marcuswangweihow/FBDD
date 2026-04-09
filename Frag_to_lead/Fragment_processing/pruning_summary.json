@@ -1,0 +1,40 @@
+{
+    "conformer_pruning_parameters": {
+        "rmsd_threshold": 0.5,
+        "total_conformers_loaded": 49911,
+        "total_conformers_after_pruning": 28724,
+        "percent_kept": 57.55043978281341,
+        "avg_per_mol": 4.206179528481476
+    },
+    "total_molecules": 6829,
+    "percentile_conformer_bins": {
+        "0-25%": {
+            "molecules": 2198,
+            "conformer_range": [
+                0,
+                2
+            ]
+        },
+        "25-50%": {
+            "molecules": 1770,
+            "conformer_range": [
+                3,
+                4
+            ]
+        },
+        "50-75%": {
+            "molecules": 1534,
+            "conformer_range": [
+                5,
+                6
+            ]
+        },
+        "75-100%": {
+            "molecules": 1327,
+            "conformer_range": [
+                7,
+                10
+            ]
+        }
+    }
+}

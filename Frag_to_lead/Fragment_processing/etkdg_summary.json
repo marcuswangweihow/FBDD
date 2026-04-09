@@ -1,0 +1,39 @@
+{
+    "total_molecules": 6835,
+    "numConfs": 10,
+    "full_confs": 2082,
+    "partial_confs": 4751,
+    "failed": 2,
+    "percent_full_confs": 30.46086320409656,
+    "percent_partial_confs": 69.50987564008778,
+    "percent_failed": 0.02926115581565472,
+    "total_conformers_generated": 49955,
+    "max_conformers_possible": 68350,
+    "percent_of_max_conformers": 73.08705193855157,
+    "average_conformers_per_partial_conf_molecule": 6.132393180383077,
+    "conformer_bins": {
+        "0-25%": {
+            "count": 856,
+            "percent": 12.52377468910022
+        },
+        "25-50%": {
+            "count": 800,
+            "percent": 11.704462326261886
+        },
+        "50-75%": {
+            "count": 987,
+            "percent": 14.440380395025604
+        },
+        "75-100%": {
+            "count": 4190,
+            "percent": 61.30212143379663
+        }
+    },
+    "ETKDG_parameters": {
+        "numThreads": 0,
+        "useRandomCoords": false,
+        "maxIterations": 1000,
+        "pruneRmsThresh": 0.1,
+        "numConfs": 10
+    }
+}

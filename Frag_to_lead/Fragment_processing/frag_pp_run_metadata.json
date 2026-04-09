@@ -1,0 +1,23 @@
+{
+    "run_id": "fragmentpp_numConfs10_conformers_A",
+    "timestamp": "20260401",
+    "paths": {
+        "base_dir": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project",
+        "run_dir": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/fragmentpp_numConfs2_conformers_A_20260401",
+        "frag_pp_run_dir": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/fragmentpp_numConfs2_conformers_A_20260401/frag_pp_run"
+    },
+    "ETKDG_parameters": {
+        "numThreads": 0,
+        "useRandomCoords": false,
+        "maxIterations": 1000,
+        "pruneRmsThresh": 0.1,
+        "numConfs": 10
+    },
+    "conformer_pruning_parameters": {
+        "rmsd_threshold": 0.5,
+        "total_conformers_loaded": 49911,
+        "total_conformers_after_pruning": 28724,
+        "percent_kept": 57.55043978281341,
+        "avg_per_mol": 4.206179528481476
+    }
+}

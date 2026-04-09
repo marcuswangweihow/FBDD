@@ -1,0 +1,24 @@
+{
+    "total_molecules": 6833,
+    "at_least_one_conf": 6829,
+    "no_conf": 4,
+    "percent_at_least_one_conf": 99.94146055905166,
+    "percent_no_conf": 0.05853944094833894,
+    "total_conformers": 49955,
+    "passed_minimization": 49911,
+    "failed_minimization": 44,
+    "percent_passed_minimization": 99.91192072865579,
+    "percent_failed_minimization": 0.08807927134420979,
+    "failure_types": {
+        "not_converged": {
+            "count": 4,
+            "percent_of_failures": 9.090909090909092,
+            "percent_of_total": 0.008007206485837253
+        },
+        "no_MMFF_params": {
+            "count": 40,
+            "percent_of_failures": 90.9090909090909,
+            "percent_of_total": 0.08007206485837254
+        }
+    }
+}
