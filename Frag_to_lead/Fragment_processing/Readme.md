@@ -500,7 +500,7 @@ Open PowerShell (Administrator) and run
 5. Open Ubuntu and proceed to execute the commands under the **Commands to Execute** section.
 6. Launch Jupyter inside WSL:
 ```bash
-conda activate fragment_pp
+conda activate fragment
 cd /path/to/project_directory/   # directory containing the pipeline notebook
 jupyter lab --no-browser --ip=localhost
 ```
@@ -520,7 +520,7 @@ Minor adjustments required:
 1. Execute the commands under the **Commands to Execute** section in a Linux terminal
 2. Launch Jupyter:
 ```bash
-conda activate fragment_pp
+conda activate fragment
 cd /path/to/project_directory/   # directory containing the pipeline notebook
 jupyter lab
 ```
@@ -531,14 +531,13 @@ jupyter lab
 Run these commands in a new WSL terminal window
 
 ```bash
-# Create environment named 'fragment_pp'
-conda create -n fragment_pp python=3.11 -y
+# Create environment named 'fragment'
+conda create -n fragment python=3.11 -y
 
 # activate environment
-conda activate fragment_pp
+conda activate fragment
 
 # Conda installations
-# Note if using previous version of gromacs and plumed (eg. for HPC cluster) install via: conda install -c conda-forge gromacs=2024 plumed=2.9.2
 conda install -c conda-forge openbabel rdkit -y
 
 # JupyterLab installation and verification
@@ -549,8 +548,8 @@ jupyter lab --version
 conda install ipykernel -y
 python -m ipykernel install \
   --user \
-  --name fragment_pp \
-  --display-name "Python (fragment_pp)"
+  --name fragment \
+  --display-name "Python (fragment)"
 ```
 
 ---
