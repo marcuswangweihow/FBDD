@@ -112,17 +112,53 @@ This folder contains the preliminary data and results for the fragment preproces
         - Number of hydrogen acceptors  
         - cLogP  
         - Number of rotatable bonds  
-        - Polar Surface Area (PSA)  
+        - Polar Surface Area (PSA)
+        - Conformer bin
         - Status (`success` / failure message)  
     - Skipped or problematic molecules are logged in CSV with failure message for reproducibility.  
     - Provides a **traceable 3D conformer dataset** for downstream MMFF minimization, docking, and MD workflows.
 
 5. **Force Field Minimization (MMFF)**
-    - MMFF94 energy minimization planned for all generated conformers.  
-    - Ready to iterate over SDF conformers, minimize energies, and store results in a new SDF.  
-    - Per-conformer logging of minimization status and energy for reproducibility.
+    - MMFF94s energy minimization performed on all generated conformers with MMFF94 fallback for conformers that fail MMFF94s minimization
+    - Iterates over SDF conformers, minimizes energies, and stores results in a new SDF.  
+    - Per-conformer logging of minimization status and energy in `conformer_minimization_log.csv`. Columns include:
+
+      | Column | Description |
+      |--------|-------------|
+      | mol_name | Molecule name / identifier |
+      | mol_index | Original molecule index in the input file |
+      | conf_id | Conformer ID |
+      | mmffVariant | MMFF variant used for minimization |
+      | min_status | Minimization status (`success` / failure type) |
+      | energy_before_kcal_mol | Energy before minimization (kcal/mol) |
+      | energy_after_kcal_mol | Energy after minimization (kcal/mol) |
   
-6. **Output Organization**  
+6. **Conformer Pruning**
+    - RMSD-based pruning to remove duplicate or near-duplicate conformers.  
+    - Pruning threshold: 0.5 Å  
+    - Retains representative conformers for downstream analysis.  
+    - Per-conformer CSV logs (`pruned_conformers.csv`) include:
+
+      | Column | Description |
+      |--------|-------------|
+      | mol_name | Molecule name / identifier |
+      | mol_index | Original molecule index in the input file |
+      | conf_id | Conformer ID |
+      | mmffVariant | MMFF variant used for minimization |
+      | min_status | Minimization status (`success` / failure type) |
+      | energy_before_kcal_mol | Energy before minimization (kcal/mol) |
+      | energy_after_kcal_mol | Energy after minimization (kcal/mol) |
+      | mw | Molecular weight |
+      | h_donors | Number of hydrogen donors |
+      | h_acceptors | Number of hydrogen acceptors |
+      | clogp | Calculated logP |
+      | rot_bonds | Number of rotatable bonds |
+      | psa | Polar surface area |
+      | conformer_bin | Absolute conformer bin based on `numConfs` |
+      | status | Conformer pass/fail status |
+      | percentile_bin | Molecule percentile bin (0–25%, 25–50%, etc.)
+      
+7. **Output Organization**  
     - Each run output is saved under a `run_id` directory.  
     - `run_id` directory contains the directory (`frag_pp_run`).
     - Metadata JSON saved in `run_dir`.
@@ -130,13 +166,17 @@ This folder contains the preliminary data and results for the fragment preproces
       - `cleaned_molecules.sdf` 
       - `sanitization_report.json`  
       - `sanitization_log.csv`  
-      - `filtered_log.csv`  
+      - `filtered_log.csv`
+      - `filtered_passed_log.csv`
       - `filtered_summary.json`
       - `filtered_fragments.sdf`
       - `conformer_log.csv`
       - `etkdg_summary.json`
       - `fragments_conformers.sdf`  
       - `conformer_minimization_log.csv`  
+      - `min_fragments_conformers.sdf`  
+      - `pruned_conformers.csv`  
+      - `pruning_summary.json`
       - `min_fragments_conformers.sdf`  
 
 > **Note:** The full pipeline code is **not publicly released** due to ongoing development and publication considerations. Selected outputs and workflow details are provided for transparency.
@@ -277,26 +317,60 @@ This JSON file (filtered_summary.json) summarizes the outcome of the filtering p
   - Status (`success` / failure message)
 
 ---
+
 # ETKDG conformer generation
-This JSON file (etkdg_summary.json) summarizes the outcome of the ETKDG conformer generation part of the fragment preprocessing pipeline, which generates conformers after the previous filtering part.
+This JSON file (`etkdg_summary.json`) summarizes the outcome of the ETKDG conformer generation part of the fragment preprocessing pipeline, which generates multiple conformers per molecule after filtering.
 
 ### ETKDG conformer generation statistics
 
 | Metric | Value |
 |--------|-------|
-| Total molecules | 6,832 |
-| Number of conformers per molecule | 2 |
-| full_confs | 6,830 (100%) |
-| partial_confs | 2 (0.03%) |
-| failed | 0 (0%) |
-| total_conformers_generated | 13660 |
+| Total molecules | 6,835 |
+| Number of conformers requested per molecule | 10 |
+| Full conformers (`full_confs`) | 2,082 (30.46%) |
+| Partial conformers (`partial_confs`) | 4,751 (69.51%) |
+| Failed | 2 (0.03%) |
+| Total conformers generated | 49,955 |
+| Maximum possible conformers | 68,350 |
+| % of max conformers generated | 73.09% |
+| Average conformers per partial-conf molecule | 6.13 |
+
+### Conformer distribution across molecules (absolute bins)
+
+Bins are computed relative to the requested number of conformers (`numConfs = 10`):
+
+| Bin | Conformer count range | Number of molecules |
+|-----|---------------------|------------------|
+| 0-25% | 0 – 2 | 856 |
+| 25-50% | 3 – 4 | 800 |
+| 50-75% | 5 – 6 | 987 |
+| 75-100% | 7 – 10 | 4,190 |
+
+**Notes:**
+
+- `0-25%` corresponds to molecules that generated ≤25% of the requested conformers (0–2 confs)  
+- `25-50%` → 25–50% of requested conformers (3–4 confs)  
+- `50-75%` → 50–75% of requested conformers (5–7 confs)  
+- `75-100%` → 75–100% of requested conformers (8–10 confs)  
+- This allows a quick view of how many molecules generated nearly full vs. partial conformers.
+
+### ETKDG parameters
+
+| Parameter | Value |
+|-----------|-------|
+| numThreads | 0 |
+| useRandomCoords | false |
+| maxIterations | 1000 |
+| pruneRmsThresh | 0.1 Å |
+| numConfs | 10 |
 
 ### Notes on ETKDG conformer generation
+- `numThreads = 0` instructs RDKit to auto-detect the number of threads available.
 - full_confs: Number of molecules that generated all conformers
 - partial_confs: Number of molecules that generated less than the specified number of conformers
 - failed: Number of molecules that generated no conformers
-- Each conformer retains the original molecule name, index, and conformer ID for traceability.  
-- CSV logs capture pass/fail status per molecule for reproducibility.
+- Each conformer retains the molecule name, index, and conformer ID for traceability.  
+- CSV logs capture status messages per molecule for reproducibility.
 - Per-conformer descriptors are logged in CSV, including:
   - Molecular weight (MW)
   - Number of hydrogen donors
@@ -304,14 +378,112 @@ This JSON file (etkdg_summary.json) summarizes the outcome of the ETKDG conforme
   - cLogP
   - Number of rotatable bonds
   - Polar surface area (PSA)
+  - Conformer bin
   - Status (`success` / failure message)
 - Example CSV row format:
   
-| mol_name | original_index | conf_id | mw | h_donors | h_acceptors | clogp | rot_bonds | psa | comment |
-|----------|----------------|--------|----|----------|-------------|-------|------------|-----|---------|
+| mol_name | mol_index | conf_id | mw | h_donors | h_acceptors | clogp | rot_bonds | psa | conformer_bin | status |
+|----------|-----------|---------|----|----------|-------------|-------|-----------|-----|---------------|--------|
   
 ---
-  
+
+# Conformer minimization summary
+
+This JSON file (`minimization_summary.json`) summarizes the outcome of the energy minimization step performed on the ETKDG-generated conformers.
+
+### Minimization statistics
+
+| Metric | Value |
+|--------|-------|
+| Total molecules | 6,833 |
+| Molecules with ≥1 conformer minimized | 6,829 (99.94%) |
+| Molecules with 0 conformers minimized | 4 (0.06%) |
+| Total conformers | 49,955 |
+| Conformers passed minimization | 49,911 (99.91%) |
+| Conformers failed minimization | 44 (0.09%) |
+
+### Minimization failure types
+
+| Failure type | Count | % of failures | % of total |
+|--------------|-------|---------------|------------|
+| Not converged | 4 | 9.09% | 0.008% |
+| No MMFF parameters | 40 | 90.91% | 0.080% |
+
+### Notes on minimization
+
+- `passed_minimization`: Conformers that successfully minimized  
+- `failed_minimization`: Conformers that failed energy minimization  
+- `not_converged`: Minimization did not converge to an energy minimum  
+- `no_MMFF_params`: Molecules lacking parameters in the MMFF94 force field  
+
+- Per-conformer CSV logs capture detailed information for reproducibility. Each row contains:
+
+| Column | Description |
+|--------|-------------|
+| mol_name | Molecule name / identifier |
+| mol_index | Original molecule index in the input file |
+| conf_id | Conformer ID |
+| mmffVariant | MMFF variant used for minimization |
+| min_status | Minimization status (`success` / failure type) |
+| energy_before_kcal_mol | Energy before minimization (kcal/mol) |
+| energy_after_kcal_mol | Energy after minimization (kcal/mol) |
+
+- These CSV logs allow per-molecule and per-conformer tracking of minimization success and energy changes.
+
+---
+
+# Conformer pruning summary
+
+This JSON file (`pruning_summary.json`) summarizes the outcome of RMSD-based pruning of minimized conformers to remove duplicates and near-duplicates.
+
+### Pruning statistics
+
+| Metric | Value |
+|--------|-------|
+| RMSD threshold | 0.5 Å |
+| Total conformers loaded | 49,911 |
+| Total conformers after pruning | 28,724 |
+| Percent of conformers kept | 57.55% |
+| Average conformers per molecule | 4.21 |
+
+### Conformer bins by molecule (percentiles)
+
+| Percentile | Number of molecules | Conformer range per molecule |
+|------------|------------------|-----------------------------|
+| 0-25% | 2,198 | 0–2 |
+| 25-50% | 1,770 | 3–4 |
+| 50-75% | 1,534 | 5–6 |
+| 75-100% | 1,327 | 7–10 |
+
+### Notes on pruning
+
+- Pruning removes conformers that are within the RMSD threshold of another conformer to reduce redundancy  
+- Each molecule retains a representative set of conformers for downstream analysis  
+- The percentile bins indicate distribution of molecules by number of conformers retained after pruning  
+
+- **Per-conformer CSV logs** capture detailed descriptors for each retained conformer. Columns include:
+
+| Column | Description |
+|--------|-------------|
+| mol_name | Molecule name / identifier |
+| mol_index | Original molecule index in the input file |
+| conf_id | Conformer ID |
+| mmffVariant | MMFF variant used for minimization |
+| min_status | Minimization status (`success` / failure type) |
+| energy_before_kcal_mol | Energy before minimization (kcal/mol) |
+| energy_after_kcal_mol | Energy after minimization (kcal/mol) |
+| mw | Molecular weight |
+| h_donors | Number of hydrogen donors |
+| h_acceptors | Number of hydrogen acceptors |
+| clogp | Calculated logP |
+| rot_bonds | Number of rotatable bonds |
+| psa | Polar surface area |
+| conformer_bin | Absolute conformer bin based on `numConfs` (0–25%, 25–50%, etc.) |
+| status | Conformer pass/fail status |
+| percentile_bin | Molecule percentile bin (0–25%, 25–50%, etc.) |
+
+- These CSV logs allow **per-molecule and per-conformer tracking** of conformer pruning, minimization success, and descriptor distributions.
+
 # Requirements
 
 ### Installation guide
