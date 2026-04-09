@@ -320,17 +320,53 @@ flowchart TD
         - Number of hydrogen acceptors  
         - cLogP  
         - Number of rotatable bonds  
-        - Polar Surface Area (PSA)  
+        - Polar Surface Area (PSA)
+        - Conformer bin
         - Status (`success` / failure message)  
     - Skipped or problematic molecules are logged in CSV with failure message for reproducibility.  
     - Provides a **traceable 3D conformer dataset** for downstream MMFF minimization, docking, and MD workflows.
 
 5. **Force Field Minimization (MMFF)**
-    - MMFF94 energy minimization planned for all generated conformers.  
-    - Ready to iterate over SDF conformers, minimize energies, and store results in a new SDF.  
-    - Per-conformer logging of minimization status and energy for reproducibility.
+    - MMFF94s energy minimization performed on all generated conformers with MMFF94 fallback for conformers that fail MMFF94s minimization
+    - Iterates over SDF conformers, minimizes energies, and stores results in a new SDF.  
+    - Per-conformer logging of minimization status and energy in `conformer_minimization_log.csv`. Columns include:
+
+      | Column | Description |
+      |--------|-------------|
+      | mol_name | Molecule name / identifier |
+      | mol_index | Original molecule index in the input file |
+      | conf_id | Conformer ID |
+      | mmffVariant | MMFF variant used for minimization |
+      | min_status | Minimization status (`success` / failure type) |
+      | energy_before_kcal_mol | Energy before minimization (kcal/mol) |
+      | energy_after_kcal_mol | Energy after minimization (kcal/mol) |
   
-6. **Output Organization**  
+6. **Conformer Pruning**
+    - RMSD-based pruning to remove duplicate or near-duplicate conformers.  
+    - Pruning threshold: 0.5 Å  
+    - Retains representative conformers for downstream analysis.  
+    - Per-conformer CSV logs (`pruned_conformers.csv`) include:
+
+      | Column | Description |
+      |--------|-------------|
+      | mol_name | Molecule name / identifier |
+      | mol_index | Original molecule index in the input file |
+      | conf_id | Conformer ID |
+      | mmffVariant | MMFF variant used for minimization |
+      | min_status | Minimization status (`success` / failure type) |
+      | energy_before_kcal_mol | Energy before minimization (kcal/mol) |
+      | energy_after_kcal_mol | Energy after minimization (kcal/mol) |
+      | mw | Molecular weight |
+      | h_donors | Number of hydrogen donors |
+      | h_acceptors | Number of hydrogen acceptors |
+      | clogp | Calculated logP |
+      | rot_bonds | Number of rotatable bonds |
+      | psa | Polar surface area |
+      | conformer_bin | Absolute conformer bin based on `numConfs` |
+      | status | Conformer pass/fail status |
+      | percentile_bin | Molecule percentile bin (0–25%, 25–50%, etc.)
+      
+7. **Output Organization**  
     - Each run output is saved under a `run_id` directory.  
     - `run_id` directory contains the directory (`frag_pp_run`).
     - Metadata JSON saved in `run_dir`.
@@ -338,13 +374,17 @@ flowchart TD
       - `cleaned_molecules.sdf` 
       - `sanitization_report.json`  
       - `sanitization_log.csv`  
-      - `filtered_log.csv`  
+      - `filtered_log.csv`
+      - `filtered_passed_log.csv`
       - `filtered_summary.json`
       - `filtered_fragments.sdf`
       - `conformer_log.csv`
       - `etkdg_summary.json`
       - `fragments_conformers.sdf`  
       - `conformer_minimization_log.csv`  
+      - `min_fragments_conformers.sdf`  
+      - `pruned_conformers.csv`  
+      - `pruning_summary.json`
       - `min_fragments_conformers.sdf`  
 
 > **Note:** The full pipeline code is **not publicly released** due to ongoing development and publication considerations. Selected outputs and workflow details are provided for transparency.
