@@ -237,10 +237,18 @@ jupyter lab
 1. Run the pipeline notebook
    
 ### Commands to execute
-<!--
 Run these commands in a new WSL terminal window
 
 ```bash
+-----------------------------------------------
+# Separate installation of Autodock vina in WSL
+# To install in base ie. new terminal window
+sudo apt install autodock-vina
+
+# Check vina version
+vina --version
+-----------------------------------------------
+
 # Create environment named 'docking'
 conda create -n docking python=3.11 -y
 
@@ -263,7 +271,6 @@ python -m ipykernel install \
 ```
 
 ---
--->
 
     
 
