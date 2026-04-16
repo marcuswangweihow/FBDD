@@ -72,6 +72,8 @@
 
 This folder contains the preliminary data and results for the docking part of the FBDD workflow.
 
+The docking pipeline is structured into modular components. The execution layer (docking_pipeline_step_4.py) serves as the pipeline driver that orchestrates ensemble docking across multiple receptor conformations derived from the upstream aLMMD simulation workflow, together with cavity-specific grid definitions. Core docking functionality is encapsulated in modular functions (see run_vina_docking), enabling reproducibility, scalability, and systematic ligand screening across structurally diverse receptor states.
+
 # Docking Pipeline Overview
 
 1. **Representative Receptor Snapshot Selection (from aLMMD pipeline)**
