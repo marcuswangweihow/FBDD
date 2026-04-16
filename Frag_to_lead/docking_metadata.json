@@ -1,0 +1,161 @@
+{
+    "grid_selection_mode": "auto",
+    "top_n_grids": 5,
+    "grid_source_key": "mapped_cavities",
+    "selected_grids": [
+        45,
+        1,
+        40,
+        29,
+        26
+    ],
+    "selected_snapshots": [
+        "rep_frame_2317_prot_metal_nucleotides.pdb"
+    ],
+    "docking_params": {
+        "grid_size": 20,
+        "exhaustiveness": 8,
+        "num_modes": 5
+    },
+    "pdbqt_dir": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/ligands_pdbqt",
+    "config_path": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotides_grid_26.txt",
+    "ligand_pdbqt_conversion": {
+        "total_processed": 28724,
+        "successful": 5,
+        "failed": 0,
+        "ligand_failure_rate": 0.0
+    },
+    "docking_summary": {
+        "n_successful": 25,
+        "n_failed": 0,
+        "n_total": 25
+    },
+    "successful_docking": [
+        {
+            "cavity": 45,
+            "ligand": "ligand_0.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_45/docked_ligand_0.pdbqt"
+        },
+        {
+            "cavity": 45,
+            "ligand": "ligand_1.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_45/docked_ligand_1.pdbqt"
+        },
+        {
+            "cavity": 45,
+            "ligand": "ligand_2.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_45/docked_ligand_2.pdbqt"
+        },
+        {
+            "cavity": 45,
+            "ligand": "ligand_3.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_45/docked_ligand_3.pdbqt"
+        },
+        {
+            "cavity": 45,
+            "ligand": "ligand_4.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_45/docked_ligand_4.pdbqt"
+        },
+        {
+            "cavity": 1,
+            "ligand": "ligand_0.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_1/docked_ligand_0.pdbqt"
+        },
+        {
+            "cavity": 1,
+            "ligand": "ligand_1.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_1/docked_ligand_1.pdbqt"
+        },
+        {
+            "cavity": 1,
+            "ligand": "ligand_2.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_1/docked_ligand_2.pdbqt"
+        },
+        {
+            "cavity": 1,
+            "ligand": "ligand_3.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_1/docked_ligand_3.pdbqt"
+        },
+        {
+            "cavity": 1,
+            "ligand": "ligand_4.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_1/docked_ligand_4.pdbqt"
+        },
+        {
+            "cavity": 40,
+            "ligand": "ligand_0.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_40/docked_ligand_0.pdbqt"
+        },
+        {
+            "cavity": 40,
+            "ligand": "ligand_1.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_40/docked_ligand_1.pdbqt"
+        },
+        {
+            "cavity": 40,
+            "ligand": "ligand_2.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_40/docked_ligand_2.pdbqt"
+        },
+        {
+            "cavity": 40,
+            "ligand": "ligand_3.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_40/docked_ligand_3.pdbqt"
+        },
+        {
+            "cavity": 40,
+            "ligand": "ligand_4.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_40/docked_ligand_4.pdbqt"
+        },
+        {
+            "cavity": 29,
+            "ligand": "ligand_0.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_29/docked_ligand_0.pdbqt"
+        },
+        {
+            "cavity": 29,
+            "ligand": "ligand_1.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_29/docked_ligand_1.pdbqt"
+        },
+        {
+            "cavity": 29,
+            "ligand": "ligand_2.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_29/docked_ligand_2.pdbqt"
+        },
+        {
+            "cavity": 29,
+            "ligand": "ligand_3.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_29/docked_ligand_3.pdbqt"
+        },
+        {
+            "cavity": 29,
+            "ligand": "ligand_4.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_29/docked_ligand_4.pdbqt"
+        },
+        {
+            "cavity": 26,
+            "ligand": "ligand_0.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_26/docked_ligand_0.pdbqt"
+        },
+        {
+            "cavity": 26,
+            "ligand": "ligand_1.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_26/docked_ligand_1.pdbqt"
+        },
+        {
+            "cavity": 26,
+            "ligand": "ligand_2.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_26/docked_ligand_2.pdbqt"
+        },
+        {
+            "cavity": 26,
+            "ligand": "ligand_3.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_26/docked_ligand_3.pdbqt"
+        },
+        {
+            "cavity": 26,
+            "ligand": "ligand_4.pdbqt",
+            "out": "/mnt/c/Users/Admin/Documents/Documents/Misc/FBDD_project/docking_screening_fragments_full_library_5x5_1snap_v1_20260416/vina_out/snap_rep_frame_2317_prot_metal_nucleotidesqt_grid_26/docked_ligand_4.pdbqt"
+        }
+    ],
+    "failed_docking": []
+}
