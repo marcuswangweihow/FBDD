@@ -92,18 +92,24 @@
 
 -------------------------------------------------------------------------------
 
-The repository implements a modular computational platform for fragment-based drug discovery (FBDD) consisting of three independent but interoperable pipelines:
+The repository presents a modular computational platform for fragment-based drug discovery (FBDD), comprising three independent but interoperable pipelines:
 
- - aLMMD (accelerated Ligand-Mapping Molecular Dynamics)
- - Fragment Processing (fragment library preparation and conformer generation)
- - Docking (ensemble docking using AutoDock Vina)
+- aLMMD (accelerated Ligand-Mapping Molecular Dynamics)
+- Fragment Processing (fragment library preparation and conformer generation)
+- Docking (ensemble docking using AutoDock Vina)
 
-Each pipeline is self-contained with its own input/output structure and run directories, and can be executed independently or chained together for end-to-end workflows.
+Each pipeline is self-contained with its own input/output structure and run directories, and can be executed independently or combined into integrated workflows for end-to-end screening.
 
+The underlying implementations are part of an integrated computational framework, with selected outputs and structural details provided here for transparency.
+
+> **Note:** The full pipeline code is **not publicly released** due to ongoing development and publication considerations. Selected outputs and workflow details are provided for transparency.  
+>
+> The complete implementation is **available upon request** for technical evaluation or collaboration.  
+>
+> To access the private repository, please contact me via the email provided in my application/CV or at marcuswangweihow@gmail.com.
+---
 
 # aLMMD
-[⬆️ Back to top](#readme-table-of-contents)
-
 This folder contains the data and results for a workflow using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
 The entire workflow can be shown as:
@@ -405,6 +411,7 @@ flowchart TD
 ---
 
 # Docking Pipeline Overview
+[⬆️ Back to top](#readme-table-of-contents)
 
 1. **Representative Receptor Snapshot Selection (from aLMMD pipeline)**
     - Receptor conformations are extracted from the upstream **aLMMD molecular dynamics pipeline run directory**.
