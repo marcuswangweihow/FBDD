@@ -27,14 +27,14 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../)
+      - [1ns_withpullres_withcheckpoints Results](../)
         - [1ns_pipeline_test](../1ns_pipeline_test/)
           - [NPT_equil](../1ns_pipeline_test/NPT_equil/)
           - [NVT_equil](../1ns_pipeline_test/NVT_equil/)
           - [Production](../1ns_pipeline_test/Production/)
           - [em](../1ns_pipeline_test/em/)
-        - [binding_event_detection](./)
-        - [mdpocket_figures](../mdpocket_figures/)
+        - [binding_event_detection](../binding_event_detection/)
+        - [mdpocket_figures](./)
         - [occupancy_maps](../occupancy_maps/)
         - [plumed_metad_cvs](../plumed_metad_cvs/)
         - [representative_snapshots](../representative_snapshots/)
@@ -92,95 +92,43 @@
 
 
 
------------------
 
-# Binding Event Detection and Pocket Mapping
 
-This module performs integrated COM clustering of probe fragments along MD trajectories and maps clusters to MDpocket-derived density peaks to identify potential binding pockets and transient binding events.
+------------------------------------
 
-Cluster → Density Peak mapping: Each cluster centroid is assigned to the nearest MDpocket density peak (DensPeak_X).
+The MDpocket figures shown here are **representative** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes.
+ - High-density regions (dens isovalue 8, gray meshes) and frequent occupancy (freq isovalue 0.5, black meshes).
 
-If a cluster is farther than a user-defined threshold (e.g., 3 Å) from any density peak, it is labeled Pocket_X.
+The representative snapshots were analyzed using MDpocket to generate:
 
-**All results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
+ - Occupancy grids (freq_iso), highlighting frequently sampled pockets ie. “frequently visited” regions
 
-## Binding event detection: Track consecutive frames where a probe is in a cluster.
+ - Density grids (dens_iso), highlighting highly populated regions ie. “densely occupied” regions
 
-Events lasting longer than dbscan_min_samples frames are reported as binding events.
+Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, gray meshes) but not in the frequency grids (freq_iso, black meshes), i.e., regions visited rarely or transiently during the simulation.
 
-## Interpretation:
+Figures illustrate pocket locations, occupancy density, and potential druggable regions.
 
-DensPeak_X clusters are likely near real pockets detected by MDpocket.
+All figures show the MDpocket density maps generated from a 1ns simulation of 4MZI.
 
-Pocket_X clusters may represent transient, low-occupancy, or previously unidentified pockets.
+# overview_frontview.png & overview_backview.png
+Overall pocket occupancy map from representative snapshots highlighting high-density regions (dens isovalue 8, gray meshes) and frequent occupancy (freq isovalue 0.5, black meshes). Front view and backview of the mdpocket_analysis_freq.dx file and the mdpocket_analysis_dens.dx file superimposed on the 4MZI protein structure.
 
-Binding events summarize when and for how long a probe occupies a particular cluster/pocket. Once clusters are labeled, users can track how long a probe resides in a cluster → gives residence times, which are biologically relevant.
-
-## Outputs:
-
-JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, names, distances to peaks, and binding events.
-
-3D COM plots: probe trajectories color-coded by cluster labels.
-
-3D COM plots from a 1ns production test run. **The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
-
-The plots do not show any binding events or meaningful clusters as expected due to the short production run of 1ns.
-
-### 3D COM plots
-Probe : benzene
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
-      <h3>1</h3>
-      <img src="./probe1_COM_clusters.png" width="400">
+      <h3>A</h3>
+      <img src="./overview_frontview.png" width="400">
     </td>
-   </tr>
-</table>
-
-Probe : methanol
-<table style="border-collapse: collapse; border: none;">
-  <tr>
     <td style="border: none; text-align: center;">
-      <h3>2</h3>
-      <img src="./probe2_COM_clusters.png" width="400">
+      <h3>B</h3>
+      <img src="./overview_backview.png" width="400">
     </td>
   </tr>
 </table>
 
-Probe : acetonitrile
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td style="border: none; text-align: center;">
-      <h3>3</h3>
-      <img src="./probe3_COM_clusters.png" width="400">
-    </td>
-  </tr>
-</table>
+# cryptic_site.png 
+Example of a potential cryptic or occluded pocket (gray meshes) identified outside highly populated regions (black meshes).
+![Cryptic1](cryptic1.png)
 
-Probe : toluene
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td style="border: none; text-align: center;">
-      <h3>4</h3>
-      <img src="./probe4_COM_clusters.png" width="400">
-    </td>
-  </tr>
-</table>
 
-## Usage of JSON file for numerical cluster detection → structural snapshot → physical interpretation:
-
-### Open JSON → see which clusters survived as “binding events”
-
-Compare cluster names to plots to confirm physical location
-
-DensPeak → matches an MDpocket peak
-
-Pocket_X → a cluster far from any peak, might be minor or transient
-
-### Once you identify a cluster / binding event of interest:
-
-Use the rep_frame_pdb listed in the JSON (and saved in the cv_plots_dir) or extract frames manually from the full trajectory
-
-Open in PyMOL/Chimera
-
-Overlay protein + probe COMs to see how the probe binds in that cluster

@@ -27,17 +27,17 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/)
-        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
-          - [NPT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
-          - [Production](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
-          - [em](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
-        - [binding_event_detection](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
-        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
-        - [representative_snapshots](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints Results](../../1ns_withpullres_withcheckpoints%20Results/)
+        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/Production/)
+          - [em](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../../1ns_withpullres_withcheckpoints%20Results/binding_event_detection/)
+        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints%20Results/mdpocket_figures/)
+        - [occupancy_maps](../../1ns_withpullres_withcheckpoints%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../../1ns_withpullres_withcheckpoints%20Results/representative_snapshots/)
     - [9N39](../../../9N39/)
       - [1ns Results](../../../9N39/1ns%20Results/)
         - [1ns_test](../../../9N39/1ns%20Results/1ns_test/)
@@ -93,9 +93,11 @@
 
 
 
+
+
 -----------------
 
-# This folder contains the preliminary outputs from Gromacs for the short 100ps production test run:
+# This folder contains the representative outputs from Gromacs for the short 100ps production test run:
 
 Stages:
 - em   : Energy minimization
@@ -103,5 +105,5 @@ Stages:
 - npt  : NPT equilibration
 - prod : Production run
 
-All files are for pipeline demonstration; results are preliminary and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
+All files are for pipeline demonstration; results are representative and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
 

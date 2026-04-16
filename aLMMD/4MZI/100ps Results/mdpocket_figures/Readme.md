@@ -27,17 +27,17 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/)
-        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
-          - [NPT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
-          - [Production](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
-          - [em](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
-        - [binding_event_detection](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
-        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
-        - [representative_snapshots](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints Results](../../1ns_withpullres_withcheckpoints%20Results/)
+        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/Production/)
+          - [em](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../../1ns_withpullres_withcheckpoints%20Results/binding_event_detection/)
+        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints%20Results/mdpocket_figures/)
+        - [occupancy_maps](../../1ns_withpullres_withcheckpoints%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../../1ns_withpullres_withcheckpoints%20Results/representative_snapshots/)
     - [9N39](../../../9N39/)
       - [1ns Results](../../../9N39/1ns%20Results/)
         - [1ns_test](../../../9N39/1ns%20Results/1ns_test/)
@@ -91,9 +91,11 @@
 
 
 
+
+
 ------------------------------------
 
-The MDpocket figures shown here are **preliminary** results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes.
+The MDpocket figures shown here are **representative** results for a short 100ps production run of the pipeline for worklflow functionality illustration purposes.
  - High-density regions (dens isovalue 0.5, red meshes) and frequent occupancy (freq isovalue 0.5, gray meshes)
 
 The representative snapshots were analyzed using MDpocket to generate:

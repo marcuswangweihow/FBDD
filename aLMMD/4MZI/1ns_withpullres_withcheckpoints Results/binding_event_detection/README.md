@@ -27,16 +27,16 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../)
+      - [1ns_withpullres_withcheckpoints Results](../)
         - [1ns_pipeline_test](../1ns_pipeline_test/)
           - [NPT_equil](../1ns_pipeline_test/NPT_equil/)
           - [NVT_equil](../1ns_pipeline_test/NVT_equil/)
           - [Production](../1ns_pipeline_test/Production/)
           - [em](../1ns_pipeline_test/em/)
-        - [binding_event_detection](../binding_event_detection/)
+        - [binding_event_detection](./)
         - [mdpocket_figures](../mdpocket_figures/)
         - [occupancy_maps](../occupancy_maps/)
-        - [plumed_metad_cvs](./)
+        - [plumed_metad_cvs](../plumed_metad_cvs/)
         - [representative_snapshots](../representative_snapshots/)
     - [9N39](../../../9N39/)
       - [1ns Results](../../../9N39/1ns%20Results/)
@@ -91,129 +91,98 @@
 
 
 
----------------------------------------------------------
 
-plumed_bias_scalar.dat and plumed_com_components.dat contain the raw data for the below plots. These files were generated from a 1ns production test run. 
 
-**All results shown here are preliminary results and only serve to show workflow/pipeline functionality.**
 
-# From plumed_bias_scalar.dat
-## Distance and torsion plots
+-----------------
 
-The distance vs time plots as well as the torsions vs time plots obtained by plotting the data from plumed_bias_scalar.dat are just for sanity checks.
+# Binding Event Detection and Pocket Mapping
 
-The plots show that the dihedrals change with time and the probes are moving, which shows the system is working.
+This module performs integrated COM clustering of probe fragments along MD trajectories and maps clusters to MDpocket-derived density peaks to identify potential binding pockets and transient binding events.
 
-## Distance vs time plots
+Cluster → Density Peak mapping: Each cluster centroid is assigned to the nearest MDpocket density peak (DensPeak_X).
+
+If a cluster is farther than a user-defined threshold (e.g., 3 Å) from any density peak, it is labeled Pocket_X.
+
+**All results shown are representative outputs intended to demonstrate pipeline functionality.**
+
+## Binding event detection: Track consecutive frames where a probe is in a cluster.
+
+Events lasting longer than dbscan_min_samples frames are reported as binding events.
+
+## Interpretation:
+
+DensPeak_X clusters are likely near real pockets detected by MDpocket.
+
+Pocket_X clusters may represent transient, low-occupancy, or previously unidentified pockets.
+
+Binding events summarize when and for how long a probe occupies a particular cluster/pocket. Once clusters are labeled, users can track how long a probe resides in a cluster → gives residence times, which are biologically relevant.
+
+## Outputs:
+
+JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, names, distances to peaks, and binding events.
+
+3D COM plots: probe trajectories color-coded by cluster labels.
+
+3D COM plots from a 1ns production test run. **The results shown are representative outputs intended to demonstrate pipeline functionality.**
+
+The plots do not show any binding events or meaningful clusters as expected due to the short production run of 1ns.
+
+### 3D COM plots
+Probe : benzene
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./Distance_d1.png" width="400">
+      <h3>1</h3>
+      <img src="./probe1_COM_clusters.png" width="400">
     </td>
+   </tr>
+</table>
+
+Probe : methanol
+<table style="border-collapse: collapse; border: none;">
+  <tr>
     <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./Distance_d2.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>C</h3>
-      <img src="./Distance_d3.png" width="400">
+      <h3>2</h3>
+      <img src="./probe2_COM_clusters.png" width="400">
     </td>
   </tr>
 </table>
 
-## Torsions vs time plots
+Probe : acetonitrile
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./Torsion_t1.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./Torsion_t2.png" width="400">
+      <h3>3</h3>
+      <img src="./probe3_COM_clusters.png" width="400">
     </td>
   </tr>
 </table>
 
-## Combined torsions vs time plot
-![Combined torsions vs Time](Torsions_Combined.png)
-
----
-# From plumed_com_components.dat
-
-With more probes and longer simulations, the 2D/3D COM density plots could become informative about preferred probe regions, which might correspond to cryptic or binding sites.
-
-Otherwise with just 8 probes and 1ns runs, mostly a sanity check. Also with 8 probes the combined plots are quite messy.
-
-## Per-probe (x,y,z) plots
-See if any probe is behaving weirdly.
+Probe : toluene
 <table style="border-collapse: collapse; border: none;">
   <tr>
     <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./COM_P01A.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./COM_P02A.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>C</h3>
-      <img src="./COM_P03A.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>D</h3>
-      <img src="./COM_P04A.png" width="400">
+      <h3>4</h3>
+      <img src="./probe4_COM_clusters.png" width="400">
     </td>
   </tr>
 </table>
 
-## Combined per-axis plots (x-only, y-only, z-only)
-Detects if probes drift together or if one is outlier.
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./COM_combined_x.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./COM_combined_y.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>C</h3>
-      <img src="./COM_combined_z.png" width="400">
-    </td>
-  </tr>
-</table>
+## Usage of JSON file for numerical cluster detection → structural snapshot → physical interpretation:
 
-## 2D projections (x-y, x-z, y-z)
-See if probes overlap unphysically or leave the expected region.
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./COM_x_vs_y.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./COM_x_vs_z.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>C</h3>
-      <img src="./COM_y_vs_z.png" width="400">
-    </td>
-  </tr>
-</table>
+### Open JSON → see which clusters survived as “binding events”
 
-## 3D COM scatter
-Good for spotting impossible geometries, clustering, or probes stuck together.
+Compare cluster names to plots to confirm physical location
 
-For multiple copies or long simulations, dense clusters may indicate potential hotspots or binding regions. 
+DensPeak → matches an MDpocket peak
 
-![3D COM scatter](COM_3D.png)
+Pocket_X → a cluster far from any peak, might be minor or transient
 
-## Pairwise COM distances
-To confirm probes don’t collide or drift apart unexpectedly.
-![Pairwise COM distances](COM_pairwise_distances.png)
+### Once you identify a cluster / binding event of interest:
+
+Use the rep_frame_pdb listed in the JSON (and saved in the cv_plots_dir) or extract frames manually from the full trajectory
+
+Open in PyMOL/Chimera
+
+Overlay protein + probe COMs to see how the probe binds in that cluster

@@ -27,7 +27,7 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../)
+      - [1ns_withpullres_withcheckpoints Results](../)
         - [1ns_pipeline_test](../1ns_pipeline_test/)
           - [NPT_equil](../1ns_pipeline_test/NPT_equil/)
           - [NVT_equil](../1ns_pipeline_test/NVT_equil/)
@@ -36,8 +36,8 @@
         - [binding_event_detection](../binding_event_detection/)
         - [mdpocket_figures](../mdpocket_figures/)
         - [occupancy_maps](../occupancy_maps/)
-        - [plumed_metad_cvs](../plumed_metad_cvs/)
-        - [representative_snapshots](./)
+        - [plumed_metad_cvs](./)
+        - [representative_snapshots](../representative_snapshots/)
     - [9N39](../../../9N39/)
       - [1ns Results](../../../9N39/1ns%20Results/)
         - [1ns_test](../../../9N39/1ns%20Results/1ns_test/)
@@ -91,69 +91,131 @@
 
 
 
------------------------------------------------------------
 
-The results here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes. 
 
-Representative snapshots: Protein-only PDBs selected from a full trajectory (1ns) using RMSD clustering, KDE peaks, and DBSCAN clustering on probe center-of-mass positions.
-These snapshots are used as input for downstream docking and MDpocket pocket analysis.
+---------------------------------------------------------
 
-# Representative Snapshot Selection
+plumed_bias_scalar.dat and plumed_com_components.dat contain the raw data for the below plots. These files were generated from a 1ns production test run. 
 
-Full trajectory frames were analyzed to select representative protein conformations.
+**All results shown here are representative results and only serve to show workflow/pipeline functionality.**
 
-Selection criteria:
+# From plumed_bias_scalar.dat
+## Distance and torsion plots
 
- - RMSD clustering to identify conformational regimes.
+The distance vs time plots as well as the torsions vs time plots obtained by plotting the data from plumed_bias_scalar.dat are just for sanity checks.
 
- - KDE peak detection on probe positions.
+The plots show that the dihedrals change with time and the probes are moving, which shows the system is working.
 
- - DBSCAN clustering to find dense probe-sampling regions.
+## Distance vs time plots
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./Distance_d1.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./Distance_d2.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>C</h3>
+      <img src="./Distance_d3.png" width="400">
+    </td>
+  </tr>
+</table>
 
-Selected snapshots are protein-only PDBs, stripped of hydrogens.
+## Torsions vs time plots
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./Torsion_t1.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./Torsion_t2.png" width="400">
+    </td>
+  </tr>
+</table>
 
-# Docking Preparation and Execution
-
-docking_prep.py and prepare_protein_snapshots.py are provided in this folder. 
-
-These scripts are intended to work on Windows.
-
-For Linux and Mac users:
-Use `conda install -c conda-forge autodock-vina` and adapt docking_prep.py and prepare_protein_snapshots.py to make them work.
-
-## 1. Inspect the Docking Prep Folder
-
-After running the integrated docking prep script (docking_prep.py), navigate to the docking folder:
-
-C:\Users\Admin\Documents\Documents\Misc\FBDD project\docking_prep
-
-You should see the following files:
-
-- `*_cleaned.pdbqt` → prepared receptor files for each representative snapshot.  
-- `*_grid_*.txt` → AutoDock Vina config files (one per KDE peak per snapshot).  
-- `run_all_vina.bat` → batch file containing all Vina docking commands.  
-- Ligands in `pdbqt_fragment_library` → prepared ligand files (.pdbqt) ready for docking.
+## Combined torsions vs time plot
+![Combined torsions vs Time](Torsions_Combined.png)
 
 ---
+# From plumed_com_components.dat
 
-## 2. Run the Batch Docking
+With more probes and longer simulations, the 2D/3D COM density plots could become informative about preferred probe regions, which might correspond to cryptic or binding sites.
 
-On Windows:
+Otherwise with just 8 probes and 1ns runs, mostly a sanity check. Also with 8 probes the combined plots are quite messy.
 
-1. Open a **Command Prompt (CMD)** or **PowerShell**.  
-2. Navigate to the docking folder:
+## Per-probe (x,y,z) plots
+See if any probe is behaving weirdly.
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./COM_P01A.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./COM_P02A.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>C</h3>
+      <img src="./COM_P03A.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>D</h3>
+      <img src="./COM_P04A.png" width="400">
+    </td>
+  </tr>
+</table>
 
-```cmd
-cd "C:\Users\Admin\Documents\Documents\Misc\FBDD project\docking_prep"
-```
+## Combined per-axis plots (x-only, y-only, z-only)
+Detects if probes drift together or if one is outlier.
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./COM_combined_x.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./COM_combined_y.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>C</h3>
+      <img src="./COM_combined_z.png" width="400">
+    </td>
+  </tr>
+</table>
 
-3. Execute the batch file:
-```cmd
-run_all_vina.bat
-```
+## 2D projections (x-y, x-z, y-z)
+See if probes overlap unphysically or leave the expected region.
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td style="border: none; text-align: center;">
+      <h3>A</h3>
+      <img src="./COM_x_vs_y.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>B</h3>
+      <img src="./COM_x_vs_z.png" width="400">
+    </td>
+    <td style="border: none; text-align: center;">
+      <h3>C</h3>
+      <img src="./COM_y_vs_z.png" width="400">
+    </td>
+  </tr>
+</table>
 
+## 3D COM scatter
+Good for spotting impossible geometries, clustering, or probes stuck together.
 
+For multiple copies or long simulations, dense clusters may indicate potential hotspots or binding regions. 
 
+![3D COM scatter](COM_3D.png)
 
-
-
+## Pairwise COM distances
+To confirm probes don’t collide or drift apart unexpectedly.
+![Pairwise COM distances](COM_pairwise_distances.png)

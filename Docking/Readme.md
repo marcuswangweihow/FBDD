@@ -27,17 +27,17 @@
         - [occupancy_maps](../aLMMD/4MZI/1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../aLMMD/4MZI/1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../aLMMD/4MZI/1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/)
-        - [1ns_pipeline_test](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
-          - [NPT_equil](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
-          - [Production](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
-          - [em](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
-        - [binding_event_detection](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
-        - [mdpocket_figures](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
-        - [representative_snapshots](../aLMMD/4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints Results](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/)
+        - [1ns_pipeline_test](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/Production/)
+          - [em](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/binding_event_detection/)
+        - [mdpocket_figures](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/mdpocket_figures/)
+        - [occupancy_maps](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../aLMMD/4MZI/1ns_withpullres_withcheckpoints%20Results/representative_snapshots/)
     - [9N39](../aLMMD/9N39/)
       - [1ns Results](../aLMMD/9N39/1ns%20Results/)
         - [1ns_test](../aLMMD/9N39/1ns%20Results/1ns_test/)
@@ -73,11 +73,15 @@
 
 
 
+
+
 ---
 
-This folder contains the preliminary data and results for the docking part of the FBDD workflow.
+This folder contains representative data and results from the docking component of the FBDD workflow.
 
 The docking pipeline is structured into modular components. The execution layer (`docking_pipeline_step_4.py`) serves as the pipeline driver that orchestrates ensemble docking across multiple receptor conformations derived from the upstream aLMMD simulation workflow, together with cavity-specific grid definitions. Core docking functionality is encapsulated in modular functions (see `run_vina_docking`), enabling reproducibility, scalability, and systematic ligand screening across structurally diverse receptor states.
+
+The scripts included here are provided as **representative excerpts of the docking workflow** used to generate the results. They are not intended to serve as a complete or production-ready implementation of the full pipeline.
 
 # Docking Pipeline Overview
 

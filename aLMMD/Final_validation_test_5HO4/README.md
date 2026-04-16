@@ -27,17 +27,17 @@
         - [occupancy_maps](../4MZI/1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../4MZI/1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../4MZI/1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/)
-        - [1ns_pipeline_test](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
-          - [NPT_equil](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
-          - [Production](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
-          - [em](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
-        - [binding_event_detection](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
-        - [mdpocket_figures](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
-        - [representative_snapshots](../4MZI/1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints Results](../4MZI/1ns_withpullres_withcheckpoints%20Results/)
+        - [1ns_pipeline_test](../4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/Production/)
+          - [em](../4MZI/1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../4MZI/1ns_withpullres_withcheckpoints%20Results/binding_event_detection/)
+        - [mdpocket_figures](../4MZI/1ns_withpullres_withcheckpoints%20Results/mdpocket_figures/)
+        - [occupancy_maps](../4MZI/1ns_withpullres_withcheckpoints%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../4MZI/1ns_withpullres_withcheckpoints%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../4MZI/1ns_withpullres_withcheckpoints%20Results/representative_snapshots/)
     - [9N39](../9N39/)
       - [1ns Results](../9N39/1ns%20Results/)
         - [1ns_test](../9N39/1ns%20Results/1ns_test/)
@@ -76,18 +76,20 @@
 
 
 
+
+
 ---
 
-This folder contains the preliminary results and data for the final validation test of the pipeline. This final validation test was performed with 5HO4 with a 100ps production run and is intended to only verify existing features of the pipeline not show system stability. Post processing results will not be uploaded since the pipeline/workflow functionality has already been demonstrated with the preliminary results of 9N39 and 4MZI in earlier work. Subsequently, after the completion of this validation test, the aLMMD pipeline is ready and and subsequent work will focus on other parts of the FBDD workflow eg. fragment preprocessing or docking.
+This folder contains the representative results and data for the final validation test of the pipeline. This final validation test was performed with 5HO4 with a 100ps production run and is intended to only verify existing features of the pipeline not show system stability. Post processing results will not be uploaded since the pipeline/workflow functionality has already been demonstrated with the representative results of 9N39 and 4MZI in earlier work. Subsequently, after the completion of this validation test, the aLMMD pipeline is ready and and subsequent work will focus on other parts of the FBDD workflow eg. fragment preprocessing or docking.
 
 # 100ps_test
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This folder contains the preliminary/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
+This folder contains the representative/test results from the pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run. 
 
-The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 100ps production run to show pipeline/workflow functionality can be found in ([100ps_test](100ps_test/)).
+The representative outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 100ps production run to show pipeline/workflow functionality can be found in ([100ps_test](100ps_test/)).
 
-**All these preliminary results are merely to show pipeline/workflow functionality.**
+**All these representative results are merely to show pipeline/workflow functionality.**
 
 ---
 

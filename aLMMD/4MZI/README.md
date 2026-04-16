@@ -27,17 +27,17 @@
         - [occupancy_maps](1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](1ns_withpullres_withcheckpoints_Preliminary%20Results/)
-        - [1ns_pipeline_test](1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
-          - [NPT_equil](1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
-          - [Production](1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
-          - [em](1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
-        - [binding_event_detection](1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
-        - [mdpocket_figures](1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
-        - [representative_snapshots](1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints Results](1ns_withpullres_withcheckpoints%20Results/)
+        - [1ns_pipeline_test](1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/)
+          - [NPT_equil](1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/Production/)
+          - [em](1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](1ns_withpullres_withcheckpoints%20Results/binding_event_detection/)
+        - [mdpocket_figures](1ns_withpullres_withcheckpoints%20Results/mdpocket_figures/)
+        - [occupancy_maps](1ns_withpullres_withcheckpoints%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](1ns_withpullres_withcheckpoints%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](1ns_withpullres_withcheckpoints%20Results/representative_snapshots/)
     - [9N39](../9N39/)
       - [1ns Results](../9N39/1ns%20Results/)
         - [1ns_test](../9N39/1ns%20Results/1ns_test/)
@@ -93,14 +93,16 @@
 
 
 
+
+
 --------------------------------------------------------
 ## Readme Table of Contents
 - [FBDD Repository Structure](#fbdd-repository-structure)
   - [Readme Table of Contents](#readme-table-of-contents)
 - [4MZI](#4mzi)
-- [100ps\_Preliminary Results](#100ps_preliminary-results)
-- [1ns\_Preliminary Results](#1ns_preliminary-results)
-- [1ns\_withpullres\_withcheckpoints\_Preliminary Results](#1ns_withpullres_withcheckpoints_preliminary-results)
+- [100ps Results](#100ps-results)
+- [1ns Results](#1ns-results)
+- [1ns\_withpullres\_withcheckpoints Results](#1ns_withpullres_withcheckpoints-results)
 
 --------------------------------------------------------
 # 4MZI
@@ -109,17 +111,17 @@
 This folder contains the data and results for a workflow with 4MZI using aLMMD (accelerated Ligand-Mapping Molecular Dynamics).
 
 
-# 100ps_Preliminary Results
+# 100ps Results
 [⬆️ Back to top](#readme-table-of-contents)
 
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run.
+This folder contains the representative/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 100ps production run.
 
-# 1ns_Preliminary Results
+# 1ns Results
 [⬆️ Back to top](#readme-table-of-contents)
 
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run.
+This folder contains the representative/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run.
 
-# 1ns_withpullres_withcheckpoints_Preliminary Results
+# 1ns_withpullres_withcheckpoints Results
 [⬆️ Back to top](#readme-table-of-contents)
 
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality.
+This folder contains the representative/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (eg. occupancy maps) for a 1ns production run with pull restraints on the metal as well as multiple restarts from checkpoint/backup files to demonstrate functionality.

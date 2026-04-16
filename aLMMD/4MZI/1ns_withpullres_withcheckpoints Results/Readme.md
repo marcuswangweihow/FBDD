@@ -27,7 +27,7 @@
         - [occupancy_maps](../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](./)
+      - [1ns_withpullres_withcheckpoints Results](./)
         - [1ns_pipeline_test](1ns_pipeline_test/)
           - [NPT_equil](1ns_pipeline_test/NPT_equil/)
           - [NVT_equil](1ns_pipeline_test/NVT_equil/)
@@ -94,14 +94,16 @@
 
 
 
+
+
 -----------------
 
-# 1ns_withpullres_withcheckpoints_Preliminary Results
+# 1ns_withpullres_withcheckpoints Results
 [⬆️ Back to top](#fbdd-repository-structure)
 
-This folder contains the preliminary/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (e.g., occupancy maps) for a 1 ns production run with pull restraints on the metal. Multiple restarts were performed from checkpoint/backup files at 368.2 ps and 648.6 ps. Backup plots and last-frame PDBs corresponding to the 648.6 ps restart are included to demonstrate pipeline functionality. Before each restart, these plots and PDBs were manually inspected to ensure system stability (e.g., no metal drift, sharp spikes in energy/temperature/bias, or runaway values).
+This folder contains the representative/test results from the **accelerated Ligand-Mapping Molecular Dynamics (aLMMD)** pipeline such as energy, temperature and bias plots, as well as post-processing plots (e.g., occupancy maps) for a 1 ns production run with pull restraints on the metal. Multiple restarts were performed from checkpoint/backup files at 368.2 ps and 648.6 ps. Backup plots and last-frame PDBs corresponding to the 648.6 ps restart are included to demonstrate pipeline functionality. Before each restart, these plots and PDBs were manually inspected to ensure system stability (e.g., no metal drift, sharp spikes in energy/temperature/bias, or runaway values).
 
-The preliminary outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 1ns production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_pipeline_test/)).
+The representative outputs from Gromacs for energy minimization, NVT equilibration, NPT equilibration and the 1ns production run to show pipeline/workflow functionality can be found in ([1ns_pipeline_test](1ns_pipeline_test/)).
 
 Occupancy maps for the individual probes per-window and for the full trajectory can be found in ([occupancy_maps](occupancy_maps/))
 
@@ -109,9 +111,9 @@ Representative snapshots and MDpocket analysis can be found in ([representative_
 
 Plots for the PLUMED metadynamics CVs can be found in ([plumed_metad_cvs](plumed_metad_cvs/)) within this directory. 
 
-Details and preliminary results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](binding_event_detection/)) within this directory.
+Details and representative results for Binding Event Detection and Pocket Mapping can be found in the binding_event_detection folder ([binding_event_detection](binding_event_detection/)) within this directory.
 
-**All these preliminary results are merely to show pipeline/workflow functionality.**
+**All these representative results are merely to show pipeline/workflow functionality.**
 
 ---
 

@@ -27,17 +27,17 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/)
-        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
-          - [NPT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
-          - [Production](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
-          - [em](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
-        - [binding_event_detection](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
-        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
-        - [occupancy_maps](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
-        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
-        - [representative_snapshots](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints Results](../../1ns_withpullres_withcheckpoints%20Results/)
+        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/Production/)
+          - [em](../../1ns_withpullres_withcheckpoints%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../../1ns_withpullres_withcheckpoints%20Results/binding_event_detection/)
+        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints%20Results/mdpocket_figures/)
+        - [occupancy_maps](../../1ns_withpullres_withcheckpoints%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../../1ns_withpullres_withcheckpoints%20Results/representative_snapshots/)
     - [9N39](../../../9N39/)
       - [1ns Results](../../../9N39/1ns%20Results/)
         - [1ns_test](../../../9N39/1ns%20Results/1ns_test/)
@@ -93,6 +93,8 @@
 
 
 
+
+
 -----------------
 
 # Binding Event Detection and Pocket Mapping
@@ -103,7 +105,7 @@ Cluster → Density Peak mapping: Each cluster centroid is assigned to the neare
 
 If a cluster is farther than a user-defined threshold (e.g., 3 Å) from any density peak, it is labeled Pocket_X.
 
-**All results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
+**All results shown are representative outputs intended to demonstrate pipeline functionality.**
 
 ## Binding event detection: Track consecutive frames where a probe is in a cluster.
 
@@ -123,7 +125,7 @@ JSON file: enhanced_clustering_results_TIMESTAMP.json with cluster centroids, na
 
 3D COM plots: probe trajectories color-coded by cluster labels.
 
-3D COM plots from a short 100ps production test run. **The results shown are preliminary and are used to demonstrate pipeline/workflow functionality.**
+3D COM plots from a short 100ps production test run. **The results shown are representative outputs intended to demonstrate pipeline functionality.**
 
 The plots do not show any binding events or meaningful clusters as expected due to the short production run of 100ps.
 

@@ -27,14 +27,14 @@
         - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
         - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
         - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
-      - [1ns_withpullres_withcheckpoints_Preliminary Results](../)
-        - [1ns_pipeline_test](../1ns_pipeline_test/)
-          - [NPT_equil](../1ns_pipeline_test/NPT_equil/)
-          - [NVT_equil](../1ns_pipeline_test/NVT_equil/)
-          - [Production](../1ns_pipeline_test/Production/)
-          - [em](../1ns_pipeline_test/em/)
+      - [1ns_withpullres_withcheckpoints Results](../)
+        - [1ns_pipeline_test](./)
+          - [NPT_equil](NPT_equil/)
+          - [NVT_equil](NVT_equil/)
+          - [Production](Production/)
+          - [em](em/)
         - [binding_event_detection](../binding_event_detection/)
-        - [mdpocket_figures](./)
+        - [mdpocket_figures](../mdpocket_figures/)
         - [occupancy_maps](../occupancy_maps/)
         - [plumed_metad_cvs](../plumed_metad_cvs/)
         - [representative_snapshots](../representative_snapshots/)
@@ -92,41 +92,19 @@
 
 
 
-------------------------------------
 
-The MDpocket figures shown here are **preliminary** results for a 1ns production run of the pipeline for worklflow functionality illustration purposes.
- - High-density regions (dens isovalue 8, gray meshes) and frequent occupancy (freq isovalue 0.5, black meshes).
 
-The representative snapshots were analyzed using MDpocket to generate:
 
- - Occupancy grids (freq_iso), highlighting frequently sampled pockets ie. “frequently visited” regions
+-----------------
 
- - Density grids (dens_iso), highlighting highly populated regions ie. “densely occupied” regions
+# This folder contains the representative outputs from Gromacs for the 1ns production test run:
 
-Potential cryptic or occluded sites correspond to regions detected in the density grids (dens_iso, gray meshes) but not in the frequency grids (freq_iso, black meshes), i.e., regions visited rarely or transiently during the simulation.
+Stages:
+- em   : Energy minimization
+- nvt  : NVT equilibration
+- npt  : NPT equilibration
+- prod : Production run
 
-Figures illustrate pocket locations, occupancy density, and potential druggable regions.
-
-All figures show the MDpocket density maps generated from a 1ns simulation of 4MZI.
-
-# overview_frontview.png & overview_backview.png
-Overall pocket occupancy map from representative snapshots highlighting high-density regions (dens isovalue 8, gray meshes) and frequent occupancy (freq isovalue 0.5, black meshes). Front view and backview of the mdpocket_analysis_freq.dx file and the mdpocket_analysis_dens.dx file superimposed on the 4MZI protein structure.
-
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td style="border: none; text-align: center;">
-      <h3>A</h3>
-      <img src="./overview_frontview.png" width="400">
-    </td>
-    <td style="border: none; text-align: center;">
-      <h3>B</h3>
-      <img src="./overview_backview.png" width="400">
-    </td>
-  </tr>
-</table>
-
-# cryptic_site.png 
-Example of a potential cryptic or occluded pocket (gray meshes) identified outside highly populated regions (black meshes).
-![Cryptic1](cryptic1.png)
+All files are for pipeline demonstration; results are representative and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
 
 
