@@ -127,8 +127,8 @@ All notable changes to this project are documented in this file. Versions prior 
 
 ### Changed
 - Documentation updated to reflect input flexibility and pipeline workflow
-- Installation requirements updated in Frag_to_lead Readme.md
-- Multiple other parts of Frag_to_lead Readme.md updated to match the updated workflow
+- Installation requirements updated in aLMMD Readme.md
+- Multiple other parts of aLMMD Readme.md updated to match the updated workflow
 
 ## [v0.3.1] - 2025-12-22
 ### Changed
