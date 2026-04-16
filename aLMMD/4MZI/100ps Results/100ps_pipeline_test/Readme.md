@@ -1,0 +1,107 @@
+<!-- REPO_TOC -->
+# FBDD Repository Structure
+- [FBDD](../../../../)
+  - [Docking](../../../../Docking/)
+  - [Fragment_processing](../../../../Fragment_processing/)
+  - [aLMMD](../../../)
+    - [4MZI](../../)
+      - [100ps Results](../)
+        - [100ps_pipeline_test](./)
+          - [NPT_equil](NPT_equil/)
+          - [NVT_equil](NVT_equil/)
+          - [Production](Production/)
+          - [em](em/)
+        - [binding_event_detection](../binding_event_detection/)
+        - [mdpocket_figures](../mdpocket_figures/)
+        - [plumed_metad_cvs](../plumed_metad_cvs/)
+        - [representative_snapshots](../representative_snapshots/)
+      - [100ps_run_for_checkpoint_testing](../../100ps_run_for_checkpoint_testing/)
+      - [1ns Results](../../1ns%20Results/)
+        - [1ns_pipeline_test](../../1ns%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../../1ns%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../../1ns%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../../1ns%20Results/1ns_pipeline_test/Production/)
+          - [em](../../1ns%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../../1ns%20Results/binding_event_detection/)
+        - [mdpocket_figures](../../1ns%20Results/mdpocket_figures/)
+        - [occupancy_maps](../../1ns%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../../1ns%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../../1ns%20Results/representative_snapshots/)
+      - [1ns_withpullres_withcheckpoints_Preliminary Results](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/)
+        - [1ns_pipeline_test](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/)
+          - [NPT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NPT_equil/)
+          - [NVT_equil](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/NVT_equil/)
+          - [Production](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/Production/)
+          - [em](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/1ns_pipeline_test/em/)
+        - [binding_event_detection](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/binding_event_detection/)
+        - [mdpocket_figures](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/mdpocket_figures/)
+        - [occupancy_maps](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/plumed_metad_cvs/)
+        - [representative_snapshots](../../1ns_withpullres_withcheckpoints_Preliminary%20Results/representative_snapshots/)
+    - [9N39](../../../9N39/)
+      - [1ns Results](../../../9N39/1ns%20Results/)
+        - [1ns_test](../../../9N39/1ns%20Results/1ns_test/)
+          - [NPT_equil](../../../9N39/1ns%20Results/1ns_test/NPT_equil/)
+          - [NVT_equil](../../../9N39/1ns%20Results/1ns_test/NVT_equil/)
+          - [Production](../../../9N39/1ns%20Results/1ns_test/Production/)
+          - [em](../../../9N39/1ns%20Results/1ns_test/em/)
+        - [mdpocket_figures](../../../9N39/1ns%20Results/mdpocket_figures/)
+        - [occupancy_maps](../../../9N39/1ns%20Results/occupancy_maps/)
+        - [plumed_metad_cvs](../../../9N39/1ns%20Results/plumed_metad_cvs/)
+        - [probe_behaviour_analysis](../../../9N39/1ns%20Results/probe_behaviour_analysis/)
+        - [representative_snapshots](../../../9N39/1ns%20Results/representative_snapshots/)
+          - [P01A_probespecific_snapshots](../../../9N39/1ns%20Results/representative_snapshots/P01A_probespecific_snapshots/)
+          - [P02A_probespecific_snapshots](../../../9N39/1ns%20Results/representative_snapshots/P02A_probespecific_snapshots/)
+          - [P03A_probespecific_snapshots](../../../9N39/1ns%20Results/representative_snapshots/P03A_probespecific_snapshots/)
+          - [P04A_probespecific_snapshots](../../../9N39/1ns%20Results/representative_snapshots/P04A_probespecific_snapshots/)
+          - [global_snapshots](../../../9N39/1ns%20Results/representative_snapshots/global_snapshots/)
+    - [Final_validation_test_5HO4](../../../Final_validation_test_5HO4/)
+      - [100ps_test](../../../Final_validation_test_5HO4/100ps_test/)
+        - [NPT_equil](../../../Final_validation_test_5HO4/100ps_test/NPT_equil/)
+        - [NVT_equil](../../../Final_validation_test_5HO4/100ps_test/NVT_equil/)
+        - [Production](../../../Final_validation_test_5HO4/100ps_test/Production/)
+        - [em](../../../Final_validation_test_5HO4/100ps_test/em/)
+  - [exploratory_examples](../../../../exploratory_examples/)
+    - [docking_4MZI_roscovitine](../../../../exploratory_examples/docking_4MZI_roscovitine/)
+  - [images](../../../../images/)
+<!-- /REPO_TOC -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------
+
+# This folder contains the preliminary outputs from Gromacs for the short 100ps production test run:
+
+Stages:
+- em   : Energy minimization
+- nvt  : NVT equilibration
+- npt  : NPT equilibration
+- prod : Production run
+
+All files are for pipeline demonstration; results are preliminary and not intended for binding site discovery. .trr files are not uploaded as they exceed the maximum size of 25MB by Github.
+
