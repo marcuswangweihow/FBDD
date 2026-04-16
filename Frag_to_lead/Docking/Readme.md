@@ -72,127 +72,141 @@
 
 This folder contains the preliminary data and results for the docking part of the FBDD workflow.
 
-<!--
 # Docking Pipeline Overview
 
-1. **Heading 1**
-    - Raw fragment library stored in `library_folder` (SDF/SMILES).  
-    - Folder structure and metadata JSON prepared to track runs and parameters.  
-    - Automatic checking for missing or invalid files before processing.
+1. **Representative Receptor Snapshot Selection (from aLMMD pipeline)**
+    - Receptor conformations are extracted from the upstream **aLMMD molecular dynamics pipeline run directory**.
+    - These represent representative structures sampled from MD trajectories.
+    - Each snapshot serves as an independent rigid receptor input for ensemble docking.
 
-2. **Molecule Cleaning & Sanitization**
-    - Remove unwanted metals and keep the largest fragment per molecule.  
-    - Add explicit hydrogens.  
-    - Sanitize molecules with RDKit; molecules failing sanitization are logged and skipped.  
-    - Full logging of cleaning status into CSV for traceability.
-    - Generation of `sanitization_report.json` provides a **transparent QC snapshot** of the preprocessing stage of the fragment library.
+2. **Receptor Preparation (PDBQT Conversion)**
+    - Each selected snapshot is converted from PDB → PDBQT format using Open Babel.
+    - Conversion is performed per-frame to preserve ensemble diversity across docking runs.
+    - Output receptors are stored in:
+      - `receptor_pdbqt/rep_frame_XXX_*.pdbqt`
+    - The conversion ensures compatibility with AutoDock Vina’s rigid receptor format.
+    - No ligand or docking parameters are modified at this stage; only receptor format adaptation occurs.
 
-3. **Fragment Filtering (Rule-of-3 + PSA)**
-    - Filter cleaned molecules to retain **fragment-friendly molecules** according to Rule-of-3 + PSA:
-      - Molecular weight (MW) ≤ 300  
-      - H-bond donors ≤ 3  
-      - H-bond acceptors ≤ 3  
-      - clogP ≤ 3  
-      - Rotatable bonds ≤ 3  
-      - Polar Surface Area (PSA) ≤ 60 Å²  
-    - Compute all descriptors using RDKit for each molecule and log them in `filtered_log.csv`.  
-    - Molecules failing one or more rules are flagged and excluded from downstream 3D conformer generation.  
-    - Summary of filtering results stored in `filtered_summary.json`, including:
-      - Total molecules processed  
-      - Number and percentage of molecules passing or failing  
-      - Failure counts per rule (MW, donors, acceptors, clogP, rotatable bonds, PSA)   
-    - Provides a **quantitative snapshot of library quality** and ensures only fragment-compliant molecules proceed downstream.
+3. **Docking Box (Grid) Definition**
+    - Docking grids are defined per snapshot–cavity pair.
+    - Each grid is centered on a biologically derived cavity centroid:
+      - `center_x`, `center_y`, `center_z`
+    - Grid size is fixed or configurable (e.g., 20 Å³ cube):
+      - `size_x`, `size_y`, `size_z`
+    - Grid parameters are written into Vina config files:
+      - `snap_{snapshot}_grid_{cavity_id}.txt`
+    - Each config file binds:
+      - receptor structure (snapshot-specific PDBQT)
+      - cavity-specific docking box
+      - Vina scoring parameters (exhaustiveness, num_modes)
+    - Grid definitions are taken from the upstream **aLMMD molecular dynamics pipeline run directory**.
 
+4. **Ligand Preparation (PDBQT Conversion)**
+    - Ligands are converted from SDF structures into PDBQT format using Open Babel.
+    - Conversion ensures:
+      - proper atom typing
+      - torsion tree generation
+      - rotatable bond definition
+    - Ligands are stored in:
+      - `ligands_pdbqt/ligand_X.pdbqt`
+    - Each ligand retains a consistent identifier for traceability across docking runs.
 
-4. **3D Conformer Generation (ETKDGv3)**
-    - Generate initial low-energy 3D conformers for **filtered fragment molecules** using **RDKit ETKDGv3**.  
-    - Number of conformers per fragment configurable (`numConfs`).  
-    - Conformers stored in a single SDF file, with per-conformer properties:
-      - `mol_name`  
-      - `mol_index`  
-      - `conf_id` for traceability  
-      - **Descriptors logged per conformer** in `conformer_log.csv`:
-        - Molecular weight (MW)  
-        - Number of hydrogen donors  
-        - Number of hydrogen acceptors  
-        - cLogP  
-        - Number of rotatable bonds  
-        - Polar Surface Area (PSA)
-        - Conformer bin
-        - Status (`success` / failure message)  
-    - Skipped or problematic molecules are logged in CSV with failure message for reproducibility.  
-    - Provides a **traceable 3D conformer dataset** for downstream MMFF minimization, docking, and MD workflows.
+5. **Docking Execution (AutoDock Vina 1.2.3)**
+    - Docking is performed using **AutoDock Vina** with rigid receptor approximation.
+    - Each ligand is docked against:
+      - one receptor snapshot
+      - one cavity-defined grid
+    - Key parameters:
+      - exhaustiveness (search depth)
+      - num_modes (output poses)
+      - grid center + size
+    - Output per ligand:
+      - docked poses (`docked_ligand_X.pdbqt`)
+      - affinity scores (kcal/mol)
+      - RMSD of alternative poses relative to the top-ranked binding mode
 
-5. **Force Field Minimization (MMFF)**
-    - MMFF94s energy minimization performed on all generated conformers with MMFF94 fallback for conformers that fail MMFF94s minimization
-    - Iterates over SDF conformers, minimizes energies, and stores results in a new SDF.  
-    - Per-conformer logging of minimization status and energy in `conformer_minimization_log.csv`. Columns include:
+    - Logging captures:
+      - ligand index
+      - docking success/failure status
+      - runtime errors per ligand
 
-      | Column | Description |
-      |--------|-------------|
-      | mol_name | Molecule name / identifier |
-      | mol_index | Original molecule index in the input file |
-      | conf_id | Conformer ID |
-      | mmffVariant | MMFF variant used for minimization |
-      | min_status | Minimization status (`success` / failure type) |
-      | energy_before_kcal_mol | Energy before minimization (kcal/mol) |
-      | energy_after_kcal_mol | Energy after minimization (kcal/mol) |
-  
-6. **Conformer Pruning**
-    - RMSD-based pruning to remove duplicate or near-duplicate conformers.  
-    - Pruning threshold: 0.5 Å  
-    - Retains representative conformers for downstream analysis.  
-    - Per-conformer CSV logs (`pruned_conformers.csv`) include:
+6. **Docking Success & Failure Tracking**
+    - Each docking attempt is classified as:
+      - **successful docking** → Vina returns valid poses without runtime error
+      - **failed docking** → subprocess error or Vina parsing failure
+    - These are stored as structured records:
+      - `successful_docking[]`
+      - `failed_docking[]`
 
-      | Column | Description |
-      |--------|-------------|
-      | mol_name | Molecule name / identifier |
-      | mol_index | Original molecule index in the input file |
-      | conf_id | Conformer ID |
-      | mmffVariant | MMFF variant used for minimization |
-      | min_status | Minimization status (`success` / failure type) |
-      | energy_before_kcal_mol | Energy before minimization (kcal/mol) |
-      | energy_after_kcal_mol | Energy after minimization (kcal/mol) |
-      | mw | Molecular weight |
-      | h_donors | Number of hydrogen donors |
-      | h_acceptors | Number of hydrogen acceptors |
-      | clogp | Calculated logP |
-      | rot_bonds | Number of rotatable bonds |
-      | psa | Polar surface area |
-      | conformer_bin | Absolute conformer bin based on `numConfs` |
-      | status | Conformer pass/fail status |
-      | percentile_bin | Molecule percentile bin (0–25%, 25–50%, etc.)
-      
-7. **Output Organization**  
-    - Each run output is saved under a `run_id` directory.  
-    - `run_id` directory contains the directory (`frag_pp_run`).
-    - Metadata JSON saved in `run_dir`.
-    - Pipeline outputs are stored in `frag_pp_run`:
-      - `cleaned_molecules.sdf` 
-      - `sanitization_report.json`  
-      - `sanitization_log.csv`  
-      - `filtered_log.csv`
-      - `filtered_passed_log.csv`
-      - `filtered_summary.json`
-      - `filtered_fragments.sdf`
-      - `conformer_log.csv`
-      - `etkdg_summary.json`
-      - `fragments_conformers.sdf`  
-      - `conformer_minimization_log.csv`  
-      - `min_fragments_conformers.sdf`  
-      - `pruned_conformers.csv`  
-      - `pruning_summary.json`
-      - `min_fragments_conformers.sdf`  
+    - Each entry includes:
+      - cavity_id
+      - ligand name
+      - output path (if successful)
+      - error message (if failed)
 
+    - This enables:
+      - reproducibility audits
+      - ligand failure analysis
+      - downstream filtering of unreliable ligands
 
+7. **Batch Docking Orchestration (Snapshot × Cavity Loop)**
+    - Docking is performed across:
+      - multiple snapshots (ensemble receptor states)
+      - multiple cavities per snapshot
+    - Each combination generates:
+      - a dedicated Vina config file
+      - a dedicated output directory:
+        - `snap_{snapshot}_grid_{cavity_id}/`
+    - This structure ensures full traceability of:
+      - receptor state
+      - binding site definition
+      - ligand ensemble results
 
-> **Note:** The full pipeline code is **not publicly released** due to ongoing development and publication considerations. Selected outputs and workflow details are provided for transparency.
-> 
-> The complete implementation is **available upon request** for technical evaluation or collaboration.
-> 
-> To access the private repository, please **contact me via the email** provided in my application/CV or at marcuswangweihow@gmail.com.
+8. **Output Organization**
+    - Each docking run is stored under a structured `docking_run_dir/` directory.
 
--->
+    - Directory structure includes:
+      - `ligands_pdbqt/` — prepared ligand structures in PDBQT format
+      - `ligands_sdf/` — original or intermediate ligand representations
+      - `receptor_pdbqt/` — receptor snapshot PDBQT files
+      - `vina_out/` — docking outputs and grid-specific results
+      - `docking_metadata.json` — structured run metadata and summaries
+
+    - Key generated outputs include:
+      - receptor PDBQT files (snapshot-specific rigid receptors)
+      - Vina configuration files (`.txt`) defining grid boxes and parameters
+      - docking results (`docked_ligand_X.pdbqt`)
+      - execution logs (`docking_log.txt`)
+      - structured metadata (`docking_metadata.json`)
+
+    - Metadata captures both configuration and execution statistics:
+      - selected snapshots and cavity IDs
+      - docking parameters (grid size, exhaustiveness, num_modes)
+      - ligand conversion statistics (success/failure counts)
+      - docking summary statistics:
+        - number of successful dockings
+        - number of failed dockings
+        - total docking attempts
+
+    - Per-ligand docking records include:
+      - cavity ID
+      - ligand identifier
+      - output file path (if successful)
+      - error message (if failed)
+
+    - This ensures full reproducibility of:
+      - receptor state used
+      - docking grid definition
+      - ligand transformation pipeline
+      - per-ligand docking outcomes
+
+---
+
+> **Note:** The full pipeline code is **not publicly released** due to ongoing development and publication considerations. Selected outputs and workflow details are provided for transparency.  
+>
+> The complete implementation is **available upon request** for technical evaluation or collaboration.  
+>
+> To access the private repository, please contact me via the email provided in my application/CV or at marcuswangweihow@gmail.com.
 ---
 
 
